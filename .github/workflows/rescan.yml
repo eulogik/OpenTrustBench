@@ -1,6 +1,6 @@
 name: Weekly Registry Refresh
 
-# Re-scan the 50 registry targets + self scans, regenerate static report
+# Re-scan the 53 registry targets + self scans, regenerate static report
 # pages/badges, refresh one-pager stats, and push. The Pages deploy workflow
 # picks up the push (web/**) automatically. Nothing here needs a backend.
 on:
