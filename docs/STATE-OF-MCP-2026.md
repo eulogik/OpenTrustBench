@@ -1,7 +1,7 @@
 # State of MCP Permissions — September 2026
 
 50 popular public MCP servers and SDKs scanned with **OpenTrustBench v0.1.0**
-(8-rule static suite, OWASP-mapped). Shallow clones at HEAD on 2026-09-09; re-scanned 2026-09-09 with v0.1.0 string-literal permission handling.
+(8-rule static suite, OWASP-mapped). Shallow clones at HEAD on 2026-09-09; re-scanned 2026-09-14 with v0.1.0 string-literal permission handling.
 Methodology and target list: `scripts/seed-registry.mjs` (resumable, all work in `/tmp`).
 
 Browse all 50 cards: <https://www.opentrustbench.com/r/>
@@ -13,11 +13,11 @@ Browse all 50 cards: <https://www.opentrustbench.com/r/>
 | Servers scanned | 50 |
 | Average Trust Score | **70.2 / 100** |
 | Graded D or F | **18 / 50 (36%)** |
-| Total findings | 461 (146 critical) |
+| Total findings | 463 (148 critical) |
 | Excessive permission scope | **20 / 50 (40%)** |
 | Minimal scope | 16 / 50 |
 
-Grade distribution: A 15 · B 12 · C 5 · D 14 · F 4.
+Grade distribution: A 15 · B 12 · C 5 · D 13 · F 5.
 
 This converges with published research: Liu et al. (2026) found 26.1% of
 42,447 skills vulnerable; Snyk (Feb 2026) found flaws in 36.8% of 3,984
@@ -41,13 +41,13 @@ comes from no longer counting string literals and prose as capabilities.)
 | Score | Server | Findings (crit) | Scope |
 |---|---|---|---|
 | 35 | ahujasid__blender-mcp | 9 (3) | excessive |
+| 37 | stripe__agent-toolkit | 10 (0) | excessive |
 | 37 | jlowin__fastmcp | 49 (22) | excessive |
 | 37 | mcp-use__mcp-use | 52 (22) | excessive |
 | 39 | mongodb-js__mongodb-mcp-server | 12 (7) | excessive |
-| 40 | stripe__agent-toolkit | 10 (0) | excessive |
 | 40 | upstash__context7 | 12 (6) | excessive |
 | 40 | modelcontextprotocol__typescript-sdk | 78 (4) | excessive |
-| 40 | modelcontextprotocol__inspector | 58 (29) | excessive |
+| 40 | modelcontextprotocol__inspector | 60 (31) | excessive |
 | 43 | getsentry__sentry-mcp | 19 (4) | excessive |
 | 43 | cloudflare__mcp-server-cloudflare | 105 (21) | excessive |
 

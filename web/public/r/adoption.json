@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-09",
+  "date": "2026-09-14",
   "displaying": 0,
   "checked": 44,
   "repos": [
@@ -105,7 +105,8 @@
     },
     {
       "repo": "neondatabase/mcp-server-neon",
-      "badge": false
+      "badge": false,
+      "error": "GitHub API 403 for /repos/neondatabase/mcp-server-neon/readme"
     },
     {
       "repo": "jlowin/fastmcp",
