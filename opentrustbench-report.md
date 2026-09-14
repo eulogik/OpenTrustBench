@@ -3,7 +3,7 @@
 > **Capability:** `Secure Data Auditor Skill` (agent-skill)  
 > **Trust Grade:** **B** (88/100)  
 > **Confidence:** MEDIUM  
-> **Date:** 2026-09-11T08:28:25.999Z
+> **Date:** 2026-09-14T11:24:08.006Z
 >
 > Static analysis only (8-rule suite, OWASP-mapped). Not a certification or penetration test.
 

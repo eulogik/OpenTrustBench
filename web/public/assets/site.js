@@ -3,7 +3,47 @@
   "use strict";
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* Nav state + mobile menu */
+  /* ── Theme toggle ──────────────────────────────────── */
+  (function initTheme() {
+    var root = document.documentElement;
+    var saved = null;
+    try { saved = localStorage.getItem("theme"); } catch (_) {}
+
+    if (saved === "light" || saved === "dark") {
+      root.setAttribute("data-theme", saved);
+    }
+    // else: no attribute, CSS media query handles system default
+
+    function getEffective() {
+      if (root.hasAttribute("data-theme")) return root.getAttribute("data-theme");
+      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+
+    function updateIcons() {
+      var btn = document.querySelector(".theme-toggle");
+      if (!btn) return;
+      var dark = getEffective() === "dark";
+      btn.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+    }
+    updateIcons();
+
+    // Listen for system preference changes (only when no manual override)
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
+      if (!root.hasAttribute("data-theme")) updateIcons();
+    });
+
+    document.addEventListener("click", function (e) {
+      var btn = e.target.closest(".theme-toggle");
+      if (!btn) return;
+      var current = getEffective();
+      var next = current === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (_) {}
+      updateIcons();
+    });
+  })();
+
+  /* ── Nav state + mobile menu ───────────────────────── */
   var nav = document.querySelector(".nav");
   var onScroll = function () { if (nav) nav.classList.toggle("scrolled", window.scrollY > 8); };
   window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
@@ -19,7 +59,7 @@
     });
   }
 
-  /* Copy buttons: <button data-copy="text"> or data-copy-target="#id" */
+  /* ── Copy buttons ──────────────────────────────────── */
   document.addEventListener("click", function (e) {
     var btn = e.target.closest("[data-copy],[data-copy-target]");
     if (!btn) return;
@@ -42,7 +82,7 @@
     }
   });
 
-  /* Install tabs: [role="tablist"] > [role="tab"][data-tab], panels [role="tabpanel"][data-panel] */
+  /* ── Install tabs ──────────────────────────────────── */
   document.querySelectorAll('[role="tablist"]').forEach(function (list) {
     var tabs = Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
     var scope = list.parentElement;
@@ -70,7 +110,7 @@
     });
   });
 
-  /* Scroll reveals */
+  /* ── Scroll reveals ────────────────────────────────── */
   var revealEls = document.querySelectorAll(".reveal");
   if (reduced || !("IntersectionObserver" in window)) {
     revealEls.forEach(function (el) { el.classList.add("in"); });
@@ -83,7 +123,7 @@
     revealEls.forEach(function (el) { io.observe(el); });
   }
 
-  /* Hero terminal: lines from data attribute, typed once when visible */
+  /* ── Hero terminal typing ──────────────────────────── */
   var term = document.getElementById("term");
   if (term) {
     var full = term.getAttribute("data-lines") || "";
@@ -113,7 +153,7 @@
     tObserver.observe(term);
   }
 
-  /* Registry explorer (only on /r/): filter chips + search + sort + histogram */
+  /* ── Registry explorer ─────────────────────────────── */
   var table = document.getElementById("registry-table");
   if (table) {
     var dataEl = document.getElementById("registry-data");
