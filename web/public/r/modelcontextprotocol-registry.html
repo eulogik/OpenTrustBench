@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>modelcontextprotocol__registry — Trust Card (Grade B) · OpenTrustBench</title>
-<meta name="description" content="Static security scan of modelcontextprotocol__registry: grade B (89/100), 0 findings, scope moderate. Ranked #17 of 53 scanned.">
-<link rel="canonical" href="https://www.opentrustbench.com/r/modelcontextprotocol-registry.html">
+<title>modelcontextprotocol__registry — Trust Card (Grade U) · OpenTrustBench</title>
+<meta name="description" content="Static security scan of modelcontextprotocol__registry: grade U (Ungraded — insufficient static coverage), 0 findings, scope moderate. Not ranked: insufficient static coverage.">
+<link rel="canonical" href="https://opentrustbench.com/r/modelcontextprotocol-registry.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="modelcontextprotocol__registry — OpenTrustBench Grade B">
-<meta property="og:url" content="https://www.opentrustbench.com/r/modelcontextprotocol-registry.html">
-<meta property="og:image" content="https://www.opentrustbench.com/og-image.png">
+<meta property="og:title" content="modelcontextprotocol__registry — OpenTrustBench Grade U">
+<meta property="og:url" content="https://opentrustbench.com/r/modelcontextprotocol-registry.html">
+<meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.opentrustbench.com/#org","name":"OpenTrustBench","url":"https://www.opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"modelcontextprotocol__registry — OpenTrustBench Grade B (89/100)","description":"Static security scan of modelcontextprotocol__registry: 0 findings (0 critical), permission scope moderate.","datePublished":"2026-09-14","dateModified":"2026-09-14","author":{"@id":"https://www.opentrustbench.com/#org"},"publisher":{"@id":"https://www.opentrustbench.com/#org"},"mainEntityOfPage":"https://www.opentrustbench.com/r/modelcontextprotocol-registry.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"modelcontextprotocol__registry — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of modelcontextprotocol__registry: 0 findings (0 critical), permission scope moderate.","datePublished":"2026-09-18","dateModified":"2026-09-18","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/modelcontextprotocol-registry.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-09-14">
+<body data-scan="2026-09-18">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -28,31 +28,1416 @@
 <p id="stale" hidden class="callout warn">⚠️ This snapshot is over 30 days old — treat the grade as stale until the next refresh. Re-scan locally to verify.</p>
 <script>try{var d=new Date(document.body.dataset.scan);if((Date.now()-d.getTime())/864e5>30){document.getElementById('stale').hidden=false;}}catch(_){}</script>
 <p class="eyebrow">Trust Card · Static snapshot</p>
-<h1>modelcontextprotocol__registry <span class="grade gB">B</span></h1>
-<p class="lede"><strong style="color:var(--text)">89/100</strong> · 0 findings (0 critical) · scope moderate · Ranked #17 of 53 scanned.</p>
-<p class="muted">Scanned 2026-09-14 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/registry @ 739b70e (2026-09-06)</p>
+<h1>modelcontextprotocol__registry <span class="grade ">U</span></h1>
+<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope moderate · Not ranked: insufficient static coverage.</p>
+<p class="muted">Scanned 2026-09-18 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/registry @ d1dcaf3 (2026-09-16)</p>
 <h2>Score breakdown</h2>
-
-    <div style="display:flex;align-items:center;gap:12px;margin:10px 0"><span style="width:130px;color:var(--muted);font-size:14px">security</span>
-    <span class="bar" style="flex:1"><span style="width:100%"></span></span>
-    <span class="mono" style="width:64px;text-align:right">100</span></div>
-    <div style="display:flex;align-items:center;gap:12px;margin:10px 0"><span style="width:130px;color:var(--muted);font-size:14px">permissions</span>
-    <span class="bar" style="flex:1"><span style="width:90%"></span></span>
-    <span class="mono" style="width:64px;text-align:right">90</span></div>
-    <div style="display:flex;align-items:center;gap:12px;margin:10px 0"><span style="width:130px;color:var(--muted);font-size:14px">provenance</span>
-    <span class="bar" style="flex:1"><span style="width:75%"></span></span>
-    <span class="mono" style="width:64px;text-align:right">75</span></div>
-    <div style="display:flex;align-items:center;gap:12px;margin:10px 0"><span style="width:130px;color:var(--muted);font-size:14px">reliability</span>
-    <span class="bar" style="flex:1"><span style="width:85%"></span></span>
-    <span class="mono" style="width:64px;text-align:right">85</span></div>
-    <div style="display:flex;align-items:center;gap:12px;margin:10px 0"><span style="width:130px;color:var(--muted);font-size:14px">stability</span>
-    <span class="bar" style="flex:1"><span style="width:75%"></span></span>
-    <span class="mono" style="width:64px;text-align:right">75</span></div>
-<p class="muted">No critical or high-severity findings; grade reflects permissions and provenance signals.</p>
+<p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
+<p class="muted">Insufficient static coverage: No non-empty supported source analyzed; documentation and data alone provide limited coverage; Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
+<h2>Coverage: limited</h2>
+<p>Static-heuristic scope: 30 analyzed / 257 discovered files; 187 unsupported source files; 228 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<ul><li>No non-empty supported source analyzed; documentation and data alone provide limited coverage</li><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
+<details><summary>File coverage, applied rules and scan limits</summary><pre>{
+  &quot;mode&quot;: &quot;static-heuristic&quot;,
+  &quot;status&quot;: &quot;limited&quot;,
+  &quot;reasons&quot;: [
+    &quot;No non-empty supported source analyzed; documentation and data alone provide limited coverage&quot;,
+    &quot;Unsupported source present&quot;
+  ],
+  &quot;limitations&quot;: [
+    &quot;Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.&quot;,
+    &quot;Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.&quot;,
+    &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
+    &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
+  ],
+  &quot;discoveredFiles&quot;: 257,
+  &quot;analyzedFiles&quot;: [
+    {
+      &quot;path&quot;: &quot;.github/dependabot.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 581,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/cancel-pulumi-lock.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 2634,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/ci.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1603,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/claude.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1570,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/close-invalid-publish-prs.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 6541,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/deploy-production.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1516,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/deploy-staging.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 3163,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/detect-invalid-publish-prs.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 3918,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/release.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 2591,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/sync-db.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 17381,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/sync-schema.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 2306,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.golangci.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1665,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.goreleaser.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 2999,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.ko.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 877,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.vscode/launch.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 892,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;data/seed.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 5351,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;deploy/Pulumi.gcpProd.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 5095,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;deploy/Pulumi.gcpStaging.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 5002,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;deploy/Pulumi.local.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 522,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;deploy/Pulumi.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 127,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;docker-compose.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 2217,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/api/openapi.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 43665,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/server-json/draft/server.schema.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 22455,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/schemas/2025-07-09.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 17657,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/schemas/2025-09-16.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 17638,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/schemas/2025-09-29.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 17122,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/schemas/2025-10-11.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 20686,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/schemas/2025-10-17.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 20686,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/schemas/2025-12-11.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 22172,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tests/integration/docker-compose.integration-test.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 449,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    }
+  ],
+  &quot;unsupportedSourceFiles&quot;: [
+    &quot;.env.example&quot;,
+    &quot;.githooks/pre-commit&quot;,
+    &quot;.ko.dockerignore&quot;,
+    &quot;Makefile&quot;,
+    &quot;cmd/publisher/auth/azurekeyvault/common.go&quot;,
+    &quot;cmd/publisher/auth/common.go&quot;,
+    &quot;cmd/publisher/auth/dns.go&quot;,
+    &quot;cmd/publisher/auth/github-at.go&quot;,
+    &quot;cmd/publisher/auth/github-oidc.go&quot;,
+    &quot;cmd/publisher/auth/github-oidc_internal_test.go&quot;,
+    &quot;cmd/publisher/auth/github_at_device_flow_internal_test.go&quot;,
+    &quot;cmd/publisher/auth/github_at_poll_internal_test.go&quot;,
+    &quot;cmd/publisher/auth/github_at_test.go&quot;,
+    &quot;cmd/publisher/auth/googlekms/common.go&quot;,
+    &quot;cmd/publisher/auth/http.go&quot;,
+    &quot;cmd/publisher/auth/interface.go&quot;,
+    &quot;cmd/publisher/auth/none.go&quot;,
+    &quot;cmd/publisher/commands/init.go&quot;,
+    &quot;cmd/publisher/commands/init_test.go&quot;,
+    &quot;cmd/publisher/commands/login.go&quot;,
+    &quot;cmd/publisher/commands/login_test.go&quot;,
+    &quot;cmd/publisher/commands/logout.go&quot;,
+    &quot;cmd/publisher/commands/logout_test.go&quot;,
+    &quot;cmd/publisher/commands/publish.go&quot;,
+    &quot;cmd/publisher/commands/publish_test.go&quot;,
+    &quot;cmd/publisher/commands/status.go&quot;,
+    &quot;cmd/publisher/commands/status_test.go&quot;,
+    &quot;cmd/publisher/commands/testutil_test.go&quot;,
+    &quot;cmd/publisher/commands/unicode.go&quot;,
+    &quot;cmd/publisher/commands/validate.go&quot;,
+    &quot;cmd/publisher/commands/validate_test.go&quot;,
+    &quot;cmd/publisher/main.go&quot;,
+    &quot;cmd/registry/main.go&quot;,
+    &quot;deploy/Makefile&quot;,
+    &quot;deploy/go.mod&quot;,
+    &quot;deploy/go.sum&quot;,
+    &quot;deploy/main.go&quot;,
+    &quot;deploy/pkg/k8s/backup.go&quot;,
+    &quot;deploy/pkg/k8s/cert_manager.go&quot;,
+    &quot;deploy/pkg/k8s/deploy.go&quot;,
+    &quot;deploy/pkg/k8s/ingress.go&quot;,
+    &quot;deploy/pkg/k8s/monitoring.go&quot;,
+    &quot;deploy/pkg/k8s/postgres.go&quot;,
+    &quot;deploy/pkg/k8s/registry.go&quot;,
+    &quot;deploy/pkg/providers/gcp/provider.go&quot;,
+    &quot;deploy/pkg/providers/local/provider.go&quot;,
+    &quot;deploy/pkg/providers/types.go&quot;,
+    &quot;docs/modelcontextprotocol-io/about.mdx&quot;,
+    &quot;docs/modelcontextprotocol-io/authentication.mdx&quot;,
+    &quot;docs/modelcontextprotocol-io/faq.mdx&quot;,
+    &quot;docs/modelcontextprotocol-io/github-actions.mdx&quot;,
+    &quot;docs/modelcontextprotocol-io/moderation-policy.mdx&quot;,
+    &quot;docs/modelcontextprotocol-io/package-types.mdx&quot;,
+    &quot;docs/modelcontextprotocol-io/quickstart.mdx&quot;,
+    &quot;docs/modelcontextprotocol-io/registry-aggregators.mdx&quot;,
+    &quot;docs/modelcontextprotocol-io/remote-servers.mdx&quot;,
+    &quot;docs/modelcontextprotocol-io/terms-of-service.mdx&quot;,
+    &quot;docs/modelcontextprotocol-io/versioning.mdx&quot;,
+    &quot;go.mod&quot;,
+    &quot;go.sum&quot;,
+    &quot;internal/api/cors_preflight_test.go&quot;,
+    &quot;internal/api/handlers/v0/auth/common.go&quot;,
+    &quot;internal/api/handlers/v0/auth/common_test.go&quot;,
+    &quot;internal/api/handlers/v0/auth/dns.go&quot;,
+    &quot;internal/api/handlers/v0/auth/dns_test.go&quot;,
+    &quot;internal/api/handlers/v0/auth/github_at.go&quot;,
+    &quot;internal/api/handlers/v0/auth/github_at_internal_test.go&quot;,
+    &quot;internal/api/handlers/v0/auth/github_at_test.go&quot;,
+    &quot;internal/api/handlers/v0/auth/github_oidc.go&quot;,
+    &quot;internal/api/handlers/v0/auth/github_oidc_test.go&quot;,
+    &quot;internal/api/handlers/v0/auth/http.go&quot;,
+    &quot;internal/api/handlers/v0/auth/http_internal_test.go&quot;,
+    &quot;internal/api/handlers/v0/auth/http_test.go&quot;,
+    &quot;internal/api/handlers/v0/auth/main.go&quot;,
+    &quot;internal/api/handlers/v0/auth/none.go&quot;,
+    &quot;internal/api/handlers/v0/auth/none_test.go&quot;,
+    &quot;internal/api/handlers/v0/auth/oidc.go&quot;,
+    &quot;internal/api/handlers/v0/auth/oidc_internal_test.go&quot;,
+    &quot;internal/api/handlers/v0/auth/oidc_test.go&quot;,
+    &quot;internal/api/handlers/v0/edit.go&quot;,
+    &quot;internal/api/handlers/v0/edit_test.go&quot;,
+    &quot;internal/api/handlers/v0/health.go&quot;,
+    &quot;internal/api/handlers/v0/health_test.go&quot;,
+    &quot;internal/api/handlers/v0/list_errors.go&quot;,
+    &quot;internal/api/handlers/v0/list_errors_test.go&quot;,
+    &quot;internal/api/handlers/v0/openapi.go&quot;,
+    &quot;internal/api/handlers/v0/ping.go&quot;,
+    &quot;internal/api/handlers/v0/ping_test.go&quot;,
+    &quot;internal/api/handlers/v0/publish.go&quot;,
+    &quot;internal/api/handlers/v0/publish_integration_test.go&quot;,
+    &quot;internal/api/handlers/v0/publish_registry_validation_test.go&quot;,
+    &quot;internal/api/handlers/v0/publish_test.go&quot;,
+    &quot;internal/api/handlers/v0/response.go&quot;,
+    &quot;internal/api/handlers/v0/servers.go&quot;,
+    &quot;internal/api/handlers/v0/servers_test.go&quot;,
+    &quot;internal/api/handlers/v0/status.go&quot;,
+    &quot;internal/api/handlers/v0/status_test.go&quot;,
+    &quot;internal/api/handlers/v0/telemetry_test.go&quot;,
+    &quot;internal/api/handlers/v0/ui.go&quot;,
+    &quot;internal/api/handlers/v0/ui_index.html&quot;,
+    &quot;internal/api/handlers/v0/validate.go&quot;,
+    &quot;internal/api/handlers/v0/validate_test.go&quot;,
+    &quot;internal/api/handlers/v0/version.go&quot;,
+    &quot;internal/api/handlers/v0/version_test.go&quot;,
+    &quot;internal/api/openapi_compliance_test.go&quot;,
+    &quot;internal/api/router/router.go&quot;,
+    &quot;internal/api/router/router_test.go&quot;,
+    &quot;internal/api/router/v0.go&quot;,
+    &quot;internal/api/server.go&quot;,
+    &quot;internal/api/server_test.go&quot;,
+    &quot;internal/auth/blocks.go&quot;,
+    &quot;internal/auth/jwt.go&quot;,
+    &quot;internal/auth/jwt_test.go&quot;,
+    &quot;internal/auth/types.go&quot;,
+    &quot;internal/config/config.go&quot;,
+    &quot;internal/database/database.go&quot;,
+    &quot;internal/database/migrate.go&quot;,
+    &quot;internal/database/migrations/001_initial_schema.sql&quot;,
+    &quot;internal/database/migrations/002_add_server_extensions.sql&quot;,
+    &quot;internal/database/migrations/003_simplify_to_key_value.sql&quot;,
+    &quot;internal/database/migrations/004_update_meta_field_format.sql&quot;,
+    &quot;internal/database/migrations/005_add_server_id_rename_version_id.sql&quot;,
+    &quot;internal/database/migrations/006_migrate_server_json_camelcase.sql&quot;,
+    &quot;internal/database/migrations/007_add_publish_constraints.sql&quot;,
+    &quot;internal/database/migrations/008_clean_invalid_data.sql&quot;,
+    &quot;internal/database/migrations/009_separate_official_metadata.sql&quot;,
+    &quot;internal/database/migrations/010_migrate_canonical_package_refs.sql&quot;,
+    &quot;internal/database/migrations/011_fix_empty_schema_fields.sql&quot;,
+    &quot;internal/database/migrations/012_fix_nuget_registry_base_url.sql&quot;,
+    &quot;internal/database/migrations/013_add_status_fields.sql&quot;,
+    &quot;internal/database/migrations/014_heal_is_latest.sql&quot;,
+    &quot;internal/database/postgres.go&quot;,
+    &quot;internal/database/postgres_test.go&quot;,
+    &quot;internal/database/testutil.go&quot;,
+    &quot;internal/importer/importer.go&quot;,
+    &quot;internal/importer/importer_test.go&quot;,
+    &quot;internal/service/registry_service.go&quot;,
+    &quot;internal/service/registry_service_test.go&quot;,
+    &quot;internal/service/service.go&quot;,
+    &quot;internal/service/versioning.go&quot;,
+    &quot;internal/service/versioning_test.go&quot;,
+    &quot;internal/telemetry/metrics.go&quot;,
+    &quot;internal/telemetry/metrics_test.go&quot;,
+    &quot;internal/validators/constants.go&quot;,
+    &quot;internal/validators/package.go&quot;,
+    &quot;internal/validators/registries/cargo.go&quot;,
+    &quot;internal/validators/registries/cargo_internal_test.go&quot;,
+    &quot;internal/validators/registries/cargo_test.go&quot;,
+    &quot;internal/validators/registries/export_test.go&quot;,
+    &quot;internal/validators/registries/mcpb.go&quot;,
+    &quot;internal/validators/registries/mcpb_test.go&quot;,
+    &quot;internal/validators/registries/mcpname.go&quot;,
+    &quot;internal/validators/registries/mcpname_internal_test.go&quot;,
+    &quot;internal/validators/registries/npm.go&quot;,
+    &quot;internal/validators/registries/npm_test.go&quot;,
+    &quot;internal/validators/registries/nuget.go&quot;,
+    &quot;internal/validators/registries/nuget_test.go&quot;,
+    &quot;internal/validators/registries/oci.go&quot;,
+    &quot;internal/validators/registries/oci_test.go&quot;,
+    &quot;internal/validators/registries/pypi.go&quot;,
+    &quot;internal/validators/registries/pypi_test.go&quot;,
+    &quot;internal/validators/registries/testutils_test.go&quot;,
+    &quot;internal/validators/schema.go&quot;,
+    &quot;internal/validators/schema_regex_test.go&quot;,
+    &quot;internal/validators/schema_test.go&quot;,
+    &quot;internal/validators/utils.go&quot;,
+    &quot;internal/validators/validation_detailed_test.go&quot;,
+    &quot;internal/validators/validation_types.go&quot;,
+    &quot;internal/validators/validation_types_test.go&quot;,
+    &quot;internal/validators/validators.go&quot;,
+    &quot;internal/validators/validators_test.go&quot;,
+    &quot;pkg/api/v0/types.go&quot;,
+    &quot;pkg/model/constants.go&quot;,
+    &quot;pkg/model/types.go&quot;,
+    &quot;scripts/mirror_data/fetch_production_data.go&quot;,
+    &quot;scripts/mirror_data/load_production_data.go&quot;,
+    &quot;scripts/test_endpoints.sh&quot;,
+    &quot;scripts/test_publish.sh&quot;,
+    &quot;tests/integration/main.go&quot;,
+    &quot;tests/integration/run.sh&quot;,
+    &quot;tools/admin/auth.sh&quot;,
+    &quot;tools/admin/takedown.sh&quot;,
+    &quot;tools/extract-server-schema/main.go&quot;,
+    &quot;tools/validate-examples/main.go&quot;,
+    &quot;tools/validate-examples.sh&quot;,
+    &quot;tools/validate-schemas/main.go&quot;,
+    &quot;tools/validate-schemas.sh&quot;
+  ],
+  &quot;excludedFiles&quot;: [
+    {
+      &quot;path&quot;: &quot;.git&quot;,
+      &quot;reason&quot;: &quot;ignored-directory&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.env.example&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.githooks/pre-commit&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.github/copilot-instructions.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.gitignore&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.ko.dockerignore&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;CLAUDE.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;CONTRIBUTING.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;LICENSE&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;Makefile&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;SECURITY.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/azurekeyvault/common.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/common.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/dns.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/github-at.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/github-oidc.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/github-oidc_internal_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/github_at_device_flow_internal_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/github_at_poll_internal_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/github_at_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/googlekms/common.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/http.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/interface.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/auth/none.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/init.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/init_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/login.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/login_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/logout.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/logout_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/publish.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/publish_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/status.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/status_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/testutil_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/unicode.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/validate.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/commands/validate_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/publisher/main.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/registry/main.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/.gitignore&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/Makefile&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/go.mod&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/go.sum&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/main.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/pkg/k8s/backup.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/pkg/k8s/cert_manager.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/pkg/k8s/deploy.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/pkg/k8s/ingress.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/pkg/k8s/monitoring.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/pkg/k8s/postgres.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/pkg/k8s/registry.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/pkg/providers/gcp/provider.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/pkg/providers/local/provider.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;deploy/pkg/providers/types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/administration/admin-operations.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/administration/maintainer-onboarding.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/community-projects.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/contributing/add-package-registry.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/contributing/releasing.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/design/design-principles.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/design/dev-summit-2025-05-registry-goals-presentation.pdf&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/design/dev-summit-2025-10-registry-status-presentation.pdf&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/design/ecosystem-diagram.excalidraw.svg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/design/ecosystem-vision.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/design/proposed-enhanced-validation.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/design/roadmap.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/design/tech-architecture.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/modelcontextprotocol-io/about.mdx&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/modelcontextprotocol-io/authentication.mdx&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/modelcontextprotocol-io/ecosystem-diagram.excalidraw.svg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/modelcontextprotocol-io/faq.mdx&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/modelcontextprotocol-io/github-actions.mdx&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/modelcontextprotocol-io/moderation-policy.mdx&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/modelcontextprotocol-io/package-types.mdx&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/modelcontextprotocol-io/quickstart.mdx&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/modelcontextprotocol-io/registry-aggregators.mdx&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/modelcontextprotocol-io/remote-servers.mdx&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/modelcontextprotocol-io/terms-of-service.mdx&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/modelcontextprotocol-io/versioning.mdx&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/api/CHANGELOG.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/api/extensions.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/api/generic-registry-api.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/api/official-registry-api.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/api/registry-authorization.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/cli/commands.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/server-json/CHANGELOG.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/server-json/CONTRIBUTING.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/server-json/generic-server-json.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/reference/server-json/official-registry-requirements.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;go.mod&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;go.sum&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/cors_preflight_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/common.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/common_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/dns.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/dns_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/github_at.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/github_at_internal_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/github_at_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/github_oidc.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/github_oidc_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/http.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/http_internal_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/http_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/main.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/none.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/none_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/oidc.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/oidc_internal_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/auth/oidc_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/edit.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/edit_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/health.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/health_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/list_errors.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/list_errors_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/openapi.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/ping.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/ping_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/publish.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/publish_integration_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/publish_registry_validation_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/publish_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/response.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/servers.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/servers_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/status.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/status_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/telemetry_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/ui.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/ui_index.html&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/validate.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/validate_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/version.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/handlers/v0/version_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/openapi_compliance_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/router/router.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/router/router_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/router/v0.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/server.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/api/server_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/auth/blocks.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/auth/jwt.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/auth/jwt_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/auth/types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/config/config.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/database.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrate.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/001_initial_schema.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/002_add_server_extensions.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/003_simplify_to_key_value.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/004_update_meta_field_format.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/005_add_server_id_rename_version_id.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/006_migrate_server_json_camelcase.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/007_add_publish_constraints.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/008_clean_invalid_data.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/009_separate_official_metadata.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/010_migrate_canonical_package_refs.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/011_fix_empty_schema_fields.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/012_fix_nuget_registry_base_url.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/013_add_status_fields.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/migrations/014_heal_is_latest.sql&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/postgres.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/postgres_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/database/testutil.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/importer/importer.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/importer/importer_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/service/registry_service.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/service/registry_service_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/service/service.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/service/versioning.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/service/versioning_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/telemetry/metrics.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/telemetry/metrics_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/constants.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/package.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/cargo.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/cargo_internal_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/cargo_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/export_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/mcpb.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/mcpb_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/mcpname.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/mcpname_internal_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/npm.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/npm_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/nuget.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/nuget_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/oci.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/oci_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/pypi.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/pypi_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/registries/testutils_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/schema.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/schema_regex_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/schema_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/schemas/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/utils.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/validation_detailed_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/validation_types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/validation_types_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/validators.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/validators/validators_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/api/v0/types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/model/constants.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/model/types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;scripts/mirror_data/.gitignore&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;scripts/mirror_data/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;scripts/mirror_data/fetch_production_data.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;scripts/mirror_data/load_production_data.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;scripts/test_endpoints.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;scripts/test_publish.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/integration/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/integration/main.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/integration/run.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/admin/auth.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/admin/takedown.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/extract-server-schema/main.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/validate-examples/main.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/validate-examples.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/validate-schemas/main.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/validate-schemas.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    }
+  ],
+  &quot;readErrors&quot;: [],
+  &quot;truncation&quot;: [],
+  &quot;limits&quot;: {
+    &quot;maxFiles&quot;: 4000,
+    &quot;maxDepth&quot;: 12,
+    &quot;maxFileBytes&quot;: 1048576
+  }
+}</pre></details>
 <h2>Fix first (0 critical/high)</h2>
 <p>No findings in scope of the 8-rule static suite.</p>
 <h2>Permissions</h2>
-<p>Scope: <strong>moderate</strong> · Shell: disabled · Network egress: yes · File deletion: none · Human approval: none</p>
+<p>Scope: <strong>moderate</strong> · Shell: disabled · Network egress: no · File deletion: none · Human approval: none</p>
 <h2>Provenance</h2>
 <p>License: none detected · Lockfile: no · Security policy: yes · Signals: unverified origin</p>
 <div class="callout"><p><strong>Independently scanned by the OpenTrustBench registry</strong> (not self-reported by the project). Static analysis only — no code executed, findings need human triage, counts may include test/example code. <strong>Static snapshot; re-scan before relying on it:</strong> <code>npx @opentrustbench/cli scan https://github.com/modelcontextprotocol/registry</code>. Scores move with every upstream commit; pages refresh weekly. <a href="../methodology.html">How scoring works</a>.</p></div>

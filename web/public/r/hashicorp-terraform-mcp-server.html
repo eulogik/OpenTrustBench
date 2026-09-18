@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>hashicorp__terraform-mcp-server — Trust Card (Grade A) · OpenTrustBench</title>
-<meta name="description" content="Static security scan of hashicorp__terraform-mcp-server: grade A (93/100), 0 findings, scope minimal. Ranked #5 of 53 scanned.">
-<link rel="canonical" href="https://www.opentrustbench.com/r/hashicorp-terraform-mcp-server.html">
+<title>hashicorp__terraform-mcp-server — Trust Card (Grade U) · OpenTrustBench</title>
+<meta name="description" content="Static security scan of hashicorp__terraform-mcp-server: grade U (Ungraded — insufficient static coverage), 0 findings, scope minimal. Not ranked: insufficient static coverage.">
+<link rel="canonical" href="https://opentrustbench.com/r/hashicorp-terraform-mcp-server.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hashicorp__terraform-mcp-server — OpenTrustBench Grade A">
-<meta property="og:url" content="https://www.opentrustbench.com/r/hashicorp-terraform-mcp-server.html">
-<meta property="og:image" content="https://www.opentrustbench.com/og-image.png">
+<meta property="og:title" content="hashicorp__terraform-mcp-server — OpenTrustBench Grade U">
+<meta property="og:url" content="https://opentrustbench.com/r/hashicorp-terraform-mcp-server.html">
+<meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.opentrustbench.com/#org","name":"OpenTrustBench","url":"https://www.opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"hashicorp__terraform-mcp-server — OpenTrustBench Grade A (93/100)","description":"Static security scan of hashicorp__terraform-mcp-server: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-09-14","dateModified":"2026-09-14","author":{"@id":"https://www.opentrustbench.com/#org"},"publisher":{"@id":"https://www.opentrustbench.com/#org"},"mainEntityOfPage":"https://www.opentrustbench.com/r/hashicorp-terraform-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"hashicorp__terraform-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of hashicorp__terraform-mcp-server: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-09-18","dateModified":"2026-09-18","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/hashicorp-terraform-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-09-14">
+<body data-scan="2026-09-18">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -28,31 +28,1369 @@
 <p id="stale" hidden class="callout warn">⚠️ This snapshot is over 30 days old — treat the grade as stale until the next refresh. Re-scan locally to verify.</p>
 <script>try{var d=new Date(document.body.dataset.scan);if((Date.now()-d.getTime())/864e5>30){document.getElementById('stale').hidden=false;}}catch(_){}</script>
 <p class="eyebrow">Trust Card · Static snapshot</p>
-<h1>hashicorp__terraform-mcp-server <span class="grade gA">A</span></h1>
-<p class="lede"><strong style="color:var(--text)">93/100</strong> · 0 findings (0 critical) · scope minimal · Ranked #5 of 53 scanned.</p>
-<p class="muted">Scanned 2026-09-14 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream hashicorp/terraform-mcp-server @ 140e3c8 (2026-09-11)</p>
+<h1>hashicorp__terraform-mcp-server <span class="grade ">U</span></h1>
+<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope minimal · Not ranked: insufficient static coverage.</p>
+<p class="muted">Scanned 2026-09-18 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream hashicorp/terraform-mcp-server @ e248187 (2026-09-15)</p>
 <h2>Score breakdown</h2>
-
-    <div style="display:flex;align-items:center;gap:12px;margin:10px 0"><span style="width:130px;color:var(--muted);font-size:14px">security</span>
-    <span class="bar" style="flex:1"><span style="width:100%"></span></span>
-    <span class="mono" style="width:64px;text-align:right">100</span></div>
-    <div style="display:flex;align-items:center;gap:12px;margin:10px 0"><span style="width:130px;color:var(--muted);font-size:14px">permissions</span>
-    <span class="bar" style="flex:1"><span style="width:100%"></span></span>
-    <span class="mono" style="width:64px;text-align:right">100</span></div>
-    <div style="display:flex;align-items:center;gap:12px;margin:10px 0"><span style="width:130px;color:var(--muted);font-size:14px">provenance</span>
-    <span class="bar" style="flex:1"><span style="width:75%"></span></span>
-    <span class="mono" style="width:64px;text-align:right">75</span></div>
-    <div style="display:flex;align-items:center;gap:12px;margin:10px 0"><span style="width:130px;color:var(--muted);font-size:14px">reliability</span>
-    <span class="bar" style="flex:1"><span style="width:85%"></span></span>
-    <span class="mono" style="width:64px;text-align:right">85</span></div>
-    <div style="display:flex;align-items:center;gap:12px;margin:10px 0"><span style="width:130px;color:var(--muted);font-size:14px">stability</span>
-    <span class="bar" style="flex:1"><span style="width:85%"></span></span>
-    <span class="mono" style="width:64px;text-align:right">85</span></div>
-<p class="muted">No critical or high-severity findings; grade reflects permissions and provenance signals.</p>
+<p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
+<p class="muted">Insufficient static coverage: No non-empty supported source analyzed; documentation and data alone provide limited coverage; Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
+<h2>Coverage: limited</h2>
+<p>Static-heuristic scope: 24 analyzed / 248 discovered files; 206 unsupported source files; 225 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<ul><li>No non-empty supported source analyzed; documentation and data alone provide limited coverage</li><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
+<details><summary>File coverage, applied rules and scan limits</summary><pre>{
+  &quot;mode&quot;: &quot;static-heuristic&quot;,
+  &quot;status&quot;: &quot;limited&quot;,
+  &quot;reasons&quot;: [
+    &quot;No non-empty supported source analyzed; documentation and data alone provide limited coverage&quot;,
+    &quot;Unsupported source present&quot;
+  ],
+  &quot;limitations&quot;: [
+    &quot;Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.&quot;,
+    &quot;Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.&quot;,
+    &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
+    &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
+  ],
+  &quot;discoveredFiles&quot;: 248,
+  &quot;analyzedFiles&quot;: [
+    {
+      &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/config.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 611,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/dependabot.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 556,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/build.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 7829,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/changelog.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 4585,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/deploy.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1436,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/e2e_test.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 633,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/hcpt_test.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1181,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/helm-lint.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1731,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/loadtest.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1044,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/publish-registry.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1931,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/release-checks.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 586,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/security-scan.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 2417,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/stale.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1450,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/workflows/unit_test.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 632,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;gemini-extension.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 589,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;helm/terraform-mcp-server/Chart.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 640,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;helm/terraform-mcp-server/templates/deployment.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 5202,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;helm/terraform-mcp-server/templates/hpa.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1030,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;helm/terraform-mcp-server/templates/ingress.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1127,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;helm/terraform-mcp-server/templates/service.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 400,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;helm/terraform-mcp-server/templates/serviceaccount.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 415,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;helm/terraform-mcp-server/templates/tests/test-connection.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 425,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;helm/terraform-mcp-server/values.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 2307,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;server.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 2041,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    }
+  ],
+  &quot;unsupportedSourceFiles&quot;: [
+    &quot;.copywrite.hcl&quot;,
+    &quot;.go-version&quot;,
+    &quot;.release/ci.hcl&quot;,
+    &quot;.release/oss-release-metadata.hcl&quot;,
+    &quot;.release/security-scan.hcl&quot;,
+    &quot;CODEOWNERS&quot;,
+    &quot;Dockerfile&quot;,
+    &quot;Makefile&quot;,
+    &quot;cmd/loadtest/main.go&quot;,
+    &quot;cmd/terraform-mcp-server/config_test.go&quot;,
+    &quot;cmd/terraform-mcp-server/init.go&quot;,
+    &quot;cmd/terraform-mcp-server/instana_test.go&quot;,
+    &quot;cmd/terraform-mcp-server/main.go&quot;,
+    &quot;cmd/terraform-mcp-server/main_metrics_test.go&quot;,
+    &quot;cmd/terraform-mcp-server/session_lifecycle_test.go&quot;,
+    &quot;cmd/terraform-mcp-server/slog.go&quot;,
+    &quot;cmd/terraform-mcp-server/toolsets_conflict_test.go&quot;,
+    &quot;e2e/cors_e2e_test.go&quot;,
+    &quot;e2e/docker_test.go&quot;,
+    &quot;e2e/helpers_test.go&quot;,
+    &quot;e2e/latest_module_version_test.go&quot;,
+    &quot;e2e/latest_provider_version_test.go&quot;,
+    &quot;e2e/main_test.go&quot;,
+    &quot;e2e/module_details_test.go&quot;,
+    &quot;e2e/official_server_test.go&quot;,
+    &quot;e2e/policy_details_test.go&quot;,
+    &quot;e2e/provider_details_test.go&quot;,
+    &quot;e2e/search_modules_test.go&quot;,
+    &quot;e2e/search_policies_test.go&quot;,
+    &quot;e2e/search_providers_test.go&quot;,
+    &quot;e2e/transport_test.go&quot;,
+    &quot;go.mod&quot;,
+    &quot;go.sum&quot;,
+    &quot;helm/terraform-mcp-server/.helmignore&quot;,
+    &quot;helm/terraform-mcp-server/templates/_helpers.tpl&quot;,
+    &quot;pkg/client/common.go&quot;,
+    &quot;pkg/client/config.go&quot;,
+    &quot;pkg/client/config_unix.go&quot;,
+    &quot;pkg/client/config_windows.go&quot;,
+    &quot;pkg/client/credentials.go&quot;,
+    &quot;pkg/client/credentials_test.go&quot;,
+    &quot;pkg/client/metrics.go&quot;,
+    &quot;pkg/client/metrics_test.go&quot;,
+    &quot;pkg/client/middleware.go&quot;,
+    &quot;pkg/client/middleware_test.go&quot;,
+    &quot;pkg/client/org_allowlist_tool_middleware.go&quot;,
+    &quot;pkg/client/org_allowlist_tool_middleware_test.go&quot;,
+    &quot;pkg/client/ratelimit.go&quot;,
+    &quot;pkg/client/ratelimit_test.go&quot;,
+    &quot;pkg/client/registry.go&quot;,
+    &quot;pkg/client/registry_client.go&quot;,
+    &quot;pkg/client/registry_client_test.go&quot;,
+    &quot;pkg/client/registry_test.go&quot;,
+    &quot;pkg/client/session.go&quot;,
+    &quot;pkg/client/tfe_client.go&quot;,
+    &quot;pkg/client/tfe_client_test.go&quot;,
+    &quot;pkg/client/tls.go&quot;,
+    &quot;pkg/client/tls_test.go&quot;,
+    &quot;pkg/client/tool_logging_middleware.go&quot;,
+    &quot;pkg/client/tool_logging_middleware_test.go&quot;,
+    &quot;pkg/client/types.go&quot;,
+    &quot;pkg/mcp-official/client/http_client.go&quot;,
+    &quot;pkg/mcp-official/client/session.go&quot;,
+    &quot;pkg/mcp-official/client/tfe_client.go&quot;,
+    &quot;pkg/mcp-official/client/tfe_client_test.go&quot;,
+    &quot;pkg/mcp-official/server.go&quot;,
+    &quot;pkg/mcp-official/tools/middleware/metrics.go&quot;,
+    &quot;pkg/mcp-official/tools/middleware/metrics_test.go&quot;,
+    &quot;pkg/mcp-official/tools/middleware/org_allowlist.go&quot;,
+    &quot;pkg/mcp-official/tools/middleware/org_allowlist_test.go&quot;,
+    &quot;pkg/mcp-official/tools/middleware/rate_limit.go&quot;,
+    &quot;pkg/mcp-official/tools/middleware/rate_limit_test.go&quot;,
+    &quot;pkg/mcp-official/tools/middleware/tool_logging.go&quot;,
+    &quot;pkg/mcp-official/tools/middleware/tool_logging_test.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/organizations.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/workspace.go&quot;,
+    &quot;pkg/mcp-official/tools/tools.go&quot;,
+    &quot;pkg/resources/resource_templates.go&quot;,
+    &quot;pkg/resources/resources.go&quot;,
+    &quot;pkg/tools/dynamic_tool.go&quot;,
+    &quot;pkg/tools/dynamic_tool_test.go&quot;,
+    &quot;pkg/tools/factories.go&quot;,
+    &quot;pkg/tools/factories_test.go&quot;,
+    &quot;pkg/tools/registry/errors.go&quot;,
+    &quot;pkg/tools/registry/get_latest_module_version.go&quot;,
+    &quot;pkg/tools/registry/get_latest_provider_version.go&quot;,
+    &quot;pkg/tools/registry/get_module_details.go&quot;,
+    &quot;pkg/tools/registry/get_module_details_test.go&quot;,
+    &quot;pkg/tools/registry/get_policy_details.go&quot;,
+    &quot;pkg/tools/registry/get_provider_capabilities.go&quot;,
+    &quot;pkg/tools/registry/get_provider_capabilities_test.go&quot;,
+    &quot;pkg/tools/registry/get_provider_details.go&quot;,
+    &quot;pkg/tools/registry/search_modules.go&quot;,
+    &quot;pkg/tools/registry/search_policies.go&quot;,
+    &quot;pkg/tools/registry/search_providers.go&quot;,
+    &quot;pkg/tools/tfe/action_run.go&quot;,
+    &quot;pkg/tools/tfe/add_team_member.go&quot;,
+    &quot;pkg/tools/tfe/add_team_member_test.go&quot;,
+    &quot;pkg/tools/tfe/create_no_code_workspace.go&quot;,
+    &quot;pkg/tools/tfe/create_no_code_workspace_test.go&quot;,
+    &quot;pkg/tools/tfe/create_project.go&quot;,
+    &quot;pkg/tools/tfe/create_project_test.go&quot;,
+    &quot;pkg/tools/tfe/create_run.go&quot;,
+    &quot;pkg/tools/tfe/create_run_test.go&quot;,
+    &quot;pkg/tools/tfe/create_team.go&quot;,
+    &quot;pkg/tools/tfe/create_team_test.go&quot;,
+    &quot;pkg/tools/tfe/create_workspace.go&quot;,
+    &quot;pkg/tools/tfe/create_workspace_test.go&quot;,
+    &quot;pkg/tools/tfe/delete_project.go&quot;,
+    &quot;pkg/tools/tfe/delete_project_test.go&quot;,
+    &quot;pkg/tools/tfe/delete_team.go&quot;,
+    &quot;pkg/tools/tfe/delete_team_test.go&quot;,
+    &quot;pkg/tools/tfe/delete_workspace_safely.go&quot;,
+    &quot;pkg/tools/tfe/delete_workspace_safely_test.go&quot;,
+    &quot;pkg/tools/tfe/descriptions.go&quot;,
+    &quot;pkg/tools/tfe/errors.go&quot;,
+    &quot;pkg/tools/tfe/force_unlock_workspace.go&quot;,
+    &quot;pkg/tools/tfe/get_apply_details.go&quot;,
+    &quot;pkg/tools/tfe/get_apply_details_test.go&quot;,
+    &quot;pkg/tools/tfe/get_apply_logs.go&quot;,
+    &quot;pkg/tools/tfe/get_apply_logs_test.go&quot;,
+    &quot;pkg/tools/tfe/get_plan_details.go&quot;,
+    &quot;pkg/tools/tfe/get_plan_details_test.go&quot;,
+    &quot;pkg/tools/tfe/get_plan_json_output.go&quot;,
+    &quot;pkg/tools/tfe/get_plan_json_output_test.go&quot;,
+    &quot;pkg/tools/tfe/get_plan_logs.go&quot;,
+    &quot;pkg/tools/tfe/get_plan_logs_test.go&quot;,
+    &quot;pkg/tools/tfe/get_private_module_details.go&quot;,
+    &quot;pkg/tools/tfe/get_private_provider_details.go&quot;,
+    &quot;pkg/tools/tfe/get_project.go&quot;,
+    &quot;pkg/tools/tfe/get_project_test.go&quot;,
+    &quot;pkg/tools/tfe/get_run_comments.go&quot;,
+    &quot;pkg/tools/tfe/get_run_comments_test.go&quot;,
+    &quot;pkg/tools/tfe/get_run_details.go&quot;,
+    &quot;pkg/tools/tfe/get_sentinel_mock.go&quot;,
+    &quot;pkg/tools/tfe/get_sentinel_mock_test.go&quot;,
+    &quot;pkg/tools/tfe/get_stack_details.go&quot;,
+    &quot;pkg/tools/tfe/get_stack_details_test.go&quot;,
+    &quot;pkg/tools/tfe/get_state_version.go&quot;,
+    &quot;pkg/tools/tfe/get_state_version_test.go&quot;,
+    &quot;pkg/tools/tfe/get_team.go&quot;,
+    &quot;pkg/tools/tfe/get_team_test.go&quot;,
+    &quot;pkg/tools/tfe/get_token_permissions.go&quot;,
+    &quot;pkg/tools/tfe/get_token_permissions_test.go&quot;,
+    &quot;pkg/tools/tfe/get_workspace_details.go&quot;,
+    &quot;pkg/tools/tfe/get_workspace_details_test.go&quot;,
+    &quot;pkg/tools/tfe/grant_team_access.go&quot;,
+    &quot;pkg/tools/tfe/grant_team_access_test.go&quot;,
+    &quot;pkg/tools/tfe/list_runs.go&quot;,
+    &quot;pkg/tools/tfe/list_stacks.go&quot;,
+    &quot;pkg/tools/tfe/list_stacks_test.go&quot;,
+    &quot;pkg/tools/tfe/list_state_versions.go&quot;,
+    &quot;pkg/tools/tfe/list_state_versions_test.go&quot;,
+    &quot;pkg/tools/tfe/list_teams.go&quot;,
+    &quot;pkg/tools/tfe/list_teams_test.go&quot;,
+    &quot;pkg/tools/tfe/list_terraform_orgs.go&quot;,
+    &quot;pkg/tools/tfe/list_terraform_projects.go&quot;,
+    &quot;pkg/tools/tfe/list_workspaces.go&quot;,
+    &quot;pkg/tools/tfe/list_workspaces_test.go&quot;,
+    &quot;pkg/tools/tfe/policy_sets.go&quot;,
+    &quot;pkg/tools/tfe/policy_sets_test.go&quot;,
+    &quot;pkg/tools/tfe/search_private_modules.go&quot;,
+    &quot;pkg/tools/tfe/search_private_providers.go&quot;,
+    &quot;pkg/tools/tfe/strings.go&quot;,
+    &quot;pkg/tools/tfe/update_workspace.go&quot;,
+    &quot;pkg/tools/tfe/update_workspace_test.go&quot;,
+    &quot;pkg/tools/tfe/variable_sets.go&quot;,
+    &quot;pkg/tools/tfe/variable_sets_test.go&quot;,
+    &quot;pkg/tools/tfe/whoami.go&quot;,
+    &quot;pkg/tools/tfe/workspace_tags.go&quot;,
+    &quot;pkg/tools/tfe/workspace_tags_test.go&quot;,
+    &quot;pkg/tools/tfe/workspace_variables.go&quot;,
+    &quot;pkg/tools/tfe/workspace_variables_test.go&quot;,
+    &quot;pkg/tools/tools.go&quot;,
+    &quot;pkg/toolsets/filter.go&quot;,
+    &quot;pkg/toolsets/mapping.go&quot;,
+    &quot;pkg/toolsets/registry.go&quot;,
+    &quot;pkg/toolsets/toolsets.go&quot;,
+    &quot;pkg/toolsets/toolsets_test.go&quot;,
+    &quot;pkg/utils/pagination.go&quot;,
+    &quot;pkg/utils/pagination_test.go&quot;,
+    &quot;pkg/utils/utils.go&quot;,
+    &quot;pkg/utils/utils_test.go&quot;,
+    &quot;scan.hcl&quot;,
+    &quot;scripts/compare-versions.sh&quot;,
+    &quot;scripts/crt-build.sh&quot;,
+    &quot;scripts/update-json-version.sh&quot;,
+    &quot;test/terraform/organizations_test.go&quot;,
+    &quot;test/terraform/private_registry_test.go&quot;,
+    &quot;test/terraform/projects_test.go&quot;,
+    &quot;test/terraform/run_test.go&quot;,
+    &quot;test/terraform/stacks_test.go&quot;,
+    &quot;test/terraform/state_version_test.go&quot;,
+    &quot;test/terraform/tags_and_policy_test.go&quot;,
+    &quot;test/terraform/teams_test.go&quot;,
+    &quot;test/terraform/terraform_test.go&quot;,
+    &quot;test/terraform/testdata/no_code_workspace_module/main.tf&quot;,
+    &quot;test/terraform/testdata/private_registry_module/main.tf&quot;,
+    &quot;test/terraform/testdata/private_registry_module/modules/child/main.tf&quot;,
+    &quot;test/terraform/testdata/run_test.tf&quot;,
+    &quot;test/terraform/testdata/state_version_test.tf&quot;,
+    &quot;test/terraform/user_test.go&quot;,
+    &quot;test/terraform/variable_sets_test.go&quot;,
+    &quot;test/terraform/workspace_test.go&quot;,
+    &quot;version/VERSION&quot;,
+    &quot;version/version.go&quot;
+  ],
+  &quot;excludedFiles&quot;: [
+    {
+      &quot;path&quot;: &quot;.git&quot;,
+      &quot;reason&quot;: &quot;ignored-directory&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.copywrite.hcl&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/bug_report.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/feature_request.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.github/pull_request_template.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.gitignore&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.go-version&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.release/ci.hcl&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.release/oss-release-metadata.hcl&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.release/security-scan.hcl&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;CHANGELOG.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;CODEOWNERS&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;Dockerfile&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;LICENSE&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;Makefile&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/loadtest/main.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/terraform-mcp-server/config_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/terraform-mcp-server/init.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/terraform-mcp-server/instana_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/terraform-mcp-server/instructions.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/terraform-mcp-server/main.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/terraform-mcp-server/main_metrics_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/terraform-mcp-server/session_lifecycle_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/terraform-mcp-server/slog.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/terraform-mcp-server/toolsets_conflict_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/cors_e2e_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/docker_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/helpers_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/latest_module_version_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/latest_provider_version_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/main_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/module_details_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/official_server_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/policy_details_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/provider_details_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/search_modules_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/search_policies_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/search_providers_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/transport_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;go.mod&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;go.sum&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;helm/terraform-mcp-server/.helmignore&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;helm/terraform-mcp-server/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;helm/terraform-mcp-server/templates/NOTES.txt&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;helm/terraform-mcp-server/templates/_helpers.tpl&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;instructions/example-AGENTS.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;instructions/example-mcp-instructions.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/common.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/config.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/config_unix.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/config_windows.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/credentials.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/credentials_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/metrics.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/metrics_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/middleware.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/middleware_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/org_allowlist_tool_middleware.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/org_allowlist_tool_middleware_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/ratelimit.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/ratelimit_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/registry.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/registry_client.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/registry_client_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/registry_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/session.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/tfe_client.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/tfe_client_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/tls.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/tls_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/tool_logging_middleware.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/tool_logging_middleware_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/client/http_client.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/client/session.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/client/tfe_client.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/client/tfe_client_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/server.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/middleware/metrics.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/middleware/metrics_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/middleware/org_allowlist.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/middleware/org_allowlist_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/middleware/rate_limit.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/middleware/rate_limit_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/middleware/tool_logging.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/middleware/tool_logging_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/organizations.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspace.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tools.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/resources/resource_templates.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/resources/resources.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/dynamic_tool.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/dynamic_tool_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/factories.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/factories_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/registry/errors.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/registry/get_latest_module_version.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/registry/get_latest_provider_version.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/registry/get_module_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/registry/get_module_details_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/registry/get_policy_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/registry/get_provider_capabilities.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/registry/get_provider_capabilities_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/registry/get_provider_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/registry/search_modules.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/registry/search_policies.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/registry/search_providers.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/action_run.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/add_team_member.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/add_team_member_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/create_no_code_workspace.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/create_no_code_workspace_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/create_project.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/create_project_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/create_run.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/create_run_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/create_team.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/create_team_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/create_workspace.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/create_workspace_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/delete_project.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/delete_project_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/delete_team.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/delete_team_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/delete_workspace_safely.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/delete_workspace_safely_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/descriptions.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/errors.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/force_unlock_workspace.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_apply_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_apply_details_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_apply_logs.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_apply_logs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_plan_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_plan_details_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_plan_json_output.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_plan_json_output_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_plan_logs.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_plan_logs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_private_module_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_private_provider_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_project.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_project_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_run_comments.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_run_comments_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_run_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_sentinel_mock.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_sentinel_mock_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_stack_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_stack_details_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_state_version.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_state_version_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_team.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_team_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_token_permissions.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_token_permissions_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_workspace_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/get_workspace_details_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/grant_team_access.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/grant_team_access_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/list_runs.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/list_stacks.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/list_stacks_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/list_state_versions.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/list_state_versions_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/list_teams.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/list_teams_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/list_terraform_orgs.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/list_terraform_projects.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/list_workspaces.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/list_workspaces_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/policy_sets.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/policy_sets_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/search_private_modules.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/search_private_providers.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/static/default-cli-run.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/strings.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/update_workspace.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/update_workspace_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/variable_sets.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/variable_sets_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/whoami.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/workspace_tags.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/workspace_tags_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/workspace_variables.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tfe/workspace_variables_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/tools.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/toolsets/filter.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/toolsets/mapping.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/toolsets/registry.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/toolsets/toolsets.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/toolsets/toolsets_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/utils/pagination.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/utils/pagination_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/utils/utils.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/utils/utils_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;public/images/Terraform-LogoMark_onDark.svg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;scan.hcl&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;scripts/compare-versions.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;scripts/crt-build.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;scripts/update-json-version.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/organizations_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/private_registry_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/projects_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/run_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/stacks_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/state_version_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/tags_and_policy_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/teams_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/terraform_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/testdata/no_code_workspace_module/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/testdata/no_code_workspace_module/main.tf&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/testdata/private_registry_module/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/testdata/private_registry_module/main.tf&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/testdata/private_registry_module/modules/child/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/testdata/private_registry_module/modules/child/main.tf&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/testdata/run_test.tf&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/testdata/state_version_test.tf&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/user_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/variable_sets_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;test/terraform/workspace_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;version/VERSION&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;version/version.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    }
+  ],
+  &quot;readErrors&quot;: [],
+  &quot;truncation&quot;: [],
+  &quot;limits&quot;: {
+    &quot;maxFiles&quot;: 4000,
+    &quot;maxDepth&quot;: 12,
+    &quot;maxFileBytes&quot;: 1048576
+  }
+}</pre></details>
 <h2>Fix first (0 critical/high)</h2>
 <p>No findings in scope of the 8-rule static suite.</p>
 <h2>Permissions</h2>
-<p>Scope: <strong>minimal</strong> · Shell: disabled · Network egress: yes · File deletion: none · Human approval: none</p>
+<p>Scope: <strong>minimal</strong> · Shell: disabled · Network egress: no · File deletion: none · Human approval: none</p>
 <h2>Provenance</h2>
 <p>License: none detected · Lockfile: no · Security policy: no · Signals: unverified origin</p>
 <div class="callout"><p><strong>Independently scanned by the OpenTrustBench registry</strong> (not self-reported by the project). Static analysis only — no code executed, findings need human triage, counts may include test/example code. <strong>Static snapshot; re-scan before relying on it:</strong> <code>npx @opentrustbench/cli scan https://github.com/hashicorp/terraform-mcp-server</code>. Scores move with every upstream commit; pages refresh weekly. <a href="../methodology.html">How scoring works</a>.</p></div>

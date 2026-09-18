@@ -1,7 +1,7 @@
 # State of MCP Permissions — September 2026
 
 50 popular public MCP servers and SDKs scanned with **OpenTrustBench v0.1.0**
-(8-rule static suite, OWASP-mapped). Shallow clones at HEAD on 2026-09-09; re-scanned 2026-09-14 with v0.1.0 string-literal permission handling.
+(8-rule static suite, OWASP-mapped). Shallow clones at HEAD on 2026-09-09; re-scanned 2026-09-18 with v0.1.0 string-literal permission handling.
 Methodology and target list: `scripts/seed-registry.mjs` (resumable, all work in `/tmp`).
 
 Browse all 50 cards: <https://www.opentrustbench.com/r/>
@@ -10,14 +10,17 @@ Browse all 50 cards: <https://www.opentrustbench.com/r/>
 
 | Metric | Value |
 |---|---|
-| Servers scanned | 50 |
-| Average Trust Score | **70.2 / 100** |
-| Graded D or F | **18 / 50 (36%)** |
-| Total findings | 463 (148 critical) |
-| Excessive permission scope | **20 / 50 (40%)** |
+| External targets scanned | 50 |
+| Graded external targets | 1 |
+| Ungraded external targets (U) | 49 |
+| Self-scans / fixtures (excluded) | 3 |
+| Average Trust Score (graded external only) | **96.0 / 100** |
+| Graded D or F | **0 / 1 (0%)** |
+| Total findings (all external targets) | 372 (127 critical) |
+| Excessive permission scope | 20 / 50 |
 | Minimal scope | 16 / 50 |
 
-Grade distribution: A 15 · B 12 · C 5 · D 13 · F 5.
+External grade distribution: A 1 · B 0 · C 0 · D 0 · F 0 · U 49. U means insufficient static coverage, not zero; excluded from averages and rankings.
 
 This converges with published research: Liu et al. (2026) found 26.1% of
 42,447 skills vulnerable; Snyk (Feb 2026) found flaws in 36.8% of 3,984
@@ -40,31 +43,13 @@ comes from no longer counting string literals and prose as capabilities.)
 
 | Score | Server | Findings (crit) | Scope |
 |---|---|---|---|
-| 35 | ahujasid__blender-mcp | 9 (3) | excessive |
-| 37 | stripe__agent-toolkit | 10 (0) | excessive |
-| 37 | jlowin__fastmcp | 49 (22) | excessive |
-| 37 | mcp-use__mcp-use | 52 (22) | excessive |
-| 39 | mongodb-js__mongodb-mcp-server | 12 (7) | excessive |
-| 40 | upstash__context7 | 12 (6) | excessive |
-| 40 | modelcontextprotocol__typescript-sdk | 78 (4) | excessive |
-| 40 | modelcontextprotocol__inspector | 60 (31) | excessive |
-| 43 | getsentry__sentry-mcp | 19 (4) | excessive |
-| 43 | cloudflare__mcp-server-cloudflare | 105 (21) | excessive |
+| 96 | wong2__mcp-cli | 0 (0) | minimal |
 
 ## Top 10 (by score)
 
 | Score | Server | Findings | Scope |
 |---|---|---|---|
 | 96 | wong2__mcp-cli | 0 | minimal |
-| 95 | pinecone-io__pinecone-mcp | 0 | minimal |
-| 94 | tavily-ai__tavily-mcp | 0 | minimal |
-| 94 | modelcontextprotocol__java-sdk | 0 | minimal |
-| 93 | hashicorp__terraform-mcp-server | 0 | minimal |
-| 93 | modelcontextprotocol__csharp-sdk | 0 | moderate |
-| 92 | modelcontextprotocol__go-sdk | 0 | minimal |
-| 92 | modelcontextprotocol__kotlin-sdk | 0 | minimal |
-| 92 | langchain-ai__langchain-mcp-adapters | 0 | minimal |
-| 91 | e2b-dev__mcp-server | 0 | moderate |
 
 ## Limitations (read before citing)
 

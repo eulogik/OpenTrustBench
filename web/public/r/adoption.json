@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-14",
+  "date": "2026-09-18",
   "displaying": 0,
   "checked": 44,
   "repos": [
@@ -88,7 +88,8 @@
     },
     {
       "repo": "ahujasid/blender-mcp",
-      "badge": false
+      "badge": false,
+      "error": "GitHub API 301 for /repos/ahujasid/blender-mcp/readme"
     },
     {
       "repo": "Flux159/mcp-server-kubernetes",
