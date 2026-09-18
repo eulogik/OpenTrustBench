@@ -1,8 +1,7 @@
-import fs from "node:fs";
-import { walkFiles } from "../util/fs-walk.js";
+import { analyzeStaticCoverage } from "./static-analyzer.js";
 import type { PermissionManifest } from "../types/index.js";
 
-export async function extractPermissions(dirPath: string): Promise<PermissionManifest> {
+export async function extractPermissions(dirPath: string, contents?: ReadonlyMap<string, string>): Promise<PermissionManifest> {
   const manifest: PermissionManifest = {
     network: [],
     filesystem: [],
@@ -22,13 +21,9 @@ export async function extractPermissions(dirPath: string): Promise<PermissionMan
     estimatedScope: "minimal"
   };
 
-  const files = collectSourceFiles(dirPath);
-
-  for (const file of files) {
-    try {
-      const content = fs.readFileSync(file, "utf8");
-      analyzeFileContent(content, manifest);
-    } catch {}
+  const analyzed = contents ?? (await analyzeStaticCoverage(dirPath)).contents;
+  for (const content of analyzed.values()) {
+    analyzeFileContent(content, manifest);
   }
 
   let riskPoints = 0;
@@ -145,10 +140,4 @@ function analyzeFileContent(content: string, manifest: PermissionManifest): void
       manifest.humanApprovalRequired.push("operator-confirmation-gate");
     }
   }
-}
-
-function collectSourceFiles(dir: string): string[] {
-  return walkFiles(dir, {
-    extensions: new Set([".ts", ".tsx", ".js", ".jsx", ".mjs", ".cjs", ".py", ".json", ".yaml", ".yml", ".md"])
-  });
 }

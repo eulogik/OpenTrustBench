@@ -160,7 +160,7 @@
     var rows = JSON.parse(dataEl.textContent);
     var tbody = table.querySelector("tbody");
     var state = { grade: "all", q: "", sort: "score-desc" };
-    var gradeClass = { A: "gA", B: "gB", C: "gC", D: "gD", F: "gF" };
+    var gradeClass = { A: "gA", B: "gB", C: "gC", D: "gD", F: "gF", U: "gU" };
 
     var hist = document.getElementById("grade-hist");
     if (hist) {

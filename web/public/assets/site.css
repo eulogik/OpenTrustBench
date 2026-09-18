@@ -357,6 +357,7 @@ table.data tr:hover td { background: var(--bg-subtle); }
 .gC { color: var(--warn); border-color: rgba(251, 191, 36, 0.35); background: rgba(251, 191, 36, 0.08); }
 .gD { color: var(--orange); border-color: rgba(234, 88, 12, 0.35); background: rgba(234, 88, 12, 0.08); }
 .gF { color: var(--bad); border-color: rgba(225, 29, 72, 0.35); background: rgba(225, 29, 72, 0.08); }
+.gU { color: var(--muted); border-color: var(--border); background: var(--surface-2); }
 
 /* ── FAQ ──────────────────────────────────────────────── */
 details.faq {

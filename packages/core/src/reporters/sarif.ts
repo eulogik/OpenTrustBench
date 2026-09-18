@@ -23,6 +23,14 @@ export function generateSarif(card: TrustCard): string {
             }))
           }
         },
+        properties: { coverage: card.coverage, trustScore: card.trustScore },
+        invocations: [{
+          executionSuccessful: card.trustScore.status === "graded",
+          toolExecutionNotifications: [{
+            descriptor: { id: "AT-COVERAGE" }, level: card.trustScore.status === "ungraded" ? "error" : "note",
+            message: { text: [card.trustScore.rationale, ...card.coverage.limitations].join(" ") }
+          }]
+        }],
         results: card.security.findings.map(f => ({
           ruleId: f.rule,
           level: f.severity === "critical" || f.severity === "high" ? "error" : "warning",

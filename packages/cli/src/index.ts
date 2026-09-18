@@ -2,11 +2,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
-  detectCapability,
-  runStaticAnalysis,
-  extractPermissions,
-  analyzeProvenance,
-  computeTrustScore,
+  type TrustCard,
+  type TrustScore,
   runScan,
   loadOpenTrustBenchConfig,
   runAttackSuite,
@@ -83,7 +80,7 @@ async function main() {
       await handleInit();
       break;
     case "badge":
-      await handleBadge(target);
+      await handleBadge(target, flags);
       break;
     case "registry":
       await handleRegistry();
@@ -99,8 +96,9 @@ async function main() {
 async function handleScan(targetPath: string, flags: Record<string, string | boolean> = {}) {
   // opentrustbench.yaml provides defaults; explicit CLI flags always win.
   const cfg = loadOpenTrustBenchConfig(process.cwd());
-  if (shouldBanner(flags)) printBanner();
-  const quiet = !!flags["quiet"];
+  const machineOutput = typeof flags["format"] === "string" && flags["format"] !== "terminal";
+  if (shouldBanner(flags) && !machineOutput) printBanner();
+  const quiet = !!flags["quiet"] || machineOutput;
   const log = (...parts: string[]) => { if (!quiet) console.log(parts.join("")); };
 
   let scanTarget;
@@ -128,7 +126,7 @@ async function handleScan(targetPath: string, flags: Record<string, string | boo
   log(gray(`[2/5] Detected capability type: `) + cyan(bold(detection.type)) + gray(` (confidence: ${Math.round(detection.confidence * 100)}%)`));
   log(gray(`[3/5] Executed static security & OWASP rule suite (${findings.length} findings).`));
   log(gray(`[4/5] Extracted permissions and provenance.`));
-  log(gray(`[5/5] Trust score: ${trustScore.grade} (${trustScore.overall}/100).`));
+  log(gray(`[5/5] Trust score: ${scoreLabel(trustScore)}.`));
 
   const format = typeof flags["format"] === "string" ? flags["format"] : "terminal";
   if (!["terminal", "json", "sarif", "md"].includes(format)) {
@@ -159,7 +157,7 @@ async function handleScan(targetPath: string, flags: Record<string, string | boo
   log(gray("\nGenerated Artifacts:"));
   log(green(`  ✓ ${sarifPath}`) + gray(" (SARIF 2.1.0 for GitHub Code Scanning)"));
   log(green(`  ✓ ${mdPath}`) + gray(" (Findings grouped by OWASP code)"));
-  log(green(`  ✓ ${cardPath}`) + gray(" (Machine-readable Trust Card v1)"));
+  log(green(`  ✓ ${cardPath}`) + gray(" (Machine-readable Trust Card v2)"));
 
   if (dependencies.length > 0) {
     log(gray(`\nDependencies: ${dependencies.length} declared | ${dependencies.filter(d => d.vulnerabilities.length > 0).length} with known vulnerabilities`));
@@ -167,6 +165,12 @@ async function handleScan(targetPath: string, flags: Record<string, string | boo
   if (!quiet) {
     console.log(gray("\nNext: enforce this in CI:"));
     console.log(cyan(`  opentrustbench scan ${targetPath} --fail-on high --quiet --output-dir ./trust`));
+  }
+
+  if (trustScore.status === "ungraded") {
+    console.error(yellow(`CI gate incomplete: ${trustScore.rationale}`));
+    process.exitCode = 2;
+    return;
   }
 
   const rawFailOn = typeof flags["fail-on"] === "string" ? flags["fail-on"] : cfg.failOn;
@@ -181,7 +185,7 @@ async function handleScan(targetPath: string, flags: Record<string, string | boo
       console.error(red(`\n✗ CI gate failed: ${breaching.length} finding(s) at or above severity "${failOn}".`));
       process.exit(1);
     }
-    console.log(green(`\n✓ CI gate passed: no findings at or above severity "${failOn}".`));
+    console.error(green(`\nCI gate passed: no findings at or above severity "${failOn}" in the supported static rule scope only.`));
   }
 }
 
@@ -196,9 +200,12 @@ async function handleAttack(targetPath: string) {
   console.log(gray(`Target: ${absPath}
 `));
 
-  const detection = await detectCapability(absPath);
-  const findings = await runStaticAnalysis(absPath);
-  const permissions = await extractPermissions(absPath);
+  const { detection, findings, permissions, trustScore } = await runScan(absPath);
+  if (trustScore.status === "ungraded") {
+    console.error(yellow(trustScore.rationale));
+    process.exitCode = 2;
+    return;
+  }
 
   const report = await runAttackSuite({
     targetName: detection.name,
@@ -268,16 +275,16 @@ writeFiles: true
   console.log(green("✓ Initialized opentrustbench.yaml configuration file."));
 }
 
-async function handleBadge(targetPath: string) {
-  const absPath = path.resolve(process.cwd(), targetPath);
-  const detection = await detectCapability(absPath);
-  const findings = await runStaticAnalysis(absPath);
-  const permissions = await extractPermissions(absPath);
-  const provenance = await analyzeProvenance(absPath);
-  const score = computeTrustScore(findings, permissions, provenance);
-
-  const color = score.grade === "A" ? "brightgreen" : score.grade === "B" ? "green" : score.grade === "C" ? "yellow" : "red";
-  const badgeUrl = `https://img.shields.io/badge/OpenTrustBench-${score.grade}%20(${score.overall}%2F100)-${color}`;
+async function handleBadge(targetPath: string, flags: Record<string, string | boolean> = {}) {
+  const target = await resolveScanTarget(targetPath, flags);
+  const { trustScore: score } = await runScan(target.resolvedPath);
+  const color = score.status === "ungraded" ? "lightgrey" : score.grade === "A" ? "brightgreen" : score.grade === "B" ? "green" : score.grade === "C" ? "yellow" : "red";
+  const label = score.status === "ungraded" ? "U%20(ungraded)" : `${score.grade}%20(${score.overall}%2F100)%20static%20only`;
+  const badgeUrl = `https://img.shields.io/badge/OpenTrustBench-${label}-${color}`;
+  if (score.status === "ungraded") {
+    console.error(score.rationale);
+    process.exitCode = 2;
+  }
 
   console.log(bold("Embeddable Markdown Badge:"));
   console.log(gray("Tip: for a bound grade, embed the per-report badge: [![OpenTrustBench](<site>/r/<slug>.svg)](<site>/r/<slug>.html) — see https://www.opentrustbench.com/r/"));
@@ -303,12 +310,18 @@ async function handleRegistry() {
   }
 }
 
-function renderTrustCardTerminal(card: any, quiet = false) {
-  const { subject, trustScore, security, permissions, provenance } = card;
+function scoreLabel(score: TrustScore): string {
+  return score.status === "ungraded" ? "U (ungraded; not scored)" : `${score.grade} (${score.overall}/100; static only)`;
+}
+
+function renderTrustCardTerminal(card: TrustCard, quiet = false) {
+  const { subject, trustScore, security, permissions, provenance, coverage } = card;
+  console.log(`Coverage: ${coverage.status} | ${coverage.analyzedFiles.filter(f => f.scope === "code").length} code files analyzed | ${coverage.unsupportedSourceFiles.length} unsupported implementation files`);
+  console.log(coverage.limitations.join(" "));
   const gradeColor = trustScore.grade === "A" ? green : trustScore.grade === "B" ? cyan : trustScore.grade === "C" ? yellow : red;
 
   if (quiet) {
-    console.log(`Trust Grade: ${trustScore.grade} (${trustScore.overall}/100) | Findings: ${security.totalFindings} (${security.criticalCount} critical, ${security.highCount} high) | Scope: ${permissions.estimatedScope}`);
+    console.log(`Trust Grade: ${scoreLabel(trustScore)} | Findings: ${security.totalFindings} (${security.criticalCount} critical, ${security.highCount} high) | Scope: ${permissions.estimatedScope}`);
     const top = [...security.findings]
       .sort((a: any, b: any) => (a.severity === b.severity ? 0 : a.severity === "critical" ? -1 : 1))
       .slice(0, 5);
@@ -321,14 +334,19 @@ function renderTrustCardTerminal(card: any, quiet = false) {
   console.log(bold("\n" + "═".repeat(60)));
   console.log(bold(`  OPENTRUSTBENCH CARD: ${subject.name} `) + gray(`(${subject.type})`));
   console.log("═".repeat(60));
-  console.log(`  Trust Grade:       ${gradeColor(bold(trustScore.grade))} (${trustScore.overall}/100) `);
+  console.log(`  Trust Grade:       ${trustScore.status === "ungraded" ? gray(bold("U (ungraded)")) : gradeColor(bold(trustScore.grade))} ${trustScore.overall === null ? "" : `(${trustScore.overall}/100)`} `);
   console.log(`  Confidence:        ${bold(trustScore.confidence.toUpperCase())}`);
-  console.log(`  Security Score:    ${trustScore.breakdown.security}/100`);
+  if (trustScore.breakdown) {
+    console.log(`  Security Score:    ${trustScore.breakdown.security}/100`);
+  }
   console.log(`  Permission Scope:  ${bold(permissions.estimatedScope.toUpperCase())}`);
   console.log(`  Provenance:        ${provenance.isVerified ? green("Signals present (license+lockfile+policy)") : yellow("Unverified origin")}`);
   console.log(`  Shell Access:      ${permissions.shell ? red("ENABLED") : green("DISABLED")}`);
   console.log(`  Network Egress:    ${permissions.canMakeHTTPRequests ? yellow("HTTP/HTTPS Outbound") : green("NONE")}`);
   console.log(`  Human In The Loop: ${permissions.humanApprovalRequired.length > 0 ? green("ENFORCED") : gray("NONE")}`);
+  if (trustScore.status === "ungraded") {
+    console.log(yellow("  ⚠ Insufficient coverage — grade withheld. Findings are incomplete, not evidence of safety."));
+  }
   console.log("─".repeat(60));
   console.log(`  Rationale: ${gray(trustScore.rationale)}`);
   console.log("═".repeat(60) + "\n");

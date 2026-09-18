@@ -133,7 +133,7 @@ export async function detectCapability(dirPath: string): Promise<DetectionResult
   };
 }
 
-const CONTENT_SCAN_EXTS = new Set([".ts", ".tsx", ".js", ".jsx", ".mjs", ".cjs", ".py", ".json", ".md", ".yaml", ".yml"]);
+const CONTENT_SCAN_EXTS = new Set([".ts", ".tsx", ".mts", ".cts", ".js", ".jsx", ".mjs", ".cjs", ".py", ".json", ".md", ".yaml", ".yml"]);
 
 function checkHasPattern(files: string[], patterns: string[]): boolean {
   for (const full of files) {

@@ -1,11 +1,11 @@
 import { detectCapability } from "../analysis/detector.js";
-import { runStaticAnalysis } from "../analysis/static-analyzer.js";
+import { analyzeStaticCoverage, type AnalysisOptions } from "../analysis/static-analyzer.js";
 import { extractPermissions } from "../analysis/permission-extractor.js";
 import { scanDependencies } from "../analysis/dependency-scanner.js";
 import { analyzeProvenance } from "../trust/provenance.js";
 import { computeTrustScore } from "../trust/scorer.js";
 import { buildTrustCard } from "../trust/card-builder.js";
-import type { TrustCard, Finding, PermissionManifest, ProvenanceInfo, TrustScore, DependencyInfo } from "../types/index.js";
+import type { TrustCard, Finding, PermissionManifest, ProvenanceInfo, TrustScore, DependencyInfo, ScanCoverage } from "../types/index.js";
 import type { DetectionResult } from "../analysis/detector.js";
 
 export interface ScanResult {
@@ -16,14 +16,15 @@ export interface ScanResult {
   trustScore: TrustScore;
   dependencies: DependencyInfo[];
   trustCard: TrustCard;
+  coverage: ScanCoverage;
 }
 
-export async function runScan(absPath: string): Promise<ScanResult> {
+export async function runScan(absPath: string, options: AnalysisOptions = {}): Promise<ScanResult> {
   const detection = await detectCapability(absPath);
-  const findings = await runStaticAnalysis(absPath);
-  const permissions = await extractPermissions(absPath);
+  const { findings, coverage, contents } = await analyzeStaticCoverage(absPath, options);
+  const permissions = await extractPermissions(absPath, contents);
   const provenance = await analyzeProvenance(absPath);
-  const trustScore = computeTrustScore(findings, permissions, provenance);
+  const trustScore = computeTrustScore(findings, permissions, provenance, coverage);
   const dependencies = await scanDependencies(absPath);
   const trustCard = buildTrustCard({
     capabilityType: detection.type,
@@ -35,7 +36,8 @@ export async function runScan(absPath: string): Promise<ScanResult> {
     permissions,
     provenance,
     trustScore,
-    dependencies
+    dependencies,
+    coverage
   });
-  return { detection, findings, permissions, provenance, trustScore, dependencies, trustCard };
+  return { detection, findings, permissions, provenance, trustScore, dependencies, trustCard, coverage };
 }

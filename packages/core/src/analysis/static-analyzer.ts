@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { Finding, Severity } from "../types/index.js";
-import { walkFiles } from "../util/fs-walk.js";
+import type { Finding, Severity, ScanCoverage } from "../types/index.js";
+import { inventoryFiles } from "../util/fs-walk.js";
 import { stableFindingId } from "../util/finding-id.js";
 
 interface RuleDef {
@@ -20,7 +20,7 @@ interface RuleDef {
 }
 
 /** Source extensions eligible for code-pattern rules. */
-const CODE_EXTS = new Set([".ts", ".tsx", ".js", ".jsx", ".mjs", ".cjs", ".py"]);
+const CODE_EXTS = new Set([".ts", ".tsx", ".mts", ".cts", ".js", ".jsx", ".mjs", ".cjs", ".py"]);
 /** Secret scanning additionally covers structured data files (never prose docs). */
 const SECRET_EXTS = new Set([...CODE_EXTS, ".json", ".yaml", ".yml"]);
 
@@ -148,7 +148,39 @@ const RULES: RuleDef[] = [
   }
 ];
 
+export interface AnalysisOptions {
+  maxFiles?: number;
+  maxDepth?: number;
+  maxFileBytes?: number;
+}
+
+export function missingCoverage(): ScanCoverage {
+  return {
+    mode: "static-heuristic", status: "none", reasons: ["Coverage evidence not supplied"],
+    limitations: [
+      "Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.",
+      "Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.",
+      "Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.",
+      "Ignored directories, declarations, and non-implementation assets are outside rule scope."
+    ],
+    discoveredFiles: 0, analyzedFiles: [], unsupportedSourceFiles: [], excludedFiles: [],
+    readErrors: [], truncation: [], limits: { maxFiles: 4000, maxDepth: 12, maxFileBytes: 1024 * 1024 }
+  };
+}
+
 export async function runStaticAnalysis(dirPath: string): Promise<Finding[]> {
+  return (await analyzeStaticCoverage(dirPath)).findings;
+}
+
+export async function analyzeStaticCoverage(dirPath: string, options: AnalysisOptions = {}) {
+  const limits = { maxFiles: options.maxFiles ?? 4000, maxDepth: options.maxDepth ?? 12, maxFileBytes: options.maxFileBytes ?? 1024 * 1024 };
+  if (!Number.isSafeInteger(limits.maxFileBytes) || limits.maxFileBytes < 1) throw new Error("Invalid file byte limit");
+  const inventory = inventoryFiles(dirPath, limits);
+  const coverage: ScanCoverage = {
+    ...missingCoverage(), limits, discoveredFiles: inventory.files.length,
+    readErrors: inventory.readErrors, truncation: inventory.truncation, excludedFiles: inventory.excludedFiles
+  };
+  const contents = new Map<string, string>();
   const findings: Finding[] = [];
   const seen = new Set<string>();
   const push = (f: Finding) => {
@@ -157,16 +189,50 @@ export async function runStaticAnalysis(dirPath: string): Promise<Finding[]> {
     findings.push(f);
   };
 
-  const files = walkFiles(dirPath, { extensions: SECRET_EXTS });
-
-  for (const file of files) {
-    const relPath = path.relative(dirPath, file);
+  const assetExts = new Set([".md", ".txt", ".rst", ".adoc", ".toml", ".ini", ".cfg", ".lock", ".map", ".css", ".scss", ".sass", ".less", ".svg", ".png", ".jpg", ".jpeg", ".gif", ".ico", ".webp", ".woff", ".woff2", ".ttf", ".eot", ".pdf", ".csv", ".snap", ".sarif"]);
+  const metadataNames = new Set([".gitignore", ".gitattributes", ".npmignore", ".npmrc", ".editorconfig", ".dockerignore", ".prettierignore", ".prettierrc", ".nvmrc", ".node-version", ".python-version", ".ds_store"]);
+  for (const file of inventory.files) {
+    const relPath = path.relative(dirPath, file) || path.basename(file);
     const ext = path.extname(file).toLowerCase();
-    const isCode = CODE_EXTS.has(ext);
+    const declaration = /\.d\.(?:ts|mts|cts)$/i.test(file);
+    const isCode = CODE_EXTS.has(ext) && !declaration;
+    if (!SECRET_EXTS.has(ext) || declaration) {
+      const basename = path.basename(file).toLowerCase();
+      const document = /^(license|licence|notice|authors|changelog|readme)(\.|$)/i.test(basename);
+      const unsupported = !declaration && !assetExts.has(ext) && !metadataNames.has(basename) && !document;
+      if (unsupported) coverage.unsupportedSourceFiles.push(relPath);
+      coverage.excludedFiles.push({ path: relPath, reason: unsupported ? "unsupported-implementation" : declaration ? "type-declaration" : basename === "skill.md" ? "skill-instructions-not-code-analyzed" : "outside-rule-scope" });
+      continue;
+    }
     let content = "";
     try {
+      const stat = fs.lstatSync(file);
+      if (!stat.isFile()) {
+        coverage.excludedFiles.push({ path: relPath, reason: "non-regular-file" });
+        continue;
+      }
+      if (stat.size > limits.maxFileBytes) {
+        coverage.truncation.push({ path: relPath, reason: "max-file-bytes" });
+        continue;
+      }
       content = fs.readFileSync(file, "utf8");
-    } catch {
+      const bytes = Buffer.byteLength(content);
+      if (bytes > limits.maxFileBytes) {
+        coverage.truncation.push({ path: relPath, reason: "max-file-bytes" });
+        continue;
+      }
+      if (content.includes("\0")) {
+        coverage.unsupportedSourceFiles.push(relPath);
+        coverage.excludedFiles.push({ path: relPath, reason: "binary-content" });
+        continue;
+      }
+      contents.set(file, content);
+      coverage.analyzedFiles.push({
+        path: relPath, scope: isCode ? "code" : "data", bytes, nonEmpty: content.trim().length > 0,
+        ruleIds: RULES.filter(rule => isCode || rule.scope === "codeAndData").map(rule => rule.rule)
+      });
+    } catch (error) {
+      coverage.readErrors.push({ path: relPath, operation: "read", code: (error as NodeJS.ErrnoException).code ?? "UNKNOWN" });
       continue;
     }
 
@@ -224,5 +290,12 @@ export async function runStaticAnalysis(dirPath: string): Promise<Finding[]> {
     }
   }
 
-  return findings;
+  coverage.reasons = [];
+  if (!coverage.analyzedFiles.some(f => f.scope === "code" && f.nonEmpty)) coverage.reasons.push("No non-empty supported source analyzed; documentation and data alone provide limited coverage");
+  if (coverage.unsupportedSourceFiles.length) coverage.reasons.push("Unsupported source present");
+  if (coverage.readErrors.length) coverage.reasons.push("File or directory reads failed");
+  if (coverage.truncation.length) coverage.reasons.push("Scan limits reached");
+  if (coverage.excludedFiles.some(f => f.reason === "non-regular-file")) coverage.reasons.push("Symlinks or special files were not examined");
+  coverage.status = coverage.reasons.length === 0 ? "sufficient" : coverage.discoveredFiles > 0 ? "limited" : "none";
+  return { findings, coverage, contents };
 }

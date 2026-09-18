@@ -6,6 +6,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import {
+  analyzeStaticCoverage,
+  runScan,
   detectCapability,
   runStaticAnalysis,
   extractPermissions,
@@ -72,7 +74,7 @@ test("vulnerable fixture grades D/F with failing attack checks", async () => {
   const findings = await runStaticAnalysis(VULNERABLE_FIXTURE);
   const permissions = await extractPermissions(VULNERABLE_FIXTURE);
   const provenance = await analyzeProvenance(VULNERABLE_FIXTURE);
-  const score = computeTrustScore(findings, permissions, provenance);
+  const score = computeTrustScore(findings, permissions, provenance, (await analyzeStaticCoverage(VULNERABLE_FIXTURE)).coverage);
 
   assert.ok(["D", "F"].includes(score.grade), `expected grade D or F, got ${score.grade}`);
 
@@ -86,18 +88,26 @@ test("vulnerable fixture grades D/F with failing attack checks", async () => {
   assert.equal(codes.has("LLM08"), false, "LLM08 must not be used (canonical LLM08 is Vector/Embedding Weaknesses)");
 });
 
-test("secure fixture has no critical findings and grades reasonably", async () => {
+test("secure skill keeps its identity and clean findings without claiming code coverage", async () => {
   const findings = await runStaticAnalysis(SECURE_FIXTURE);
   const criticals = findings.filter(f => f.severity === "critical").length;
   assert.equal(criticals, 0, `expected zero critical findings, got ${criticals}: ${JSON.stringify(findings.map(f => f.rule))}`);
 
-  const permissions = await extractPermissions(SECURE_FIXTURE);
-  const provenance = await analyzeProvenance(SECURE_FIXTURE);
-  const score = computeTrustScore(findings, permissions, provenance);
-  assert.ok(score.overall >= 60, `expected overall >= 60 for secure fixture, got ${score.overall}`);
+  const { detection, trustScore: score, coverage, permissions, trustCard } = await runScan(SECURE_FIXTURE);
+  assert.equal(detection.type, "agent-skill");
+  assert.equal(detection.name, "Secure Data Auditor Skill");
+  assert.deepEqual(trustCard.compatibility, ["claude-code", "cursor", "codex"]);
+  assert.equal(permissions.shell, false);
+  assert.equal(permissions.canModifyFiles, false);
+  assert.equal(permissions.canDeleteFiles, false);
+  assert.equal(score.grade, "U");
+  assert.equal(score.status, "ungraded");
+  assert.equal(score.overall, null);
+  assert.equal(coverage.status, "limited");
+  assert.equal(coverage.analyzedFiles.length, 0);
 });
 
-test("trust score reacts to severity weights", () => {
+test("trust score reacts to severity weights", async () => {
   const base = {
     network: [],
     filesystem: [],
@@ -129,7 +139,8 @@ test("trust score reacts to severity weights", () => {
     isVerified: true
   };
 
-  const clean = computeTrustScore([], base, prov);
+  const { coverage } = await analyzeStaticCoverage(VULNERABLE_FIXTURE);
+  const clean = computeTrustScore([], base, prov, coverage);
   const dirty = computeTrustScore(
     [{
       id: "f1",
@@ -143,9 +154,12 @@ test("trust score reacts to severity weights", () => {
       owaspCode: "LLM02"
     }],
     base,
-    prov
+    prov,
+    coverage
   );
 
+  assert.ok(clean.overall !== null && dirty.overall !== null);
+  assert.ok(clean.breakdown && dirty.breakdown);
   assert.ok(clean.overall > dirty.overall, "critical finding must reduce overall score");
   assert.ok(clean.breakdown.security > dirty.breakdown.security);
 });
@@ -187,14 +201,15 @@ test("SARIF output is valid SARIF 2.1.0 with results", async () => {
   const findings = await runStaticAnalysis(VULNERABLE_FIXTURE);
   const permissions = await extractPermissions(VULNERABLE_FIXTURE);
   const provenance = await analyzeProvenance(VULNERABLE_FIXTURE);
-  const score = computeTrustScore(findings, permissions, provenance);
+  const score = computeTrustScore(findings, permissions, provenance, (await analyzeStaticCoverage(VULNERABLE_FIXTURE)).coverage);
   const card = buildTrustCard({
     capabilityType: "mcp-server",
     name: "vulnerable-fixture",
     findings,
     permissions,
     provenance,
-    trustScore: score
+    trustScore: score,
+    coverage: (await analyzeStaticCoverage(VULNERABLE_FIXTURE)).coverage
   });
 
   const sarif = JSON.parse(generateSarif(card));

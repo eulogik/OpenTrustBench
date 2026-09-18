@@ -1,6 +1,20 @@
 
 export type Severity = "critical" | "high" | "medium" | "low" | "info";
-export type TrustGrade = "A" | "B" | "C" | "D" | "F";
+export type TrustGrade = "A" | "B" | "C" | "D" | "F" | "U";
+
+export interface ScanCoverage {
+  mode: "static-heuristic";
+  status: "sufficient" | "limited" | "none";
+  reasons: string[];
+  limitations: string[];
+  discoveredFiles: number;
+  analyzedFiles: { path: string; scope: "code" | "data"; bytes: number; nonEmpty: boolean; ruleIds: string[] }[];
+  unsupportedSourceFiles: string[];
+  excludedFiles: { path: string; reason: string }[];
+  readErrors: { path: string; operation: "read" | "walk"; code: string }[];
+  truncation: { path: string; reason: "max-files" | "max-depth" | "max-file-bytes" }[];
+  limits: { maxFiles: number; maxDepth: number; maxFileBytes: number };
+}
 export type CapabilityType = 
   | "mcp-server" 
   | "agent-skill" 
@@ -101,16 +115,24 @@ export interface TrustScoreBreakdown {
   stability: number;     // 0-100
 }
 
-export interface TrustScore {
-  overall: number;       // 0-100
-  grade: TrustGrade;
+export type TrustScore = {
+  status: "graded";
+  overall: number;
+  grade: Exclude<TrustGrade, "U">;
   breakdown: TrustScoreBreakdown;
   confidence: "low" | "medium" | "high";
   rationale: string;
-}
+} | {
+  status: "ungraded";
+  overall: null;
+  grade: "U";
+  breakdown: null;
+  confidence: "low";
+  rationale: string;
+};
 
 export interface TrustCard {
-  schema: "opentrustbench/trust-card/v1";
+  schema: "opentrustbench/trust-card/v2";
   generatedAt: string;
   opentrustbenchVersion: string;
   subject: {
@@ -137,6 +159,7 @@ export interface TrustCard {
     list: DependencyInfo[];
   };
   trustScore: TrustScore;
+  coverage: ScanCoverage;
   compatibility: string[];
   tags: string[];
 }

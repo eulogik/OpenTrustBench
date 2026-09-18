@@ -1,10 +1,18 @@
-import type { Finding, PermissionManifest, ProvenanceInfo, TrustScore, TrustGrade, TrustScoreBreakdown } from "../types/index.js";
+import type { Finding, PermissionManifest, ProvenanceInfo, TrustScore, TrustGrade, TrustScoreBreakdown, ScanCoverage } from "../types/index.js";
+import { missingCoverage } from "../analysis/static-analyzer.js";
 
 export function computeTrustScore(
   findings: Finding[],
   permissions: PermissionManifest,
-  provenance: ProvenanceInfo
+  provenance: ProvenanceInfo,
+  coverage: ScanCoverage = missingCoverage()
 ): TrustScore {
+  if (coverage.status !== "sufficient" || coverage.readErrors.length > 0 || coverage.truncation.length > 0 || coverage.unsupportedSourceFiles.length > 0 || coverage.excludedFiles.some(f => f.reason === "non-regular-file") || !coverage.analyzedFiles.some(f => f.scope === "code" && f.nonEmpty && f.ruleIds.length === 8)) {
+    return {
+      status: "ungraded", overall: null, grade: "U", breakdown: null, confidence: "low",
+      rationale: `Insufficient static coverage: ${coverage.reasons.join("; ") || "incomplete analysis evidence"}. Findings remain actionable; absence of findings is not evidence of safety.`
+    };
+  }
   let security = 100;
   for (const f of findings) {
     if (f.severity === "critical") security -= 25;
@@ -77,10 +85,11 @@ export function computeTrustScore(
   }
 
   return {
+    status: "graded",
     overall,
     grade,
     breakdown,
     confidence: provenance.isVerified ? "high" : "medium",
-    rationale
+    rationale: `${rationale} Limited to the supported static rule scope; not proof of safety.`
   };
 }

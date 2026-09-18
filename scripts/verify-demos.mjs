@@ -10,7 +10,12 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const cli = path.join(root, "packages", "cli", "dist", "index.js");
 
 function run(args) {
-  execFileSync("node", [cli, ...args], { cwd: root, stdio: "pipe" });
+  try {
+    execFileSync("node", [cli, ...args], { cwd: root, stdio: "pipe" });
+  } catch (err) {
+    if (err.status !== 2) throw err;
+    // Exit code 2 = insufficient coverage (artifacts still written)
+  }
 }
 
 function readJson(file) {
@@ -40,13 +45,19 @@ console.log(`ok: SARIF report valid (${sarif.runs[0].results.length} results)`);
 
 run(["scan", "examples/secure-agent-skill"]);
 const secure = readJson("trust-card.json");
-if (["D", "F"].includes(secure.trustScore.grade)) {
-  fail(`secure fixture graded ${secure.trustScore.grade}, expected C or better`);
+if (secure.trustScore.grade !== "U") {
+  fail(`secure fixture (docs-only) graded ${secure.trustScore.grade}, expected U (ungraded — no executable code)`);
 }
 if (secure.security.criticalCount !== 0) {
   fail(`secure fixture has ${secure.security.criticalCount} critical findings`);
 }
-console.log(`ok: secure fixture grade ${secure.trustScore.grade} (${secure.trustScore.overall}/100)`);
+if (secure.trustScore.status !== "ungraded") {
+  fail(`secure fixture status ${secure.trustScore.status}, expected ungraded`);
+}
+if (secure.trustScore.overall !== null) {
+  fail(`secure fixture overall score ${secure.trustScore.overall}, expected null for ungraded`);
+}
+console.log(`ok: secure fixture grade ${secure.trustScore.grade} (ungraded, docs-only skill — ${secure.coverage.analyzedFiles.length} analyzed / ${secure.coverage.discoveredFiles} discovered files)`);
 
 run(["attack", "examples/vulnerable-mcp-server"]);
 const attack = readJson("opentrustbench-attack-report.json");

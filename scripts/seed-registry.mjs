@@ -5,6 +5,8 @@
 // - Never writes into the repo; all work happens under /tmp/at-sweep
 // - Usage: node scripts/seed-registry.mjs [maxScans]
 import { execFileSync, execSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
+import { scanTarget as scanTargetCore, validateScanCard } from "./build-reports.mjs";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -127,13 +129,7 @@ function clone(repo, dest) {
   sh(`git clone --depth 1 --quiet https://github.com/${repo}.git "${dest}"`);
 }
 
-function scanTarget(name, targetPath) {
-  const outDir = path.join(OUT, name.replace(/[^a-zA-Z0-9_-]/g, "_"));
-  fs.rmSync(outDir, { recursive: true, force: true });
-  fs.mkdirSync(outDir, { recursive: true });
-  execFileSync("node", [CLI, "scan", targetPath, "--quiet", "--format", "json", "--output-dir", outDir, "--no-color"],
-    { stdio: "pipe", timeout: 120000 });
-  const card = JSON.parse(fs.readFileSync(path.join(outDir, "trust-card.json"), "utf8"));
+export function seedResult(name, card) {
   return {
     name,
     grade: card.trustScore.grade,
@@ -146,7 +142,14 @@ function scanTarget(name, targetPath) {
   };
 }
 
-function main() {
+export function scanTarget(name, targetPath) {
+  const outDir = path.join(OUT, name.replace(/[^a-zA-Z0-9_-]/g, "_"));
+  const card = scanTargetCore(targetPath, outDir);
+  validateScanCard(card, card.trustScore.grade === "U" ? 2 : 0);
+  return seedResult(name, card);
+}
+
+export function main() {
   fs.mkdirSync(CLONES, { recursive: true });
   fs.mkdirSync(OUT, { recursive: true });
   let results = [];
@@ -173,7 +176,7 @@ function main() {
         try {
           const r = scanTarget(name, target);
           results.push(r); done.add(name); save();
-          console.log(`OK ${name}: ${r.grade} ${r.overall} findings=${r.totalFindings} crit=${r.critical} scope=${r.scope}`);
+          console.log(`OK ${name}: ${r.grade} ${r.overall === null ? "ungraded" : r.overall} findings=${r.totalFindings} crit=${r.critical} scope=${r.scope}`);
         } catch (e) {
           console.log(`FAIL ${name}: ${String(e.message).split("\n")[0]}`);
         }
@@ -194,7 +197,7 @@ function main() {
       clone(repo, dest);
       const r = scanTarget(name, dest);
       results.push({ ...r, repo }); done.add(name); save();
-      console.log(`OK ${repo}: ${r.grade} ${r.overall} findings=${r.totalFindings} crit=${r.critical} scope=${r.scope}`);
+      console.log(`OK ${repo}: ${r.grade} ${r.overall === null ? "ungraded" : r.overall} findings=${r.totalFindings} crit=${r.critical} scope=${r.scope}`);
     } catch (e) {
       console.log(`FAIL ${repo}: ${String(e.message).split("\n")[0]}`);
     } finally {
@@ -202,7 +205,14 @@ function main() {
     }
   }
 
-  console.log(`\nDone: ${results.length}/${MAX} servers scanned. Results: ${RESULTS}`);
+  if (results.length < MAX) {
+    console.error(`Seed sweep incomplete: ${results.length}/${MAX} (see FAIL/SKIP lines above)`);
+    process.exitCode = 1;
+  } else {
+    console.log(`\nDone: ${results.length}/${MAX} servers scanned. Results: ${RESULTS}`);
+  }
 }
 
-main();
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main();
+}
