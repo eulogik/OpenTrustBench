@@ -54,11 +54,11 @@
         "@type": "FAQPage",
         "mainEntity": [
           { "@type": "Question", "name": "What is OpenTrustBench?", "acceptedAnswer": { "@type": "Answer", "text": "OpenTrustBench is a free, local-first security scanner for AI agents and MCP servers. It runs 8 OWASP-mapped static rules, extracts permission manifests, and issues a Trust Card graded A–F with SARIF output for CI." } },
-          { "@type": "Question", "name": "How do I scan an MCP server?", "acceptedAnswer": { "@type": "Answer", "text": "Run npx @opentrustbench/cli scan <path-or-github-url>. You get a Trust Card, SARIF and Markdown reports in seconds, with zero data leaving your machine." } },
-          { "@type": "Question", "name": "What is a Trust Card?", "acceptedAnswer": { "@type": "Answer", "text": "A Trust Card is a portable, machine-readable credential (opentrustbench/trust-card/v1) summarizing an agent's security posture: letter grade, 0–100 score, findings, permissions, provenance, and inferred host compatibility." } },
+          { "@type": "Question", "name": "How do I scan an MCP server?", "acceptedAnswer": { "@type": "Answer", "text": "Run npx @opentrustbench/cli scan <path-or-github-url>. You get a Trust Card, SARIF and Markdown reports in seconds. Local analysis; no OpenTrustBench telemetry. GitHub-URL scans clone the public repo to a temp directory on your machine." } },
+          { "@type": "Question", "name": "What is a Trust Card?", "acceptedAnswer": { "@type": "Answer", "text": "A Trust Card is a portable, machine-readable credential (opentrustbench/trust-card/v2) summarizing an agent's security posture: letter grade, 0–100 score, findings, permissions, provenance, coverage, and inferred host compatibility." } },
           { "@type": "Question", "name": "Is OpenTrustBench a certification?", "acceptedAnswer": { "@type": "Answer", "text": "No. OpenTrustBench is a static scanner, not a certification body. Attack analysis is heuristic, workflow eval is simulated, and Trust Cards are evidence input for your own review — never a compliance verdict." } },
-          { "@type": "Question", "name": "Does my code leave my machine?", "acceptedAnswer": { "@type": "Answer", "text": "No. The CLI runs entirely locally with zero telemetry and zero data retention. GitHub-URL scans clone the public repo to a temp directory on your machine." } },
-          { "@type": "Question", "name": "What do the grades mean?", "acceptedAnswer": { "@type": "Answer", "text": "A (90+) through F (below 40), computed from security findings, permission scope, provenance signals, reliability and stability. Across 53 public MCP servers, the average is 70.2 (C) and 36% grade D or F." } },
+          { "@type": "Question", "name": "Does my code leave my machine?", "acceptedAnswer": { "@type": "Answer", "text": "No. The CLI runs entirely locally with zero telemetry and no OpenTrustBench data retention. GitHub-URL scans clone the public repo to a temp directory on your machine. Dependency auditing queries the npm registry." } },
+          { "@type": "Question", "name": "What do the grades mean?", "acceptedAnswer": { "@type": "Answer", "text": "A (90+) through F (below 40), computed from security findings, permission scope, provenance signals, reliability and stability. Across 50 external MCP targets the average is 70.2 (C) and 36% grade D or F; 3 self-scans excluded." } },
           { "@type": "Question", "name": "Why does the OpenTrustBench repo itself grade F?", "acceptedAnswer": { "@type": "Answer", "text": "Because it contains its own test ammunition: a deliberately vulnerable example fixture, unit tests that must contain eval( and exec( strings to prove the detector catches them, and automation scripts that legitimately shell out to git and npm. The shipped CLI (packages/cli) self-scans at A (90/100) — that is what the README badge grades. Grade the artifact you ship, not the monorepo that tests it." } }
         ]
       }
@@ -92,7 +92,7 @@
       <div class="wrap">
         <p class="eyebrow">OWASP-mapped · Agentic + LLM Top 10</p>
         <h1 id="hero-h">A trust score for every AI agent.</h1>
-        <p class="lede"><strong style="color:var(--text)">OpenTrustBench is a free, local-first security scanner for AI agents and MCP servers.</strong> Eight static rules, a permission manifest, and a Trust Card graded A–F — in seconds, with zero data leaving your machine.</p>
+        <p class="lede"><strong style="color:var(--text)">OpenTrustBench is a free, local-first security scanner for AI agents and MCP servers.</strong> Eight static rules, a permission manifest, and a Trust Card graded A–F — in seconds. Local analysis; no OpenTrustBench telemetry.</p>
         <div class="hero-ctas">
           <span class="cmd"><span>npx @opentrustbench/cli scan .</span><button type="button" data-copy="npx @opentrustbench/cli scan .">Copy</button></span>
           <a class="btn btn-ghost" href="https://github.com/eulogik/OpenTrustBench">View on GitHub</a>
@@ -275,7 +275,7 @@ docker run --rm -v $(pwd):/workspace eulogik/opentrustbench scan .</pre>
           </details>
           <details class="faq">
             <summary>What is a Trust Card?</summary>
-            <div class="a"><p>A portable, machine-readable credential (<code>opentrustbench/trust-card/v1</code>): letter grade, 0–100 score, findings with file:line evidence, permission scope, provenance signals, and inferred host compatibility. Bound badges link each grade to its public evidence page.</p></div>
+            <div class="a"><p>A portable, machine-readable credential (<code>opentrustbench/trust-card/v2</code>): letter grade, 0–100 score, findings with file:line evidence, permission scope, provenance signals, coverage, and inferred host compatibility. Bound badges link each grade to its public evidence page.</p></div>
           </details>
           <details class="faq">
             <summary>Is OpenTrustBench a certification?</summary>
@@ -283,11 +283,11 @@ docker run --rm -v $(pwd):/workspace eulogik/opentrustbench scan .</pre>
           </details>
           <details class="faq">
             <summary>Does my code leave my machine?</summary>
-            <div class="a"><p>No. Zero telemetry, zero retention. The scanner reads files, computes locally, and writes reports to a directory you choose.</p></div>
+            <div class="a"><p>No. The CLI runs locally with zero telemetry and no OpenTrustBench data retention. GitHub-URL scans clone the public repo to a temp directory on your machine. Dependency auditing queries the npm registry.</p></div>
           </details>
           <details class="faq">
             <summary>What do the grades mean?</summary>
-            <div class="a"><p>A (90+) through F (below 40), weighted across security findings, permission scope, provenance, reliability and stability. Across 53 public MCP servers the average is 70.2 (C); 36% grade D or F. <a href="methodology.html">Full scoring methodology</a>.</p></div>
+            <div class="a"><p>A (90+) through F (below 40), weighted across security findings, permission scope, provenance, reliability and stability. Across 50 external MCP targets the average is 70.2 (C); 36% grade D or F; 3 self-scans excluded. <a href="methodology.html">Full scoring methodology</a>.</p></div>
           </details>
           <details class="faq">
             <summary>Why does the OpenTrustBench repo itself grade F?</summary>
@@ -346,7 +346,7 @@ docker run --rm -v $(pwd):/workspace eulogik/opentrustbench scan .</pre>
         </div>
       </div>
       <div class="foot-base">
-        <span>© 2026 OpenTrustBench · Apache-2.0 · Refreshed weekly from 53 public scans · Built by <a href="https://eulogik.com">Eulogik</a></span>
+        <span>© 2026 OpenTrustBench · Apache-2.0 · Refreshed weekly from 50 external targets + 3 self-scans · Built by <a href="https://eulogik.com">Eulogik</a></span>
         <span>Static site · No cookies · No tracking</span>
       </div>
     </div>

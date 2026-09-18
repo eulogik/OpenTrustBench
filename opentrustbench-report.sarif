@@ -11,6 +11,61 @@
           "rules": []
         }
       },
+      "properties": {
+        "coverage": {
+          "mode": "static-heuristic",
+          "status": "limited",
+          "reasons": [
+            "No non-empty supported source analyzed; documentation and data alone provide limited coverage"
+          ],
+          "limitations": [
+            "Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.",
+            "Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.",
+            "Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.",
+            "Ignored directories, declarations, and non-implementation assets are outside rule scope."
+          ],
+          "discoveredFiles": 1,
+          "analyzedFiles": [],
+          "unsupportedSourceFiles": [],
+          "excludedFiles": [
+            {
+              "path": "SKILL.md",
+              "reason": "skill-instructions-not-code-analyzed"
+            }
+          ],
+          "readErrors": [],
+          "truncation": [],
+          "limits": {
+            "maxFiles": 4000,
+            "maxDepth": 12,
+            "maxFileBytes": 1048576
+          }
+        },
+        "trustScore": {
+          "status": "ungraded",
+          "overall": null,
+          "grade": "U",
+          "breakdown": null,
+          "confidence": "low",
+          "rationale": "Insufficient static coverage: No non-empty supported source analyzed; documentation and data alone provide limited coverage. Findings remain actionable; absence of findings is not evidence of safety."
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": false,
+          "toolExecutionNotifications": [
+            {
+              "descriptor": {
+                "id": "AT-COVERAGE"
+              },
+              "level": "error",
+              "message": {
+                "text": "Insufficient static coverage: No non-empty supported source analyzed; documentation and data alone provide limited coverage. Findings remain actionable; absence of findings is not evidence of safety. Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage. Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule. Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement. Ignored directories, declarations, and non-implementation assets are outside rule scope."
+              }
+            }
+          ]
+        }
+      ],
       "results": []
     }
   ]

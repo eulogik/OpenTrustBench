@@ -28,7 +28,7 @@
 
 OpenTrustBench is a trust and security verification platform for autonomous AI agents and MCP (Model Context Protocol) servers. It scans your codebase for vulnerabilities, maps findings to [OWASP Agentic AI Top 10](https://owasp.org/) and [OWASP LLM Top 10 2025](https://owasp.org/), generates a verifiable **Trust Card** with a letter grade, and provides a **shareable badge** for your README.
 
-**Zero data retention.** Everything runs locally on your machine. No telemetry. No account required.
+**Local analysis, no OpenTrustBench telemetry.** Dependency auditing uses the npm registry. No account required.
 
 ## Quick Start
 
@@ -68,7 +68,7 @@ npx @opentrustbench/cli eval ./tests/workflow.yaml
 ## What You Get
 | Output | Description |
 |--------|-------------|
-| **Trust Card** | Machine-readable credential (`opentrustbench/trust-card/v1`) with grade, score, findings, and permissions |
+| **Trust Card** | Machine-readable credential (`opentrustbench/trust-card/v2`) with grade, score, findings, permissions, and coverage |
 | **SARIF Report** | Industry-standard format for GitHub Security tab integration |
 | **Markdown Report** | Human-readable audit report for compliance and review |
 | **Grade Badge** | Shareable SVG badge linking to a public report page ([example](https://www.opentrustbench.com/badge/a.svg), [registry](https://www.opentrustbench.com/r/)) |
