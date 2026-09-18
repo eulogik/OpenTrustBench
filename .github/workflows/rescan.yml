@@ -21,6 +21,8 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
 
       - uses: actions/setup-node@v4
         with:
@@ -45,9 +47,12 @@ jobs:
         run: node scripts/check-badges.mjs
 
       - name: Commit + push if changed
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config user.name "opentrustbench-bot"
           git config user.email "opentrustbench-bot@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/eulogik/OpenTrustBench.git
           git add web/public/r docs/STATE-OF-MCP-2026.md
           if git diff --cached --quiet; then
             echo "No registry changes — nothing to push."
