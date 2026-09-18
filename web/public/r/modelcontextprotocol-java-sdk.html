@@ -30,12 +30,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>modelcontextprotocol__java-sdk <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope minimal · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-09-18 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/java-sdk @ 183935b (2026-09-17)</p>
+<p class="muted">Scanned 2026-09-18 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/java-sdk @ c7fef64 (2026-09-18)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: No non-empty supported source analyzed; documentation and data alone provide limited coverage; Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 10 analyzed / 307 discovered files; 259 unsupported source files; 298 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 10 analyzed / 308 discovered files; 260 unsupported source files; 299 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>No non-empty supported source analyzed; documentation and data alone provide limited coverage</li><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -50,7 +50,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 307,
+  &quot;discoveredFiles&quot;: 308,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/config.yml&quot;,
@@ -295,6 +295,7 @@
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/JSONRPCRequestMcpValidationTest.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/McpClientSessionTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/McpErrorTest.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/McpStreamableServerSessionTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/PromptReferenceEqualsTest.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/json/gson/GsonMcpJsonMapper.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/json/gson/GsonMcpJsonMapperTests.java&quot;,
@@ -1163,6 +1164,10 @@
     },
     {
       &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/McpErrorTest.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/McpStreamableServerSessionTests.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
