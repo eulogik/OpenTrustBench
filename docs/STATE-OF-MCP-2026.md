@@ -24,14 +24,16 @@ External grade distribution: A 1 · B 0 · C 0 · D 0 · F 0 · U 49. U means in
 
 This converges with published research: Liu et al. (2026) found 26.1% of
 42,447 skills vulnerable; Snyk (Feb 2026) found flaws in 36.8% of 3,984
-published skills. Our 36% D/F lands in the same band.
+published skills. Under coverage gating the 2026-09-18 snapshot withholds 49
+of 50 externals as U, so the band comparison is suspended until graded n
+recovers — the strictness is the point.
 
 ## The pattern: scope is the story
 
 Every A-grade server shares the same shape — **zero findings and
-minimal-or-moderate scope**. Conversely, all 18 D/F servers are
-excessive-scope except two broad ones. Findings matter, but **permission
-breadth predicts the grade**.
+minimal-or-moderate scope**. In earlier (pre-gating) revisions every graded
+D/F server was excessive-scope except two broad ones. Findings matter, but
+**permission breadth predicts the grade**.
 
 40% of scanned servers still request excessive scope (shell + network +
 filesystem deletion combined). For a tool the user installs with one command,

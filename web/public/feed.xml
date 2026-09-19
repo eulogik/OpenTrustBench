@@ -6,6 +6,12 @@
     <description>Releases, registry refreshes, and methodology updates for the OpenTrustBench agent trust scanner.</description>
     <language>en</language>
     <item>
+      <title>Coverage integrity v2: U grade + trust-card/v2</title>
+      <link>https://opentrustbench.com/changelog.html</link>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Trust-card/v2 ships: U (ungraded) where static coverage is insufficient, coverage object in every card, exit code 2. Registry recomputed: 3 graded, 50 ungraded.</description>
+    </item>
+    <item>
       <title>Weekly registry refresh goes automatic</title>
       <link>https://opentrustbench.com/r/</link>
       <pubDate>Tue, 09 Sep 2026 00:00:00 GMT</pubDate>
@@ -15,7 +21,7 @@
       <title>State of MCP Permissions: 50 servers scanned</title>
       <link>https://github.com/eulogik/OpenTrustBench/blob/main/docs/STATE-OF-MCP-2026.md</link>
       <pubDate>Mon, 08 Sep 2026 00:00:00 GMT</pubDate>
-      <description>Average 70.2 (C); 36% grade D or F; permission scope predicts the grade. Full methodology and tables.</description>
+      <description>Average 70.2 (C); 36% grade D or F; permission scope predicts the grade. Full methodology and tables. (Pre-gating figures; superseded by coverage integrity v2 on 2026-09-18 — see changelog.)</description>
     </item>
     <item>
       <title>v0.1.3: verified CLI banner + badge rebrand</title>

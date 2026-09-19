@@ -1,6 +1,6 @@
 {
   "targetName": "vulnerable-file-tools-mcp",
-  "timestamp": "2026-09-18T10:09:46.482Z",
+  "timestamp": "2026-09-19T10:58:50.822Z",
   "mode": "static-heuristic",
   "disclaimer": "Static-heuristic mode: no dynamic payloads were executed. Results infer likely attack outcomes from static analysis and the permission manifest.",
   "testsRun": 5,

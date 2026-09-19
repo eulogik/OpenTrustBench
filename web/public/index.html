@@ -4,23 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenTrustBench — A trust score for every AI agent</title>
-        <meta name="description" content="OpenTrustBench is a free, local-first security scanner for AI agents and MCP servers. 8 OWASP-mapped rules, Trust Cards graded A–F, SARIF output, and a public registry of 53 scanned servers.">
+        <meta name="description" content="OpenTrustBench is a free, local-first security scanner for AI agents and MCP servers. 8 OWASP-mapped rules, Trust Cards graded A–F (or U where coverage is insufficient), SARIF output, and a public registry of 53 scanned servers.">
   <link rel="canonical" href="https://opentrustbench.com/">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenTrustBench">
   <meta property="og:url" content="https://opentrustbench.com/">
   <meta property="og:title" content="OpenTrustBench — A trust score for every AI agent">
-  <meta property="og:description" content="Free, local-first scanner: 8 OWASP-mapped rules, Trust Cards graded A–F, and a public registry of 53 scanned MCP servers.">
+  <meta property="og:description" content="Free, local-first scanner: 8 OWASP-mapped rules, Trust Cards graded A–F or U, and a public registry of 53 scanned MCP servers (50 external targets + 3 self-scans).">
   <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://opentrustbench.com/og-image.png">
   <meta name="twitter:title" content="OpenTrustBench — A trust score for every AI agent">
-  <meta name="twitter:description" content="Free, local-first scanner: 8 OWASP-mapped rules, Trust Cards graded A–F, and a public registry of 53 scanned MCP servers.">
+  <meta name="twitter:description" content="Free, local-first scanner: 8 OWASP-mapped rules, Trust Cards graded A–F or U, and a public registry of 53 scanned MCP servers (50 external targets + 3 self-scans).">
   <link rel="preload" href="assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/jetbrains-mono-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
   <link rel="alternate" type="application/rss+xml" title="OpenTrustBench changelog" href="feed.xml">
   <script type="application/ld+json">
@@ -58,8 +61,8 @@
           { "@type": "Question", "name": "What is a Trust Card?", "acceptedAnswer": { "@type": "Answer", "text": "A Trust Card is a portable, machine-readable credential (opentrustbench/trust-card/v2) summarizing an agent's security posture: letter grade, 0–100 score, findings, permissions, provenance, coverage, and inferred host compatibility." } },
           { "@type": "Question", "name": "Is OpenTrustBench a certification?", "acceptedAnswer": { "@type": "Answer", "text": "No. OpenTrustBench is a static scanner, not a certification body. Attack analysis is heuristic, workflow eval is simulated, and Trust Cards are evidence input for your own review — never a compliance verdict." } },
           { "@type": "Question", "name": "Does my code leave my machine?", "acceptedAnswer": { "@type": "Answer", "text": "No. The CLI runs entirely locally with zero telemetry and no OpenTrustBench data retention. GitHub-URL scans clone the public repo to a temp directory on your machine. Dependency auditing queries the npm registry." } },
-          { "@type": "Question", "name": "What do the grades mean?", "acceptedAnswer": { "@type": "Answer", "text": "A (90+) through F (below 40), computed from security findings, permission scope, provenance signals, reliability and stability. Across 50 external MCP targets the average is 70.2 (C) and 36% grade D or F; 3 self-scans excluded." } },
-          { "@type": "Question", "name": "Why does the OpenTrustBench repo itself grade F?", "acceptedAnswer": { "@type": "Answer", "text": "Because it contains its own test ammunition: a deliberately vulnerable example fixture, unit tests that must contain eval( and exec( strings to prove the detector catches them, and automation scripts that legitimately shell out to git and npm. The shipped CLI (packages/cli) self-scans at A (90/100) — that is what the README badge grades. Grade the artifact you ship, not the monorepo that tests it." } }
+          { "@type": "Question", "name": "What do the grades mean?", "acceptedAnswer": { "@type": "Answer", "text": "A (90+) through F (below 40), computed from security findings, permission scope, provenance signals, reliability and stability. U means ungraded: static coverage was insufficient, so no score was issued and the card is excluded from averages and rankings. In the 2026-09-18 snapshot, 3 of 53 cards are graded and 50 are U." } },
+          { "@type": "Question", "name": "Why shouldn't I scan the OpenTrustBench monorepo itself?", "acceptedAnswer": { "@type": "Answer", "text": "Because it contains its own test ammunition: a deliberately vulnerable example fixture, unit tests that must contain eval( and exec( strings to prove the detector catches them, and automation scripts that legitimately shell out to git and npm. The monorepo itself currently grades U (60 code files analyzed against 66 unsupported implementation files, so coverage is limited). The shipped CLI (packages/cli) self-scans at A (90/100) — grade the artifact you ship, not the monorepo that tests it." } }
         ]
       }
     ]
@@ -100,16 +103,20 @@
         <p class="hero-note">Free forever · No account · Open source (Apache-2.0) · <a href="#install">Install in 60 seconds</a></p>
 
         <div class="proof reveal" aria-label="Registry statistics">
-          <div><div class="n">53</div><div class="l">public MCP servers scanned — <a href="r/">browse the registry</a></div></div>
-          <div><div class="n">70.2</div><div class="l">average score (C) across the ecosystem</div></div>
-          <div><div class="n">36%</div><div class="l">grade D or F — findings need triage, not panic</div></div>
-          <div><div class="n">0</div><div class="l">bytes of your code ever transmitted</div></div>
+          <div><div class="n">53</div><div class="l">Trust Cards published — 50 external targets + 3 self-scans · <a href="r/">browse the registry</a></div></div>
+          <div><div class="n">3</div><div class="l">graded A–F; 50 withheld as U where coverage was insufficient</div></div>
+          <div><div class="n">8</div><div class="l">OWASP-mapped static rules behind every card</div></div>
+          <div><div class="n">0</div><div class="l">bytes of your code sent to OpenTrustBench</div></div>
         </div>
 
-        <div class="term reveal" id="term" data-lines="$ npx @opentrustbench/cli scan examples/secure-agent-skill&#10;Trust Grade: [G]B (88/100)[/G] · Findings: 0 · Scope: minimal&#10;Provenance: signals present · Rules: 8 static (OWASP-mapped)&#10;[C]✔ trust-card.json[/C] [D](Trust Card v1)[/D]&#10;[C]✔ opentrustbench-report.sarif[/C] [D](GitHub Code Scanning)[/D]&#10;[C]✔ opentrustbench-report.md[/C]" aria-label="Sample scan output">
-          <div class="term-bar"><i></i><i></i><i></i><span>terminal — sample output, secure fixture</span></div>
+        <div class="term reveal" id="term" data-lines="$ npx @opentrustbench/cli scan examples/secure-agent-skill&#10;Capability: agent-skill (95%) · Findings: 0 · Rules: 8 static (OWASP-mapped)&#10;Trust Grade: [G]U (ungraded)[/G] · Coverage: limited — 0 code files analyzed&#10;[C]✔ trust-card.json[/C] [D](Trust Card v2, status: ungraded)[/D]&#10;[C]✔ opentrustbench-report.sarif[/C] [D](GitHub Code Scanning)[/D]&#10;[C]✔ opentrustbench-report.md[/C]" aria-label="Sample scan output">
+          <div class="term-bar"><i></i><i></i><i></i><span>terminal — sample output, secure fixture (Grade U)</span></div>
           <div class="term-body"></div>
         </div>
+        <figure class="reveal" style="margin:32px 0 0">
+          <img src="assets/demo.gif" alt="Recorded OpenTrustBench scan running in a terminal (7 seconds)" loading="lazy" style="width:100%;border-radius:var(--radius);border:1px solid var(--border)">
+          <figcaption class="muted small" style="margin-top:8px">A recorded run (7s). The typed terminal above illustrates the same output.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -133,46 +140,38 @@
             <div class="k">03 — PROVE</div>
             <h3>Share the evidence</h3>
             <p>Embed a bound badge that links to a public report page — grade image and evidence travel together. See the <a href="r/">live registry</a>.</p>
+            <p style="margin:12px 0 0"><a href="r/self-packages-cli.html"><img src="r/self-packages-cli.svg" alt="OpenTrustBench grade A badge for the shipped CLI" loading="lazy"></a></p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Registry preview: the ecosystem, ranked -->
+    <!-- Registry preview: strict grades, honestly withheld -->
     <section id="registry-preview" aria-labelledby="reg-h" style="padding-top:0">
       <div class="wrap">
-        <p class="eyebrow reveal">The registry · 53 servers, re-scanned weekly</p>
-        <h2 id="reg-h" class="reveal">Who's passing, who's not.</h2>
-        <p class="lede reveal">Independently scanned snapshots — not self-reports. Full evidence behind every grade.</p>
+        <p class="eyebrow reveal">The registry · snapshot 2026-09-18 · re-scanned weekly</p>
+        <h2 id="reg-h" class="reveal">Strict grades, honestly withheld.</h2>
+        <p class="lede reveal">One external target graded; 49 withheld as U for limited static coverage. Full evidence behind every card.</p>
         <div class="steps">
           <div class="step reveal">
-            <div class="k">HIGHEST GRADED</div>
+            <div class="k">GRADED NOW</div>
             <table class="data" style="margin-top:14px">
               <tbody>
                 <tr><td><span class="grade gA">A</span></td><td><a href="r/wong2-mcp-cli.html">mcp-cli</a></td><td class="mono">96</td></tr>
-                <tr><td><span class="grade gA">A</span></td><td><a href="r/pinecone-io-pinecone-mcp.html">pinecone-mcp</a></td><td class="mono">95</td></tr>
-                <tr><td><span class="grade gA">A</span></td><td><a href="r/tavily-ai-tavily-mcp.html">tavily-mcp</a></td><td class="mono">94</td></tr>
-                <tr><td><span class="grade gA">A</span></td><td><a href="r/modelcontextprotocol-java-sdk.html">java-sdk</a></td><td class="mono">94</td></tr>
-                <tr><td><span class="grade gA">A</span></td><td><a href="r/hashicorp-terraform-mcp-server.html">terraform-mcp-server</a></td><td class="mono">93</td></tr>
+                <tr><td><span class="grade gA">A</span></td><td><a href="r/self-packages-cli.html">opentrustbench CLI (self)</a></td><td class="mono">90</td></tr>
+                <tr><td><span class="grade gF">F</span></td><td><a href="r/self-examples-vulnerable-mcp-server.html">vulnerable fixture (self)</a></td><td class="mono">33</td></tr>
               </tbody>
             </table>
           </div>
           <div class="step reveal">
-            <div class="k">NEEDS WORK</div>
-            <table class="data" style="margin-top:14px">
-              <tbody>
-                <tr><td><span class="grade gF">F</span></td><td><a href="r/ahujasid-blender-mcp.html">blender-mcp</a></td><td class="mono">35</td></tr>
-                <tr><td><span class="grade gF">F</span></td><td><a href="r/jlowin-fastmcp.html">fastmcp</a></td><td class="mono">37</td></tr>
-                <tr><td><span class="grade gF">F</span></td><td><a href="r/mcp-use-mcp-use.html">mcp-use</a></td><td class="mono">37</td></tr>
-                <tr><td><span class="grade gF">F</span></td><td><a href="r/mongodb-js-mongodb-mcp-server.html">mongodb-mcp-server</a></td><td class="mono">39</td></tr>
-                <tr><td><span class="grade gD">D</span></td><td><a href="r/stripe-agent-toolkit.html">agent-toolkit</a></td><td class="mono">40</td></tr>
-              </tbody>
-            </table>
+            <div class="k">WITHHELD (U)</div>
+            <h3>49 of 50 externals ungraded.</h3>
+            <p>U means limited static coverage — unsupported files present — not a zero and not a safety verdict. Ungraded cards keep their findings but get no score and stay out of rankings and averages. <a href="r/">Filter the registry by U →</a></p>
           </div>
           <div class="step reveal">
-            <div class="k">THE PATTERN</div>
-            <h3>Scope predicts the grade.</h3>
-            <p>Every A-grade server pairs zero findings with minimal scope. All D/F servers are excessive-scope except two. <a href="methodology.html">How scoring works</a> · <a href="r/">Explore all 53 →</a></p>
+            <div class="k">REPRODUCE</div>
+            <h3>Re-scan anything.</h3>
+            <p>Every card records its upstream commit sha, so any grade can be re-verified exactly. <a href="methodology.html">How scoring works</a> · <a href="r/">Explore the registry →</a></p>
           </div>
         </div>
       </div>
@@ -199,8 +198,7 @@ opentrustbench scan ./my-mcp-server --quiet</pre>
               <div class="tab-meta"><button class="btn btn-ghost btn-sm" data-copy-target="#cmd-npm">Copy</button><a href="https://www.npmjs.com/package/@opentrustbench/cli">npm package →</a></div>
             </div>
             <div role="tabpanel" id="panel-pip" aria-labelledby="tab-pip" data-panel="pip" hidden>
-              <pre id="cmd-pip">pip install opentrustbench
-npm install -g @opentrustbench/cli
+              <pre id="cmd-pip">pip install opentrustbench  # needs Node 18+ for the CLI engine
 opentrustbench scan ./my-mcp-server --quiet</pre>
               <div class="tab-meta"><button class="btn btn-ghost btn-sm" data-copy-target="#cmd-pip">Copy</button><span class="muted">Needs Node 18+ · <a href="https://pypi.org/project/opentrustbench/">PyPI →</a></span></div>
             </div>
@@ -287,11 +285,11 @@ docker run --rm -v $(pwd):/workspace eulogik/opentrustbench scan .</pre>
           </details>
           <details class="faq">
             <summary>What do the grades mean?</summary>
-            <div class="a"><p>A (90+) through F (below 40), weighted across security findings, permission scope, provenance, reliability and stability. Across 50 external MCP targets the average is 70.2 (C); 36% grade D or F; 3 self-scans excluded. <a href="methodology.html">Full scoring methodology</a>.</p></div>
+            <div class="a"><p>A (90+) through F (below 40), weighted across security findings, permission scope, provenance, reliability and stability. <strong>U means ungraded</strong>: coverage was insufficient, so no score was issued — currently 50 of 53 cards. Ungraded cards are excluded from averages and rankings. <a href="methodology.html">Full scoring methodology</a>.</p></div>
           </details>
           <details class="faq">
-            <summary>Why does the OpenTrustBench repo itself grade F?</summary>
-            <div class="a"><p>Because it contains its own test ammunition — and a scanner that <em>didn't</em> flag it would be the real scandal. The F comes from three intentional sources: (1) <code>examples/vulnerable-mcp-server</code>, a deliberately vulnerable fixture; (2) our unit tests, which must contain <code>eval(</code>, <code>exec(</code> and <code>transferFunds(</code> strings to prove the detector catches them; (3) our automation scripts, which legitimately shell out to <code>git</code> and <code>npm</code> with hardcoded local arguments. The shipped product (<code>packages/cli</code>) self-scans at <a href="r/self-packages-cli.html">A (90/100)</a> — that is what the README badge grades. Rule of thumb: grade the artifact you ship, not the monorepo that tests it.</p></div>
+            <summary>Why shouldn't I scan the OpenTrustBench monorepo itself?</summary>
+            <div class="a"><p>Because it contains its own test ammunition — and a scanner that <em>didn't</em> flag it would be the real scandal. The three intentional sources: (1) <code>examples/vulnerable-mcp-server</code>, a deliberately vulnerable fixture; (2) our unit tests, which must contain <code>eval(</code>, <code>exec(</code> and <code>transferFunds(</code> strings to prove the detector catches them; (3) our automation scripts, which legitimately shell out to <code>git</code> and <code>npm</code> with hardcoded local arguments. The monorepo itself currently grades U (60 code files analyzed against 66 unsupported implementation files — limited coverage, so the grade is withheld). The shipped product (<code>packages/cli</code>) self-scans at <a href="r/self-packages-cli.html">A (90/100)</a>. Rule of thumb: grade the artifact you ship, not the monorepo that tests it.</p></div>
           </details>
         </div>
       </div>
@@ -331,6 +329,7 @@ docker run --rm -v $(pwd):/workspace eulogik/opentrustbench scan .</pre>
           <h4>Resources</h4>
           <ul>
             <li><a href="#faq">FAQ</a></li>
+            <li><a href="changelog.html">Changelog</a></li>
             <li><a href="feed.xml">Changelog feed</a></li>
             <li><a href="https://github.com/eulogik/OpenTrustBench/blob/main/docs/STATE-OF-MCP-2026.md">State of MCP report</a></li>
             <li><a href="llms.txt">llms.txt</a></li>

@@ -86,7 +86,7 @@ npx serve web/public -p 3000             # static web UI (landing page)
 - `TrustScore` gains `status: "graded" | "ungraded"`, `grade` adds `"U"`, optional `coverage` object with `mode`, `status`, `reasons`, `limitations`, `discoveredFiles`, `analyzedFiles[]`, `unsupportedSourceFiles[]`, `excludedFiles[]`, `readErrors[]`, `truncation[]`, `limits`.
 - Secure skill fixture (docs-only) correctly grades **U** — 0 analyzed / 1 discovered files.
 - Registry: U excluded from rankings/averages; gray badge "U ungraded"; explorer filter/sort/histogram includes U.
-- Registry stats: 50 external targets (50 graded, 3 ungraded) + 3 self-scans; 36% D/F across graded externals.
+- Registry stats: 50 external targets (1 graded, 49 ungraded) + 3 self-scans (2 graded, 1 ungraded). Averages withheld while graded n is tiny; U excluded from rankings/averages.
 - CLI: exit 2 for U; `--fail-on` gate fails on insufficient coverage (separate from severity gate).
 - Reporters: markdown/SARIF surface coverage, nullable scores, gray U badge.
 
@@ -95,7 +95,7 @@ npx serve web/public -p 3000             # static web UI (landing page)
 - "Local analysis, no OpenTrustBench telemetry; npm audit uses npm registry" (replaces "zero data leaving your machine").
 - **50 external targets + 3 self-scans** (not "53 public servers").
 - Footer, JSON-LD, FAQs updated with accurate numbers.
-- Homepage: "50 external targets (50 graded, 3 ungraded); 3 self-scans".
+- Homepage: "53 Trust Cards (50 external + 3 self-scans); 3 graded, 50 U; no averages claimed".
 - U badge at `opentrustbench.com/badge/u.svg` (gray).
 
 ### Weekly automation fixed
@@ -110,7 +110,7 @@ npx serve web/public -p 3000             # static web UI (landing page)
 ### Live site (verified 2026-09-18)
 - Registry dated snapshot: **2026-09-18** (refreshed today via PAT).
 - Secure skill page: **Grade U** with "Ungraded — insufficient static coverage".
-- Registry shows "50 external targets (50 graded, 3 ungraded); 3 self-scans".
+- Registry shows "50 external targets (1 graded, 49 ungraded); 3 self-scans".
 - U badge live at `opentrustbench.com/badge/u.svg` (gray).
 
 ## Future path (from ROADMAP.md)

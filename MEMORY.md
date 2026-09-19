@@ -70,7 +70,7 @@ Researched, sequenced, buildable plan with non-negotiable constraints (local, ho
 - "Local analysis, no OpenTrustBench telemetry; npm audit uses npm registry" (replaces "zero data leaving your machine").
 - **50 external targets + 3 self-scans** (not "53 public servers").
 - Footer, JSON-LD, FAQs updated with accurate numbers.
-- Homepage: "50 external targets (50 graded, 3 ungraded); 3 self-scans".
+- Homepage: "53 Trust Cards (50 external + 3 self-scans); 3 graded, 50 U; no averages claimed".
 - U badge at `opentrustbench.com/badge/u.svg` (gray).
 
 **Weekly automation fixed:**
@@ -85,7 +85,7 @@ Researched, sequenced, buildable plan with non-negotiable constraints (local, ho
 **Live site verified (2026-09-18):**
 - Registry dated snapshot: **2026-09-18** (refreshed today via PAT).
 - Secure skill page: **Grade U** with "Ungraded — insufficient static coverage".
-- Registry shows "50 external targets (50 graded, 3 ungraded); 3 self-scans".
+- Registry shows "50 external targets (1 graded, 49 ungraded); 3 self-scans".
 - U badge live at `opentrustbench.com/badge/u.svg` (gray).
 
 **Distribution (all v0.1.3):** npm, PyPI, Homebrew, Docker, VS Code, GitHub Action.

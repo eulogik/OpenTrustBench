@@ -164,11 +164,11 @@
 
     var hist = document.getElementById("grade-hist");
     if (hist) {
-      var counts = { A: 0, B: 0, C: 0, D: 0, F: 0 };
+      var counts = { A: 0, B: 0, C: 0, D: 0, F: 0, U: 0 };
       rows.forEach(function (r) { counts[r.grade] = (counts[r.grade] || 0) + 1; });
       var max = Math.max.apply(null, Object.values(counts).concat([1]));
-      var colors = { A: "#34d399", B: "#22d3ee", C: "#fbbf24", D: "#fb923c", F: "#fb7185" };
-      hist.innerHTML = ["A", "B", "C", "D", "F"].map(function (g) {
+      var colors = { A: "#34d399", B: "#22d3ee", C: "#fbbf24", D: "#fb923c", F: "#fb7185", U: "#94a3b8" };
+      hist.innerHTML = ["A", "B", "C", "D", "F", "U"].map(function (g) {
         var h = Math.max(4, Math.round((counts[g] / max) * 68));
         return '<div style="height:' + h + 'px;background:' + colors[g] + '" title="' + g + ': ' + counts[g] + '"></div>';
       }).join("");
@@ -180,7 +180,7 @@
         if (state.q && (r.title + " " + r.scope).toLowerCase().indexOf(state.q) < 0) return false;
         return true;
       });
-      var rank = { A: 0, B: 1, C: 2, D: 3, F: 4 };
+      var rank = { A: 0, B: 1, C: 2, D: 3, F: 4, U: 5 };
       list.sort(function (a, b) {
         if (state.sort === "score-desc") return b.overall - a.overall;
         if (state.sort === "score-asc") return a.overall - b.overall;

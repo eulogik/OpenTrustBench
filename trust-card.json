@@ -1,6 +1,6 @@
 {
   "schema": "opentrustbench/trust-card/v2",
-  "generatedAt": "2026-09-18T10:09:46.450Z",
+  "generatedAt": "2026-09-19T10:58:50.788Z",
   "opentrustbenchVersion": "0.1.3",
   "subject": {
     "type": "agent-skill",

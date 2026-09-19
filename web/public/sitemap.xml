@@ -2,361 +2,367 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://opentrustbench.com/</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/#how</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/#install</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/#pricing</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/#faq</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/methodology.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/ahujasid-blender-mcp.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/apify-actors-mcp-server.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/browserbase-mcp-server-browserbase.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/clickhouse-mcp-clickhouse.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/cloudflare-mcp-server-cloudflare.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/e2b-dev-mcp-server.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/elastic-mcp-server-elasticsearch.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/exa-labs-exa-mcp-server.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/flux159-mcp-server-kubernetes.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/getsentry-sentry-mcp.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/github-github-mcp-server.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/gongrzhe-gmail-mcp-server.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/grafana-mcp-grafana.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/hashicorp-terraform-mcp-server.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/jlowin-fastmcp.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/korotovsky-slack-mcp-server.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/langchain-ai-langchain-mcp-adapters.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/makenotion-notion-mcp-server.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/mcp-everything.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/mcp-fetch.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/mcp-filesystem.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/mcp-git.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/mcp-memory.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/mcp-sequentialthinking.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/mcp-time.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/mcp-use-mcp-use.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/mendableai-firecrawl-mcp-server.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/microsoft-playwright-mcp.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/modelcontextprotocol-csharp-sdk.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/modelcontextprotocol-go-sdk.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/modelcontextprotocol-inspector.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/modelcontextprotocol-java-sdk.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/modelcontextprotocol-kotlin-sdk.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/modelcontextprotocol-python-sdk.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/modelcontextprotocol-registry.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/modelcontextprotocol-typescript-sdk.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/mongodb-js-mongodb-mcp-server.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/motherduckdb-mcp-server-motherduck.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/neondatabase-mcp-server-neon.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/pinecone-io-pinecone-mcp.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/prefecthq-prefect-mcp-server.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/qdrant-mcp-server-qdrant.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/redis-mcp-redis.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/self-examples-secure-agent-skill.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/self-examples-vulnerable-mcp-server.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/self-packages-cli.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/sooperset-mcp-atlassian.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/sparfenyuk-mcp-proxy.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/stripe-agent-toolkit.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/supabase-community-supabase-mcp.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/tavily-ai-tavily-mcp.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/upstash-context7.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://opentrustbench.com/r/wong2-mcp-cli.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://opentrustbench.com/changelog.html</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

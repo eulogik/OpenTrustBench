@@ -15,6 +15,9 @@
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
   <link rel="preload" href="assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
   <script type="application/ld+json">
   {
@@ -30,9 +33,9 @@
       {
         "@type": "Article",
         "headline": "OpenTrustBench methodology: how Trust Card scoring works",
-        "description": "The 8-rule static suite, OWASP mappings, scoring weights, and limitations behind every OpenTrustBench grade.",
+        "description": "The 8-rule static suite, OWASP mappings, scoring weights, coverage gating (U grade), and limitations behind every OpenTrustBench grade.",
         "datePublished": "2026-09-10",
-        "dateModified": "2026-09-10",
+        "dateModified": "2026-09-19",
         "author": { "@id": "https://opentrustbench.com/#org" },
         "publisher": { "@id": "https://opentrustbench.com/#org" },
         "mainEntityOfPage": "https://opentrustbench.com/methodology.html"
@@ -40,7 +43,8 @@
       {
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "How is the Trust Card grade computed?", "acceptedAnswer": { "@type": "Answer", "text": "Five weighted dimensions: security findings (35%), permission scope (25%), provenance signals (15%), reliability (15%), stability (10%). A is 90+, B 75+, C 60+, D 40+, F below 40." } },
+          { "@type": "Question", "name": "How is the Trust Card grade computed?", "acceptedAnswer": { "@type": "Answer", "text": "Five weighted dimensions: security findings (35%), permission scope (25%), provenance signals (15%), reliability (15%), stability (10%). A is 90+, B 75+, C 60+, D 40+, F below 40. U means ungraded: coverage was insufficient, so no score is issued (trust-card/v2, status ungraded, overall null)." } },
+          { "@type": "Question", "name": "When is a card graded U instead of A–F?", "acceptedAnswer": { "@type": "Answer", "text": "When static coverage is insufficient: unsupported source files present, scan limits reached, or no non-empty supported source analyzed. The CLI exits 2, still writes all artifacts, and --fail-on treats insufficient coverage as a gate failure. Ungraded cards are excluded from registry rankings and averages." } },
           { "@type": "Question", "name": "What can't OpenTrustBench see?", "acceptedAnswer": { "@type": "Answer", "text": "Runtime behavior, prompt-injection payloads in the wild, supply-chain compromises after scan time, and anything requiring execution. It is regex-based static analysis — no AST yet." } }
         ]
       }
@@ -69,7 +73,7 @@
   <main id="main">
     <section class="hero" style="padding-bottom:0">
       <div class="wrap">
-        <p class="eyebrow">Methodology · v0.1.3 · Updated 2026-09-10</p>
+        <p class="eyebrow">Methodology · v0.1.3 · Updated 2026-09-19</p>
         <h1>How every grade is computed.</h1>
         <p class="lede"><strong style="color:var(--text)">OpenTrustBench grades come from 8 static rules, a permission manifest, and documentary provenance — nothing else.</strong> No ML, no black box, no hidden signals. Everything below is reproducible with one command.</p>
       </div>
@@ -111,7 +115,17 @@
             <tr><td>Stability</td><td class="mono">10%</td><td>Lockfile and changelog presence</td></tr>
           </tbody>
         </table>
-        <p style="margin-top:24px">Grades: <strong>A</strong> 90+ · <strong>B</strong> 75+ · <strong>C</strong> 60+ · <strong>D</strong> 40+ · <strong>F</strong> below 40. Finding IDs are deterministic hashes, so repeat scans produce byte-stable SARIF.</p>
+        <p style="margin-top:24px">Grades: <strong>A</strong> 90+ · <strong>B</strong> 75+ · <strong>C</strong> 60+ · <strong>D</strong> 40+ · <strong>F</strong> below 40 · <strong>U</strong> ungraded (no score issued). Finding IDs are deterministic hashes, so repeat scans produce byte-stable SARIF. Trust Cards follow the <code>opentrustbench/trust-card/v2</code> schema (<code>status: graded | ungraded</code>, nullable score and breakdown).</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="coverage-h" style="padding-top:0">
+      <div class="wrap">
+        <p class="eyebrow">Coverage gating</p>
+        <h2 id="coverage-h">Insufficient coverage withholds the grade.</h2>
+        <p>Every card carries a <code>coverage</code> object: mode (<code>static-heuristic</code>), status (<code>sufficient</code> or <code>limited</code>), reasons, limitations, and per-file lists (discovered, analyzed, unsupported, excluded, read errors, truncations, limits). Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule. Skill instructions and other prose are not code-analyzed.</p>
+        <p>A card grades <strong>U</strong> when coverage is <code>limited</code>: unsupported source present, scan limits reached, or no non-empty supported source analyzed. The CLI exits with code 2 (artifacts still written), and <code>--fail-on</code> treats insufficient coverage as a gate failure, separate from the severity gate. Ungraded cards are excluded from registry rankings and averages, and badges render gray ("U ungraded").</p>
+        <p class="muted">Current snapshot (2026-09-18): 3 of 53 cards graded, 50 ungraded — mostly real-world repos carrying Dockerfiles, type declarations, docs, and images outside rule scope. Withheld, never inflated.</p>
       </div>
     </section>
 
@@ -122,10 +136,11 @@
         <div class="callout warn">
           <p><strong>Static analysis only.</strong> No code executes, no payloads fire, no runtime behavior is observed. Findings need human triage; counts may include test and example code. Attack analysis is heuristic relabeling of findings; workflow eval parses suites without executing them. Trust Cards are evidence input — never a certification, audit, or compliance verdict.</p>
         </div>
-        <h3>Why our own repo grades F</h3>
-        <p>It contains its own test ammunition: a deliberately vulnerable fixture, unit tests with attack strings, and automation scripts that shell out by design. The shipped CLI grades A. Grade the artifact, not the test bench.</p>
+        <h3>Why our own repo grades U, not A</h3>
+        <p>It contains its own test ammunition: a deliberately vulnerable fixture, unit tests with attack strings, and automation scripts that shell out by design — plus 66 unsupported implementation files against 60 analyzed, so coverage is limited and the grade is withheld. The shipped CLI grades A. Grade the artifact, not the test bench.</p>
         <h3>Reproduce any grade</h3>
-        <pre>npx @opentrustbench/cli scan https://github.com/owner/repo --quiet</pre>
+        <pre>npx @opentrustbench/cli scan https://github.com/owner/repo --quiet
+echo $?  # 0 clean, 1 gate failed, 2 ungraded (limited coverage)</pre>
         <p class="muted">Registry snapshots record the upstream commit sha, so any historical grade can be re-verified exactly.</p>
       </div>
     </section>

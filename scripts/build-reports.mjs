@@ -186,6 +186,9 @@ function reportPage({ slug: sl, title, repoUrl, upstream, card, rankLine, self }
   <meta property="og:image:height" content="640">
 <script type="application/ld+json">${jsonLd}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body data-scan="${esc(SCAN_DATE)}">
@@ -264,6 +267,9 @@ function indexPage(rows, adoption = adoptionLine()) {
   <meta property="og:image:height" content="640">
 <script type="application/ld+json">${jsonLd}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
@@ -285,7 +291,7 @@ function indexPage(rows, adoption = adoptionLine()) {
 </div>
 <div class="hist" id="grade-hist" aria-hidden="true"></div>
 <p class="count-line" id="registry-count"></p>
-<table class="data" id="registry-table"><thead><tr><th>Grade</th><th>Server</th><th>Score</th><th>Findings</th><th>Scope</th><th>Badge</th></tr></thead><tbody>${trs}</tbody></table>
+<div class="table-scroll"><table class="data" id="registry-table"><thead><tr><th>Grade</th><th>Server</th><th>Score</th><th>Findings</th><th>Scope</th><th>Badge</th></tr></thead><tbody>${trs}</tbody></table></div>
 <script type="application/json" id="registry-data">${JSON.stringify(explorerJson(rows)).replace(/</g, "\\u003c")}</script>
 ${adoption}
 <div class="callout"><p>Dated snapshot (${esc(SCAN_DATE)}), engine v${esc(CORE_PKG.version)}. Static analysis only — findings need triage. <a href="../methodology.html">How scoring works</a> · <a href="https://github.com/eulogik/OpenTrustBench/blob/main/docs/STATE-OF-MCP-2026.md">State of MCP report</a>.</p></div>

@@ -11,15 +11,16 @@ can I trust this, what is it allowed to do, and can I prove it.
 - Scans a local directory, GitHub repo, or npm package (`opentrustbench scan <target>`)
 - Runs 8 OWASP-mapped static rules (AT-SEC-001–007, AT-COMP-001)
 - Extracts a permission manifest (shell, network, filesystem, browser, email, DB, human approval)
-- Issues a Trust Card graded A–F (`opentrustbench/trust-card/v1`) with SARIF + Markdown reports
-- Enforces a CI gate (`--fail-on high`); ships a GitHub Action
-- Runs 100% locally: zero telemetry, zero data retention
+- Issues a Trust Card graded A–F, or U where static coverage is insufficient (`opentrustbench/trust-card/v2`) with SARIF + Markdown reports
+- Enforces CI gates (`--fail-on high` for severity; insufficient coverage fails separately, exit code 2)
+- Runs locally with no OpenTrustBench telemetry and no data retention. GitHub-URL scans clone the public repo to a temp directory on your machine; dependency auditing queries the npm registry.
 
 ## Key pages
 
 - Homepage: https://opentrustbench.com/
-- Methodology (rules, scoring, limits): https://opentrustbench.com/methodology.html
-- Registry of 53 scanned MCP servers: https://opentrustbench.com/r/
+- Methodology (rules, scoring, coverage gating, limits): https://opentrustbench.com/methodology.html
+- Registry of 53 scanned servers (50 external targets + 3 self-scans): https://opentrustbench.com/r/
+- Changelog: https://opentrustbench.com/changelog.html
 - State of MCP Permissions report: https://github.com/eulogik/OpenTrustBench/blob/main/docs/STATE-OF-MCP-2026.md
 - FAQ: https://opentrustbench.com/#faq
 - Install: https://opentrustbench.com/#install
@@ -31,8 +32,8 @@ can I trust this, what is it allowed to do, and can I prove it.
 ## Key facts (quotable)
 
 - 8 detection rules mapped to OWASP Agentic Top 10 (ASI) and OWASP LLM Top 10 2025.
-- Trust Card grades: A (90+), B (75+), C (60+), D (40+), F (below 40).
-- Across 53 public MCP servers (Sep 2026): average 70.2 (C); 36% grade D or F; 40% request excessive permission scope.
+- Trust Card grades: A (90+), B (75+), C (60+), D (40+), F (below 40), U (ungraded — no score issued).
+- Snapshot 2026-09-18 across 53 cards: 3 graded, 50 ungraded (49 external + 1 fixture). Ungraded cards are excluded from averages and rankings.
 - The shipped CLI self-scans at A (90/100) with 0 findings.
 - Attack analysis is static-heuristic (no payloads execute); workflow eval is simulated (nothing runs).
 - Trust Cards are evidence input, never a certification or compliance verdict.
@@ -41,4 +42,5 @@ can I trust this, what is it allowed to do, and can I prove it.
 
 - Regex-based static analysis (no AST yet); findings need human triage.
 - Counts may include test/example code inside scanned repos.
+- Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule. Skill instructions and prose are not code-analyzed.
 - Registry pages are dated snapshots refreshed weekly; re-scan before relying on a grade.
