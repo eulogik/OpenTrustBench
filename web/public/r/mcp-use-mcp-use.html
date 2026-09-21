@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>mcp-use__mcp-use — Trust Card (Grade U) · OpenTrustBench</title>
-<meta name="description" content="Static security scan of mcp-use__mcp-use: grade U (Ungraded — insufficient static coverage), 52 findings, scope excessive. Not ranked: insufficient static coverage.">
+<meta name="description" content="Static security scan of mcp-use__mcp-use: grade U (Ungraded — insufficient static coverage), 51 findings, scope excessive. Not ranked: insufficient static coverage.">
 <link rel="canonical" href="https://opentrustbench.com/r/mcp-use-mcp-use.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mcp-use__mcp-use — OpenTrustBench Grade U">
@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"mcp-use__mcp-use — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of mcp-use__mcp-use: 52 findings (22 critical), permission scope excessive.","datePublished":"2026-09-18","dateModified":"2026-09-18","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/mcp-use-mcp-use.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"mcp-use__mcp-use — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of mcp-use__mcp-use: 51 findings (22 critical), permission scope excessive.","datePublished":"2026-09-21","dateModified":"2026-09-21","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/mcp-use-mcp-use.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-09-18">
+<body data-scan="2026-09-21">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -32,13 +32,13 @@
 <script>try{var d=new Date(document.body.dataset.scan);if((Date.now()-d.getTime())/864e5>30){document.getElementById('stale').hidden=false;}}catch(_){}</script>
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>mcp-use__mcp-use <span class="grade ">U</span></h1>
-<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 52 findings (22 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-09-18 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream mcp-use/mcp-use @ 5dd52f4 (2026-09-17)</p>
+<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 51 findings (22 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
+<p class="muted">Scanned 2026-09-21 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream mcp-use/mcp-use @ 5bf924c (2026-09-18)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 1409 analyzed / 2094 discovered files; 369 unsupported source files; 686 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 1413 analyzed / 2097 discovered files; 368 unsupported source files; 685 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,7 +52,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 2094,
+  &quot;discoveredFiles&quot;: 2097,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.claude-plugin/marketplace.json&quot;,
@@ -4493,7 +4493,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4128,
+      &quot;bytes&quot;: 4041,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -4888,7 +4888,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/agent/src/agents/mcp_agent_langchain.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 78963,
+      &quot;bytes&quot;: 79060,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5000,7 +5000,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/agent/src/agents/types.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4538,
+      &quot;bytes&quot;: 4557,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6088,7 +6088,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/agent/tests/stream_events.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12139,
+      &quot;bytes&quot;: 12211,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6105,6 +6105,22 @@
       &quot;path&quot;: &quot;libraries/typescript/packages/agent/tests/stream_events_simple.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 6552,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/agent/tests/unit/agent/max-steps-budget.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3479,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6186,7 +6202,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2406,
+      &quot;bytes&quot;: 2427,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -7333,7 +7349,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/tests/commands/deploy.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 37013,
+      &quot;bytes&quot;: 37157,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8890,7 +8906,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/client/src/transport/base.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 35451,
+      &quot;bytes&quot;: 33801,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8922,7 +8938,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/client/src/transport/http.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 30917,
+      &quot;bytes&quot;: 28242,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8938,7 +8954,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/client/src/transport/stdio.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10265,
+      &quot;bytes&quot;: 10222,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9626,7 +9642,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/client/tests/unit/react/mcp-client-provider-metadata-updates.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11087,
+      &quot;bytes&quot;: 11306,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9931,6 +9947,22 @@
       &quot;path&quot;: &quot;libraries/typescript/packages/client/tests/unit/transport/http-lifecycle.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 5090,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/client/tests/unit/transport/http-progress.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 6714,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10479,7 +10511,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 5828,
+      &quot;bytes&quot;: 5858,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -10865,7 +10897,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/ChatTab.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 60226,
+      &quot;bytes&quot;: 60051,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11009,7 +11041,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/Layout.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 32658,
+      &quot;bytes&quot;: 32812,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11393,7 +11425,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/chat/ChatInputArea.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9085,
+      &quot;bytes&quot;: 9118,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11489,7 +11521,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/chat/ConfigurationDialog.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 33255,
+      &quot;bytes&quot;: 33530,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11919,6 +11951,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/chat/__tests__/providerMeta.test.tsx&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2008,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/chat/__tests__/skill-context.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 8141,
@@ -12225,7 +12273,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/chat/providerMeta.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6969,
+      &quot;bytes&quot;: 7987,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -12369,7 +12417,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/chat/types.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3139,
+      &quot;bytes&quot;: 3207,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -15313,7 +15361,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/utils/__tests__/connectionUpdates.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9698,
+      &quot;bytes&quot;: 12628,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -15362,6 +15410,22 @@
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/utils/__tests__/serverCapabilities.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 4238,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/utils/__tests__/serverDisplayName.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1312,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -15425,7 +15489,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/utils/connectionUpdates.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21309,
+      &quot;bytes&quot;: 21717,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -15601,7 +15665,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/utils/servers.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1607,
+      &quot;bytes&quot;: 1638,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -16001,7 +16065,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/tests/e2e/connection.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 48081,
+      &quot;bytes&quot;: 48868,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -16672,7 +16736,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/auth/better-auth/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 816,
+      &quot;bytes&quot;: 815,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -16840,7 +16904,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/auth/mixed-oauth/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 633,
+      &quot;bytes&quot;: 632,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -17281,7 +17345,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/nextjs/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 574,
+      &quot;bytes&quot;: 573,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -17315,7 +17379,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/nextjs-standalone/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 800,
+      &quot;bytes&quot;: 799,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -18595,7 +18659,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4729,
+      &quot;bytes&quot;: 4738,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -21099,7 +21163,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/pnpm-lock.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 581591,
+      &quot;bytes&quot;: 582482,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -21653,7 +21717,6 @@
     &quot;libraries/python/mcp_use/server/utils/templates/docs.html&quot;,
     &quot;libraries/python/mcp_use/task_managers/.deprecated&quot;,
     &quot;libraries/python/mcp_use/types/.deprecated&quot;,
-    &quot;libraries/typescript/.husky/pre-commit&quot;,
     &quot;libraries/typescript/packages/agent/examples/run-verify.sh&quot;,
     &quot;libraries/typescript/packages/client/examples/browser/react/index.html&quot;,
     &quot;libraries/typescript/packages/client/examples/cli/cli_basic_example.sh&quot;,
@@ -23560,10 +23623,6 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
-      &quot;path&quot;: &quot;libraries/typescript/.husky/pre-commit&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
       &quot;path&quot;: &quot;libraries/typescript/.npmrc&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -24436,8 +24495,8 @@
     &quot;maxFileBytes&quot;: 1048576
   }
 }</pre></details>
-<h2>Fix first (45 critical/high)</h2>
-<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/python/mcp_use/telemetry/telemetry.py:131</code><br><span class="muted">Evidence: </span><code>PROJECT_API_KEY = &quot;phc_lyTtbYwvkdSbrcMQNPiKiiRWrrM1seyKIMjycSvItEI&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">libraries/python/tests/unit/test_code_executor.py:153</code><br><span class="muted">Evidence: </span><code>code = &quot;eval('1 + 1')&quot;</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/cli/src/commands/load-client.ts:241</code><br><span class="muted">Evidence: </span><code>const child = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/client/src/auth/node.ts:602</code><br><span class="muted">Evidence: </span><code>const child = spawn(cmd, args, { stdio: &quot;ignore&quot;, detached: true });</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/typescript/packages/client/src/telemetry/telemetry.ts:50</code><br><span class="muted">Evidence: </span><code>const PROJECT_API_KEY = &quot;phc_lyTtbYwvkdSbrcMQNPiKiiRWrrM1seyKIMjycSvItEI&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">libraries/typescript/packages/client/tests/unit/client/executor-e2b-shim.test.ts:28</code><br><span class="muted">Evidence: </span><code>const run = new Function(&quot;global&quot;, &quot;console&quot;, shim);</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">libraries/typescript/packages/client/tests/unit/client/executor-e2b-shim.test.ts:47</code><br><span class="muted">Evidence: </span><code>expect(() =&gt; new Function(shim)).not.toThrow();</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">libraries/typescript/packages/client/tests/unit/client/executor-e2b-shim.test.ts:62</code><br><span class="muted">Evidence: </span><code>expect(() =&gt; new Function(shim)).not.toThrow();</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">libraries/typescript/packages/client/tests/unit/client/executor-e2b-shim.test.ts:78</code><br><span class="muted">Evidence: </span><code>expect(() =&gt; new Function(shim)).not.toThrow();</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">libraries/typescript/packages/client/tests/unit/inject-openai-file-apis.test.ts:18</code><br><span class="muted">Evidence: </span><code>new Function(script!.textContent!)();</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/typescript/packages/client/tests/unit/transport/stdio-env.test.ts:5</code><br><span class="muted">Evidence: </span><code>const SECRET_KEY = &quot;MCP_USE_STDIO_ENV_LEAK_PROBE&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/fixtures/google-emulate-server.ts:16</code><br><span class="muted">Evidence: </span><code>const STATIC_CLIENT_SECRET = &quot;GOCSPX-mcp-emulate-test-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/scripts/run-python-e2e.mjs:55</code><br><span class="muted">Evidence: </span><code>const proc = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/scripts/run-python-e2e.mjs:81</code><br><span class="muted">Evidence: </span><code>const proc = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/scripts/run-test-matrix.mjs:77</code><br><span class="muted">Evidence: </span><code>const proc = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/scripts/run-test-matrix.mjs:104</code><br><span class="muted">Evidence: </span><code>const proc = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/scripts/run-tunnel-test.mjs:72</code><br><span class="muted">Evidence: </span><code>const proc = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/scripts/run-tunnel-test.mjs:101</code><br><span class="muted">Evidence: </span><code>const proc = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/server/examples/verify-examples.mjs:617</code><br><span class="muted">Evidence: </span><code>const child = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/typescript/packages/server/tests/oauth-direct-providers.test.ts:422</code><br><span class="muted">Evidence: </span><code>const secret = &quot;0123456789abcdef0123456789abcdef&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/typescript/packages/server/tests/oauth-direct-providers.test.ts:505</code><br><span class="muted">Evidence: </span><code>const secret = &quot;0123456789abcdef0123456789abcdef&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/typescript/packages/server/tests/oauth-direct-providers.test.ts:523</code><br><span class="muted">Evidence: </span><code>const secret = &quot;0123456789abcdef0123456789abcdef&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">examples/typescript/excalidraw/src/checkpoint-store.ts:82</code><br><span class="muted">Evidence: </span><code>fs.promises.unlink(path.join(this.dir, f.name)).catch(() =&gt; {})</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">libraries/python/tests/unit/test_client.py:64</code><br><span class="muted">Evidence: </span><code>os.unlink(temp_path)</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">libraries/python/tests/unit/test_client.py:84</code><br><span class="muted">Evidence: </span><code>os.unlink(temp_path)</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">libraries/python/tests/unit/test_client.py:196</code><br><span class="muted">Evidence: </span><code>os.unlink(temp_path)</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">libraries/python/tests/unit/test_config.py:35</code><br><span class="muted">Evidence: </span><code>os.unlink(temp_path)</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/agent/src/llm/providers/google.ts:202</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/agent/src/llm/providers/google.ts:278</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/cli/src/commands/screenshot.ts:732</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/examples/conformance/src/oauth-retry-fetch.ts:142</code><br><span class="muted">Evidence: </span><code>let response = await innerFetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/examples/conformance/src/oauth-retry-fetch.ts:230</code><br><span class="muted">Evidence: </span><code>response = await innerFetch(url, newInit);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">libraries/typescript/packages/client/src/code-mode/executor-e2b.ts:88</code><br><span class="muted">Evidence: </span><code>fs.unlinkSync(resultPath); // Clean up</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/src/telemetry/tel-fetch.ts:5</code><br><span class="muted">Evidence: </span><code>export async function telFetch(url: string, init?: RequestInit): Promise&lt;void&gt; {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/src/telemetry/tel-fetch.ts:7</code><br><span class="muted">Evidence: </span><code>await fetch(url, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/src/transport/http.ts:176</code><br><span class="muted">Evidence: </span><code>return baseFetch(input, { ...init, signal: deadlineSignal });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/src/transport/http.ts:194</code><br><span class="muted">Evidence: </span><code>return await baseFetch(input, { ...init, signal: controller.signal });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/src/transport/http.ts:651</code><br><span class="muted">Evidence: </span><code>const response = await baseFetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/inspector/src/client/auth/manufact-auth.ts:247</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url.toString(), {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/inspector/src/server/proxy/oauth-proxy.ts:728</code><br><span class="muted">Evidence: </span><code>async function safeFetch(url: URL, init: RequestInit): Promise&lt;Response&gt; {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/inspector/src/server/proxy/oauth-proxy.ts:729</code><br><span class="muted">Evidence: </span><code>return fetch(url, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/connection.test.ts:1047</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">libraries/typescript/packages/server/examples/views/excalidraw/src/checkpoint-store.ts:82</code><br><span class="muted">Evidence: </span><code>fs.promises.unlink(path.join(this.dir, f.name)).catch(() =&gt; {})</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/server/tests/oauth-introspection.test.ts:338</code><br><span class="muted">Evidence: </span><code>return fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/scripts/release-channel.mjs:192</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/client/examples/node/auth/oauth-flow.ts:96</code><br><span class="muted">Evidence: </span><code>console.log(&quot;authorization URL:&quot;, url);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/client/examples/node/auth/oauth-flow.ts:122</code><br><span class="muted">Evidence: </span><code>console.log(&quot;OAuth flow complete:&quot;, tokens.token_type, tokens.expires_in);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/inspector/src/client/components/OAuthCallback.tsx:18</code><br><span class="muted">Evidence: </span><code>console.log(&quot;[OAuthCallback] Component mounted, handling authorization...&quot;);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/inspector/src/client/components/OAuthCallback.tsx:24</code><br><span class="muted">Evidence: </span><code>console.log(&quot;[OAuthCallback] Authorization successful&quot;);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/inspector/src/client/hooks/useAutoConnect.ts:389</code><br><span class="muted">Evidence: </span><code>console.log(`[useAutoConnect] Pre-stored OAuth tokens for ${url}`);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/inspector/start-auth-servers.ts:34</code><br><span class="muted">Evidence: </span><code>console.log(&quot;   API Key:        Authorization: Bearer test-api-key-12345&quot;);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/inspector/start-auth-servers.ts:35</code><br><span class="muted">Evidence: </span><code>console.log(&quot;   Custom Header:  X-Custom-Auth: custom-auth-token-xyz&quot;);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr></tbody></table>
+<h2>Fix first (44 critical/high)</h2>
+<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/python/mcp_use/telemetry/telemetry.py:131</code><br><span class="muted">Evidence: </span><code>PROJECT_API_KEY = &quot;phc_lyTtbYwvkdSbrcMQNPiKiiRWrrM1seyKIMjycSvItEI&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">libraries/python/tests/unit/test_code_executor.py:153</code><br><span class="muted">Evidence: </span><code>code = &quot;eval('1 + 1')&quot;</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/cli/src/commands/load-client.ts:241</code><br><span class="muted">Evidence: </span><code>const child = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/client/src/auth/node.ts:602</code><br><span class="muted">Evidence: </span><code>const child = spawn(cmd, args, { stdio: &quot;ignore&quot;, detached: true });</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/typescript/packages/client/src/telemetry/telemetry.ts:50</code><br><span class="muted">Evidence: </span><code>const PROJECT_API_KEY = &quot;phc_lyTtbYwvkdSbrcMQNPiKiiRWrrM1seyKIMjycSvItEI&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">libraries/typescript/packages/client/tests/unit/client/executor-e2b-shim.test.ts:28</code><br><span class="muted">Evidence: </span><code>const run = new Function(&quot;global&quot;, &quot;console&quot;, shim);</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">libraries/typescript/packages/client/tests/unit/client/executor-e2b-shim.test.ts:47</code><br><span class="muted">Evidence: </span><code>expect(() =&gt; new Function(shim)).not.toThrow();</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">libraries/typescript/packages/client/tests/unit/client/executor-e2b-shim.test.ts:62</code><br><span class="muted">Evidence: </span><code>expect(() =&gt; new Function(shim)).not.toThrow();</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">libraries/typescript/packages/client/tests/unit/client/executor-e2b-shim.test.ts:78</code><br><span class="muted">Evidence: </span><code>expect(() =&gt; new Function(shim)).not.toThrow();</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">libraries/typescript/packages/client/tests/unit/inject-openai-file-apis.test.ts:18</code><br><span class="muted">Evidence: </span><code>new Function(script!.textContent!)();</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/typescript/packages/client/tests/unit/transport/stdio-env.test.ts:5</code><br><span class="muted">Evidence: </span><code>const SECRET_KEY = &quot;MCP_USE_STDIO_ENV_LEAK_PROBE&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/fixtures/google-emulate-server.ts:16</code><br><span class="muted">Evidence: </span><code>const STATIC_CLIENT_SECRET = &quot;GOCSPX-mcp-emulate-test-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/scripts/run-python-e2e.mjs:55</code><br><span class="muted">Evidence: </span><code>const proc = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/scripts/run-python-e2e.mjs:81</code><br><span class="muted">Evidence: </span><code>const proc = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/scripts/run-test-matrix.mjs:77</code><br><span class="muted">Evidence: </span><code>const proc = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/scripts/run-test-matrix.mjs:104</code><br><span class="muted">Evidence: </span><code>const proc = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/scripts/run-tunnel-test.mjs:72</code><br><span class="muted">Evidence: </span><code>const proc = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/scripts/run-tunnel-test.mjs:101</code><br><span class="muted">Evidence: </span><code>const proc = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">libraries/typescript/packages/server/examples/verify-examples.mjs:617</code><br><span class="muted">Evidence: </span><code>const child = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/typescript/packages/server/tests/oauth-direct-providers.test.ts:422</code><br><span class="muted">Evidence: </span><code>const secret = &quot;0123456789abcdef0123456789abcdef&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/typescript/packages/server/tests/oauth-direct-providers.test.ts:505</code><br><span class="muted">Evidence: </span><code>const secret = &quot;0123456789abcdef0123456789abcdef&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">libraries/typescript/packages/server/tests/oauth-direct-providers.test.ts:523</code><br><span class="muted">Evidence: </span><code>const secret = &quot;0123456789abcdef0123456789abcdef&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">examples/typescript/excalidraw/src/checkpoint-store.ts:82</code><br><span class="muted">Evidence: </span><code>fs.promises.unlink(path.join(this.dir, f.name)).catch(() =&gt; {})</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">libraries/python/tests/unit/test_client.py:64</code><br><span class="muted">Evidence: </span><code>os.unlink(temp_path)</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">libraries/python/tests/unit/test_client.py:84</code><br><span class="muted">Evidence: </span><code>os.unlink(temp_path)</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">libraries/python/tests/unit/test_client.py:196</code><br><span class="muted">Evidence: </span><code>os.unlink(temp_path)</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">libraries/python/tests/unit/test_config.py:35</code><br><span class="muted">Evidence: </span><code>os.unlink(temp_path)</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/agent/src/llm/providers/google.ts:202</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/agent/src/llm/providers/google.ts:278</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/cli/src/commands/screenshot.ts:732</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/examples/conformance/src/oauth-retry-fetch.ts:142</code><br><span class="muted">Evidence: </span><code>let response = await innerFetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/examples/conformance/src/oauth-retry-fetch.ts:230</code><br><span class="muted">Evidence: </span><code>response = await innerFetch(url, newInit);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">libraries/typescript/packages/client/src/code-mode/executor-e2b.ts:88</code><br><span class="muted">Evidence: </span><code>fs.unlinkSync(resultPath); // Clean up</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/src/telemetry/tel-fetch.ts:5</code><br><span class="muted">Evidence: </span><code>export async function telFetch(url: string, init?: RequestInit): Promise&lt;void&gt; {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/src/telemetry/tel-fetch.ts:7</code><br><span class="muted">Evidence: </span><code>await fetch(url, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/src/transport/http.ts:176</code><br><span class="muted">Evidence: </span><code>return baseFetch(input, { ...init, signal: deadlineSignal });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/client/src/transport/http.ts:194</code><br><span class="muted">Evidence: </span><code>return await baseFetch(input, { ...init, signal: controller.signal });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/inspector/src/client/auth/manufact-auth.ts:247</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url.toString(), {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/inspector/src/server/proxy/oauth-proxy.ts:728</code><br><span class="muted">Evidence: </span><code>async function safeFetch(url: URL, init: RequestInit): Promise&lt;Response&gt; {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/inspector/src/server/proxy/oauth-proxy.ts:729</code><br><span class="muted">Evidence: </span><code>return fetch(url, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/inspector/tests/e2e/connection.test.ts:1066</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">libraries/typescript/packages/server/examples/views/excalidraw/src/checkpoint-store.ts:82</code><br><span class="muted">Evidence: </span><code>fs.promises.unlink(path.join(this.dir, f.name)).catch(() =&gt; {})</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/packages/server/tests/oauth-introspection.test.ts:338</code><br><span class="muted">Evidence: </span><code>return fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">libraries/typescript/scripts/release-channel.mjs:192</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/client/examples/node/auth/oauth-flow.ts:96</code><br><span class="muted">Evidence: </span><code>console.log(&quot;authorization URL:&quot;, url);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/client/examples/node/auth/oauth-flow.ts:122</code><br><span class="muted">Evidence: </span><code>console.log(&quot;OAuth flow complete:&quot;, tokens.token_type, tokens.expires_in);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/inspector/src/client/components/OAuthCallback.tsx:18</code><br><span class="muted">Evidence: </span><code>console.log(&quot;[OAuthCallback] Component mounted, handling authorization...&quot;);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/inspector/src/client/components/OAuthCallback.tsx:24</code><br><span class="muted">Evidence: </span><code>console.log(&quot;[OAuthCallback] Authorization successful&quot;);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/inspector/src/client/hooks/useAutoConnect.ts:389</code><br><span class="muted">Evidence: </span><code>console.log(`[useAutoConnect] Pre-stored OAuth tokens for ${url}`);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/inspector/start-auth-servers.ts:34</code><br><span class="muted">Evidence: </span><code>console.log(&quot;   API Key:        Authorization: Bearer test-api-key-12345&quot;);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">libraries/typescript/packages/inspector/start-auth-servers.ts:35</code><br><span class="muted">Evidence: </span><code>console.log(&quot;   Custom Header:  X-Custom-Auth: custom-auth-token-xyz&quot;);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr></tbody></table>
 <h2>Permissions</h2>
 <p>Scope: <strong>excessive</strong> · Shell: enabled · Network egress: yes · File deletion: enabled · Human approval: none</p>
 <h2>Provenance</h2>

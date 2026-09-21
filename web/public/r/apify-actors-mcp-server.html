@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"apify__actors-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of apify__actors-mcp-server: 5 findings (2 critical), permission scope excessive.","datePublished":"2026-09-18","dateModified":"2026-09-18","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/apify-actors-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"apify__actors-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of apify__actors-mcp-server: 5 findings (2 critical), permission scope excessive.","datePublished":"2026-09-21","dateModified":"2026-09-21","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/apify-actors-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-09-18">
+<body data-scan="2026-09-21">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>apify__actors-mcp-server <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 5 findings (2 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-09-18 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream apify/actors-mcp-server @ 5e58ef3 (2026-09-17)</p>
+<p class="muted">Scanned 2026-09-21 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream apify/actors-mcp-server @ 273de85 (2026-09-21)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present; Symlinks or special files were not examined. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 334 analyzed / 387 discovered files; 8 unsupported source files; 55 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 333 analyzed / 386 discovered files; 8 unsupported source files; 55 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Symlinks or special files were not examined</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -53,7 +53,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 387,
+  &quot;discoveredFiles&quot;: 386,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/bug_report.yml&quot;,
@@ -306,9 +306,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;evals/mcp_agent/claude_agent.ts&quot;,
+      &quot;path&quot;: &quot;evals/agent/claude_agent.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8427,
+      &quot;bytes&quot;: 8593,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -322,9 +322,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;evals/mcp_agent/claude_judge_client.ts&quot;,
+      &quot;path&quot;: &quot;evals/agent/conversation_adapter.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5152,
+      &quot;bytes&quot;: 13433,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -338,9 +338,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;evals/mcp_agent/config.ts&quot;,
+      &quot;path&quot;: &quot;evals/config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3932,
+      &quot;bytes&quot;: 1554,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -354,9 +354,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;evals/mcp_agent/export_dataset.ts&quot;,
+      &quot;path&quot;: &quot;evals/environment.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2700,
+      &quot;bytes&quot;: 2874,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -370,9 +370,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;evals/mcp_agent/langfuse_dataset.ts&quot;,
+      &quot;path&quot;: &quot;evals/judge/claude_client.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9299,
+      &quot;bytes&quot;: 4941,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -386,9 +386,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;evals/mcp_agent/langfuse_experiment.ts&quot;,
+      &quot;path&quot;: &quot;evals/judge/client.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 22764,
+      &quot;bytes&quot;: 1512,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -402,9 +402,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;evals/mcp_agent/langfuse_observations.ts&quot;,
+      &quot;path&quot;: &quot;evals/judge/judge.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9126,
+      &quot;bytes&quot;: 7338,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -418,7 +418,55 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;evals/mcp_agent/langfuse_tracing.ts&quot;,
+      &quot;path&quot;: &quot;evals/judge/openrouter_client.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3216,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/langfuse/dataset.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 9343,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/langfuse/observations.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 9139,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/langfuse/tracing.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 926,
       &quot;nonEmpty&quot;: true,
@@ -434,7 +482,87 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;evals/mcp_agent/llm_client.ts&quot;,
+      &quot;path&quot;: &quot;evals/runner/experiment.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 22787,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/runner/filters.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 918,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/runner/run.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 14284,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/runner/tool_call_mode.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3922,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/scripts/export_dataset.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2699,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/scripts/schedules_fixtures.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 5352,
       &quot;nonEmpty&quot;: true,
@@ -450,153 +578,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;evals/mcp_agent/mcp_agent_judge.ts&quot;,
+      &quot;path&quot;: &quot;evals/scripts/tasks_fixtures.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6165,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;evals/mcp_agent/run_mcp_agent_evals.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13436,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;evals/mcp_agent/schedules_fixtures.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5384,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;evals/mcp_agent/sdk_conversation_adapter.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12657,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;evals/mcp_agent/tasks_fixtures.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3592,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;evals/mcp_agent/tool_call_mode.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3915,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;evals/mcp_agent/types.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1133,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;evals/shared/config.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3113,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;evals/shared/test_case_loader.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1119,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;evals/shared/types.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 447,
+      &quot;bytes&quot;: 3574,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -646,7 +630,7 @@
     {
       &quot;path&quot;: &quot;package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 5213,
+      &quot;bytes&quot;: 5188,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -3369,7 +3353,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/evals.claude_agent.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8610,
+      &quot;bytes&quot;: 8603,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3383,9 +3367,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;tests/unit/evals.claude_judge_client.test.ts&quot;,
+      &quot;path&quot;: &quot;tests/unit/evals.claude_client.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1086,
+      &quot;bytes&quot;: 1076,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3399,7 +3383,39 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;tests/unit/evals.config.test.ts&quot;,
+      &quot;path&quot;: &quot;tests/unit/evals.conversation_adapter.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 12903,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tests/unit/evals.dataset.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 11573,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tests/unit/evals.environment.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 1877,
       &quot;nonEmpty&quot;: true,
@@ -3415,9 +3431,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;tests/unit/evals.langfuse_dataset.test.ts&quot;,
+      &quot;path&quot;: &quot;tests/unit/evals.experiment.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11583,
+      &quot;bytes&quot;: 23778,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3431,9 +3447,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;tests/unit/evals.langfuse_experiment.test.ts&quot;,
+      &quot;path&quot;: &quot;tests/unit/evals.filters.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 23772,
+      &quot;bytes&quot;: 1765,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3447,9 +3463,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;tests/unit/evals.langfuse_observations.test.ts&quot;,
+      &quot;path&quot;: &quot;tests/unit/evals.judge.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10113,
+      &quot;bytes&quot;: 5027,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3463,41 +3479,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;tests/unit/evals.mcp_agent_judge.test.ts&quot;,
+      &quot;path&quot;: &quot;tests/unit/evals.observations.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5028,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;tests/unit/evals.sdk_conversation_adapter.test.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12911,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;tests/unit/evals.test_case_loader.test.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1804,
+      &quot;bytes&quot;: 10095,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3513,7 +3497,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/evals.tool_call_mode.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3236,
+      &quot;bytes&quot;: 3233,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5268,7 +5252,7 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
-      &quot;path&quot;: &quot;evals/mcp_agent/README.md&quot;,
+      &quot;path&quot;: &quot;evals/README.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
