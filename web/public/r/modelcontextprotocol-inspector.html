@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>modelcontextprotocol__inspector — Trust Card (Grade U) · OpenTrustBench</title>
-<meta name="description" content="Static security scan of modelcontextprotocol__inspector: grade U (Ungraded — insufficient static coverage), 69 findings, scope excessive. Not ranked: insufficient static coverage.">
+<meta name="description" content="Static security scan of modelcontextprotocol__inspector: grade U (Ungraded — insufficient static coverage), 74 findings, scope excessive. Not ranked: insufficient static coverage.">
 <link rel="canonical" href="https://opentrustbench.com/r/modelcontextprotocol-inspector.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="modelcontextprotocol__inspector — OpenTrustBench Grade U">
@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"modelcontextprotocol__inspector — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of modelcontextprotocol__inspector: 69 findings (31 critical), permission scope excessive.","datePublished":"2026-09-21","dateModified":"2026-09-21","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/modelcontextprotocol-inspector.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"modelcontextprotocol__inspector — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of modelcontextprotocol__inspector: 74 findings (32 critical), permission scope excessive.","datePublished":"2026-09-28","dateModified":"2026-09-28","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/modelcontextprotocol-inspector.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-09-21">
+<body data-scan="2026-09-28">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -32,13 +32,13 @@
 <script>try{var d=new Date(document.body.dataset.scan);if((Date.now()-d.getTime())/864e5>30){document.getElementById('stale').hidden=false;}}catch(_){}</script>
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>modelcontextprotocol__inspector <span class="grade ">U</span></h1>
-<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 69 findings (31 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-09-21 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/inspector @ 2e90a62 (2026-09-16)</p>
+<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 74 findings (32 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
+<p class="muted">Scanned 2026-09-28 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/inspector @ 1e31c78 (2026-09-23)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 1319 analyzed / 1422 discovered files; 3 unsupported source files; 104 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 1327 analyzed / 1433 discovered files; 3 unsupported source files; 107 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,7 +52,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 1422,
+  &quot;discoveredFiles&quot;: 1433,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.claude/settings.json&quot;,
@@ -121,6 +121,15 @@
       &quot;path&quot;: &quot;.claude/skills/project-structure/evals/evals.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 990,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.claude/skills/security-advisory/evals/evals.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1161,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -779,7 +788,7 @@
     {
       &quot;path&quot;: &quot;clients/cli/package-lock.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 51804,
+      &quot;bytes&quot;: 51829,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -788,7 +797,7 @@
     {
       &quot;path&quot;: &quot;clients/cli/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1447,
+      &quot;bytes&quot;: 1472,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1183,7 +1192,7 @@
     {
       &quot;path&quot;: &quot;clients/launcher/package-lock.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 307,
+      &quot;bytes&quot;: 332,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1192,7 +1201,7 @@
     {
       &quot;path&quot;: &quot;clients/launcher/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 919,
+      &quot;bytes&quot;: 944,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1507,7 +1516,7 @@
     {
       &quot;path&quot;: &quot;clients/tui/__tests__/ToolTestModal.test.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10728,
+      &quot;bytes&quot;: 12091,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1891,7 +1900,7 @@
     {
       &quot;path&quot;: &quot;clients/tui/package-lock.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 149550,
+      &quot;bytes&quot;: 149575,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1900,7 +1909,7 @@
     {
       &quot;path&quot;: &quot;clients/tui/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1446,
+      &quot;bytes&quot;: 1471,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2133,7 +2142,7 @@
     {
       &quot;path&quot;: &quot;clients/tui/src/components/ToolTestModal.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10584,
+      &quot;bytes&quot;: 10928,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2473,7 +2482,7 @@
     {
       &quot;path&quot;: &quot;clients/web/package-lock.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 335511,
+      &quot;bytes&quot;: 335560,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2482,7 +2491,7 @@
     {
       &quot;path&quot;: &quot;clients/web/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 3060,
+      &quot;bytes&quot;: 3105,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2571,7 +2580,7 @@
     {
       &quot;path&quot;: &quot;clients/web/server/resolve-bind-host.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4654,
+      &quot;bytes&quot;: 4894,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2699,7 +2708,7 @@
     {
       &quot;path&quot;: &quot;clients/web/server/web-server-config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 22495,
+      &quot;bytes&quot;: 22677,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4987,7 +4996,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/components/elements/SecretStorageFooter/SecretStorageFooter.test.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10276,
+      &quot;bytes&quot;: 10846,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5003,7 +5012,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/components/elements/SecretStorageFooter/SecretStorageFooter.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13395,
+      &quot;bytes&quot;: 13428,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7675,7 +7684,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/components/groups/SchemaForm/SchemaForm.test.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 124617,
+      &quot;bytes&quot;: 125812,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8043,7 +8052,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/components/groups/ServerSettingsForm/ServerSettingsForm.stories.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8157,
+      &quot;bytes&quot;: 8433,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8059,7 +8068,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/components/groups/ServerSettingsForm/ServerSettingsForm.test.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 60603,
+      &quot;bytes&quot;: 63299,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8075,7 +8084,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/components/groups/ServerSettingsForm/ServerSettingsForm.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 45003,
+      &quot;bytes&quot;: 46479,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8107,7 +8116,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/components/groups/ServerSettingsModal/ServerSettingsModal.test.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 32826,
+      &quot;bytes&quot;: 34059,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8123,7 +8132,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/components/groups/ServerSettingsModal/ServerSettingsModal.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11594,
+      &quot;bytes&quot;: 11971,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11019,7 +11028,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/test/core/auth/oidcDiscoveryCompat.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 22841,
+      &quot;bytes&quot;: 25394,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11131,7 +11140,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/test/core/auth/secret-storage-info.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8000,
+      &quot;bytes&quot;: 8067,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11307,7 +11316,23 @@
     {
       &quot;path&quot;: &quot;clients/web/src/test/core/jsonUtils.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 22492,
+      &quot;bytes&quot;: 22996,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;clients/web/src/test/core/localRefs.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 10263,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11769,9 +11794,41 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;clients/web/src/test/core/mcp/node/notificationHeadersFetch.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 4266,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;clients/web/src/test/core/mcp/node/servers.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 12215,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;clients/web/src/test/core/mcp/node/suppressNotificationStreamFetch.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3868,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11915,7 +11972,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/test/core/mcp/serverList.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 72396,
+      &quot;bytes&quot;: 73648,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -12843,7 +12900,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/test/core/schemaLint.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 26172,
+      &quot;bytes&quot;: 27335,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -12971,7 +13028,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/test/integration/auth/node/file-secret-store.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 59259,
+      &quot;bytes&quot;: 67347,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -13003,7 +13060,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/test/integration/auth/node/secret-store-selection.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 63834,
+      &quot;bytes&quot;: 65364,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -13547,7 +13604,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/test/integration/mcp/inspectorClient-subscriptions-era.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 50450,
+      &quot;bytes&quot;: 52533,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -13883,7 +13940,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/test/integration/mcp/remote/server-extra-coverage.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 58014,
+      &quot;bytes&quot;: 59317,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -14012,6 +14069,22 @@
       &quot;path&quot;: &quot;clients/web/src/test/integration/mcp/skills-strict-configs.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 3669,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;clients/web/src/test/integration/mcp/suppress-notification-stream.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2779,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -14235,7 +14308,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/test/integration/server/web-server-config.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 30021,
+      &quot;bytes&quot;: 30976,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -15067,7 +15140,7 @@
     {
       &quot;path&quot;: &quot;clients/web/src/utils/jsonUtils.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 20186,
+      &quot;bytes&quot;: 20431,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -16248,7 +16321,7 @@
     {
       &quot;path&quot;: &quot;core/auth/node/file-secret-store.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 43445,
+      &quot;bytes&quot;: 49577,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -16344,7 +16417,7 @@
     {
       &quot;path&quot;: &quot;core/auth/node/secret-store-selection.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 42791,
+      &quot;bytes&quot;: 43655,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -16360,7 +16433,7 @@
     {
       &quot;path&quot;: &quot;core/auth/node/secret-store.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 29436,
+      &quot;bytes&quot;: 29491,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -16440,7 +16513,7 @@
     {
       &quot;path&quot;: &quot;core/auth/oidcDiscoveryCompat.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 19898,
+      &quot;bytes&quot;: 20418,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -16568,7 +16641,7 @@
     {
       &quot;path&quot;: &quot;core/auth/secret-storage-info.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10575,
+      &quot;bytes&quot;: 10645,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -16776,7 +16849,23 @@
     {
       &quot;path&quot;: &quot;core/json/jsonUtils.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 17198,
+      &quot;bytes&quot;: 17399,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;core/json/localRefs.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 10725,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -16824,7 +16913,7 @@
     {
       &quot;path&quot;: &quot;core/json/schemaLint.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 24575,
+      &quot;bytes&quot;: 26534,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -17286,6 +17375,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;core/mcp/node/notificationHeadersFetch.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3246,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;core/mcp/node/proxyFetch.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 9757,
@@ -17334,9 +17439,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;core/mcp/node/suppressNotificationStreamFetch.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3033,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;core/mcp/node/transport.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7031,
+      &quot;bytes&quot;: 7914,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -17480,7 +17601,7 @@
     {
       &quot;path&quot;: &quot;core/mcp/remote/node/server.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 131038,
+      &quot;bytes&quot;: 131547,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -17592,7 +17713,7 @@
     {
       &quot;path&quot;: &quot;core/mcp/serverList.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 47838,
+      &quot;bytes&quot;: 48375,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -18072,7 +18193,7 @@
     {
       &quot;path&quot;: &quot;core/mcp/types.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 55148,
+      &quot;bytes&quot;: 56595,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -18625,7 +18746,7 @@
     {
       &quot;path&quot;: &quot;package-lock.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 192639,
+      &quot;bytes&quot;: 192658,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -18634,7 +18755,7 @@
     {
       &quot;path&quot;: &quot;package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 7268,
+      &quot;bytes&quot;: 7287,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -18883,7 +19004,7 @@
     {
       &quot;path&quot;: &quot;scripts/lib/claude-cli.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2693,
+      &quot;bytes&quot;: 3829,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -18899,7 +19020,7 @@
     {
       &quot;path&quot;: &quot;scripts/lib/claude-cli.test.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2558,
+      &quot;bytes&quot;: 3380,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -19411,7 +19532,7 @@
     {
       &quot;path&quot;: &quot;scripts/skill-eval.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 29082,
+      &quot;bytes&quot;: 39545,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -19427,7 +19548,7 @@
     {
       &quot;path&quot;: &quot;scripts/skill-eval.test.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 26908,
+      &quot;bytes&quot;: 37827,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20579,6 +20700,10 @@
       &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
     },
     {
+      &quot;path&quot;: &quot;.claude/skills/security-advisory/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
       &quot;path&quot;: &quot;.claude/skills/test-servers/SKILL.md&quot;,
       &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
     },
@@ -20625,6 +20750,10 @@
     {
       &quot;path&quot;: &quot;Dockerfile&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;LICENSE&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
       &quot;path&quot;: &quot;README.md&quot;,
@@ -20748,6 +20877,10 @@
     },
     {
       &quot;path&quot;: &quot;docs/quality-gate.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/secret-storage.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -20967,12 +21100,12 @@
     &quot;maxFileBytes&quot;: 1048576
   }
 }</pre></details>
-<h2>Fix first (68 critical/high)</h2>
-<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/auth/revocation-e2e.test.ts:41</code><br><span class="muted">Evidence: </span><code>const OTHER_CLIENT_SECRET = &quot;test-2144-other-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/ema-mock-servers.ts:23</code><br><span class="muted">Evidence: </span><code>export const EMA_MOCK_RESOURCE_CLIENT_SECRET = &quot;ema-mock-resource-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-modern-era-oauth.test.ts:54</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-modern-era-oauth&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-direct-mid-session-e2e.test.ts:69</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-direct-mid-session&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-direct-mid-session-e2e.test.ts:146</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-direct-step-up&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:206</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-static-secret-2&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:829</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-connect-no-nav&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:892</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-connect-retry-no-disconnect&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:1437</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-offline-access-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:1507</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-no-offline-access-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:1578</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-inherited-offline-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:1651</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-as-migrate-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-remote-mid-session-e2e.test.ts:130</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-mid-session&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-remote-mid-session-e2e.test.ts:215</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-reconnect-mid-session&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-remote-mid-session-e2e.test.ts:455</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-resume-fallback&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-remote-mid-session-e2e.test.ts:558</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-ambient-interactive&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-remote-mid-session-e2e.test.ts:649</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-ambient-auth&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-remote-storage-e2e.test.ts:270</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-static-secret-reload&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth.test.ts:204</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-auth-fetch-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth.test.ts:437</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-token-injection-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">core/auth/node/file-secret-store.ts:109</code><br><span class="muted">Evidence: </span><code>export const SECRET_KEY_ENV = &quot;MCP_INSPECTOR_SECRET_KEY&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">core/auth/node/secret-store-selection.ts:76</code><br><span class="muted">Evidence: </span><code>export const SECRET_STORE_ENV = &quot;MCP_INSPECTOR_SECRET_STORE&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">core/auth/node/secret-store-selection.ts:79</code><br><span class="muted">Evidence: </span><code>export const SECRET_FILE_ENV = &quot;MCP_INSPECTOR_SECRET_FILE&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">core/mcp/remote/constants.ts:6</code><br><span class="muted">Evidence: </span><code>export const LEGACY_AUTH_TOKEN_ENV = &quot;MCP_PROXY_AUTH_TOKEN&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/lib/announced-child.mjs:79</code><br><span class="muted">Evidence: </span><code>const child = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/lib/claude-cli.mjs:65</code><br><span class="muted">Evidence: </span><code>const res = spawn(command, args, options);</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/lib/npm-scripts.mjs:17</code><br><span class="muted">Evidence: </span><code>while ((m = re.exec(command)) !== null) {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/lib/render-smoke.mjs:143</code><br><span class="muted">Evidence: </span><code>const child = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/sdk-watch.test.mjs:349</code><br><span class="muted">Evidence: </span><code>const tools = /--tools\s+&quot;([^&quot;]*)&quot;/.exec(args)?.[1] ?? &quot;&quot;;</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/sdk-watch.test.mjs:359</code><br><span class="muted">Evidence: </span><code>const allowed = /--allowedTools\s+&quot;([^&quot;]*)&quot;/.exec(args)?.[1] ?? &quot;&quot;;</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/verify-skills-cli.mjs:104</code><br><span class="muted">Evidence: </span><code>const res = spawn(command, winShellArgs(args, platform), {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/cli/__tests__/relogin-revocation.test.ts:172</code><br><span class="muted">Evidence: </span><code>fs.rmSync(path.dirname(catalogPath), { recursive: true, force: true });</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/cli/__tests__/relogin-revocation.test.ts:192</code><br><span class="muted">Evidence: </span><code>fs.rmSync(path.dirname(catalogPath), { recursive: true, force: true });</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/file-lock.test.ts:489</code><br><span class="muted">Evidence: </span><code>fs.rmSync(lockPath, { recursive: true, force: true });</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/storage.test.ts:26</code><br><span class="muted">Evidence: </span><code>await fs.unlink(stateFilePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/storage.test.ts:464</code><br><span class="muted">Evidence: </span><code>await fs.unlink(persistTestPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/storage.test.ts:483</code><br><span class="muted">Evidence: </span><code>await fs.unlink(testStatePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/storage.test.ts:544</code><br><span class="muted">Evidence: </span><code>await fs.unlink(customPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/storage.test.ts:587</code><br><span class="muted">Evidence: </span><code>await fs.unlink(filePath).catch(() =&gt; {});</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/storage.test.ts:624</code><br><span class="muted">Evidence: </span><code>await fs.unlink(customPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:169</code><br><span class="muted">Evidence: </span><code>await expect(timedFetch(url, ENDPOINTS[endpoint].init)).rejects.toThrow(</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:185</code><br><span class="muted">Evidence: </span><code>timedFetch(url, ENDPOINTS[endpoint].init),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:235</code><br><span class="muted">Evidence: </span><code>const res = await fetch(urlFor(started.url, &quot;protected-resource-metadata&quot;));</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:251</code><br><span class="muted">Evidence: </span><code>timedFetch(urlFor(started.url, &quot;token&quot;), ENDPOINTS.token.init),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:263</code><br><span class="muted">Evidence: </span><code>const pending = fetch(urlFor(started.url, &quot;token&quot;), {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:323</code><br><span class="muted">Evidence: </span><code>const pending = fetch(urlFor(started.url, &quot;token&quot;), {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:353</code><br><span class="muted">Evidence: </span><code>timedFetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:443</code><br><span class="muted">Evidence: </span><code>timedFetch(urlFor(started.url, endpoint), ENDPOINTS[endpoint].init),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-ema-e2e.test.ts:79</code><br><span class="muted">Evidence: </span><code>await fs.unlink(oauthTestStatePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-ema-e2e.test.ts:61</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:89</code><br><span class="muted">Evidence: </span><code>await fs.unlink(oauthTestStatePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:1220</code><br><span class="muted">Evidence: </span><code>await fs.unlink(customPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:1239</code><br><span class="muted">Evidence: </span><code>return fetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-fetchFn.test.ts:52</code><br><span class="muted">Evidence: </span><code>await fs.unlink(oauthTestStatePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth.test.ts:50</code><br><span class="muted">Evidence: </span><code>await fs.unlink(oauthTestStatePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-xmcpheader-mirroring.test.ts:66</code><br><span class="muted">Evidence: </span><code>return fetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient.test.ts:4121</code><br><span class="muted">Evidence: </span><code>await fetch(url!, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/oauth-resource-metadata-challenge.test.ts:135</code><br><span class="muted">Evidence: </span><code>return fetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/oauth-resource-metadata-challenge.test.ts:202</code><br><span class="muted">Evidence: </span><code>fetch(input, init),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/mcp/test-server-protected-resource.test.ts:57</code><br><span class="muted">Evidence: </span><code>fs.unlinkSync(invalidPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/server/sandbox-controller.test.ts:225</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/server/sandbox-controller.test.ts:262</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/server/sandbox-controller.test.ts:279</code><br><span class="muted">Evidence: </span><code>const body = await (await fetch(url)).text();</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">core/mcp/fetchTracking.ts:618</code><br><span class="muted">Evidence: </span><code>response = await baseFetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">core/mcp/node/authChallengeFetch.ts:15</code><br><span class="muted">Evidence: </span><code>const response = await baseFetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">core/mcp/node/authChallengeFetch.ts:63</code><br><span class="muted">Evidence: </span><code>const response = await baseFetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">core/storage/store-io.ts:119</code><br><span class="muted">Evidence: </span><code>await fs.unlink(filePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">test-servers/src/test-helpers.ts:185</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url, { headers, signal: controller.signal });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">clients/web/server/web-server-config.ts:234</code><br><span class="muted">Evidence: </span><code>console.log(`   Auth token: ${resolvedToken}\n`);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr></tbody></table>
+<h2>Fix first (73 critical/high)</h2>
+<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/auth/revocation-e2e.test.ts:41</code><br><span class="muted">Evidence: </span><code>const OTHER_CLIENT_SECRET = &quot;test-2144-other-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/ema-mock-servers.ts:23</code><br><span class="muted">Evidence: </span><code>export const EMA_MOCK_RESOURCE_CLIENT_SECRET = &quot;ema-mock-resource-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-modern-era-oauth.test.ts:54</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-modern-era-oauth&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-direct-mid-session-e2e.test.ts:69</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-direct-mid-session&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-direct-mid-session-e2e.test.ts:146</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-direct-step-up&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:206</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-static-secret-2&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:829</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-connect-no-nav&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:892</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-connect-retry-no-disconnect&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:1437</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-offline-access-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:1507</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-no-offline-access-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:1578</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-inherited-offline-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:1651</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-as-migrate-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-remote-mid-session-e2e.test.ts:130</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-mid-session&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-remote-mid-session-e2e.test.ts:215</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-reconnect-mid-session&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-remote-mid-session-e2e.test.ts:455</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-resume-fallback&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-remote-mid-session-e2e.test.ts:558</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-ambient-interactive&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-remote-mid-session-e2e.test.ts:649</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-secret-ambient-auth&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-remote-storage-e2e.test.ts:270</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-static-secret-reload&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth.test.ts:204</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-auth-fetch-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth.test.ts:437</code><br><span class="muted">Evidence: </span><code>const staticClientSecret = &quot;test-token-injection-secret&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">core/auth/node/file-secret-store.ts:114</code><br><span class="muted">Evidence: </span><code>export const SECRET_KEY_ENV = &quot;MCP_INSPECTOR_SECRET_KEY&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">core/auth/node/file-secret-store.ts:123</code><br><span class="muted">Evidence: </span><code>export const SECRET_KEY_FILE_ENV = &quot;MCP_INSPECTOR_SECRET_KEY_FILE&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">core/auth/node/secret-store-selection.ts:76</code><br><span class="muted">Evidence: </span><code>export const SECRET_STORE_ENV = &quot;MCP_INSPECTOR_SECRET_STORE&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">core/auth/node/secret-store-selection.ts:79</code><br><span class="muted">Evidence: </span><code>export const SECRET_FILE_ENV = &quot;MCP_INSPECTOR_SECRET_FILE&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">core/mcp/remote/constants.ts:6</code><br><span class="muted">Evidence: </span><code>export const LEGACY_AUTH_TOKEN_ENV = &quot;MCP_PROXY_AUTH_TOKEN&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/lib/announced-child.mjs:79</code><br><span class="muted">Evidence: </span><code>const child = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/lib/claude-cli.mjs:102</code><br><span class="muted">Evidence: </span><code>const res = spawn(command, args, options);</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/lib/npm-scripts.mjs:17</code><br><span class="muted">Evidence: </span><code>while ((m = re.exec(command)) !== null) {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/lib/render-smoke.mjs:143</code><br><span class="muted">Evidence: </span><code>const child = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/sdk-watch.test.mjs:349</code><br><span class="muted">Evidence: </span><code>const tools = /--tools\s+&quot;([^&quot;]*)&quot;/.exec(args)?.[1] ?? &quot;&quot;;</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/sdk-watch.test.mjs:359</code><br><span class="muted">Evidence: </span><code>const allowed = /--allowedTools\s+&quot;([^&quot;]*)&quot;/.exec(args)?.[1] ?? &quot;&quot;;</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/verify-skills-cli.mjs:104</code><br><span class="muted">Evidence: </span><code>const res = spawn(command, winShellArgs(args, platform), {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/cli/__tests__/relogin-revocation.test.ts:172</code><br><span class="muted">Evidence: </span><code>fs.rmSync(path.dirname(catalogPath), { recursive: true, force: true });</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/cli/__tests__/relogin-revocation.test.ts:192</code><br><span class="muted">Evidence: </span><code>fs.rmSync(path.dirname(catalogPath), { recursive: true, force: true });</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/file-lock.test.ts:489</code><br><span class="muted">Evidence: </span><code>fs.rmSync(lockPath, { recursive: true, force: true });</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/storage.test.ts:26</code><br><span class="muted">Evidence: </span><code>await fs.unlink(stateFilePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/storage.test.ts:464</code><br><span class="muted">Evidence: </span><code>await fs.unlink(persistTestPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/storage.test.ts:483</code><br><span class="muted">Evidence: </span><code>await fs.unlink(testStatePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/storage.test.ts:544</code><br><span class="muted">Evidence: </span><code>await fs.unlink(customPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/storage.test.ts:587</code><br><span class="muted">Evidence: </span><code>await fs.unlink(filePath).catch(() =&gt; {});</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/auth/node/storage.test.ts:624</code><br><span class="muted">Evidence: </span><code>await fs.unlink(customPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:169</code><br><span class="muted">Evidence: </span><code>await expect(timedFetch(url, ENDPOINTS[endpoint].init)).rejects.toThrow(</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:185</code><br><span class="muted">Evidence: </span><code>timedFetch(url, ENDPOINTS[endpoint].init),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:235</code><br><span class="muted">Evidence: </span><code>const res = await fetch(urlFor(started.url, &quot;protected-resource-metadata&quot;));</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:251</code><br><span class="muted">Evidence: </span><code>timedFetch(urlFor(started.url, &quot;token&quot;), ENDPOINTS.token.init),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:263</code><br><span class="muted">Evidence: </span><code>const pending = fetch(urlFor(started.url, &quot;token&quot;), {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:323</code><br><span class="muted">Evidence: </span><code>const pending = fetch(urlFor(started.url, &quot;token&quot;), {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:353</code><br><span class="muted">Evidence: </span><code>timedFetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/auth/oauth-stalled-endpoint.test.ts:443</code><br><span class="muted">Evidence: </span><code>timedFetch(urlFor(started.url, endpoint), ENDPOINTS[endpoint].init),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-ema-e2e.test.ts:79</code><br><span class="muted">Evidence: </span><code>await fs.unlink(oauthTestStatePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-ema-e2e.test.ts:61</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:89</code><br><span class="muted">Evidence: </span><code>await fs.unlink(oauthTestStatePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:1220</code><br><span class="muted">Evidence: </span><code>await fs.unlink(customPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-e2e.test.ts:1239</code><br><span class="muted">Evidence: </span><code>return fetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth-fetchFn.test.ts:52</code><br><span class="muted">Evidence: </span><code>await fs.unlink(oauthTestStatePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-oauth.test.ts:50</code><br><span class="muted">Evidence: </span><code>await fs.unlink(oauthTestStatePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient-xmcpheader-mirroring.test.ts:66</code><br><span class="muted">Evidence: </span><code>return fetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/inspectorClient.test.ts:4121</code><br><span class="muted">Evidence: </span><code>await fetch(url!, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/oauth-resource-metadata-challenge.test.ts:135</code><br><span class="muted">Evidence: </span><code>return fetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/oauth-resource-metadata-challenge.test.ts:202</code><br><span class="muted">Evidence: </span><code>fetch(input, init),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/mcp/suppress-notification-stream.test.ts:53</code><br><span class="muted">Evidence: </span><code>return fetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">clients/web/src/test/integration/mcp/test-server-protected-resource.test.ts:57</code><br><span class="muted">Evidence: </span><code>fs.unlinkSync(invalidPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/server/sandbox-controller.test.ts:225</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/server/sandbox-controller.test.ts:262</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">clients/web/src/test/integration/server/sandbox-controller.test.ts:279</code><br><span class="muted">Evidence: </span><code>const body = await (await fetch(url)).text();</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">core/mcp/fetchTracking.ts:618</code><br><span class="muted">Evidence: </span><code>response = await baseFetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">core/mcp/node/authChallengeFetch.ts:15</code><br><span class="muted">Evidence: </span><code>const response = await baseFetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">core/mcp/node/authChallengeFetch.ts:63</code><br><span class="muted">Evidence: </span><code>const response = await baseFetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">core/mcp/node/notificationHeadersFetch.ts:35</code><br><span class="muted">Evidence: </span><code>if (method === undefined) return baseFetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">core/mcp/node/notificationHeadersFetch.ts:39</code><br><span class="muted">Evidence: </span><code>return baseFetch(input, { ...init, headers });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">core/mcp/node/suppressNotificationStreamFetch.ts:43</code><br><span class="muted">Evidence: </span><code>return baseFetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">core/storage/store-io.ts:119</code><br><span class="muted">Evidence: </span><code>await fs.unlink(filePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">test-servers/src/test-helpers.ts:185</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url, { headers, signal: controller.signal });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">clients/web/server/web-server-config.ts:234</code><br><span class="muted">Evidence: </span><code>console.log(`   Auth token: ${resolvedToken}\n`);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr></tbody></table>
 <h2>Permissions</h2>
 <p>Scope: <strong>excessive</strong> · Shell: enabled · Network egress: yes · File deletion: enabled · Human approval: none</p>
 <h2>Provenance</h2>
-<p>License: MIT · Lockfile: yes · Security policy: yes · Signals: present (documentary, not a safety verdict)</p>
+<p>License: SEE LICENSE IN LICENSE · Lockfile: yes · Security policy: yes · Signals: present (documentary, not a safety verdict)</p>
 <div class="callout"><p><strong>Independently scanned by the OpenTrustBench registry</strong> (not self-reported by the project). Static analysis only — no code executed, findings need human triage, counts may include test/example code. <strong>Static snapshot; re-scan before relying on it:</strong> <code>npx @opentrustbench/cli scan https://github.com/modelcontextprotocol/inspector</code>. Scores move with every upstream commit; pages refresh weekly. <a href="../methodology.html">How scoring works</a>.</p></div>
 </div></main>
 <footer><div class="wrap"><div class="foot-base" style="border-top:none;padding-top:0"><span>© 2026 OpenTrustBench · Apache-2.0 · Built by <a href="https://eulogik.com">Eulogik</a></span><span><a href="../">Home</a> · <a href="./">Registry</a></span></div></div></footer>

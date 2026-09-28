@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"hashicorp__terraform-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of hashicorp__terraform-mcp-server: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-09-21","dateModified":"2026-09-21","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/hashicorp-terraform-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"hashicorp__terraform-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of hashicorp__terraform-mcp-server: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-09-28","dateModified":"2026-09-28","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/hashicorp-terraform-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-09-21">
+<body data-scan="2026-09-28">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>hashicorp__terraform-mcp-server <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope minimal · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-09-21 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream hashicorp/terraform-mcp-server @ e248187 (2026-09-15)</p>
+<p class="muted">Scanned 2026-09-28 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream hashicorp/terraform-mcp-server @ 4d3b9ef (2026-09-25)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: No non-empty supported source analyzed; documentation and data alone provide limited coverage; Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 24 analyzed / 248 discovered files; 206 unsupported source files; 225 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 24 analyzed / 250 discovered files; 208 unsupported source files; 227 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>No non-empty supported source analyzed; documentation and data alone provide limited coverage</li><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -53,7 +53,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 248,
+  &quot;discoveredFiles&quot;: 250,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/config.yml&quot;,
@@ -334,6 +334,7 @@
     &quot;pkg/client/tool_logging_middleware.go&quot;,
     &quot;pkg/client/tool_logging_middleware_test.go&quot;,
     &quot;pkg/client/types.go&quot;,
+    &quot;pkg/instructions/instructions.go&quot;,
     &quot;pkg/mcp-official/client/http_client.go&quot;,
     &quot;pkg/mcp-official/client/session.go&quot;,
     &quot;pkg/mcp-official/client/tfe_client.go&quot;,
@@ -448,6 +449,7 @@
     &quot;pkg/tools/tfe/workspace_variables_test.go&quot;,
     &quot;pkg/tools/tools.go&quot;,
     &quot;pkg/toolsets/filter.go&quot;,
+    &quot;pkg/toolsets/filter_test.go&quot;,
     &quot;pkg/toolsets/mapping.go&quot;,
     &quot;pkg/toolsets/registry.go&quot;,
     &quot;pkg/toolsets/toolsets.go&quot;,
@@ -560,10 +562,6 @@
     {
       &quot;path&quot;: &quot;cmd/terraform-mcp-server/instana_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;cmd/terraform-mcp-server/instructions.md&quot;,
-      &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
       &quot;path&quot;: &quot;cmd/terraform-mcp-server/main.go&quot;,
@@ -780,6 +778,14 @@
     {
       &quot;path&quot;: &quot;pkg/client/types.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/instructions/instructions.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/instructions/instructions.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
       &quot;path&quot;: &quot;pkg/mcp-official/client/http_client.go&quot;,
@@ -1239,6 +1245,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/toolsets/filter.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/toolsets/filter_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
