@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>cloudflare__mcp-server-cloudflare — Trust Card (Grade U) · OpenTrustBench</title>
-<meta name="description" content="Static security scan of cloudflare__mcp-server-cloudflare: grade U (Ungraded — insufficient static coverage), 11 findings, scope excessive. Not ranked: insufficient static coverage.">
+<meta name="description" content="Static security scan of cloudflare__mcp-server-cloudflare: grade U (Ungraded — insufficient static coverage), 15 findings, scope excessive. Not ranked: insufficient static coverage.">
 <link rel="canonical" href="https://opentrustbench.com/r/cloudflare-mcp-server-cloudflare.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cloudflare__mcp-server-cloudflare — OpenTrustBench Grade U">
@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"cloudflare__mcp-server-cloudflare — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of cloudflare__mcp-server-cloudflare: 11 findings (2 critical), permission scope excessive.","datePublished":"2026-09-28","dateModified":"2026-09-28","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/cloudflare-mcp-server-cloudflare.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"cloudflare__mcp-server-cloudflare — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of cloudflare__mcp-server-cloudflare: 15 findings (2 critical), permission scope excessive.","datePublished":"2026-10-05","dateModified":"2026-10-05","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/cloudflare-mcp-server-cloudflare.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-09-28">
+<body data-scan="2026-10-05">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -32,13 +32,13 @@
 <script>try{var d=new Date(document.body.dataset.scan);if((Date.now()-d.getTime())/864e5>30){document.getElementById('stale').hidden=false;}}catch(_){}</script>
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>cloudflare__mcp-server-cloudflare <span class="grade ">U</span></h1>
-<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 11 findings (2 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-09-28 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream cloudflare/mcp-server-cloudflare @ 1d7a16b (2026-09-25)</p>
+<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 15 findings (2 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
+<p class="muted">Scanned 2026-10-05 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream cloudflare/mcp-server-cloudflare @ ab883e5 (2026-10-01)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 296 analyzed / 475 discovered files; 43 unsupported source files; 180 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 298 analyzed / 478 discovered files; 43 unsupported source files; 181 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,7 +52,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 475,
+  &quot;discoveredFiles&quot;: 478,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.changeset/config.json&quot;,
@@ -220,7 +220,7 @@
     {
       &quot;path&quot;: &quot;apps/ai-gateway/src/ai-gateway.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 733,
+      &quot;bytes&quot;: 758,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -366,7 +366,7 @@
     {
       &quot;path&quot;: &quot;apps/auditlogs/src/auditlogs.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1408,
+      &quot;bytes&quot;: 1432,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -480,7 +480,7 @@
     {
       &quot;path&quot;: &quot;apps/autorag/src/autorag.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1814,
+      &quot;bytes&quot;: 1836,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -610,7 +610,7 @@
     {
       &quot;path&quot;: &quot;apps/browser-rendering/src/browser.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 720,
+      &quot;bytes&quot;: 752,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -740,7 +740,7 @@
     {
       &quot;path&quot;: &quot;apps/cloudflare-blog/src/cloudflare-blog.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 400,
+      &quot;bytes&quot;: 430,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -788,7 +788,7 @@
     {
       &quot;path&quot;: &quot;apps/cloudflare-blog/src/tools/blog.tools.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7091,
+      &quot;bytes&quot;: 7178,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -886,7 +886,7 @@
     {
       &quot;path&quot;: &quot;apps/cloudflare-one-casb/src/cf1-casb.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 734,
+      &quot;bytes&quot;: 768,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1032,7 +1032,7 @@
     {
       &quot;path&quot;: &quot;apps/demo-day/src/demo-day.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1447,
+      &quot;bytes&quot;: 1470,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1123,7 +1123,7 @@
     {
       &quot;path&quot;: &quot;apps/dex-analysis/src/dex-analysis.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 805,
+      &quot;bytes&quot;: 832,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1187,7 +1187,7 @@
     {
       &quot;path&quot;: &quot;apps/dex-analysis/src/warp_diag_reader.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3165,
+      &quot;bytes&quot;: 3242,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1253,7 +1253,7 @@
     {
       &quot;path&quot;: &quot;apps/dns-analytics/src/dns-analytics.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1105,
+      &quot;bytes&quot;: 1133,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1367,7 +1367,7 @@
     {
       &quot;path&quot;: &quot;apps/docs-ai-search/src/docs-ai-search.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 726,
+      &quot;bytes&quot;: 755,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1465,7 +1465,7 @@
     {
       &quot;path&quot;: &quot;apps/graphql/src/graphql.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1337,
+      &quot;bytes&quot;: 1359,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1513,7 +1513,7 @@
     {
       &quot;path&quot;: &quot;apps/graphql/src/tools/graphql.tools.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 34733,
+      &quot;bytes&quot;: 34819,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1579,7 +1579,7 @@
     {
       &quot;path&quot;: &quot;apps/logpush/src/logpush.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 874,
+      &quot;bytes&quot;: 896,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1693,7 +1693,7 @@
     {
       &quot;path&quot;: &quot;apps/radar/src/radar.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1942,
+      &quot;bytes&quot;: 1962,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1741,7 +1741,7 @@
     {
       &quot;path&quot;: &quot;apps/radar/src/tools/radar.tools.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 79377,
+      &quot;bytes&quot;: 79453,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1757,7 +1757,7 @@
     {
       &quot;path&quot;: &quot;apps/radar/src/tools/url-scanner.tools.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7698,
+      &quot;bytes&quot;: 7855,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2072,7 +2072,7 @@
     {
       &quot;path&quot;: &quot;apps/sandbox-container/server/sandbox.server.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 919,
+      &quot;bytes&quot;: 951,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2282,7 +2282,7 @@
     {
       &quot;path&quot;: &quot;apps/stack-mcp/src/stack-mcp.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 925,
+      &quot;bytes&quot;: 949,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2460,7 +2460,7 @@
     {
       &quot;path&quot;: &quot;apps/workers-bindings/src/bindings.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1494,
+      &quot;bytes&quot;: 1525,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2750,7 +2750,7 @@
     {
       &quot;path&quot;: &quot;apps/workers-builds/src/workers-builds.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1965,
+      &quot;bytes&quot;: 1994,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2912,7 +2912,7 @@
     {
       &quot;path&quot;: &quot;apps/workers-observability/src/workers-observability.app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1833,
+      &quot;bytes&quot;: 1869,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3247,7 +3247,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp-common/src/cloudflare-api.spec.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3892,
+      &quot;bytes&quot;: 4349,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3263,7 +3263,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp-common/src/cloudflare-api.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1864,
+      &quot;bytes&quot;: 2038,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3279,7 +3279,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp-common/src/cloudflare-auth.spec.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8717,
+      &quot;bytes&quot;: 9091,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3295,7 +3295,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp-common/src/cloudflare-auth.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6339,
+      &quot;bytes&quot;: 6406,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3327,7 +3327,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp-common/src/cloudflare-oauth-handler.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21924,
+      &quot;bytes&quot;: 21991,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3423,7 +3423,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp-common/src/mcp-app.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3539,
+      &quot;bytes&quot;: 3760,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3631,7 +3631,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp-common/src/shared-prompts/docs-ai-search.prompts.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 773,
+      &quot;bytes&quot;: 832,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3663,7 +3663,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp-common/src/shared-tools/docs-ai-search.tools.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5965,
+      &quot;bytes&quot;: 6024,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3808,6 +3808,38 @@
       &quot;path&quot;: &quot;packages/mcp-common/src/transport-migration.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 1401,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/mcp-common/src/user-agent.spec.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2043,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/mcp-common/src/user-agent.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1318,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4362,6 +4394,10 @@
     },
     {
       &quot;path&quot;: &quot;.changeset/direct-docs-ai-search.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;.changeset/outbound-user-agent.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -5069,8 +5105,8 @@
     &quot;maxFileBytes&quot;: 1048576
   }
 }</pre></details>
-<h2>Fix first (11 critical/high)</h2>
-<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">apps/sandbox-container/server/container-tools.ts:68</code><br><span class="muted">Evidence: </span><code>content: [{ type: 'text', text: await getUserContainer(context).container_exec(args) }],</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">apps/sandbox-container/server/userContainer.ts:84</code><br><span class="muted">Evidence: </span><code>async container_exec(params: ExecParams): Promise&lt;string&gt; {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/browser-rendering/src/browser.tools.spec.ts:19</code><br><span class="muted">Evidence: </span><code>new Cloudflare({ apiToken, fetch: (url, init) =&gt; globalThis.fetch(url, init) }),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/cloudflare-blog/src/tools/blog.tools.ts:25</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/demo-day/frontend/script.js:141</code><br><span class="muted">Evidence: </span><code>async function retryFetch(url, options, maxRetries = 3) {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/demo-day/frontend/script.js:144</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, options)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/dex-analysis/src/warp_diag_reader.ts:79</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url, { headers })</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/radar/src/tools/radar.tools.ts:163</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url.toString(), {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/radar/src/tools/url-scanner.tools.ts:39</code><br><span class="muted">Evidence: </span><code>const res = await fetch(url.toString(), {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/sandbox-container/server/containerHelpers.ts:74</code><br><span class="muted">Evidence: </span><code>return fetch(url, request.clone() as Request)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/mcp-common/src/cloudflare-api.ts:51</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
+<h2>Fix first (15 critical/high)</h2>
+<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">apps/sandbox-container/server/container-tools.ts:68</code><br><span class="muted">Evidence: </span><code>content: [{ type: 'text', text: await getUserContainer(context).container_exec(args) }],</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">apps/sandbox-container/server/userContainer.ts:84</code><br><span class="muted">Evidence: </span><code>async container_exec(params: ExecParams): Promise&lt;string&gt; {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/browser-rendering/src/browser.tools.spec.ts:19</code><br><span class="muted">Evidence: </span><code>new Cloudflare({ apiToken, fetch: (url, init) =&gt; globalThis.fetch(url, init) }),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/cloudflare-blog/src/tools/blog.tools.ts:27</code><br><span class="muted">Evidence: </span><code>const res = await cloudflareFetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/demo-day/frontend/script.js:141</code><br><span class="muted">Evidence: </span><code>async function retryFetch(url, options, maxRetries = 3) {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/demo-day/frontend/script.js:144</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, options)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/dex-analysis/src/warp_diag_reader.ts:81</code><br><span class="muted">Evidence: </span><code>const res = await cloudflareFetch(url, { headers })</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/radar/src/tools/radar.tools.ts:164</code><br><span class="muted">Evidence: </span><code>const response = await cloudflareFetch(url.toString(), {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/radar/src/tools/url-scanner.tools.ts:40</code><br><span class="muted">Evidence: </span><code>const res = await cloudflareFetch(url.toString(), {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">apps/sandbox-container/server/containerHelpers.ts:74</code><br><span class="muted">Evidence: </span><code>return fetch(url, request.clone() as Request)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/mcp-common/src/cloudflare-api.ts:53</code><br><span class="muted">Evidence: </span><code>const response = await cloudflareFetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/mcp-common/src/user-agent.spec.ts:25</code><br><span class="muted">Evidence: </span><code>await cloudflareFetch(URL, { headers: { Authorization: 'Bearer token' } })</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/mcp-common/src/user-agent.spec.ts:34</code><br><span class="muted">Evidence: </span><code>await cloudflareFetch(URL, { headers: new Headers({ 'User-Agent': 'something-else' }) })</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/mcp-common/src/user-agent.spec.ts:54</code><br><span class="muted">Evidence: </span><code>await cloudflareFetch(URL)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/mcp-common/src/user-agent.ts:35</code><br><span class="muted">Evidence: </span><code>return fetch(input, { ...init, headers })</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
 <h2>Permissions</h2>
 <p>Scope: <strong>excessive</strong> · Shell: enabled · Network egress: yes · File deletion: none · Human approval: none</p>
 <h2>Provenance</h2>

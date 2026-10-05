@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"github__github-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of github__github-mcp-server: 0 findings (0 critical), permission scope moderate.","datePublished":"2026-09-28","dateModified":"2026-09-28","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/github-github-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"github__github-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of github__github-mcp-server: 0 findings (0 critical), permission scope moderate.","datePublished":"2026-10-05","dateModified":"2026-10-05","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/github-github-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-09-28">
+<body data-scan="2026-10-05">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>github__github-mcp-server <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope moderate · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-09-28 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream github/github-mcp-server @ 85598ba (2026-09-16)</p>
+<p class="muted">Scanned 2026-10-05 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream github/github-mcp-server @ 71ef826 (2026-10-03)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 38 analyzed / 584 discovered files; 269 unsupported source files; 547 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 38 analyzed / 599 discovered files; 277 unsupported source files; 562 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,12 +52,12 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 584,
+  &quot;discoveredFiles&quot;: 599,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/actions/build-ui/action.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1264,
+      &quot;bytes&quot;: 1280,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -66,7 +66,7 @@
     {
       &quot;path&quot;: &quot;.github/dependabot.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 643,
+      &quot;bytes&quot;: 732,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -111,7 +111,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/code-scanning.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 3594,
+      &quot;bytes&quot;: 3610,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -120,7 +120,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/docker-publish.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 5253,
+      &quot;bytes&quot;: 5494,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -174,7 +174,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/lint.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 500,
+      &quot;bytes&quot;: 510,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -210,7 +210,7 @@
     {
       &quot;path&quot;: &quot;.golangci.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 864,
+      &quot;bytes&quot;: 1143,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -273,7 +273,7 @@
     {
       &quot;path&quot;: &quot;ui/package-lock.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 218184,
+      &quot;bytes&quot;: 120270,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -282,7 +282,7 @@
     {
       &quot;path&quot;: &quot;ui/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 935,
+      &quot;bytes&quot;: 1027,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -307,7 +307,7 @@
     {
       &quot;path&quot;: &quot;ui/src/apps/get-me/App.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5598,
+      &quot;bytes&quot;: 6310,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -323,7 +323,7 @@
     {
       &quot;path&quot;: &quot;ui/src/apps/issue-write/App.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 60136,
+      &quot;bytes&quot;: 64067,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -339,7 +339,7 @@
     {
       &quot;path&quot;: &quot;ui/src/apps/pr-edit/App.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 29004,
+      &quot;bytes&quot;: 32211,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -355,7 +355,7 @@
     {
       &quot;path&quot;: &quot;ui/src/apps/pr-write/App.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 31117,
+      &quot;bytes&quot;: 34402,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -371,7 +371,7 @@
     {
       &quot;path&quot;: &quot;ui/src/components/AppProvider.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1900,
+      &quot;bytes&quot;: 2130,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -387,7 +387,7 @@
     {
       &quot;path&quot;: &quot;ui/src/components/FeedbackFooter.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 442,
+      &quot;bytes&quot;: 505,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -403,7 +403,7 @@
     {
       &quot;path&quot;: &quot;ui/src/components/MarkdownEditor.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13740,
+      &quot;bytes&quot;: 12261,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -419,7 +419,7 @@
     {
       &quot;path&quot;: &quot;ui/src/hooks/useMcpApp.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4518,
+      &quot;bytes&quot;: 4512,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -435,7 +435,7 @@
     {
       &quot;path&quot;: &quot;ui/src/lib/toolResult.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1444,
+      &quot;bytes&quot;: 1438,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -484,6 +484,8 @@
     &quot;cmd/github-mcp-server/list_scopes.go&quot;,
     &quot;cmd/github-mcp-server/main.go&quot;,
     &quot;cmd/github-mcp-server/main_test.go&quot;,
+    &quot;cmd/github-mcp-server/version.go&quot;,
+    &quot;cmd/github-mcp-server/version_test.go&quot;,
     &quot;cmd/mcpcurl/main.go&quot;,
     &quot;cmd/mcpcurl/main_test.go&quot;,
     &quot;e2e/e2e_test.go&quot;,
@@ -533,6 +535,8 @@
     &quot;pkg/github/code_quality_test.go&quot;,
     &quot;pkg/github/code_scanning.go&quot;,
     &quot;pkg/github/code_scanning_test.go&quot;,
+    &quot;pkg/github/comment_minimize.go&quot;,
+    &quot;pkg/github/comment_minimize_test.go&quot;,
     &quot;pkg/github/context_tools.go&quot;,
     &quot;pkg/github/context_tools_test.go&quot;,
     &quot;pkg/github/copilot.go&quot;,
@@ -548,6 +552,7 @@
     &quot;pkg/github/deprecated_tool_aliases.go&quot;,
     &quot;pkg/github/discussions.go&quot;,
     &quot;pkg/github/discussions_test.go&quot;,
+    &quot;pkg/github/encoded_schemas_test.go&quot;,
     &quot;pkg/github/feature_flags.go&quot;,
     &quot;pkg/github/feature_flags_benchmark_test.go&quot;,
     &quot;pkg/github/feature_flags_test.go&quot;,
@@ -678,9 +683,12 @@
     &quot;pkg/http/transport/graphql_features_test.go&quot;,
     &quot;pkg/http/transport/helpers_test.go&quot;,
     &quot;pkg/http/transport/user_agent.go&quot;,
+    &quot;pkg/http/transport/user_agent_test.go&quot;,
     &quot;pkg/ifc/ifc.go&quot;,
     &quot;pkg/ifc/ifc_test.go&quot;,
     &quot;pkg/inventory/builder.go&quot;,
+    &quot;pkg/inventory/encoded_schemas.go&quot;,
+    &quot;pkg/inventory/encoded_schemas_test.go&quot;,
     &quot;pkg/inventory/errors.go&quot;,
     &quot;pkg/inventory/features.go&quot;,
     &quot;pkg/inventory/features_test.go&quot;,
@@ -840,6 +848,14 @@
     },
     {
       &quot;path&quot;: &quot;cmd/github-mcp-server/main_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/github-mcp-server/version.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;cmd/github-mcp-server/version_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1339,6 +1355,18 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/hide_issue_comment.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/hide_pull_request_review.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/hide_pull_request_review_comment.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/issue_dependency_read_ff_issue_dependencies.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -1567,6 +1595,18 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/unhide_issue_comment.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/unhide_pull_request_review.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/unhide_pull_request_review_comment.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/unresolve_review_thread.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -1663,6 +1703,14 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/comment_minimize.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/comment_minimize_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/context_tools.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -1720,6 +1768,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/discussions_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/encoded_schemas_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -2243,6 +2295,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/http/transport/user_agent_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/ifc/ifc.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -2252,6 +2308,14 @@
     },
     {
       &quot;path&quot;: &quot;pkg/inventory/builder.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/inventory/encoded_schemas.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/inventory/encoded_schemas_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -2775,7 +2839,7 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
-      &quot;path&quot;: &quot;third-party/github.com/google/go-github/v89/github/LICENSE&quot;,
+      &quot;path&quot;: &quot;third-party/github.com/google/go-github/v92/github/LICENSE&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -2929,6 +2993,10 @@
     {
       &quot;path&quot;: &quot;ui/src/apps/pr-write/index.html&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;ui/src/styles.module.css&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
       &quot;path&quot;: &quot;ui/src/vite-env.d.ts&quot;,

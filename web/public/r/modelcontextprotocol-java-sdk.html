@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"modelcontextprotocol__java-sdk — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of modelcontextprotocol__java-sdk: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-09-28","dateModified":"2026-09-28","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/modelcontextprotocol-java-sdk.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"modelcontextprotocol__java-sdk — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of modelcontextprotocol__java-sdk: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-10-05","dateModified":"2026-10-05","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/modelcontextprotocol-java-sdk.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-09-28">
+<body data-scan="2026-10-05">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>modelcontextprotocol__java-sdk <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope minimal · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-09-28 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/java-sdk @ c7fef64 (2026-09-18)</p>
+<p class="muted">Scanned 2026-10-05 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/java-sdk @ 1cf7903 (2026-09-30)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: No non-empty supported source analyzed; documentation and data alone provide limited coverage; Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 10 analyzed / 308 discovered files; 260 unsupported source files; 299 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 10 analyzed / 318 discovered files; 270 unsupported source files; 309 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>No non-empty supported source analyzed; documentation and data alone provide limited coverage</li><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -53,7 +53,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 308,
+  &quot;discoveredFiles&quot;: 318,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/config.yml&quot;,
@@ -182,7 +182,7 @@
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/client/transport/InvalidSseMessageEndpointException.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/client/transport/MaxSizeExceededException.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/client/transport/McpHttpClientTransportAuthorizationException.java&quot;,
-    &quot;mcp-core/src/main/java/io/modelcontextprotocol/client/transport/ResponseSubscribers.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/client/transport/ResponseBodyHandlers.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/client/transport/ServerParameters.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/client/transport/SseMessageEndpointValidator.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/client/transport/StdioClientTransport.java&quot;,
@@ -277,9 +277,17 @@
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/McpAsyncClientElicitationDefaultsTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/McpAsyncClientTest.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/McpSyncClientTest.java&quot;,
-    &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/BoundedBodySubscriberTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/DefaultSseMessageEndpointValidatorTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/HttpClientHttpTransportLeakTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/HttpClientSseClientTransportConnectTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportSendMessageTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportSseEventTypeTest.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/LargeSseEventDecodingTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/LoopbackMcpHttpServer.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/ResponseBodyHandlersSendAsyncTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/SseEventParserTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/Utf8LineDecoderBoundTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/Utf8LineDecoderTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/customizer/DelegatingMcpAsyncHttpClientRequestCustomizerTest.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/customizer/DelegatingMcpSyncHttpClientRequestCustomizerTest.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/customizer/McpHttpClientAuthorizationErrorHandlerTest.java&quot;,
@@ -295,6 +303,7 @@
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/server/transport/DefaultServerTransportSecurityValidatorTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/server/transport/HttpServletRequestUtilsTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/ArgumentException.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/DefaultMcpTransportSessionTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/JSONRPCRequestMcpValidationTest.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/McpClientSessionTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/McpErrorTest.java&quot;,
@@ -367,8 +376,9 @@
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/HttpClientSseClientTransportTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportBoundedReadTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportDeleteBoundedReadTests.java&quot;,
-    &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportEmptyJsonResponseTest.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportEmptyResponseTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportErrorHandlingTest.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportLargeResponseTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportTest.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/StdioClientTransportTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/common/AsyncServerMcpTransportContextIntegrationTests.java&quot;,
@@ -706,7 +716,7 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/client/transport/ResponseSubscribers.java&quot;,
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/client/transport/ResponseBodyHandlers.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1086,15 +1096,47 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/BoundedBodySubscriberTests.java&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
       &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/DefaultSseMessageEndpointValidatorTests.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/HttpClientHttpTransportLeakTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/HttpClientSseClientTransportConnectTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportSendMessageTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportSseEventTypeTest.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/LargeSseEventDecodingTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/LoopbackMcpHttpServer.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/ResponseBodyHandlersSendAsyncTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/SseEventParserTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/Utf8LineDecoderBoundTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/Utf8LineDecoderTests.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1155,6 +1197,10 @@
     },
     {
       &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/ArgumentException.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/spec/DefaultMcpTransportSessionTests.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1446,11 +1492,15 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportEmptyJsonResponseTest.java&quot;,
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportEmptyResponseTests.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
       &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportErrorHandlingTest.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/client/transport/HttpClientStreamableHttpTransportLargeResponseTests.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {

@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-28",
+  "date": "2026-10-05",
   "displaying": 0,
   "checked": 44,
   "repos": [
@@ -17,7 +17,8 @@
     },
     {
       "repo": "getsentry/sentry-mcp",
-      "badge": false
+      "badge": false,
+      "error": "GitHub API 301 for /repos/getsentry/sentry-mcp/readme"
     },
     {
       "repo": "stripe/agent-toolkit",
