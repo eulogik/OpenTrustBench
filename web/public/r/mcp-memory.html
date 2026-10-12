@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>mcp-memory — Trust Card (Grade U) · OpenTrustBench</title>
-<meta name="description" content="Static security scan of mcp-memory: grade U (Ungraded — insufficient static coverage), 5 findings, scope broad. Not ranked: insufficient static coverage.">
+<meta name="description" content="Static security scan of mcp-memory: grade U (Ungraded — insufficient static coverage), 11 findings, scope excessive. Not ranked: insufficient static coverage.">
 <link rel="canonical" href="https://opentrustbench.com/r/mcp-memory.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mcp-memory — OpenTrustBench Grade U">
@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"mcp-memory — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of mcp-memory: 5 findings (0 critical), permission scope broad.","datePublished":"2026-10-05","dateModified":"2026-10-05","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/mcp-memory.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"mcp-memory — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of mcp-memory: 11 findings (0 critical), permission scope excessive.","datePublished":"2026-10-12","dateModified":"2026-10-12","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/mcp-memory.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-05">
+<body data-scan="2026-10-12">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -32,13 +32,13 @@
 <script>try{var d=new Date(document.body.dataset.scan);if((Date.now()-d.getTime())/864e5>30){document.getElementById('stale').hidden=false;}}catch(_){}</script>
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>mcp-memory <span class="grade ">U</span></h1>
-<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 5 findings (0 critical) · scope broad · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-05 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/servers @ 5abed86 (2026-10-04)</p>
+<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 11 findings (0 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
+<p class="muted">Scanned 2026-10-12 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/servers @ bbb701e (2026-10-11)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 12 analyzed / 14 discovered files; 1 unsupported source files; 2 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 18 analyzed / 21 discovered files; 1 unsupported source files; 3 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,12 +52,12 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 14,
+  &quot;discoveredFiles&quot;: 21,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;__tests__/atomic-save.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5040,
+      &quot;bytes&quot;: 5358,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -71,9 +71,41 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;__tests__/delete-reporting.test.ts&quot;,
+      &quot;path&quot;: &quot;__tests__/create-reporting.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3648,
+      &quot;bytes&quot;: 2990,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;__tests__/entry-point.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3903,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;__tests__/file-lock.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 11924,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -89,7 +121,23 @@
     {
       &quot;path&quot;: &quot;__tests__/file-path.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6352,
+      &quot;bytes&quot;: 7296,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;__tests__/helpers.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2812,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -105,7 +153,23 @@
     {
       &quot;path&quot;: &quot;__tests__/knowledge-graph.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 30055,
+      &quot;bytes&quot;: 32291,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;__tests__/persistence.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 15216,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -121,23 +185,7 @@
     {
       &quot;path&quot;: &quot;__tests__/resource.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3701,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;__tests__/search-nodes-schema.test.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1032,
+      &quot;bytes&quot;: 8080,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -153,7 +201,39 @@
     {
       &quot;path&quot;: &quot;__tests__/server-version.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1017,
+      &quot;bytes&quot;: 2207,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;__tests__/stdio-smoke.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2431,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;__tests__/tools.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 29949,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -169,7 +249,7 @@
     {
       &quot;path&quot;: &quot;index.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 25306,
+      &quot;bytes&quot;: 40585,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -185,7 +265,7 @@
     {
       &quot;path&quot;: &quot;package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1073,
+      &quot;bytes&quot;: 1515,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -194,7 +274,16 @@
     {
       &quot;path&quot;: &quot;tsconfig.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 209,
+      &quot;bytes&quot;: 232,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tsconfig.test.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 546,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -203,7 +292,7 @@
     {
       &quot;path&quot;: &quot;version.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 787,
+      &quot;bytes&quot;: 970,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -219,7 +308,7 @@
     {
       &quot;path&quot;: &quot;vitest.config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 307,
+      &quot;bytes&quot;: 697,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -238,6 +327,10 @@
   ],
   &quot;excludedFiles&quot;: [
     {
+      &quot;path&quot;: &quot;CHANGELOG.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;Dockerfile&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -254,10 +347,10 @@
     &quot;maxFileBytes&quot;: 1048576
   }
 }</pre></details>
-<h2>Fix first (5 critical/high)</h2>
-<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">__tests__/delete-reporting.test.ts:35</code><br><span class="muted">Evidence: </span><code>await fs.unlink(testFilePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">__tests__/file-path.test.ts:32</code><br><span class="muted">Evidence: </span><code>await fs.unlink(oldMemoryPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">__tests__/file-path.test.ts:37</code><br><span class="muted">Evidence: </span><code>await fs.unlink(newMemoryPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">__tests__/knowledge-graph.test.ts:23</code><br><span class="muted">Evidence: </span><code>await fs.unlink(testFilePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">index.ts:197</code><br><span class="muted">Evidence: </span><code>await fs.unlink(tempFilePath).catch(() =&gt; {});</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr></tbody></table>
+<h2>Fix first (11 critical/high)</h2>
+<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">__tests__/create-reporting.test.ts:38</code><br><span class="muted">Evidence: </span><code>await fs.unlink(testFilePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">__tests__/file-lock.test.ts:168</code><br><span class="muted">Evidence: </span><code>await fs.unlink(lockPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">__tests__/file-lock.test.ts:222</code><br><span class="muted">Evidence: </span><code>onceOnOpen(lockPath, &quot;r&quot;, () =&gt; fs.unlink(lockPath));</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">__tests__/file-lock.test.ts:285</code><br><span class="muted">Evidence: </span><code>await fs.unlink(lockPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">__tests__/knowledge-graph.test.ts:23</code><br><span class="muted">Evidence: </span><code>await fs.unlink(testFilePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">index.ts:214</code><br><span class="muted">Evidence: </span><code>await fs.unlink(breakerPath).catch(ignoreError);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">index.ts:224</code><br><span class="muted">Evidence: </span><code>await fs.unlink(lockPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">index.ts:227</code><br><span class="muted">Evidence: </span><code>await fs.unlink(breakerPath).catch(ignoreError);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">index.ts:267</code><br><span class="muted">Evidence: </span><code>await fs.unlink(lockPath).catch(ignoreError);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">index.ts:319</code><br><span class="muted">Evidence: </span><code>await fs.unlink(lockPath).catch(ignoreError);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">index.ts:512</code><br><span class="muted">Evidence: </span><code>await fs.unlink(tempFilePath).catch(() =&gt; {});</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr></tbody></table>
 <h2>Permissions</h2>
-<p>Scope: <strong>broad</strong> · Shell: disabled · Network egress: no · File deletion: enabled · Human approval: none</p>
+<p>Scope: <strong>excessive</strong> · Shell: enabled · Network egress: no · File deletion: enabled · Human approval: none</p>
 <h2>Provenance</h2>
 <p>License: SEE LICENSE IN LICENSE · Lockfile: no · Security policy: no · Signals: unverified origin</p>
 <div class="callout"><p><strong>Independently scanned by the OpenTrustBench registry</strong> (not self-reported by the project). Static analysis only — no code executed, findings need human triage, counts may include test/example code. <strong>Static snapshot; re-scan before relying on it:</strong> <code>npx @opentrustbench/cli scan https://github.com/modelcontextprotocol/servers/tree/main/src/memory</code>. Scores move with every upstream commit; pages refresh weekly. <a href="../methodology.html">How scoring works</a>.</p></div>

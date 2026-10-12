@@ -1,7 +1,7 @@
 # State of MCP Permissions — September 2026
 
 50 popular public MCP servers and SDKs scanned with **OpenTrustBench v0.1.0**
-(8-rule static suite, OWASP-mapped). Shallow clones at HEAD on 2026-09-09; re-scanned 2026-10-05 with v0.1.0 string-literal permission handling.
+(8-rule static suite, OWASP-mapped). Shallow clones at HEAD on 2026-09-09; re-scanned 2026-10-12 with v0.1.0 string-literal permission handling.
 Methodology and target list: `scripts/seed-registry.mjs` (resumable, all work in `/tmp`).
 
 Browse all 50 cards: <https://www.opentrustbench.com/r/>
@@ -16,9 +16,9 @@ Browse all 50 cards: <https://www.opentrustbench.com/r/>
 | Self-scans / fixtures (excluded) | 3 |
 | Average Trust Score (graded external only) | **96.0 / 100** |
 | Graded D or F | **0 / 1 (0%)** |
-| Total findings (all external targets) | 457 (159 critical) |
+| Total findings (all external targets) | 484 (161 critical) |
 | Excessive permission scope | 20 / 50 |
-| Minimal scope | 16 / 50 |
+| Minimal scope | 14 / 50 |
 
 External grade distribution: A 1 · B 0 · C 0 · D 0 · F 0 · U 49. U means insufficient static coverage, not zero; excluded from averages and rankings.
 

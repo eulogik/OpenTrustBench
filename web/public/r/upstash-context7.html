@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>upstash__context7 — Trust Card (Grade U) · OpenTrustBench</title>
-<meta name="description" content="Static security scan of upstash__context7: grade U (Ungraded — insufficient static coverage), 14 findings, scope excessive. Not ranked: insufficient static coverage.">
+<meta name="description" content="Static security scan of upstash__context7: grade U (Ungraded — insufficient static coverage), 15 findings, scope excessive. Not ranked: insufficient static coverage.">
 <link rel="canonical" href="https://opentrustbench.com/r/upstash-context7.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="upstash__context7 — OpenTrustBench Grade U">
@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"upstash__context7 — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of upstash__context7: 14 findings (8 critical), permission scope excessive.","datePublished":"2026-10-05","dateModified":"2026-10-05","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/upstash-context7.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"upstash__context7 — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of upstash__context7: 15 findings (9 critical), permission scope excessive.","datePublished":"2026-10-12","dateModified":"2026-10-12","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/upstash-context7.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-05">
+<body data-scan="2026-10-12">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -32,13 +32,13 @@
 <script>try{var d=new Date(document.body.dataset.scan);if((Date.now()-d.getTime())/864e5>30){document.getElementById('stale').hidden=false;}}catch(_){}</script>
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>upstash__context7 <span class="grade ">U</span></h1>
-<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 14 findings (8 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-05 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream upstash/context7 @ f2eef4f (2026-10-05)</p>
+<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 15 findings (9 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
+<p class="muted">Scanned 2026-10-12 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream upstash/context7 @ 33414e6 (2026-10-12)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 196 analyzed / 502 discovered files; 124 unsupported source files; 307 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 213 analyzed / 523 discovered files; 124 unsupported source files; 311 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,7 +52,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 502,
+  &quot;discoveredFiles&quot;: 523,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.agents/plugins/marketplace.json&quot;,
@@ -76,6 +76,15 @@
       &quot;path&quot;: &quot;.claude-plugin/marketplace.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 429,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.cursor-plugin/marketplace.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 425,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -111,7 +120,7 @@
     {
       &quot;path&quot;: &quot;.github/dependabot.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 362,
+      &quot;bytes&quot;: 292,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -147,7 +156,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/mcp-registry.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 3260,
+      &quot;bytes&quot;: 3593,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -156,7 +165,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/release.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4055,
+      &quot;bytes&quot;: 4025,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -165,7 +174,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/test.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1931,
+      &quot;bytes&quot;: 2047,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -235,7 +244,7 @@
     {
       &quot;path&quot;: &quot;package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1936,
+      &quot;bytes&quot;: 1946,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -260,7 +269,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1648,
+      &quot;bytes&quot;: 1718,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -347,6 +356,24 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;packages/cli/src/__tests__/fixtures/cursor/marketplace.schema.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 3987,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/cli/src/__tests__/fixtures/cursor/plugin.schema.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 6022,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;packages/cli/src/__tests__/github.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 5666,
@@ -397,7 +424,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/__tests__/plugin-manifests.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1095,
+      &quot;bytes&quot;: 11310,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -413,7 +440,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/__tests__/remove.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16025,
+      &quot;bytes&quot;: 17170,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -589,7 +616,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/commands/docs.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7303,
+      &quot;bytes&quot;: 7566,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -621,7 +648,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/commands/remove.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 15273,
+      &quot;bytes&quot;: 15775,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -637,7 +664,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/commands/setup.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 20526,
+      &quot;bytes&quot;: 20304,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -717,7 +744,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/setup/agents.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13293,
+      &quot;bytes&quot;: 13289,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -781,7 +808,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/setup/templates.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6535,
+      &quot;bytes&quot;: 7166,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -829,7 +856,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/utils/api.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10295,
+      &quot;bytes&quot;: 10393,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -973,7 +1000,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/utils/prompts.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4441,
+      &quot;bytes&quot;: 4497,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1053,7 +1080,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/utils/update-check.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8427,
+      &quot;bytes&quot;: 8413,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1078,7 +1105,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/tsup.config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 352,
+      &quot;bytes&quot;: 618,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1135,7 +1162,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2508,
+      &quot;bytes&quot;: 2515,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1160,7 +1187,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp/schema/context7.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4345,
+      &quot;bytes&quot;: 4522,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1178,7 +1205,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp/src/index.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 28507,
+      &quot;bytes&quot;: 30418,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1194,7 +1221,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp/src/lib/api.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6954,
+      &quot;bytes&quot;: 8068,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1224,9 +1251,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;packages/mcp/src/lib/auth-lifecycle-telemetry.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1990,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;packages/mcp/src/lib/constants.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1803,
+      &quot;bytes&quot;: 3035,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1258,7 +1301,23 @@
     {
       &quot;path&quot;: &quot;packages/mcp/src/lib/jwt.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4037,
+      &quot;bytes&quot;: 7221,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/mcp/src/lib/log-throttle.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1918,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1288,6 +1347,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;packages/mcp/src/lib/mcp-http-auth.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 7213,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;packages/mcp/src/lib/mcp-operation-scope.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 771,
@@ -1304,9 +1379,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;packages/mcp/src/lib/mcp-route.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 331,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;packages/mcp/src/lib/mcp-subscription-telemetry.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 20172,
+      &quot;bytes&quot;: 19975,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1322,7 +1413,39 @@
     {
       &quot;path&quot;: &quot;packages/mcp/src/lib/mcp-telemetry.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 24996,
+      &quot;bytes&quot;: 25010,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/mcp/src/lib/oauth-audience.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3995,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/mcp/src/lib/oauth-token-validation.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 6887,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1339,22 +1462,6 @@
       &quot;path&quot;: &quot;packages/mcp/src/lib/process-shutdown.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 2568,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;packages/mcp/src/lib/subscriptions.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 574,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1386,7 +1493,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp/src/lib/telemetry-contracts.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 476,
+      &quot;bytes&quot;: 2016,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1418,7 +1525,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp/src/lib/telemetry-runtime.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4044,
+      &quot;bytes&quot;: 4396,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1434,7 +1541,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp/src/lib/telemetry.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8259,
+      &quot;bytes&quot;: 9574,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1466,7 +1573,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp/src/lib/types.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1168,
+      &quot;bytes&quot;: 1268,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1512,9 +1619,57 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;packages/mcp/test/auth-lifecycle-telemetry.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2852,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/mcp/test/auth-telemetry.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2726,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;packages/mcp/test/certificate.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 1688,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/mcp/test/clerk-oauth-jwt.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 13778,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1562,7 +1717,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp/test/integration.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 29381,
+      &quot;bytes&quot;: 46605,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1578,7 +1733,39 @@
     {
       &quot;path&quot;: &quot;packages/mcp/test/jwt.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11719,
+      &quot;bytes&quot;: 13043,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/mcp/test/log-throttle.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1832,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/mcp/test/mcp-http-auth.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 9246,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1594,7 +1781,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp/test/mcp-subscription-telemetry.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 24484,
+      &quot;bytes&quot;: 25761,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1624,6 +1811,38 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;packages/mcp/test/oauth-audience.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3677,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/mcp/test/oauth-token-validation.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 7923,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;packages/mcp/test/stdio-shutdown.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 3674,
@@ -1640,25 +1859,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;packages/mcp/test/subscriptions.test.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 892,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
       &quot;path&quot;: &quot;packages/mcp/test/telemetry-disabled.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1936,
+      &quot;bytes&quot;: 2331,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1674,7 +1877,7 @@
     {
       &quot;path&quot;: &quot;packages/mcp/test/telemetry.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7531,
+      &quot;bytes&quot;: 7643,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1740,7 +1943,7 @@
     {
       &quot;path&quot;: &quot;packages/opencode/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1396,
+      &quot;bytes&quot;: 1401,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1774,7 +1977,7 @@
     {
       &quot;path&quot;: &quot;packages/opencode/tsup.config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 222,
+      &quot;bytes&quot;: 488,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1950,7 +2153,7 @@
     {
       &quot;path&quot;: &quot;packages/pi/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1567,
+      &quot;bytes&quot;: 1572,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1959,7 +2162,7 @@
     {
       &quot;path&quot;: &quot;packages/pi/tsconfig.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 542,
+      &quot;bytes&quot;: 206,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2000,7 +2203,7 @@
     {
       &quot;path&quot;: &quot;packages/sdk/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1292,
+      &quot;bytes&quot;: 1300,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2057,7 +2260,7 @@
     {
       &quot;path&quot;: &quot;packages/sdk/src/client.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5943,
+      &quot;bytes&quot;: 5939,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2281,7 +2484,7 @@
     {
       &quot;path&quot;: &quot;packages/sdk/src/http/abort.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2894,
+      &quot;bytes&quot;: 3575,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2297,7 +2500,7 @@
     {
       &quot;path&quot;: &quot;packages/sdk/src/http/index.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14196,
+      &quot;bytes&quot;: 17645,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2313,7 +2516,7 @@
     {
       &quot;path&quot;: &quot;packages/sdk/src/http/index.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6567,
+      &quot;bytes&quot;: 6745,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2361,7 +2564,7 @@
     {
       &quot;path&quot;: &quot;packages/sdk/src/http/types.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2906,
+      &quot;bytes&quot;: 2892,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2409,7 +2612,7 @@
     {
       &quot;path&quot;: &quot;packages/sdk/tsconfig.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 746,
+      &quot;bytes&quot;: 437,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2418,7 +2621,7 @@
     {
       &quot;path&quot;: &quot;packages/sdk/tsup.config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 156,
+      &quot;bytes&quot;: 422,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2482,7 +2685,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-ai-sdk/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1570,
+      &quot;bytes&quot;: 1578,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2651,7 +2854,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-ai-sdk/tsconfig.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 724,
+      &quot;bytes&quot;: 363,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2660,7 +2863,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-ai-sdk/tsup.config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 395,
+      &quot;bytes&quot;: 661,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2702,6 +2905,24 @@
       &quot;path&quot;: &quot;plugins/agent-plugins/context7/plugin.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 578,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;plugins/antigravity/context7/mcp_config.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 100,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;plugins/antigravity/context7/plugin.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 771,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2771,9 +2992,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;plugins/cursor/context7/.cursor/plugin.json&quot;,
+      &quot;path&quot;: &quot;plugins/cursor/context7/.cursor-plugin/plugin.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 529,
+      &quot;bytes&quot;: 759,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2782,7 +3003,7 @@
     {
       &quot;path&quot;: &quot;plugins/cursor/context7/mcp.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 72,
+      &quot;bytes&quot;: 122,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2791,7 +3012,7 @@
     {
       &quot;path&quot;: &quot;pnpm-lock.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 271043,
+      &quot;bytes&quot;: 253462,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2800,7 +3021,7 @@
     {
       &quot;path&quot;: &quot;pnpm-workspace.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 154,
+      &quot;bytes&quot;: 720,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2826,6 +3047,15 @@
       &quot;path&quot;: &quot;server.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 1268,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tsconfig.bundler.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 824,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -4097,6 +4327,18 @@
       &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
     },
     {
+      &quot;path&quot;: &quot;plugins/antigravity/context7/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;plugins/antigravity/context7/assets/logo.svg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;plugins/antigravity/context7/skills/context7-mcp/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
       &quot;path&quot;: &quot;plugins/claude/context7/README.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -4129,11 +4371,19 @@
       &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
     },
     {
+      &quot;path&quot;: &quot;plugins/cursor/context7/LICENSE&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;plugins/cursor/context7/README.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
       &quot;path&quot;: &quot;plugins/cursor/context7/agents/docs-researcher.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;plugins/cursor/context7/assets/logo.svg&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -4185,10 +4435,6 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
-      &quot;path&quot;: &quot;skills/context7-cli/references/skills.md&quot;,
-      &quot;reason&quot;: &quot;outside-rule-scope&quot;
-    },
-    {
       &quot;path&quot;: &quot;skills/context7-mcp/SKILL.md&quot;,
       &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
     },
@@ -4205,8 +4451,8 @@
     &quot;maxFileBytes&quot;: 1048576
   }
 }</pre></details>
-<h2>Fix first (14 critical/high)</h2>
-<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/cli/src/commands/upgrade.ts:35</code><br><span class="muted">Evidence: </span><code>const child = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">packages/mcp/test/integration.test.ts:339</code><br><span class="muted">Evidence: </span><code>const apiKey = &quot;ctx7sk-advertised-header-test&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/sdk/src/commands/get-context/index.test.ts:48</code><br><span class="muted">Evidence: </span><code>await expect(command.exec(requesterWith(&quot;documentation text&quot;))).resolves.toBe(</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/sdk/src/commands/search/index.test.ts:33</code><br><span class="muted">Evidence: </span><code>await expect(command.exec(requesterWith(response))).resolves.toEqual(response);</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/sdk/src/commands/search/index.test.ts:39</code><br><span class="muted">Evidence: </span><code>await expect(command.exec(requesterWith(&quot;documentation text&quot;))).resolves.toBe(</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/sdk/src/commands/search-library/index.test.ts:24</code><br><span class="muted">Evidence: </span><code>await expect(command.exec(requesterWith(apiResult))).resolves.toEqual([</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/sdk/src/commands/search-library/index.test.ts:42</code><br><span class="muted">Evidence: </span><code>const result = await command.exec(requesterWith(apiResult));</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/sdk/src/commands/search-library/index.test.ts:51</code><br><span class="muted">Evidence: </span><code>const error = await command.exec(requesterWith(undefined)).catch((e) =&gt; e);</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/cli/src/utils/auth.ts:215</code><br><span class="muted">Evidence: </span><code>return await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/mcp/src/lib/api.ts:134</code><br><span class="muted">Evidence: </span><code>() =&gt; fetch(url, { headers, signal: abortSignal }),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/mcp/src/lib/api.ts:174</code><br><span class="muted">Evidence: </span><code>() =&gt; fetch(url, { headers, signal: abortSignal }),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/pi/lib/api.ts:43</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, { headers: authHeaders() });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/pi/lib/api.ts:55</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, { headers: authHeaders() });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/sdk/src/http/index.ts:132</code><br><span class="muted">Evidence: </span><code>response = await this.fetch(url, { ...init, headers });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
+<h2>Fix first (15 critical/high)</h2>
+<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/cli/src/commands/upgrade.ts:35</code><br><span class="muted">Evidence: </span><code>const child = spawn(command, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">packages/mcp/test/integration.test.ts:445</code><br><span class="muted">Evidence: </span><code>const apiKey = &quot;ctx7sk-advertised-header-test&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/mcp/test/integration.test.ts:95</code><br><span class="muted">Evidence: </span><code>const bearer = /^Bearer (.+)$/.exec(req.headers.authorization ?? &quot;&quot;)?.[1] ?? &quot;&quot;;</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/sdk/src/commands/get-context/index.test.ts:48</code><br><span class="muted">Evidence: </span><code>await expect(command.exec(requesterWith(&quot;documentation text&quot;))).resolves.toBe(</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/sdk/src/commands/search/index.test.ts:33</code><br><span class="muted">Evidence: </span><code>await expect(command.exec(requesterWith(response))).resolves.toEqual(response);</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/sdk/src/commands/search/index.test.ts:39</code><br><span class="muted">Evidence: </span><code>await expect(command.exec(requesterWith(&quot;documentation text&quot;))).resolves.toBe(</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/sdk/src/commands/search-library/index.test.ts:24</code><br><span class="muted">Evidence: </span><code>await expect(command.exec(requesterWith(apiResult))).resolves.toEqual([</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/sdk/src/commands/search-library/index.test.ts:42</code><br><span class="muted">Evidence: </span><code>const result = await command.exec(requesterWith(apiResult));</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/sdk/src/commands/search-library/index.test.ts:51</code><br><span class="muted">Evidence: </span><code>const error = await command.exec(requesterWith(undefined)).catch((e) =&gt; e);</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/cli/src/utils/auth.ts:215</code><br><span class="muted">Evidence: </span><code>return await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/mcp/src/lib/api.ts:159</code><br><span class="muted">Evidence: </span><code>() =&gt; fetch(url, { headers, signal: abortSignal }),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/mcp/src/lib/api.ts:200</code><br><span class="muted">Evidence: </span><code>() =&gt; fetch(url, { headers, signal: abortSignal }),</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/pi/lib/api.ts:43</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, { headers: authHeaders() });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/pi/lib/api.ts:55</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, { headers: authHeaders() });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/sdk/src/http/index.ts:136</code><br><span class="muted">Evidence: </span><code>response = await this.fetch(url, { ...init, headers });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
 <h2>Permissions</h2>
 <p>Scope: <strong>excessive</strong> · Shell: enabled · Network egress: yes · File deletion: enabled · Human approval: none</p>
 <h2>Provenance</h2>

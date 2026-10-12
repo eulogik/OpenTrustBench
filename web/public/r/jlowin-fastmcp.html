@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"jlowin__fastmcp — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of jlowin__fastmcp: 50 findings (23 critical), permission scope excessive.","datePublished":"2026-10-05","dateModified":"2026-10-05","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/jlowin-fastmcp.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"jlowin__fastmcp — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of jlowin__fastmcp: 50 findings (23 critical), permission scope excessive.","datePublished":"2026-10-12","dateModified":"2026-10-12","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/jlowin-fastmcp.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-05">
+<body data-scan="2026-10-12">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>jlowin__fastmcp <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 50 findings (23 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-05 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream jlowin/fastmcp @ 5baeacf (2026-10-04)</p>
+<p class="muted">Scanned 2026-10-12 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream jlowin/fastmcp @ e2fcc41 (2026-10-08)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present; Symlinks or special files were not examined. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 978 analyzed / 1801 discovered files; 618 unsupported source files; 834 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 982 analyzed / 1805 discovered files; 618 unsupported source files; 834 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Symlinks or special files were not examined</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -53,7 +53,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 1801,
+  &quot;discoveredFiles&quot;: 1805,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.agents/skills/release/scripts/changelog_entry.py&quot;,
@@ -180,7 +180,7 @@
     {
       &quot;path&quot;: &quot;.github/scripts/test-ci-workflows.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8896,
+      &quot;bytes&quot;: 8953,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -399,7 +399,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/run-tests.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 13072,
+      &quot;bytes&quot;: 13137,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -408,7 +408,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/run-upgrade-checks.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4904,
+      &quot;bytes&quot;: 4969,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -3337,7 +3337,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/apps/generative.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6476,
+      &quot;bytes&quot;: 6545,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3449,7 +3449,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/cli/cli.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 38248,
+      &quot;bytes&quot;: 38483,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3465,7 +3465,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/cli/client.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 36005,
+      &quot;bytes&quot;: 36583,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3625,7 +3625,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/cli/generate.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 29334,
+      &quot;bytes&quot;: 29547,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3737,7 +3737,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/cli/install/mcp_json.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5764,
+      &quot;bytes&quot;: 5884,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4169,7 +4169,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/client/sampling/handlers/anthropic.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 17058,
+      &quot;bytes&quot;: 17063,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4265,7 +4265,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/client/transports/config.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16926,
+      &quot;bytes&quot;: 16658,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4425,7 +4425,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/contrib/component_manager/component_manager.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7059,
+      &quot;bytes&quot;: 7194,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4489,7 +4489,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/contrib/mcp_mixin/mcp_mixin.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12203,
+      &quot;bytes&quot;: 12477,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4585,7 +4585,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/experimental/transforms/code_mode.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 28366,
+      &quot;bytes&quot;: 28647,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4665,7 +4665,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/prompts/function_prompt.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 17782,
+      &quot;bytes&quot;: 18222,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4745,7 +4745,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/resources/template.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 33660,
+      &quot;bytes&quot;: 34311,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4809,7 +4809,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/auth/auth.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 48709,
+      &quot;bytes&quot;: 48724,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4905,7 +4905,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/auth/middleware.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6956,
+      &quot;bytes&quot;: 7283,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4969,7 +4969,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/auth/oauth_proxy/proxy.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 135564,
+      &quot;bytes&quot;: 135759,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5417,7 +5417,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/context.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 53478,
+      &quot;bytes&quot;: 53409,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5529,7 +5529,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/low_level.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 26324,
+      &quot;bytes&quot;: 26288,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5913,7 +5913,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/providers/filesystem_discovery.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16410,
+      &quot;bytes&quot;: 16458,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5961,7 +5961,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/providers/local_provider/decorators/prompts.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8422,
+      &quot;bytes&quot;: 8549,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5977,7 +5977,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/providers/local_provider/decorators/resources.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8391,
+      &quot;bytes&quot;: 8522,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5993,7 +5993,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/providers/local_provider/decorators/tools.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13581,
+      &quot;bytes&quot;: 13798,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6105,7 +6105,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/providers/prefab_synthesis.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8590,
+      &quot;bytes&quot;: 9090,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6121,7 +6121,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/providers/proxy.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 79794,
+      &quot;bytes&quot;: 80299,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6185,7 +6185,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/providers/skills/directory_provider.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6266,
+      &quot;bytes&quot;: 6405,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6361,7 +6361,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/transforms/prompts_as_tools.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5817,
+      &quot;bytes&quot;: 6026,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6377,7 +6377,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/transforms/resources_as_tools.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6295,
+      &quot;bytes&quot;: 6510,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6473,7 +6473,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/server/transforms/version_filter.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5238,
+      &quot;bytes&quot;: 5934,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6585,7 +6585,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/tools/function_tool.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 25205,
+      &quot;bytes&quot;: 26444,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6665,7 +6665,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/utilities/async_utils.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4607,
+      &quot;bytes&quot;: 4937,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6745,7 +6745,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/utilities/docstring_parsing.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2412,
+      &quot;bytes&quot;: 3036,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6809,7 +6809,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/utilities/json_schema.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 37545,
+      &quot;bytes&quot;: 37922,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6825,7 +6825,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/utilities/json_schema_type.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 42485,
+      &quot;bytes&quot;: 43384,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7058,7 +7058,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/utilities/openapi/director.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 17850,
+      &quot;bytes&quot;: 18654,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7090,7 +7090,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/utilities/openapi/json_schema_converter.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13395,
+      &quot;bytes&quot;: 17064,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7138,7 +7138,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/utilities/openapi/schemas.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 36763,
+      &quot;bytes&quot;: 37084,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7298,7 +7298,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_slim/fastmcp/utilities/version_check.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4683,
+      &quot;bytes&quot;: 4702,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7378,7 +7378,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_tasks/fastmcp_tasks/components.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7763,
+      &quot;bytes&quot;: 9300,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7474,7 +7474,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_tasks/fastmcp_tasks/handlers.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21261,
+      &quot;bytes&quot;: 22268,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7506,7 +7506,7 @@
     {
       &quot;path&quot;: &quot;fastmcp_tasks/fastmcp_tasks/input_store.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21593,
+      &quot;bytes&quot;: 22362,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7899,7 +7899,23 @@
     {
       &quot;path&quot;: &quot;tests/apps/test_form.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8094,
+      &quot;bytes&quot;: 8120,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tests/apps/test_generative.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 929,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8059,7 +8075,7 @@
     {
       &quot;path&quot;: &quot;tests/cli/test_cli.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 22848,
+      &quot;bytes&quot;: 23742,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8075,7 +8091,7 @@
     {
       &quot;path&quot;: &quot;tests/cli/test_client_commands.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 29418,
+      &quot;bytes&quot;: 32240,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8171,7 +8187,7 @@
     {
       &quot;path&quot;: &quot;tests/cli/test_generate_cli.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 34004,
+      &quot;bytes&quot;: 34787,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8203,7 +8219,7 @@
     {
       &quot;path&quot;: &quot;tests/cli/test_install.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 19447,
+      &quot;bytes&quot;: 20405,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8283,7 +8299,7 @@
     {
       &quot;path&quot;: &quot;tests/cli/test_run.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 44266,
+      &quot;bytes&quot;: 45831,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8667,7 +8683,7 @@
     {
       &quot;path&quot;: &quot;tests/client/group/test_client_group.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13979,
+      &quot;bytes&quot;: 14520,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8731,7 +8747,7 @@
     {
       &quot;path&quot;: &quot;tests/client/sampling/handlers/test_anthropic_handler.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14456,
+      &quot;bytes&quot;: 15296,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8956,6 +8972,22 @@
       &quot;path&quot;: &quot;tests/client/test_progress.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 2249,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tests/client/test_result_hydration.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1972,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9252,7 +9284,7 @@
     {
       &quot;path&quot;: &quot;tests/contrib/test_component_manager.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 40509,
+      &quot;bytes&quot;: 42612,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9268,7 +9300,7 @@
     {
       &quot;path&quot;: &quot;tests/contrib/test_mcp_mixin.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 17783,
+      &quot;bytes&quot;: 19342,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9540,7 +9572,7 @@
     {
       &quot;path&quot;: &quot;tests/experimental/transforms/test_code_mode.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 39197,
+      &quot;bytes&quot;: 39530,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9629,7 +9661,7 @@
     {
       &quot;path&quot;: &quot;tests/fs/test_discovery.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 19758,
+      &quot;bytes&quot;: 20851,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9645,7 +9677,7 @@
     {
       &quot;path&quot;: &quot;tests/fs/test_provider.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 24801,
+      &quot;bytes&quot;: 25721,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9741,7 +9773,7 @@
     {
       &quot;path&quot;: &quot;tests/integration_tests/test_github_mcp_remote.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6297,
+      &quot;bytes&quot;: 6162,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9789,7 +9821,7 @@
     {
       &quot;path&quot;: &quot;tests/prompts/test_prompt.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 34790,
+      &quot;bytes&quot;: 35614,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9885,7 +9917,7 @@
     {
       &quot;path&quot;: &quot;tests/resources/test_resource_template.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 61502,
+      &quot;bytes&quot;: 63730,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10189,7 +10221,7 @@
     {
       &quot;path&quot;: &quot;tests/server/auth/oauth_proxy/test_tokens.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 94044,
+      &quot;bytes&quot;: 94206,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10589,7 +10621,7 @@
     {
       &quot;path&quot;: &quot;tests/server/auth/test_auth_provider.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5207,
+      &quot;bytes&quot;: 14062,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10685,7 +10717,7 @@
     {
       &quot;path&quot;: &quot;tests/server/auth/test_enhanced_error_responses.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 39931,
+      &quot;bytes&quot;: 41397,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -12075,6 +12107,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;tests/server/providers/openapi/test_write_only_responses.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 15440,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;tests/server/providers/proxy/__init__.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 0,
@@ -12109,7 +12157,7 @@
     {
       &quot;path&quot;: &quot;tests/server/providers/proxy/test_proxy_client.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 23265,
+      &quot;bytes&quot;: 24754,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -12157,7 +12205,7 @@
     {
       &quot;path&quot;: &quot;tests/server/providers/proxy/test_proxy_server.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 65063,
+      &quot;bytes&quot;: 66392,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -12269,7 +12317,7 @@
     {
       &quot;path&quot;: &quot;tests/server/providers/test_local_provider.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 29436,
+      &quot;bytes&quot;: 33474,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -12333,7 +12381,7 @@
     {
       &quot;path&quot;: &quot;tests/server/providers/test_prefab_synthesis.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6650,
+      &quot;bytes&quot;: 9408,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -12365,7 +12413,7 @@
     {
       &quot;path&quot;: &quot;tests/server/providers/test_skills_provider.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 38405,
+      &quot;bytes&quot;: 39183,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -12717,7 +12765,7 @@
     {
       &quot;path&quot;: &quot;tests/server/test_generator_dependency_lifetime.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4071,
+      &quot;bytes&quot;: 4014,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -12765,7 +12813,7 @@
     {
       &quot;path&quot;: &quot;tests/server/test_input_validation.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 24553,
+      &quot;bytes&quot;: 30124,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -13115,6 +13163,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;tests/server/transforms/test_input_required.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 6444,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;tests/server/transforms/test_model_visibility_boundary.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 6059,
@@ -13245,7 +13309,7 @@
     {
       &quot;path&quot;: &quot;tests/server/versioning/test_filtering.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 20582,
+      &quot;bytes&quot;: 22597,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -13485,7 +13549,7 @@
     {
       &quot;path&quot;: &quot;tests/tasks/server/test_context_background_task.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 18644,
+      &quot;bytes&quot;: 18596,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -13725,7 +13789,7 @@
     {
       &quot;path&quot;: &quot;tests/tasks/server/test_task_methods.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5562,
+      &quot;bytes&quot;: 6775,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -13837,7 +13901,7 @@
     {
       &quot;path&quot;: &quot;tests/tasks/server/test_task_tools.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9381,
+      &quot;bytes&quot;: 12590,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -13853,7 +13917,7 @@
     {
       &quot;path&quot;: &quot;tests/tasks/server/test_task_ttl.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4319,
+      &quot;bytes&quot;: 5197,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -13981,7 +14045,7 @@
     {
       &quot;path&quot;: &quot;tests/test_apps.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 27241,
+      &quot;bytes&quot;: 28263,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -14109,7 +14173,7 @@
     {
       &quot;path&quot;: &quot;tests/test_mcp_config.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 46437,
+      &quot;bytes&quot;: 48025,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -14285,7 +14349,7 @@
     {
       &quot;path&quot;: &quot;tests/tools/tool/test_argument_validation.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4561,
+      &quot;bytes&quot;: 4704,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -14605,7 +14669,7 @@
     {
       &quot;path&quot;: &quot;tests/utilities/json_schema_type/test_containers.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14897,
+      &quot;bytes&quot;: 17664,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -14621,7 +14685,7 @@
     {
       &quot;path&quot;: &quot;tests/utilities/json_schema_type/test_formats.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4073,
+      &quot;bytes&quot;: 6681,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -14797,7 +14861,7 @@
     {
       &quot;path&quot;: &quot;tests/utilities/openapi/test_director.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 55505,
+      &quot;bytes&quot;: 56694,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -14893,7 +14957,7 @@
     {
       &quot;path&quot;: &quot;tests/utilities/openapi/test_path_values.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3159,
+      &quot;bytes&quot;: 8153,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -14989,7 +15053,7 @@
     {
       &quot;path&quot;: &quot;tests/utilities/test_async_utils.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9392,
+      &quot;bytes&quot;: 11114,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -15053,7 +15117,7 @@
     {
       &quot;path&quot;: &quot;tests/utilities/test_docstring_parsing.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16792,
+      &quot;bytes&quot;: 19038,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -15117,7 +15181,7 @@
     {
       &quot;path&quot;: &quot;tests/utilities/test_json_schema.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 46058,
+      &quot;bytes&quot;: 47338,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -15277,7 +15341,7 @@
     {
       &quot;path&quot;: &quot;tests/utilities/test_version_check.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11810,
+      &quot;bytes&quot;: 12359,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -19258,7 +19322,7 @@
   }
 }</pre></details>
 <h2>Fix first (50 critical/high)</h2>
-<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">docs/fastmcp-analytics.js:6</code><br><span class="muted">Evidence: </span><code>var AMPLITUDE_API_KEY = &quot;c361ed56e7bdc1a48a38773c40120b39&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/oidc_proxy.py:254</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-oidc-client-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/auth0.py:16</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-auth0-client-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/auth0.py:76</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-auth0-client-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/aws.py:17</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-cognito-client-secret&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/aws.py:116</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-cognito-client-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/clerk.py:21</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-clerk-client-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/clerk.py:266</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-clerk-client-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/discord.py:15</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-discord-client-secret&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/discord.py:186</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;discord-client-secret-abc123...&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/github.py:15</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-github-client-secret&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/google.py:15</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-google-client-secret&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/cli/deploy/test_horizon_client.py:234</code><br><span class="muted">Evidence: </span><code>secret_body = &quot;fmcp_response_secret&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/cli/test_client_commands.py:403</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;synthetic-registration-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/client/auth/test_oauth_static_client.py:230</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;pre-registered-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/client/auth/test_oauth_static_client.py:243</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;pre-registered-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oauth_consent_flow.py:80</code><br><span class="muted">Evidence: </span><code>upstream_client_secret=&quot;test-upstream-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oidc_proxy.py:672</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;introspection-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oidc_proxy.py:709</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;introspection-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oidc_proxy.py:741</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;introspection-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oidc_proxy.py:773</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;introspection-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oidc_proxy.py:1062</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;introspection-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oidc_proxy_token.py:156</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;introspection-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">fastmcp_slim/fastmcp/cli/cimd.py:185</code><br><span class="muted">Evidence: </span><code>doc = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:238</code><br><span class="muted">Evidence: </span><code>doc = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:256</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:257</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:266</code><br><span class="muted">Evidence: </span><code>async def fake_fetch(url: str, **kwargs) -&gt; SSRFFetchResponse:</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:283</code><br><span class="muted">Evidence: </span><code>await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:303</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:304</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:337</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:338</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:371</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:372</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:400</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:401</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:434</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:435</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:472</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:473</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:474</code><br><span class="muted">Evidence: </span><code>third = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:508</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:514</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:515</code><br><span class="muted">Evidence: </span><code>third = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:540</code><br><span class="muted">Evidence: </span><code>await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:549</code><br><span class="muted">Evidence: </span><code>await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:561</code><br><span class="muted">Evidence: </span><code>await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:580</code><br><span class="muted">Evidence: </span><code>await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/test_mcp_config.py:1443</code><br><span class="muted">Evidence: </span><code>def fetch(url: str) -&gt; str:</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
+<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">docs/fastmcp-analytics.js:6</code><br><span class="muted">Evidence: </span><code>var AMPLITUDE_API_KEY = &quot;c361ed56e7bdc1a48a38773c40120b39&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/oidc_proxy.py:254</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-oidc-client-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/auth0.py:16</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-auth0-client-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/auth0.py:76</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-auth0-client-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/aws.py:17</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-cognito-client-secret&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/aws.py:116</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-cognito-client-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/clerk.py:21</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-clerk-client-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/clerk.py:266</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-clerk-client-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/discord.py:15</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-discord-client-secret&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/discord.py:186</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;discord-client-secret-abc123...&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/github.py:15</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-github-client-secret&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">fastmcp_slim/fastmcp/server/auth/providers/google.py:15</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;your-google-client-secret&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/cli/deploy/test_horizon_client.py:234</code><br><span class="muted">Evidence: </span><code>secret_body = &quot;fmcp_response_secret&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/cli/test_client_commands.py:451</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;synthetic-registration-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/client/auth/test_oauth_static_client.py:230</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;pre-registered-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/client/auth/test_oauth_static_client.py:243</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;pre-registered-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oauth_consent_flow.py:80</code><br><span class="muted">Evidence: </span><code>upstream_client_secret=&quot;test-upstream-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oidc_proxy.py:672</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;introspection-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oidc_proxy.py:709</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;introspection-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oidc_proxy.py:741</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;introspection-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oidc_proxy.py:773</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;introspection-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oidc_proxy.py:1062</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;introspection-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/server/auth/test_oidc_proxy_token.py:156</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;introspection-secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">fastmcp_slim/fastmcp/cli/cimd.py:185</code><br><span class="muted">Evidence: </span><code>doc = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:238</code><br><span class="muted">Evidence: </span><code>doc = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:256</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:257</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:266</code><br><span class="muted">Evidence: </span><code>async def fake_fetch(url: str, **kwargs) -&gt; SSRFFetchResponse:</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:283</code><br><span class="muted">Evidence: </span><code>await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:303</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:304</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:337</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:338</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:371</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:372</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:400</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:401</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:434</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:435</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:472</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:473</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:474</code><br><span class="muted">Evidence: </span><code>third = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:508</code><br><span class="muted">Evidence: </span><code>first = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:514</code><br><span class="muted">Evidence: </span><code>second = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:515</code><br><span class="muted">Evidence: </span><code>third = await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:540</code><br><span class="muted">Evidence: </span><code>await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:549</code><br><span class="muted">Evidence: </span><code>await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:561</code><br><span class="muted">Evidence: </span><code>await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/server/auth/test_cimd.py:580</code><br><span class="muted">Evidence: </span><code>await fetcher.fetch(url)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tests/test_mcp_config.py:1492</code><br><span class="muted">Evidence: </span><code>def fetch(url: str) -&gt; str:</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
 <h2>Permissions</h2>
 <p>Scope: <strong>excessive</strong> · Shell: enabled · Network egress: yes · File deletion: enabled · Human approval: none</p>
 <h2>Provenance</h2>

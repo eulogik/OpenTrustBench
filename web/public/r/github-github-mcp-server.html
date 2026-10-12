@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"github__github-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of github__github-mcp-server: 0 findings (0 critical), permission scope moderate.","datePublished":"2026-10-05","dateModified":"2026-10-05","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/github-github-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"github__github-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of github__github-mcp-server: 0 findings (0 critical), permission scope moderate.","datePublished":"2026-10-12","dateModified":"2026-10-12","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/github-github-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-05">
+<body data-scan="2026-10-12">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>github__github-mcp-server <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope moderate · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-05 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream github/github-mcp-server @ 71ef826 (2026-10-03)</p>
+<p class="muted">Scanned 2026-10-12 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream github/github-mcp-server @ 07e2466 (2026-10-12)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 38 analyzed / 599 discovered files; 277 unsupported source files; 562 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 40 analyzed / 660 discovered files; 325 unsupported source files; 621 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,12 +52,12 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 599,
+  &quot;discoveredFiles&quot;: 660,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/actions/build-ui/action.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1280,
+      &quot;bytes&quot;: 1338,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -66,7 +66,7 @@
     {
       &quot;path&quot;: &quot;.github/dependabot.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 732,
+      &quot;bytes&quot;: 768,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -93,7 +93,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/ai-issue-assessment.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 782,
+      &quot;bytes&quot;: 825,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -102,7 +102,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/close-inactive-issues.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1154,
+      &quot;bytes&quot;: 1197,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -111,7 +111,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/code-scanning.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 3610,
+      &quot;bytes&quot;: 3954,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -120,7 +120,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/docker-publish.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 5494,
+      &quot;bytes&quot;: 5580,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -129,7 +129,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/docs-check.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1238,
+      &quot;bytes&quot;: 1324,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -138,7 +138,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/go.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1105,
+      &quot;bytes&quot;: 1191,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -147,7 +147,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/goreleaser.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1243,
+      &quot;bytes&quot;: 1372,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -165,7 +165,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/license-check.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4012,
+      &quot;bytes&quot;: 4184,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -174,7 +174,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/lint.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 510,
+      &quot;bytes&quot;: 639,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -183,7 +183,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/mcp-diff.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 5412,
+      &quot;bytes&quot;: 7092,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -192,7 +192,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/moderator.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 663,
+      &quot;bytes&quot;: 749,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -201,7 +201,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/registry-releaser.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2763,
+      &quot;bytes&quot;: 2849,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -219,7 +219,7 @@
     {
       &quot;path&quot;: &quot;.goreleaser.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1166,
+      &quot;bytes&quot;: 1172,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -273,7 +273,7 @@
     {
       &quot;path&quot;: &quot;ui/package-lock.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 120270,
+      &quot;bytes&quot;: 120284,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -282,7 +282,7 @@
     {
       &quot;path&quot;: &quot;ui/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1027,
+      &quot;bytes&quot;: 1099,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -323,7 +323,7 @@
     {
       &quot;path&quot;: &quot;ui/src/apps/issue-write/App.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 64067,
+      &quot;bytes&quot;: 64076,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -339,7 +339,7 @@
     {
       &quot;path&quot;: &quot;ui/src/apps/pr-edit/App.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 32211,
+      &quot;bytes&quot;: 32298,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -355,7 +355,7 @@
     {
       &quot;path&quot;: &quot;ui/src/apps/pr-write/App.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 34402,
+      &quot;bytes&quot;: 34489,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -449,9 +449,41 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;ui/src/lib/uiGetResult.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3300,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;ui/src/lib/uiGetResult.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1672,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;ui/tsconfig.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 401,
+      &quot;bytes&quot;: 441,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -494,6 +526,7 @@
     &quot;internal/buildinfo/buildinfo.go&quot;,
     &quot;internal/ghmcp/oauth.go&quot;,
     &quot;internal/ghmcp/oauth_test.go&quot;,
+    &quot;internal/ghmcp/oauth_typed_test.go&quot;,
     &quot;internal/ghmcp/server.go&quot;,
     &quot;internal/ghmcp/server_test.go&quot;,
     &quot;internal/githubapp/githubapp.go&quot;,
@@ -531,12 +564,15 @@
     &quot;pkg/github/actions.go&quot;,
     &quot;pkg/github/actions_minimal_test.go&quot;,
     &quot;pkg/github/actions_test.go&quot;,
+    &quot;pkg/github/actions_types.go&quot;,
     &quot;pkg/github/code_quality.go&quot;,
     &quot;pkg/github/code_quality_test.go&quot;,
     &quot;pkg/github/code_scanning.go&quot;,
     &quot;pkg/github/code_scanning_test.go&quot;,
     &quot;pkg/github/comment_minimize.go&quot;,
     &quot;pkg/github/comment_minimize_test.go&quot;,
+    &quot;pkg/github/consolidated_issue_types.go&quot;,
+    &quot;pkg/github/consolidated_pull_request_types.go&quot;,
     &quot;pkg/github/context_tools.go&quot;,
     &quot;pkg/github/context_tools_test.go&quot;,
     &quot;pkg/github/copilot.go&quot;,
@@ -550,6 +586,9 @@
     &quot;pkg/github/dependencies.go&quot;,
     &quot;pkg/github/dependencies_test.go&quot;,
     &quot;pkg/github/deprecated_tool_aliases.go&quot;,
+    &quot;pkg/github/discussion_notification_contracts_test.go&quot;,
+    &quot;pkg/github/discussion_notification_inputs.go&quot;,
+    &quot;pkg/github/discussion_notification_outputs.go&quot;,
     &quot;pkg/github/discussions.go&quot;,
     &quot;pkg/github/discussions_test.go&quot;,
     &quot;pkg/github/encoded_schemas_test.go&quot;,
@@ -564,7 +603,10 @@
     &quot;pkg/github/gists.go&quot;,
     &quot;pkg/github/gists_test.go&quot;,
     &quot;pkg/github/git.go&quot;,
+    &quot;pkg/github/git_gist_types.go&quot;,
     &quot;pkg/github/git_test.go&quot;,
+    &quot;pkg/github/granular_issue_types.go&quot;,
+    &quot;pkg/github/granular_pull_request_types.go&quot;,
     &quot;pkg/github/granular_tools_test.go&quot;,
     &quot;pkg/github/header_params_test.go&quot;,
     &quot;pkg/github/helper_test.go&quot;,
@@ -574,6 +616,7 @@
     &quot;pkg/github/issue_dependencies_test.go&quot;,
     &quot;pkg/github/issue_fields.go&quot;,
     &quot;pkg/github/issue_fields_test.go&quot;,
+    &quot;pkg/github/issue_tool_types.go&quot;,
     &quot;pkg/github/issues.go&quot;,
     &quot;pkg/github/issues_delete_test.go&quot;,
     &quot;pkg/github/issues_granular.go&quot;,
@@ -582,7 +625,9 @@
     &quot;pkg/github/labels_test.go&quot;,
     &quot;pkg/github/lockdown.go&quot;,
     &quot;pkg/github/lockdown_test.go&quot;,
+    &quot;pkg/github/method_output_schema.go&quot;,
     &quot;pkg/github/minimal_types.go&quot;,
+    &quot;pkg/github/notification_output_fidelity_test.go&quot;,
     &quot;pkg/github/notifications.go&quot;,
     &quot;pkg/github/notifications_test.go&quot;,
     &quot;pkg/github/params.go&quot;,
@@ -595,6 +640,7 @@
     &quot;pkg/github/projects_resolver.go&quot;,
     &quot;pkg/github/projects_resolver_test.go&quot;,
     &quot;pkg/github/projects_test.go&quot;,
+    &quot;pkg/github/projects_types.go&quot;,
     &quot;pkg/github/projects_v2_test.go&quot;,
     &quot;pkg/github/prompts.go&quot;,
     &quot;pkg/github/public_repo_scopes_test.go&quot;,
@@ -611,6 +657,7 @@
     &quot;pkg/github/repository_resource_completions.go&quot;,
     &quot;pkg/github/repository_resource_completions_test.go&quot;,
     &quot;pkg/github/repository_resource_test.go&quot;,
+    &quot;pkg/github/repository_tool_types.go&quot;,
     &quot;pkg/github/request_state.go&quot;,
     &quot;pkg/github/resources.go&quot;,
     &quot;pkg/github/rulesets.go&quot;,
@@ -621,12 +668,14 @@
     &quot;pkg/github/search.go&quot;,
     &quot;pkg/github/search_semantic_test.go&quot;,
     &quot;pkg/github/search_test.go&quot;,
+    &quot;pkg/github/search_tool_types.go&quot;,
     &quot;pkg/github/search_utils.go&quot;,
     &quot;pkg/github/search_utils_test.go&quot;,
     &quot;pkg/github/secret_scanning.go&quot;,
     &quot;pkg/github/secret_scanning_test.go&quot;,
     &quot;pkg/github/security_advisories.go&quot;,
     &quot;pkg/github/security_advisories_test.go&quot;,
+    &quot;pkg/github/security_outputs.go&quot;,
     &quot;pkg/github/server.go&quot;,
     &quot;pkg/github/server_test.go&quot;,
     &quot;pkg/github/tool_scopes.go&quot;,
@@ -637,6 +686,29 @@
     &quot;pkg/github/tools_validation_test.go&quot;,
     &quot;pkg/github/toolset_icons_test.go&quot;,
     &quot;pkg/github/toolset_instructions.go&quot;,
+    &quot;pkg/github/typed_account_repository_search_test.go&quot;,
+    &quot;pkg/github/typed_actions_outputs_test.go&quot;,
+    &quot;pkg/github/typed_compatibility_test.go&quot;,
+    &quot;pkg/github/typed_consolidated_issue_enrichment_test.go&quot;,
+    &quot;pkg/github/typed_consolidated_issue_outputs_test.go&quot;,
+    &quot;pkg/github/typed_consolidated_pull_request_outputs_test.go&quot;,
+    &quot;pkg/github/typed_contracts_test.go&quot;,
+    &quot;pkg/github/typed_copilot_ui_outputs.go&quot;,
+    &quot;pkg/github/typed_copilot_ui_outputs_test.go&quot;,
+    &quot;pkg/github/typed_discussion_notification_outputs_test.go&quot;,
+    &quot;pkg/github/typed_git_gist_outputs_test.go&quot;,
+    &quot;pkg/github/typed_governance_outputs.go&quot;,
+    &quot;pkg/github/typed_governance_outputs_test.go&quot;,
+    &quot;pkg/github/typed_granular_issue_outputs_test.go&quot;,
+    &quot;pkg/github/typed_granular_pull_request_outputs_test.go&quot;,
+    &quot;pkg/github/typed_issue_outputs_test.go&quot;,
+    &quot;pkg/github/typed_projects_outputs_test.go&quot;,
+    &quot;pkg/github/typed_read_normalizers.go&quot;,
+    &quot;pkg/github/typed_repository_commit_outputs_test.go&quot;,
+    &quot;pkg/github/typed_repository_outputs_test.go&quot;,
+    &quot;pkg/github/typed_search_outputs_test.go&quot;,
+    &quot;pkg/github/typed_security_compatibility_test.go&quot;,
+    &quot;pkg/github/typed_security_outputs_test.go&quot;,
     &quot;pkg/github/ui_capability.go&quot;,
     &quot;pkg/github/ui_capability_test.go&quot;,
     &quot;pkg/github/ui_dist/.gitkeep&quot;,
@@ -646,6 +718,7 @@
     &quot;pkg/github/ui_resources_test.go&quot;,
     &quot;pkg/github/ui_tools.go&quot;,
     &quot;pkg/github/ui_tools_test.go&quot;,
+    &quot;pkg/github/workflow_enums.go&quot;,
     &quot;pkg/github/workflow_prompts.go&quot;,
     &quot;pkg/http/handler.go&quot;,
     &quot;pkg/http/handler_test.go&quot;,
@@ -693,6 +766,9 @@
     &quot;pkg/inventory/features.go&quot;,
     &quot;pkg/inventory/features_test.go&quot;,
     &quot;pkg/inventory/filters.go&quot;,
+    &quot;pkg/inventory/header_params_test.go&quot;,
+    &quot;pkg/inventory/input_error.go&quot;,
+    &quot;pkg/inventory/input_error_test.go&quot;,
     &quot;pkg/inventory/instructions.go&quot;,
     &quot;pkg/inventory/instructions_test.go&quot;,
     &quot;pkg/inventory/prompts.go&quot;,
@@ -703,6 +779,10 @@
     &quot;pkg/inventory/server_tool_test.go&quot;,
     &quot;pkg/inventory/tool_availability.go&quot;,
     &quot;pkg/inventory/tool_availability_test.go&quot;,
+    &quot;pkg/inventory/typed_input_test.go&quot;,
+    &quot;pkg/inventory/typed_output.go&quot;,
+    &quot;pkg/inventory/typed_output_test.go&quot;,
+    &quot;pkg/inventory/typed_schema.go&quot;,
     &quot;pkg/lockdown/lockdown.go&quot;,
     &quot;pkg/lockdown/lockdown_test.go&quot;,
     &quot;pkg/log/io.go&quot;,
@@ -987,6 +1067,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;docs/typed-tool-schemas.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;e2e/README.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -1012,6 +1096,10 @@
     },
     {
       &quot;path&quot;: &quot;internal/ghmcp/oauth_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/ghmcp/oauth_typed_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1315,6 +1403,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/get_job_logs_actions.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/get_label.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -1391,6 +1483,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/list_branches_output.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/list_code_scanning_alerts.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -1431,6 +1527,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/list_issues_output.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/list_label.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -1444,6 +1544,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/list_pull_requests.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/list_pull_requests_output.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -1468,6 +1572,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/list_tags.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/list_tags_output.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -1504,6 +1612,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/pull_request_review_write.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/pull_request_review_write_resolution_reason.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -1547,7 +1659,15 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/resolve_review_thread_resolution_reason.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/search_code.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/search_code_output.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -1559,11 +1679,19 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/search_issues_output.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/search_orgs.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/search_pull_requests.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/search_pull_requests_output.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -1687,6 +1815,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/actions_types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/code_quality.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -1708,6 +1840,14 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/comment_minimize_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/consolidated_issue_types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/consolidated_pull_request_types.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1760,6 +1900,18 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/deprecated_tool_aliases.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/discussion_notification_contracts_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/discussion_notification_inputs.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/discussion_notification_outputs.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1819,7 +1971,19 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/git_gist_types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/git_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/granular_issue_types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/granular_pull_request_types.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1859,6 +2023,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/issue_tool_types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/issues.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -1891,7 +2059,15 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/method_output_schema.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/minimal_types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/notification_output_fidelity_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1940,6 +2116,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/projects_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/projects_types.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -2007,6 +2187,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/repository_tool_types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/request_state.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -2047,6 +2231,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/search_tool_types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/search_utils.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -2068,6 +2256,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/security_advisories_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/security_outputs.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -2111,6 +2303,98 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/typed_account_repository_search_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_actions_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_compatibility_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_consolidated_issue_enrichment_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_consolidated_issue_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_consolidated_pull_request_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_contracts_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_copilot_ui_outputs.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_copilot_ui_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_discussion_notification_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_git_gist_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_governance_outputs.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_governance_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_granular_issue_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_granular_pull_request_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_issue_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_projects_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_read_normalizers.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_repository_commit_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_repository_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_search_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_security_compatibility_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/typed_security_outputs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/ui_capability.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -2144,6 +2428,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/ui_tools_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/workflow_enums.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -2335,6 +2623,18 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/inventory/header_params_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/inventory/input_error.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/inventory/input_error_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/inventory/instructions.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -2372,6 +2672,22 @@
     },
     {
       &quot;path&quot;: &quot;pkg/inventory/tool_availability_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/inventory/typed_input_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/inventory/typed_output.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/inventory/typed_output_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/inventory/typed_schema.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -2827,7 +3143,7 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
-      &quot;path&quot;: &quot;third-party/github.com/github/github-mcp-server/LICENSE&quot;,
+      &quot;path&quot;: &quot;third-party/github.com/github/github-mcp-server/v2/LICENSE&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {

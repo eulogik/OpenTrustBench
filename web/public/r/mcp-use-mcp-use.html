@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"mcp-use__mcp-use — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of mcp-use__mcp-use: 57 findings (22 critical), permission scope excessive.","datePublished":"2026-10-05","dateModified":"2026-10-05","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/mcp-use-mcp-use.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"mcp-use__mcp-use — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of mcp-use__mcp-use: 57 findings (22 critical), permission scope excessive.","datePublished":"2026-10-12","dateModified":"2026-10-12","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/mcp-use-mcp-use.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-05">
+<body data-scan="2026-10-12">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>mcp-use__mcp-use <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 57 findings (22 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-05 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream mcp-use/mcp-use @ 90b6b8b (2026-10-04)</p>
+<p class="muted">Scanned 2026-10-12 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream mcp-use/mcp-use @ 33f2c32 (2026-10-09)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 1474 analyzed / 2194 discovered files; 382 unsupported source files; 721 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 1514 analyzed / 2244 discovered files; 383 unsupported source files; 731 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,7 +52,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 2194,
+  &quot;discoveredFiles&quot;: 2244,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.claude-plugin/marketplace.json&quot;,
@@ -395,7 +395,7 @@
     {
       &quot;path&quot;: &quot;docs/docs.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 46497,
+      &quot;bytes&quot;: 46564,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -6252,7 +6252,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2658,
+      &quot;bytes&quot;: 2714,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -6357,7 +6357,23 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/src/cli/build.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16996,
+      &quot;bytes&quot;: 17145,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/cli/src/cli/context-diagnostics.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2213,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6405,7 +6421,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/src/cli/dev.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 40170,
+      &quot;bytes&quot;: 41582,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6579,6 +6595,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/cli/src/cli/view-config.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 20856,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/src/cli/views-bindings.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 4697,
@@ -6597,7 +6629,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/src/cli/views-plugin.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6570,
+      &quot;bytes&quot;: 8207,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6613,7 +6645,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/src/cli/views.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4910,
+      &quot;bytes&quot;: 5011,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6709,7 +6741,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/src/commands/cloud-api.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13428,
+      &quot;bytes&quot;: 13505,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6725,7 +6757,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/src/commands/deploy.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 53970,
+      &quot;bytes&quot;: 56053,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6933,7 +6965,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/src/internal/vite.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 309,
+      &quot;bytes&quot;: 366,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7045,7 +7077,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/src/views/types.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 688,
+      &quot;bytes&quot;: 1304,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7077,7 +7109,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/tests/cli/build.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 30862,
+      &quot;bytes&quot;: 31468,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7094,6 +7126,22 @@
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/tests/cli/commands.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 1934,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/cli/tests/cli/context-diagnostics.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 5265,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7139,9 +7187,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/cli/tests/cli/dev-view-config.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 6998,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/tests/cli/dev.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 56380,
+      &quot;bytes&quot;: 58436,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7239,7 +7303,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/tests/cli/fixtures/views/views/product-search-result/view.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 471,
+      &quot;bytes&quot;: 592,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7349,6 +7413,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/cli/tests/cli/view-config.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 10593,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/tests/cli/views.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 3298,
@@ -7399,7 +7479,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/tests/commands/cloud-api.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3847,
+      &quot;bytes&quot;: 5667,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7415,7 +7495,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/cli/tests/commands/deploy.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 37157,
+      &quot;bytes&quot;: 45758,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8302,7 +8382,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/client/src/code-mode/connector.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8303,
+      &quot;bytes&quot;: 12978,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8366,7 +8446,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/client/src/core/base.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21884,
+      &quot;bytes&quot;: 22007,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8414,7 +8494,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/client/src/core/node.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 24311,
+      &quot;bytes&quot;: 24314,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9452,6 +9532,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/client/tests/unit/client/code-mode-connector.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 11573,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/client/tests/unit/client/code-mode-custom-executor.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 4818,
@@ -10313,7 +10409,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/create-mcp-use-app/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1405,
+      &quot;bytes&quot;: 1406,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -10368,6 +10464,38 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/create-mcp-use-app/src/__tests__/failed-scaffold.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1428,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/create-mcp-use-app/src/__tests__/run-package-manager.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2487,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/create-mcp-use-app/src/__tests__/skills-config.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 1244,
@@ -10402,7 +10530,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/create-mcp-use-app/src/index.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 32388,
+      &quot;bytes&quot;: 31875,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10616,7 +10744,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/create-mcp-use-app/src/utils.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3958,
+      &quot;bytes&quot;: 5116,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10659,7 +10787,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 6003,
+      &quot;bytes&quot;: 6075,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -11077,7 +11205,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/ConnectionSettingsForm.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 26902,
+      &quot;bytes&quot;: 27198,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11173,7 +11301,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/InspectorDashboard.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 43388,
+      &quot;bytes&quot;: 43977,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11189,7 +11317,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/Layout.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 32812,
+      &quot;bytes&quot;: 33042,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -13781,7 +13909,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/tools/__tests__/useToolExecution.test.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2083,
+      &quot;bytes&quot;: 3405,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -13845,7 +13973,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/components/tools/useToolExecution.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10870,
+      &quot;bytes&quot;: 11232,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -14723,6 +14851,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/hooks/__tests__/useConnectionFormState.test.tsx&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3414,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/hooks/__tests__/useMcpAppsHostContext.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 542,
@@ -14853,7 +14997,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/hooks/useConnectionFormState.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6358,
+      &quot;bytes&quot;: 6327,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -15509,7 +15653,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/utils/__tests__/connectionUpdates.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12628,
+      &quot;bytes&quot;: 13816,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -15637,7 +15781,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/inspector/src/client/utils/connectionUpdates.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21717,
+      &quot;bytes&quot;: 21696,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -18760,6 +18904,200 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/package.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 681,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/src/catalog.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1628,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/src/data.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1187,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/src/index.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 4951,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/tsconfig.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 630,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/views/bookshop/attachments.tsx&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3430,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/views/bookshop/cart-settings.tsx&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 6116,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/views/bookshop/catalog.tsx&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 4976,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/views/bookshop/details.tsx&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3248,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/views/bookshop/route.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 767,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/views/bookshop/routing.tsx&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1891,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/views/bookshop/shop.tsx&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 5123,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/views/bookshop/view.tsx&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1214,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/excalidraw/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 706,
@@ -19131,7 +19469,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/property-search/views/property-search/view.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 27690,
+      &quot;bytes&quot;: 27728,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -19297,7 +19635,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 5303,
+      &quot;bytes&quot;: 5397,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -19338,7 +19676,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/branding.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11769,
+      &quot;bytes&quot;: 11713,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -19434,7 +19772,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/index.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5956,
+      &quot;bytes&quot;: 6140,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -19498,7 +19836,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/logging.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 22508,
+      &quot;bytes&quot;: 23165,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -19514,7 +19852,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/mcp-proxy.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 17759,
+      &quot;bytes&quot;: 17913,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20058,7 +20396,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/components/model-context.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3225,
+      &quot;bytes&quot;: 3273,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20120,6 +20458,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/hooks/use-deep-link.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2335,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/hooks/use-display-mode.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 2715,
@@ -20155,6 +20509,22 @@
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/hooks/use-host-context.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 5511,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/hooks/use-model-context.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2990,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20282,7 +20652,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/index.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2005,
+      &quot;bytes&quot;: 2469,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20298,7 +20668,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/public-assets.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2888,
+      &quot;bytes&quot;: 2861,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20314,7 +20684,23 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/runtime/bootstrap-view.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7696,
+      &quot;bytes&quot;: 7886,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/runtime/model-context-image.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2186,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20330,7 +20716,39 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/runtime/model-context-store.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13324,
+      &quot;bytes&quot;: 50215,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/runtime/model-context-wire.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 8867,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/runtime/model-context.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3346,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20346,7 +20764,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/runtime/view-config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3199,
+      &quot;bytes&quot;: 4238,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20378,7 +20796,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/runtime/view-runtime.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 27195,
+      &quot;bytes&quot;: 27274,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20411,6 +20829,22 @@
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/types/host-types.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 812,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/src/react/types/model-context.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3821,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20522,7 +20956,23 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/server.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 84260,
+      &quot;bytes&quot;: 88701,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/src/settings.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 11902,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20618,7 +21068,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/tools.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9720,
+      &quot;bytes&quot;: 11510,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20728,6 +21178,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/src/views/entrypoints.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2506,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/views/index.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 645,
@@ -20810,7 +21276,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/views/types.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4080,
+      &quot;bytes&quot;: 4669,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20826,7 +21292,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/views/wire.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6088,
+      &quot;bytes&quot;: 6536,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20874,7 +21340,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/src/vite/index.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 19324,
+      &quot;bytes&quot;: 20014,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -20920,9 +21386,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/budgets/buffered-response.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3288,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/budgets/cli-budget.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8634,
+      &quot;bytes&quot;: 9355,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -21003,6 +21485,38 @@
       &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/elicitation.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 17574,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/entrypoint-registration.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 4174,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/entrypoints.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 7733,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -21146,7 +21660,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/logging.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16883,
+      &quot;bytes&quot;: 22680,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -21195,6 +21709,54 @@
       &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/middleware.e2e.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 13296,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/model-context-attachments.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 45082,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/model-context-image.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 5180,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/model-context-store.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 9555,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -21450,7 +22012,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/proxy.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 18673,
+      &quot;bytes&quot;: 19044,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -21466,7 +22028,23 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/react-bridge.test.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 91049,
+      &quot;bytes&quot;: 96357,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/react-deep-link.test.tsx&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 6976,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -21592,6 +22170,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/settings.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 21164,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/skills.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 15674,
@@ -21656,6 +22250,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/tool-icons.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 4555,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/type-level.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 24833,
@@ -21675,6 +22285,22 @@
       &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/usage.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 2625,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/view-config.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3339,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -21738,7 +22364,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/views.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 52767,
+      &quot;bytes&quot;: 53631,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -21754,7 +22380,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/tests/vite-build.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8372,
+      &quot;bytes&quot;: 8667,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -21836,7 +22462,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/tsup.config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4582,
+      &quot;bytes&quot;: 5888,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -21918,7 +22544,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/tunnel/src/index.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 31312,
+      &quot;bytes&quot;: 31470,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -21982,7 +22608,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/packages/tunnel/tests/tunnel.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6907,
+      &quot;bytes&quot;: 8391,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -22041,7 +22667,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/pnpm-lock.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 688307,
+      &quot;bytes&quot;: 688590,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -22050,7 +22676,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/pnpm-workspace.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4239,
+      &quot;bytes&quot;: 4226,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -22171,7 +22797,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/scripts/typedoc-navigation-plugin.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1168,
+      &quot;bytes&quot;: 2854,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -22237,7 +22863,7 @@
     {
       &quot;path&quot;: &quot;libraries/typescript/typedoc.options.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 467,
+      &quot;bytes&quot;: 469,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -22552,6 +23178,7 @@
     &quot;docs/v2/typescript/getting-started/quickstart.mdx&quot;,
     &quot;docs/v2/typescript/getting-started/templates.mdx&quot;,
     &quot;docs/v2/typescript/getting-started/welcome.mdx&quot;,
+    &quot;docs/v2/typescript/mcp-apps/chatgpt-extensions.mdx&quot;,
     &quot;docs/v2/typescript/mcp-apps/content-security-policy.mdx&quot;,
     &quot;docs/v2/typescript/mcp-apps/generative-ui.mdx&quot;,
     &quot;docs/v2/typescript/mcp-apps/interactivity.mdx&quot;,
@@ -22634,7 +23261,7 @@
     &quot;libraries/typescript/packages/server/examples/sentry/.env.example&quot;,
     &quot;libraries/typescript/packages/server/examples/upstash/.env.example&quot;,
     &quot;libraries/typescript/patches/@modelcontextprotocol__sdk.patch&quot;,
-    &quot;libraries/typescript/patches/@modelcontextprotocol__server@2.0.0.patch&quot;,
+    &quot;libraries/typescript/patches/@modelcontextprotocol__server@2.3.1.patch&quot;,
     &quot;libraries/typescript/patches/better-call@1.4.0.patch&quot;
   ],
   &quot;excludedFiles&quot;: [
@@ -22844,6 +23471,10 @@
     },
     {
       &quot;path&quot;: &quot;docs/images/icons/keycloak.svg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/images/icons/openai.svg&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -24255,6 +24886,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;docs/v2/typescript/mcp-apps/chatgpt-extensions.mdx&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;docs/v2/typescript/mcp-apps/content-security-policy.mdx&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -24588,6 +25223,10 @@
     },
     {
       &quot;path&quot;: &quot;libraries/typescript/.prettierignore&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/API.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -25259,6 +25898,34 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/mcp-env.d.ts&quot;,
+      &quot;reason&quot;: &quot;type-declaration&quot;
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/public/book.svg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/public/covers/moonlit-atlas.png&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/public/covers/paper-planets.png&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/public/covers/small-hours.png&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/bookshop/views/bookshop/view.css&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;libraries/typescript/packages/server/examples/views/excalidraw/README.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -25347,7 +26014,7 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;libraries/typescript/patches/@modelcontextprotocol__server@2.0.0.patch&quot;,
+      &quot;path&quot;: &quot;libraries/typescript/patches/@modelcontextprotocol__server@2.3.1.patch&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
