@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"hashicorp__terraform-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of hashicorp__terraform-mcp-server: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-10-12","dateModified":"2026-10-12","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/hashicorp-terraform-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"hashicorp__terraform-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of hashicorp__terraform-mcp-server: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-10-19","dateModified":"2026-10-19","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/hashicorp-terraform-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-12">
+<body data-scan="2026-10-19">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>hashicorp__terraform-mcp-server <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope minimal · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-12 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream hashicorp/terraform-mcp-server @ 66e223d (2026-10-08)</p>
+<p class="muted">Scanned 2026-10-19 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream hashicorp/terraform-mcp-server @ 4bbe30c (2026-10-15)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: No non-empty supported source analyzed; documentation and data alone provide limited coverage; Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 24 analyzed / 355 discovered files; 313 unsupported source files; 332 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 24 analyzed / 389 discovered files; 346 unsupported source files; 366 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>No non-empty supported source analyzed; documentation and data alone provide limited coverage</li><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -53,7 +53,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 355,
+  &quot;discoveredFiles&quot;: 389,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/config.yml&quot;,
@@ -103,7 +103,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/e2e_test.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 633,
+      &quot;bytes&quot;: 936,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -296,7 +296,7 @@
     &quot;e2e/provider_details_test.go&quot;,
     &quot;e2e/search_modules_test.go&quot;,
     &quot;e2e/search_policies_test.go&quot;,
-    &quot;e2e/search_providers_test.go&quot;,
+    &quot;e2e/search_provider_docs_test.go&quot;,
     &quot;e2e/transport_test.go&quot;,
     &quot;go.mod&quot;,
     &quot;go.sum&quot;,
@@ -350,7 +350,15 @@
     &quot;pkg/mcp-official/client/session.go&quot;,
     &quot;pkg/mcp-official/client/tfe_client.go&quot;,
     &quot;pkg/mcp-official/client/tfe_client_test.go&quot;,
+    &quot;pkg/mcp-official/resources/resource_templates.go&quot;,
+    &quot;pkg/mcp-official/resources/resources.go&quot;,
+    &quot;pkg/mcp-official/resources/resources_test.go&quot;,
     &quot;pkg/mcp-official/server.go&quot;,
+    &quot;pkg/mcp-official/server_test.go&quot;,
+    &quot;pkg/mcp-official/session_lifecycle.go&quot;,
+    &quot;pkg/mcp-official/session_lifecycle_test.go&quot;,
+    &quot;pkg/mcp-official/stdio.go&quot;,
+    &quot;pkg/mcp-official/stdio_test.go&quot;,
     &quot;pkg/mcp-official/tools/middleware/metrics.go&quot;,
     &quot;pkg/mcp-official/tools/middleware/metrics_test.go&quot;,
     &quot;pkg/mcp-official/tools/middleware/org_allowlist.go&quot;,
@@ -359,22 +367,29 @@
     &quot;pkg/mcp-official/tools/middleware/rate_limit_test.go&quot;,
     &quot;pkg/mcp-official/tools/middleware/tool_logging.go&quot;,
     &quot;pkg/mcp-official/tools/middleware/tool_logging_test.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/get_latest_module_version.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/get_latest_module_version_test.go&quot;,
     &quot;pkg/mcp-official/tools/registry/get_latest_provider_version.go&quot;,
     &quot;pkg/mcp-official/tools/registry/get_latest_provider_version_test.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/get_module_details.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/get_module_details_test.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/get_policy_details.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/get_policy_details_test.go&quot;,
     &quot;pkg/mcp-official/tools/registry/get_provider_capabilities.go&quot;,
     &quot;pkg/mcp-official/tools/registry/get_provider_capabilities_test.go&quot;,
     &quot;pkg/mcp-official/tools/registry/get_provider_details.go&quot;,
     &quot;pkg/mcp-official/tools/registry/get_provider_details_test.go&quot;,
-    &quot;pkg/mcp-official/tools/registry/search_providers.go&quot;,
-    &quot;pkg/mcp-official/tools/registry/search_providers_test.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/results.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/search_modules.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/search_modules_test.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/search_policies.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/search_policies_test.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/search_provider_docs.go&quot;,
+    &quot;pkg/mcp-official/tools/registry/search_provider_docs_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/applies_get_details_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/applies_get_details_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/applies_get_logs_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/applies_get_logs_tool_test.go&quot;,
-    &quot;pkg/mcp-official/tools/tfe/get_private_module_details_tool.go&quot;,
-    &quot;pkg/mcp-official/tools/tfe/get_private_module_details_tool_test.go&quot;,
-    &quot;pkg/mcp-official/tools/tfe/get_private_provider_details_tool.go&quot;,
-    &quot;pkg/mcp-official/tools/tfe/get_private_provider_details_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/mapping_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/organizations_list_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/organizations_list_tool_test.go&quot;,
@@ -392,6 +407,14 @@
     &quot;pkg/mcp-official/tools/tfe/policies_attach_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/policies_list_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/policies_list_tool_test.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/private_get_module_details_tool.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/private_get_module_details_tool_test.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/private_get_provider_details_tool.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/private_get_provider_details_tool_test.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/private_search_modules_tool.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/private_search_modules_tool_test.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/private_search_providers_tool.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/private_search_providers_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/projects_create_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/projects_create_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/projects_delete_tool.go&quot;,
@@ -401,14 +424,14 @@
     &quot;pkg/mcp-official/tools/tfe/projects_list_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/projects_list_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/results.go&quot;,
-    &quot;pkg/mcp-official/tools/tfe/search_private_modules_tool.go&quot;,
-    &quot;pkg/mcp-official/tools/tfe/search_private_modules_tool_test.go&quot;,
-    &quot;pkg/mcp-official/tools/tfe/search_private_providers_tool.go&quot;,
-    &quot;pkg/mcp-official/tools/tfe/search_private_providers_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/stacks_get_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/stacks_get_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/stacks_list_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/stacks_list_tool_test.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/state_version_get_tool.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/state_version_get_tool_test.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/state_version_list_tool.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/state_version_list_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/tags.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/tags_create_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/tags_create_tool_test.go&quot;,
@@ -449,10 +472,20 @@
     &quot;pkg/mcp-official/tools/tfe/workspace_variables_list_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/workspace_variables_update_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/workspace_variables_update_tool_test.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/workspaces_create_tool.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/workspaces_create_tool_test.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/workspaces_delete_tool_safely.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/workspaces_delete_tool_safely_test.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/workspaces_details.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/workspaces_details_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/workspaces_force_unlock_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/workspaces_force_unlock_tool_test.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/workspaces_get_tool.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/workspaces_get_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/workspaces_list_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/workspaces_list_tool_test.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/workspaces_update_tool.go&quot;,
+    &quot;pkg/mcp-official/tools/tfe/workspaces_update_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tools.go&quot;,
     &quot;pkg/otelmetrics/otelmetrics.go&quot;,
     &quot;pkg/otelmetrics/otelmetrics_test.go&quot;,
@@ -473,7 +506,7 @@
     &quot;pkg/tools/registry/get_provider_details.go&quot;,
     &quot;pkg/tools/registry/search_modules.go&quot;,
     &quot;pkg/tools/registry/search_policies.go&quot;,
-    &quot;pkg/tools/registry/search_providers.go&quot;,
+    &quot;pkg/tools/registry/search_provider_docs.go&quot;,
     &quot;pkg/tools/tfe/action_run.go&quot;,
     &quot;pkg/tools/tfe/add_team_member.go&quot;,
     &quot;pkg/tools/tfe/add_team_member_test.go&quot;,
@@ -717,7 +750,7 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;e2e/search_providers_test.go&quot;,
+      &quot;path&quot;: &quot;e2e/search_provider_docs_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -953,7 +986,39 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/mcp-official/resources/resource_templates.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/resources/resources.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/resources/resources_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/mcp-official/server.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/server_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/session_lifecycle.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/session_lifecycle_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/stdio.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/stdio_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -989,11 +1054,35 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/get_latest_module_version.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/get_latest_module_version_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/get_latest_provider_version.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
       &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/get_latest_provider_version_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/get_module_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/get_module_details_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/get_policy_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/get_policy_details_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1013,11 +1102,31 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/search_providers.go&quot;,
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/results.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/search_providers_test.go&quot;,
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/search_modules.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/search_modules_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/search_policies.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/search_policies_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/search_provider_docs.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/search_provider_docs_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1034,22 +1143,6 @@
     },
     {
       &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/applies_get_logs_tool_test.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/get_private_module_details_tool.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/get_private_module_details_tool_test.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/get_private_provider_details_tool.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/get_private_provider_details_tool_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1121,6 +1214,38 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/private_get_module_details_tool.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/private_get_module_details_tool_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/private_get_provider_details_tool.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/private_get_provider_details_tool_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/private_search_modules_tool.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/private_search_modules_tool_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/private_search_providers_tool.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/private_search_providers_tool_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/projects_create_tool.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -1157,22 +1282,6 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/search_private_modules_tool.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/search_private_modules_tool_test.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/search_private_providers_tool.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/search_private_providers_tool_test.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
       &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/stacks_get_tool.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -1187,6 +1296,26 @@
     {
       &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/stacks_list_tool_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/state_version_get_tool.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/state_version_get_tool_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/state_version_list_tool.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/state_version_list_tool_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/static/default-cli-run.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
       &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/tags.go&quot;,
@@ -1349,6 +1478,30 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_create_tool.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_create_tool_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_delete_tool_safely.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_delete_tool_safely_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_details.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_details_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_force_unlock_tool.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -1357,11 +1510,27 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_get_tool.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_get_tool_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_list_tool.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
       &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_list_tool_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_update_tool.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/tfe/workspaces_update_tool_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1445,7 +1614,7 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;pkg/tools/registry/search_providers.go&quot;,
+      &quot;path&quot;: &quot;pkg/tools/registry/search_provider_docs.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {

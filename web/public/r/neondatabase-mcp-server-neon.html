@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>neondatabase__mcp-server-neon — Trust Card (Grade U) · OpenTrustBench</title>
-<meta name="description" content="Static security scan of neondatabase__mcp-server-neon: grade U (Ungraded — insufficient static coverage), 10 findings, scope excessive. Not ranked: insufficient static coverage.">
+<meta name="description" content="Static security scan of neondatabase__mcp-server-neon: grade U (Ungraded — insufficient static coverage), 14 findings, scope excessive. Not ranked: insufficient static coverage.">
 <link rel="canonical" href="https://opentrustbench.com/r/neondatabase-mcp-server-neon.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="neondatabase__mcp-server-neon — OpenTrustBench Grade U">
@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"neondatabase__mcp-server-neon — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of neondatabase__mcp-server-neon: 10 findings (7 critical), permission scope excessive.","datePublished":"2026-10-12","dateModified":"2026-10-12","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/neondatabase-mcp-server-neon.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"neondatabase__mcp-server-neon — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of neondatabase__mcp-server-neon: 14 findings (11 critical), permission scope excessive.","datePublished":"2026-10-19","dateModified":"2026-10-19","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/neondatabase-mcp-server-neon.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-12">
+<body data-scan="2026-10-19">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -32,13 +32,13 @@
 <script>try{var d=new Date(document.body.dataset.scan);if((Date.now()-d.getTime())/864e5>30){document.getElementById('stale').hidden=false;}}catch(_){}</script>
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>neondatabase__mcp-server-neon <span class="grade ">U</span></h1>
-<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 10 findings (7 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-12 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream neondatabase/mcp-server-neon @ 185d5ee (2026-10-04)</p>
+<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 14 findings (11 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
+<p class="muted">Scanned 2026-10-19 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream neondatabase/mcp-server-neon @ 1f341ee (2026-10-15)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present; Symlinks or special files were not examined. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 176 analyzed / 255 discovered files; 3 unsupported source files; 82 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 181 analyzed / 265 discovered files; 3 unsupported source files; 87 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Symlinks or special files were not examined</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -53,7 +53,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 255,
+  &quot;discoveredFiles&quot;: 265,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/dependabot.yml&quot;,
@@ -67,7 +67,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/claude.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2423,
+      &quot;bytes&quot;: 2446,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -76,7 +76,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/deploy-preview.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 5574,
+      &quot;bytes&quot;: 5620,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -85,7 +85,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/pr.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 3234,
+      &quot;bytes&quot;: 3149,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -142,7 +142,7 @@
     {
       &quot;path&quot;: &quot;app/api/[transport]/route.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 47713,
+      &quot;bytes&quot;: 50141,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -158,7 +158,7 @@
     {
       &quot;path&quot;: &quot;app/api/authorize/route.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12889,
+      &quot;bytes&quot;: 12944,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -190,7 +190,7 @@
     {
       &quot;path&quot;: &quot;app/api/list-tools/route.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5445,
+      &quot;bytes&quot;: 5678,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -334,7 +334,7 @@
     {
       &quot;path&quot;: &quot;e2e/list-tools.spec.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3962,
+      &quot;bytes&quot;: 4070,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -366,7 +366,7 @@
     {
       &quot;path&quot;: &quot;e2e/oauth-consent-modes.spec.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 27127,
+      &quot;bytes&quot;: 31125,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -583,7 +583,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/__snapshots__/hosted-tools-list.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 156942,
+      &quot;bytes&quot;: 163655,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -704,7 +704,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/consent-approval.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9696,
+      &quot;bytes&quot;: 13000,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -736,7 +736,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/consent-dialog.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12018,
+      &quot;bytes&quot;: 15753,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -752,7 +752,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/consent-mode.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3629,
+      &quot;bytes&quot;: 3842,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -864,7 +864,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/grant-context.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6969,
+      &quot;bytes&quot;: 9845,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -880,7 +880,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/grant-filter.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14938,
+      &quot;bytes&quot;: 15019,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -896,7 +896,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/handle-tool-error.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2828,
+      &quot;bytes&quot;: 4255,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -929,6 +929,22 @@
       &quot;path&quot;: &quot;mcp/__tests__/hosted-tools-list.snapshot.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 3551,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;mcp/__tests__/inspect-database-errors.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3275,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1040,7 +1056,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/list-tools-endpoint.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9182,
+      &quot;bytes&quot;: 10077,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1056,7 +1072,23 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/live/mcp-server.live.e2e.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 31508,
+      &quot;bytes&quot;: 38408,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;mcp/__tests__/live/pinned-role.live.e2e.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 17311,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1072,7 +1104,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/mcp-server.e2e.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11196,
+      &quot;bytes&quot;: 12357,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1102,9 +1134,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;mcp/__tests__/oauth-api-key-fallback.integration.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 8689,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;mcp/__tests__/oauth-authorize-route.integration.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 26631,
+      &quot;bytes&quot;: 31726,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1120,7 +1168,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/oauth-callback-route.integration.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 23661,
+      &quot;bytes&quot;: 24648,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1168,7 +1216,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/oauth-token-route.integration.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4457,
+      &quot;bytes&quot;: 4494,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1198,9 +1246,41 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;mcp/__tests__/pinned-role-route.integration.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 11181,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;mcp/__tests__/pinned-role.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 11577,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;mcp/__tests__/project-scoped-injection.integration.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9379,
+      &quot;bytes&quot;: 9959,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1472,7 +1552,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/token-refresh.integration.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 30937,
+      &quot;bytes&quot;: 31948,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1504,7 +1584,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/tool-definitions.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 27202,
+      &quot;bytes&quot;: 28379,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1536,7 +1616,7 @@
     {
       &quot;path&quot;: &quot;mcp/__tests__/transport-dynamic-tools.integration.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21355,
+      &quot;bytes&quot;: 22752,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1696,7 +1776,7 @@
     {
       &quot;path&quot;: &quot;mcp/oauth/auth-transaction.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5099,
+      &quot;bytes&quot;: 5294,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1728,7 +1808,7 @@
     {
       &quot;path&quot;: &quot;mcp/oauth/consent-approval.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9454,
+      &quot;bytes&quot;: 10482,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1760,7 +1840,7 @@
     {
       &quot;path&quot;: &quot;mcp/oauth/consent-dialog.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 38103,
+      &quot;bytes&quot;: 41462,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1792,7 +1872,7 @@
     {
       &quot;path&quot;: &quot;mcp/oauth/consent-mode.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1218,
+      &quot;bytes&quot;: 1304,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1808,7 +1888,7 @@
     {
       &quot;path&quot;: &quot;mcp/oauth/consent-tools.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1362,
+      &quot;bytes&quot;: 1524,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2000,7 +2080,7 @@
     {
       &quot;path&quot;: &quot;mcp/server/errors.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2888,
+      &quot;bytes&quot;: 3322,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2048,7 +2128,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/definitions.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14106,
+      &quot;bytes&quot;: 14308,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2064,7 +2144,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/generated/adapt.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12451,
+      &quot;bytes&quot;: 13158,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2080,7 +2160,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/generated/names.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4928,
+      &quot;bytes&quot;: 5142,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2096,7 +2176,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/generated/operations.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4183,
+      &quot;bytes&quot;: 4353,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2128,7 +2208,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/grant-filter.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10313,
+      &quot;bytes&quot;: 11486,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2144,7 +2224,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/handlers/connection-string.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2775,
+      &quot;bytes&quot;: 3384,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2176,7 +2256,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/handlers/describe-branch.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2367,
+      &quot;bytes&quot;: 3065,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2240,7 +2320,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/handlers/inspect-database.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5466,
+      &quot;bytes&quot;: 6305,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2416,7 +2496,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/registration.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2156,
+      &quot;bytes&quot;: 2348,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2448,7 +2528,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/tools.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 36770,
+      &quot;bytes&quot;: 37144,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2464,7 +2544,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/toolsSchema.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12794,
+      &quot;bytes&quot;: 13507,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2480,7 +2560,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/types.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 882,
+      &quot;bytes&quot;: 1045,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2496,7 +2576,7 @@
     {
       &quot;path&quot;: &quot;mcp/tools/utils.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6173,
+      &quot;bytes&quot;: 6273,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2560,7 +2640,7 @@
     {
       &quot;path&quot;: &quot;mcp/utils/grant-context.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4474,
+      &quot;bytes&quot;: 6572,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2697,7 +2777,7 @@
     {
       &quot;path&quot;: &quot;pnpm-lock.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 252582,
+      &quot;bytes&quot;: 252583,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2943,6 +3023,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;e2e/consent-screenshots/A7-pinned-role-confirmation.png&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;e2e/consent-screenshots/B1-bare-editable.png&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -2984,6 +3068,22 @@
     },
     {
       &quot;path&quot;: &quot;e2e/consent-screenshots/B7-switch-back-to-all-projects.png&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/consent-screenshots/B8-editable-role-collapsed.png&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/consent-screenshots/B8-editable-role-read-only.png&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/consent-screenshots/B8-editable-role-read-write.png&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;e2e/consent-screenshots/B9-invalid-role.png&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -3131,8 +3231,8 @@
     &quot;maxFileBytes&quot;: 1048576
   }
 }</pre></details>
-<h2>Fix first (10 critical/high)</h2>
-<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">mcp/__tests__/transport-dynamic-tools.integration.test.ts:261</code><br><span class="muted">Evidence: </span><code>const oauthToken = 'oauth-client-application';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">mcp/__tests__/transport-dynamic-tools.integration.test.ts:339</code><br><span class="muted">Evidence: </span><code>const oauthToken = 'oauth-unclassified-dcr';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">mcp/__tests__/transport-dynamic-tools.integration.test.ts:419</code><br><span class="muted">Evidence: </span><code>const oauthToken = 'oauth-handshake-wins';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">mcp/__tests__/transport-dynamic-tools.integration.test.ts:565</code><br><span class="muted">Evidence: </span><code>const oauthToken = 'oauth-unscoped-with-query';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">mcp/oauth/refresh-lock.ts:216</code><br><span class="muted">Evidence: </span><code>redis.eval(HEARTBEAT_LUA, {</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">mcp/oauth/refresh-lock.ts:238</code><br><span class="muted">Evidence: </span><code>redis.eval(RELEASE_WITH_TRANSIENT_LUA, {</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">mcp/oauth/refresh-lock.ts:246</code><br><span class="muted">Evidence: </span><code>redis.eval(RELEASE_LUA, { keys: [lkey], arguments: [owner] }),</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">lib/oauth/client.ts:191</code><br><span class="muted">Evidence: </span><code>return globalThis.fetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">lib/oauth/client.ts:193</code><br><span class="muted">Evidence: </span><code>return globalThis.fetch(input, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">mcp/tools/handlers/docs.ts:52</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
+<h2>Fix first (14 critical/high)</h2>
+<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">mcp/__tests__/oauth-api-key-fallback.integration.test.ts:63</code><br><span class="muted">Evidence: </span><code>const OAUTH_BEARER = 'oauth-bearer-from-the-mcp-oauth-flow';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">mcp/__tests__/pinned-role-route.integration.test.ts:18</code><br><span class="muted">Evidence: </span><code>const PASSWORD = 'FAKE_TEST_PASSWORD_123';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">mcp/__tests__/pinned-role-route.integration.test.ts:19</code><br><span class="muted">Evidence: </span><code>const API_KEY = 'fake-api-key-for-tests';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">mcp/__tests__/pinned-role.test.ts:52</code><br><span class="muted">Evidence: </span><code>const PASSWORD = 'FAKE_TEST_PASSWORD_123';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">mcp/__tests__/transport-dynamic-tools.integration.test.ts:261</code><br><span class="muted">Evidence: </span><code>const oauthToken = 'oauth-client-application';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">mcp/__tests__/transport-dynamic-tools.integration.test.ts:339</code><br><span class="muted">Evidence: </span><code>const oauthToken = 'oauth-unclassified-dcr';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">mcp/__tests__/transport-dynamic-tools.integration.test.ts:419</code><br><span class="muted">Evidence: </span><code>const oauthToken = 'oauth-handshake-wins';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">mcp/__tests__/transport-dynamic-tools.integration.test.ts:611</code><br><span class="muted">Evidence: </span><code>const oauthToken = 'oauth-unscoped-with-query';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">mcp/oauth/refresh-lock.ts:216</code><br><span class="muted">Evidence: </span><code>redis.eval(HEARTBEAT_LUA, {</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">mcp/oauth/refresh-lock.ts:238</code><br><span class="muted">Evidence: </span><code>redis.eval(RELEASE_WITH_TRANSIENT_LUA, {</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">mcp/oauth/refresh-lock.ts:246</code><br><span class="muted">Evidence: </span><code>redis.eval(RELEASE_LUA, { keys: [lkey], arguments: [owner] }),</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">lib/oauth/client.ts:191</code><br><span class="muted">Evidence: </span><code>return globalThis.fetch(input, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">lib/oauth/client.ts:193</code><br><span class="muted">Evidence: </span><code>return globalThis.fetch(input, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">mcp/tools/handlers/docs.ts:52</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
 <h2>Permissions</h2>
 <p>Scope: <strong>excessive</strong> · Shell: disabled · Network egress: yes · File deletion: none · Human approval: none</p>
 <h2>Provenance</h2>
