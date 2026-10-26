@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"modelcontextprotocol__java-sdk — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of modelcontextprotocol__java-sdk: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-10-19","dateModified":"2026-10-19","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/modelcontextprotocol-java-sdk.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"modelcontextprotocol__java-sdk — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of modelcontextprotocol__java-sdk: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-10-26","dateModified":"2026-10-26","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/modelcontextprotocol-java-sdk.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-19">
+<body data-scan="2026-10-26">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,7 +33,7 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>modelcontextprotocol__java-sdk <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope minimal · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-19 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/java-sdk @ 7b9b000 (2026-10-16)</p>
+<p class="muted">Scanned 2026-10-26 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/java-sdk @ 54e8b61 (2026-10-23)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: No non-empty supported source analyzed; documentation and data alone provide limited coverage; Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
@@ -67,7 +67,7 @@
     {
       &quot;path&quot;: &quot;.github/dependabot.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1063,
+      &quot;bytes&quot;: 3729,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -76,7 +76,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/ci.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 847,
+      &quot;bytes&quot;: 878,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -85,7 +85,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/conformance.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4380,
+      &quot;bytes&quot;: 4411,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -103,7 +103,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/maven-central-release.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1429,
+      &quot;bytes&quot;: 1460,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -112,7 +112,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/publish-snapshot.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1465,
+      &quot;bytes&quot;: 1496,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -268,6 +268,7 @@
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/server/transport/HeaderAccessor.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/server/transport/HttpServletHeaderAccessor.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/server/transport/HttpServletRequestUtils.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/server/transport/HttpServletResponseUtils.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/server/transport/HttpServletSseServerTransportProvider.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/server/transport/HttpServletStatelessServerTransport.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/server/transport/HttpServletStreamableServerTransportProvider.java&quot;,
@@ -338,17 +339,7 @@
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/customizer/McpHttpClientAuthorizationErrorHandlerTest.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/customizer/McpHttpClientTransportAuthorizationErrorHandlerTest.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/common/McpTransportContextTests.java&quot;,
-    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/HmacRequestStateCodecTests.java&quot;,
-    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/McpServerMrtrTests.java&quot;,
-    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/McpServerTests.java&quot;,
-    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/ModernTestFixtures.java&quot;,
-    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/SubscriptionsFeatureTests.java&quot;,
-    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/feature/CompletionsFeatureTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/feature/McpChangeFeedTests.java&quot;,
-    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/feature/PromptsFeatureTests.java&quot;,
-    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/feature/ResourcesFeatureTests.java&quot;,
-    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/feature/ToolsFeatureTests.java&quot;,
-    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/transport/StdioMcpTransportTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/server/AsyncToolSpecificationBuilderTest.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/server/DefaultMcpStatelessServerHandlerTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/server/McpAsyncListFilterTests.java&quot;,
@@ -441,10 +432,19 @@
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/common/HttpClientStreamableHttpVersionNegotiationIntegrationTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/common/SyncServerMcpTransportContextIntegrationTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/McpSchemaSerializationTests.java&quot;,
-    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/feature/CompletionsFeatureValueCapTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/HmacRequestStateCodecTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/McpServerMrtrTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/McpServerTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/ModernTestFixtures.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/SubscriptionsFeatureTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/feature/CompletionsFeatureTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/feature/PromptsFeatureTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/feature/ResourcesFeatureTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/feature/ToolsFeatureTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/transport/HttpServletMcpTransportIntegrationTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/transport/HttpServletMcpTransportSlowClientIntegrationTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/transport/HttpServletMcpTransportThreadLocalIntegrationTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/transport/StdioMcpTransportTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/server/DerivedCapabilitiesRuntimeChangesTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/server/HttpServletSseIntegrationTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/server/HttpServletStatelessIntegrationTests.java&quot;,
@@ -1126,6 +1126,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/server/transport/HttpServletResponseUtils.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/server/transport/HttpServletSseServerTransportProvider.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -1406,47 +1410,7 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/HmacRequestStateCodecTests.java&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/McpServerMrtrTests.java&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/McpServerTests.java&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/ModernTestFixtures.java&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/SubscriptionsFeatureTests.java&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/feature/CompletionsFeatureTests.java&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
       &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/feature/McpChangeFeedTests.java&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/feature/PromptsFeatureTests.java&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/feature/ResourcesFeatureTests.java&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/feature/ToolsFeatureTests.java&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/transport/StdioMcpTransportTests.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1818,7 +1782,39 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/feature/CompletionsFeatureValueCapTests.java&quot;,
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/HmacRequestStateCodecTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/McpServerMrtrTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/McpServerTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/ModernTestFixtures.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/SubscriptionsFeatureTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/feature/CompletionsFeatureTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/feature/PromptsFeatureTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/feature/ResourcesFeatureTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/feature/ToolsFeatureTests.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1831,6 +1827,10 @@
     },
     {
       &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/transport/HttpServletMcpTransportThreadLocalIntegrationTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/transport/StdioMcpTransportTests.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {

@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"modelcontextprotocol__csharp-sdk — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of modelcontextprotocol__csharp-sdk: 0 findings (0 critical), permission scope moderate.","datePublished":"2026-10-19","dateModified":"2026-10-19","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/modelcontextprotocol-csharp-sdk.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"modelcontextprotocol__csharp-sdk — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of modelcontextprotocol__csharp-sdk: 0 findings (0 critical), permission scope moderate.","datePublished":"2026-10-26","dateModified":"2026-10-26","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/modelcontextprotocol-csharp-sdk.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-19">
+<body data-scan="2026-10-26">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>modelcontextprotocol__csharp-sdk <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope moderate · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-19 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/csharp-sdk @ af0fda3 (2026-10-17)</p>
+<p class="muted">Scanned 2026-10-26 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/csharp-sdk @ b9faee7 (2026-10-23)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 48 analyzed / 885 discovered files; 760 unsupported source files; 838 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 51 analyzed / 964 discovered files; 826 unsupported source files; 914 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,7 +52,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 885,
+  &quot;discoveredFiles&quot;: 964,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.config/dotnet-tools.json&quot;,
@@ -79,6 +79,38 @@
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/scripts/prepare_markdown_links.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1501,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;.github/scripts/test_prepare_markdown_links.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1770,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
       ]
     },
     {
@@ -129,7 +161,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/markdown-link-check.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1037,
+      &quot;bytes&quot;: 1640,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -237,7 +269,7 @@
     {
       &quot;path&quot;: &quot;docs/concepts/toc.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1212,
+      &quot;bytes&quot;: 1245,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -289,7 +321,7 @@
     {
       &quot;path&quot;: &quot;package-lock.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 56697,
+      &quot;bytes&quot;: 56839,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -298,7 +330,7 @@
     {
       &quot;path&quot;: &quot;package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 313,
+      &quot;bytes&quot;: 314,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -398,6 +430,15 @@
       &quot;path&quot;: &quot;samples/ProtectedMcpServer/appsettings.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 242,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsServer/Properties/launchSettings.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 341,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -604,6 +645,11 @@
     &quot;samples/QuickstartWeatherServer/QuickstartWeatherServer.csproj&quot;,
     &quot;samples/QuickstartWeatherServer/Tools/HttpClientExt.cs&quot;,
     &quot;samples/QuickstartWeatherServer/Tools/WeatherTools.cs&quot;,
+    &quot;samples/SkillsClient/Program.cs&quot;,
+    &quot;samples/SkillsClient/SkillsClient.csproj&quot;,
+    &quot;samples/SkillsClient/YamlFrontmatterReader.cs&quot;,
+    &quot;samples/SkillsServer/Program.cs&quot;,
+    &quot;samples/SkillsServer/SkillsServer.csproj&quot;,
     &quot;samples/TasksExtension/Program.cs&quot;,
     &quot;samples/TasksExtension/TasksExtension.csproj&quot;,
     &quot;samples/TestServerWithHosting/Program.cs&quot;,
@@ -754,6 +800,7 @@
     &quot;src/ModelContextProtocol.Core/Client/McpHeaderExtractor.cs&quot;,
     &quot;src/ModelContextProtocol.Core/Client/McpHttpClient.cs&quot;,
     &quot;src/ModelContextProtocol.Core/Client/ResumeClientSessionOptions.cs&quot;,
+    &quot;src/ModelContextProtocol.Core/Client/ServerDiscoverSkippedForSseException.cs&quot;,
     &quot;src/ModelContextProtocol.Core/Client/SseClientSessionTransport.cs&quot;,
     &quot;src/ModelContextProtocol.Core/Client/StdioClientCompletionDetails.cs&quot;,
     &quot;src/ModelContextProtocol.Core/Client/StdioClientSessionTransport.cs&quot;,
@@ -901,6 +948,7 @@
     &quot;src/ModelContextProtocol.Core/Protocol/UrlElicitationRequiredErrorData.cs&quot;,
     &quot;src/ModelContextProtocol.Core/RequestHandlers.cs&quot;,
     &quot;src/ModelContextProtocol.Core/RequestOptions.cs&quot;,
+    &quot;src/ModelContextProtocol.Core/RequestTimeout.cs&quot;,
     &quot;src/ModelContextProtocol.Core/SemaphoreSlimExtensions.cs&quot;,
     &quot;src/ModelContextProtocol.Core/Server/AIFunctionMcpServerPrompt.cs&quot;,
     &quot;src/ModelContextProtocol.Core/Server/AIFunctionMcpServerResource.cs&quot;,
@@ -975,6 +1023,32 @@
     &quot;src/ModelContextProtocol.Extensions.Apps/Server/McpUiResourcePermissions.cs&quot;,
     &quot;src/ModelContextProtocol.Extensions.Apps/Server/McpUiToolMeta.cs&quot;,
     &quot;src/ModelContextProtocol.Extensions.Apps/Server/McpUiToolVisibility.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Client/McpSkillsClientExtensions.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Client/SkillEntryRejection.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Client/SkillListingResult.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Client/SkillVerificationException.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Client/SkillVerifier.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/McpSkillsJsonContext.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/ModelContextProtocol.Extensions.Skills.csproj&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/GetSkillRequestParams.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/GetSkillResult.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/ListSkillsRequestParams.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/ListSkillsResult.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/Skill.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/SkillResource.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/SkillResources.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/SkillResourcesConverter.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Server/IMcpSkillCatalog.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Server/InMemoryMcpSkillCatalog.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Server/McpServerSkill.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Server/McpServerSkillFile.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Server/McpSkillPage.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Server/McpSkillRequestContext.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Server/McpSkillsBuilderExtensions.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/Server/McpSkillsOptions.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/SkillFrontmatter.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/SkillValidation.cs&quot;,
+    &quot;src/ModelContextProtocol.Extensions.Skills/SkillsProtocol.cs&quot;,
     &quot;src/ModelContextProtocol.Extensions.Tasks/Client/McpTasksClientExtensions.cs&quot;,
     &quot;src/ModelContextProtocol.Extensions.Tasks/McpTasksJsonContext.cs&quot;,
     &quot;src/ModelContextProtocol.Extensions.Tasks/ModelContextProtocol.Extensions.Tasks.csproj&quot;,
@@ -1005,6 +1079,7 @@
     &quot;tests/Common/Utils/ProcessExtensions.cs&quot;,
     &quot;tests/Common/Utils/ServerMessageTracker.cs&quot;,
     &quot;tests/Common/Utils/TestConstants.cs&quot;,
+    &quot;tests/Common/Utils/TestMcpClient.cs&quot;,
     &quot;tests/Common/Utils/TestServerTransport.cs&quot;,
     &quot;tests/Common/Utils/XunitLoggerProvider.cs&quot;,
     &quot;tests/Directory.Build.props&quot;,
@@ -1018,6 +1093,7 @@
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/CachingConformanceTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/ClientConformanceTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/ConformanceServerFixture.cs&quot;,
+    &quot;tests/ModelContextProtocol.AspNetCore.Tests/ConformanceServerFixtureTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/DistributedCacheResumabilityIntegrationTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/GlobalUsings.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/HttpHeaderConformanceTests.cs&quot;,
@@ -1037,12 +1113,15 @@
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/ModelContextProtocol.AspNetCore.Tests.csproj&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/MrtrProtocolTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/AuthEventTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/AuthServerMetadataCancellationTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/AuthTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/DcrFailureTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/DefaultAuthorizationUrlHandlerTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/DiscoveryTimeoutTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/IdentityAssertionGrantIntegrationTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/McpAuthenticationHandlerTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/OAuthTestBase.cs&quot;,
+    &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/SseDiscoveryTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/TokenCacheTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/RawHttpConformanceTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/RequestAbortCancellationTests.cs&quot;,
@@ -1050,6 +1129,7 @@
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/ResumabilityIntegrationTestsBase.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/ServerConformanceTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/SessionMigrationTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.AspNetCore.Tests/SkillsAuthorizationTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/SseIntegrationTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/SseServerIntegrationTestFixture.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/SseServerIntegrationTests.cs&quot;,
@@ -1058,6 +1138,7 @@
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/StreamableHttpClientConformanceTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/StreamableHttpServerConformanceTests.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/StreamableHttpServerIntegrationTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.AspNetCore.Tests/Utils/AsyncGate.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/Utils/FaultingStreamHandler.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/Utils/KestrelInMemoryConnection.cs&quot;,
     &quot;tests/ModelContextProtocol.AspNetCore.Tests/Utils/KestrelInMemoryTest.cs&quot;,
@@ -1072,6 +1153,7 @@
     &quot;tests/ModelContextProtocol.ConformanceServer/Prompts/ConformancePrompts.cs&quot;,
     &quot;tests/ModelContextProtocol.ConformanceServer/Prompts/IncompleteResultPrompts.cs&quot;,
     &quot;tests/ModelContextProtocol.ConformanceServer/Resources/ConformanceResources.cs&quot;,
+    &quot;tests/ModelContextProtocol.ConformanceServer/Skills/ConformanceSkills.cs&quot;,
     &quot;tests/ModelContextProtocol.ConformanceServer/Tools/ConformanceTaskTools.cs&quot;,
     &quot;tests/ModelContextProtocol.ConformanceServer/Tools/ConformanceTools.cs&quot;,
     &quot;tests/ModelContextProtocol.ConformanceServer/Tools/IncompleteResultTools.cs&quot;,
@@ -1119,7 +1201,11 @@
     &quot;tests/ModelContextProtocol.Tests/Client/McpHeaderEncoderTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Client/McpHeaderExtractorValidationTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Client/McpRequestHeadersTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Client/McpSkillsClientUnreadableTextTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Client/McpSkillsClientValidationTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Client/McpSkillsEnumerationTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Client/MrtrIntegrationTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Client/SkillVerifierTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/ClientIntegrationTestFixture.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/ClientIntegrationTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/ClientServerTestBase.cs&quot;,
@@ -1226,6 +1312,7 @@
     &quot;tests/ModelContextProtocol.Tests/Protocol/SamplingMessageTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Protocol/ServerCapabilitiesTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Protocol/SetLevelRequestParamsTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Protocol/SkillSerializationTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Protocol/SubscribeRequestParamsTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Protocol/SubscriptionsListenProtocolTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Protocol/TaskSerializationTests.cs&quot;,
@@ -1239,6 +1326,7 @@
     &quot;tests/ModelContextProtocol.Tests/Protocol/UrlElicitationRequiredErrorDataTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Protocol/UrlElicitationTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/RequestOptionsTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Samples/SkillsClientFrontmatterReaderTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/CallToolFilterMixingTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/CustomRequestHandlerCollisionTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/DelegatingMcpServerPromptTests.cs&quot;,
@@ -1246,7 +1334,9 @@
     &quot;tests/ModelContextProtocol.Tests/Server/DelegatingMcpServerToolTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/DistributedCacheEventStreamStoreTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/EmptyCollectionTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/InMemoryMcpSkillCatalogTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/InMemoryMcpTaskStoreTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/InjectedParameterSchemaTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/July2026ProtocolBackcompatTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpAppsIntegrationTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpAppsTests.cs&quot;,
@@ -1254,14 +1344,26 @@
     &quot;tests/ModelContextProtocol.Tests/Server/McpMetaAttributeTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpServerDelegatesTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpServerLoggingLevelTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/McpServerNativeUriSkillTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/McpServerNestedUnicodeSkillTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpServerPrimitiveCollectionTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpServerPromptTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpServerResourceTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillAuthoringBoundaryTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsCatalogTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsDefaultsTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsFromDirectoryTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsIntegrityTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsOwnershipTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsRegistrationTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpServerTaskTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpServerTasksNoStoreTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpServerTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpServerToolNameValidationTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpServerToolTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/McpSkillDirectorySelectionTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/McpTaskStoreTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/MrtrHandlerLifecycleTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/MrtrInputRequiredExceptionTests.cs&quot;,
@@ -1274,6 +1376,10 @@
     &quot;tests/ModelContextProtocol.Tests/Server/RawStreamConformanceTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/ResourceSubscriptionProtocolGatingTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/Sep2106ListToolsBackCompatTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/SkillFrontmatterCorpusTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/SkillFrontmatterNodeClassificationTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/SkillFrontmatterRegressionTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Server/SkillFrontmatterTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/SubscriptionsListenHandlerTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/SubscriptionsListenTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Server/TaskCallToolFilterCompositionTests.cs&quot;,
@@ -1289,7 +1395,8 @@
     &quot;tests/ModelContextProtocol.Tests/Transport/SseResponseStreamTransportTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Transport/StdioClientTransportTests.cs&quot;,
     &quot;tests/ModelContextProtocol.Tests/Transport/StdioServerTransportTests.cs&quot;,
-    &quot;tests/ModelContextProtocol.Tests/Transport/StreamableHttpServerTransportTests.cs&quot;
+    &quot;tests/ModelContextProtocol.Tests/Transport/StreamableHttpServerTransportTests.cs&quot;,
+    &quot;tests/ModelContextProtocol.Tests/Utils/ConformanceProcessTests.cs&quot;
   ],
   &quot;excludedFiles&quot;: [
     {
@@ -1625,6 +1732,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;docs/concepts/skills/skills.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;docs/concepts/stateless/stateless.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -1874,6 +1985,62 @@
     },
     {
       &quot;path&quot;: &quot;samples/QuickstartWeatherServer/Tools/WeatherTools.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsClient/Program.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsClient/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsClient/SkillsClient.csproj&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsClient/YamlFrontmatterReader.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsServer/Program.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsServer/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsServer/Skills/git-workflow/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsServer/Skills/git-workflow/references/COMMIT_STYLE.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsServer/Skills/git-workflow/templates/PULL_REQUEST.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsServer/Skills/refunds/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsServer/Skills/refunds/examples/approved.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsServer/Skills/refunds/examples/declined.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsServer/Skills/refunds/policy/REFUND_POLICY.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;samples/SkillsServer/SkillsServer.csproj&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -2497,6 +2664,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Core/Client/ServerDiscoverSkippedForSseException.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;src/ModelContextProtocol.Core/Client/SseClientSessionTransport.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -3085,6 +3256,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Core/RequestTimeout.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;src/ModelContextProtocol.Core/SemaphoreSlimExtensions.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -3381,6 +3556,110 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Client/McpSkillsClientExtensions.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Client/SkillEntryRejection.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Client/SkillListingResult.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Client/SkillVerificationException.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Client/SkillVerifier.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/McpSkillsJsonContext.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/ModelContextProtocol.Extensions.Skills.csproj&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/GetSkillRequestParams.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/GetSkillResult.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/ListSkillsRequestParams.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/ListSkillsResult.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/Skill.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/SkillResource.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/SkillResources.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Protocol/SkillResourcesConverter.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Server/IMcpSkillCatalog.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Server/InMemoryMcpSkillCatalog.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Server/McpServerSkill.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Server/McpServerSkillFile.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Server/McpSkillPage.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Server/McpSkillRequestContext.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Server/McpSkillsBuilderExtensions.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/Server/McpSkillsOptions.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/SkillFrontmatter.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/SkillValidation.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Skills/SkillsProtocol.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;src/ModelContextProtocol.Extensions.Tasks/Client/McpTasksClientExtensions.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -3505,6 +3784,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tests/Common/Utils/TestMcpClient.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tests/Common/Utils/TestServerTransport.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -3554,6 +3837,10 @@
     },
     {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.AspNetCore.Tests/ConformanceServerFixture.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.AspNetCore.Tests/ConformanceServerFixtureTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -3633,6 +3920,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/AuthServerMetadataCancellationTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/AuthTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -3645,6 +3936,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/DiscoveryTimeoutTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/IdentityAssertionGrantIntegrationTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -3654,6 +3949,10 @@
     },
     {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/OAuthTestBase.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.AspNetCore.Tests/OAuth/SseDiscoveryTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -3682,6 +3981,10 @@
     },
     {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.AspNetCore.Tests/SessionMigrationTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.AspNetCore.Tests/SkillsAuthorizationTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -3714,6 +4017,10 @@
     },
     {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.AspNetCore.Tests/StreamableHttpServerIntegrationTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.AspNetCore.Tests/Utils/AsyncGate.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -3770,6 +4077,10 @@
     },
     {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.ConformanceServer/Resources/ConformanceResources.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.ConformanceServer/Skills/ConformanceSkills.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -3961,7 +4272,23 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Client/McpSkillsClientUnreadableTextTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Client/McpSkillsClientValidationTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Client/McpSkillsEnumerationTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Client/MrtrIntegrationTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Client/SkillVerifierTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -4389,6 +4716,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Protocol/SkillSerializationTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Protocol/SubscribeRequestParamsTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -4441,6 +4772,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Samples/SkillsClientFrontmatterReaderTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/CallToolFilterMixingTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -4469,7 +4804,15 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/InMemoryMcpSkillCatalogTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/InMemoryMcpTaskStoreTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/InjectedParameterSchemaTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -4501,6 +4844,14 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerNativeUriSkillTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerNestedUnicodeSkillTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerPrimitiveCollectionTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -4510,6 +4861,42 @@
     },
     {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerResourceTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillAuthoringBoundaryTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsCatalogTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsDefaultsTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsFromDirectoryTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsIntegrityTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsOwnershipTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsRegistrationTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerSkillsTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -4530,6 +4917,10 @@
     },
     {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpServerToolTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/McpSkillDirectorySelectionTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -4578,6 +4969,22 @@
     },
     {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/Sep2106ListToolsBackCompatTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/SkillFrontmatterCorpusTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/SkillFrontmatterNodeClassificationTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/SkillFrontmatterRegressionTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Server/SkillFrontmatterTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -4642,6 +5049,10 @@
     },
     {
       &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Transport/StreamableHttpServerTransportTests.cs&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tests/ModelContextProtocol.Tests/Utils/ConformanceProcessTests.cs&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     }
   ],

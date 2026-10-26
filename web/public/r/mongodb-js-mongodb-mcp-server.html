@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"mongodb-js__mongodb-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of mongodb-js__mongodb-mcp-server: 13 findings (8 critical), permission scope excessive.","datePublished":"2026-10-19","dateModified":"2026-10-19","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/mongodb-js-mongodb-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"mongodb-js__mongodb-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of mongodb-js__mongodb-mcp-server: 13 findings (8 critical), permission scope excessive.","datePublished":"2026-10-26","dateModified":"2026-10-26","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/mongodb-js-mongodb-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-19">
+<body data-scan="2026-10-26">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>mongodb-js__mongodb-mcp-server <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 13 findings (8 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-19 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream mongodb-js/mongodb-mcp-server @ 0cfe62a (2026-10-19)</p>
+<p class="muted">Scanned 2026-10-26 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream mongodb-js/mongodb-mcp-server @ 1b117c7 (2026-10-23)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present; Scan limits reached. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 747 analyzed / 800 discovered files; 16 unsupported source files; 53 excluded; 0 read errors; 1 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 748 analyzed / 801 discovered files; 16 unsupported source files; 53 excluded; 0 read errors; 1 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Scan limits reached</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -53,7 +53,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 800,
+  &quot;discoveredFiles&quot;: 801,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/bug_report.yml&quot;,
@@ -121,7 +121,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/braintrust-evals.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2071,
+      &quot;bytes&quot;: 2108,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -193,7 +193,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/copilot-setup-steps.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 827,
+      &quot;bytes&quot;: 828,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -265,7 +265,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/mcp-publish.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 820,
+      &quot;bytes&quot;: 811,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -301,7 +301,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/publish.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 15967,
+      &quot;bytes&quot;: 16574,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -403,7 +403,7 @@
     {
       &quot;path&quot;: &quot;knip.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6054,
+      &quot;bytes&quot;: 6329,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -428,7 +428,7 @@
     {
       &quot;path&quot;: &quot;package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4466,
+      &quot;bytes&quot;: 4460,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -437,7 +437,7 @@
     {
       &quot;path&quot;: &quot;packages/accuracy-tests/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1372,
+      &quot;bytes&quot;: 1366,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1485,7 +1485,7 @@
     {
       &quot;path&quot;: &quot;packages/atlas-api-client/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 979,
+      &quot;bytes&quot;: 973,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1672,7 +1672,7 @@
     {
       &quot;path&quot;: &quot;packages/atlas-telemetry/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 978,
+      &quot;bytes&quot;: 972,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1827,7 +1827,7 @@
     {
       &quot;path&quot;: &quot;packages/browser-tests/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1066,
+      &quot;bytes&quot;: 1060,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2117,7 +2117,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1708,
+      &quot;bytes&quot;: 1702,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2318,7 +2318,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/config/userConfig.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 20822,
+      &quot;bytes&quot;: 22248,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2793,7 +2793,7 @@
     {
       &quot;path&quot;: &quot;packages/core/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1268,
+      &quot;bytes&quot;: 1262,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -3316,7 +3316,7 @@
     {
       &quot;path&quot;: &quot;packages/e2e-tests/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 642,
+      &quot;bytes&quot;: 636,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -3325,7 +3325,7 @@
     {
       &quot;path&quot;: &quot;packages/e2e-tests/src/elicitation.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2175,
+      &quot;bytes&quot;: 2473,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3405,7 +3405,7 @@
     {
       &quot;path&quot;: &quot;packages/e2e-tests/src/utils/inProcessServer.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1653,
+      &quot;bytes&quot;: 1688,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3421,7 +3421,7 @@
     {
       &quot;path&quot;: &quot;packages/e2e-tests/src/utils/useMcpAgent.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2578,
+      &quot;bytes&quot;: 2669,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3462,7 +3462,7 @@
     {
       &quot;path&quot;: &quot;packages/eval-tests/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1452,
+      &quot;bytes&quot;: 1574,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -3530,7 +3530,7 @@
     {
       &quot;path&quot;: &quot;packages/eval-tests/src/lib/evalTypes.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4609,
+      &quot;bytes&quot;: 4565,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3546,7 +3546,7 @@
     {
       &quot;path&quot;: &quot;packages/eval-tests/src/lib/judge.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4358,
+      &quot;bytes&quot;: 4801,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3690,7 +3690,7 @@
     {
       &quot;path&quot;: &quot;packages/eval-tests/src/lib/user.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2124,
+      &quot;bytes&quot;: 2478,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3706,7 +3706,7 @@
     {
       &quot;path&quot;: &quot;packages/eval-tests/src/mongodb.eval.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5814,
+      &quot;bytes&quot;: 5959,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3859,7 +3859,7 @@
     {
       &quot;path&quot;: &quot;packages/fetch/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 984,
+      &quot;bytes&quot;: 978,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -3934,7 +3934,7 @@
     {
       &quot;path&quot;: &quot;packages/harness-tester/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 970,
+      &quot;bytes&quot;: 964,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -3943,7 +3943,7 @@
     {
       &quot;path&quot;: &quot;packages/harness-tester/src/harness/claude/claudeConfig.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4795,
+      &quot;bytes&quot;: 5445,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3959,7 +3959,7 @@
     {
       &quot;path&quot;: &quot;packages/harness-tester/src/harness/claude/claudeConfig.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7070,
+      &quot;bytes&quot;: 7534,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4039,7 +4039,7 @@
     {
       &quot;path&quot;: &quot;packages/harness-tester/src/harness/codex/codexConfig.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5284,
+      &quot;bytes&quot;: 9460,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4055,7 +4055,23 @@
     {
       &quot;path&quot;: &quot;packages/harness-tester/src/harness/codex/codexConfig.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10192,
+      &quot;bytes&quot;: 13919,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/harness-tester/src/harness/codex/codexHarness.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 783,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4071,7 +4087,7 @@
     {
       &quot;path&quot;: &quot;packages/harness-tester/src/harness/codex/codexHarness.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3796,
+      &quot;bytes&quot;: 4202,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4119,7 +4135,7 @@
     {
       &quot;path&quot;: &quot;packages/harness-tester/src/harness/codex/codexSession.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1654,
+      &quot;bytes&quot;: 1748,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4135,7 +4151,7 @@
     {
       &quot;path&quot;: &quot;packages/harness-tester/src/harness/codex/codexTuiMarkers.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3191,
+      &quot;bytes&quot;: 3782,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4151,7 +4167,7 @@
     {
       &quot;path&quot;: &quot;packages/harness-tester/src/harness/codex/codexTuiMarkers.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1860,
+      &quot;bytes&quot;: 2391,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4215,7 +4231,7 @@
     {
       &quot;path&quot;: &quot;packages/harness-tester/src/harness/tuiSession.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3292,
+      &quot;bytes&quot;: 15190,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4231,7 +4247,7 @@
     {
       &quot;path&quot;: &quot;packages/harness-tester/src/harness/tuiSession.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12297,
+      &quot;bytes&quot;: 16366,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4295,7 +4311,7 @@
     {
       &quot;path&quot;: &quot;packages/harness-tester/src/useAgent.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2271,
+      &quot;bytes&quot;: 2959,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4329,7 +4345,7 @@
     {
       &quot;path&quot;: &quot;packages/http-runners/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1202,
+      &quot;bytes&quot;: 1196,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -4516,7 +4532,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1715,
+      &quot;bytes&quot;: 1709,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -4671,7 +4687,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/config/userConfig.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 43381,
+      &quot;bytes&quot;: 46230,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5711,7 +5727,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/tools/mongodb/metadata/explain.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 20134,
+      &quot;bytes&quot;: 22381,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5775,7 +5791,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/tools/mongodb/mongodbTool.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 25564,
+      &quot;bytes&quot;: 22997,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5791,7 +5807,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/tools/mongodb/read/aggregate.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 77708,
+      &quot;bytes&quot;: 79214,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5855,7 +5871,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/tools/mongodb/read/find.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 31547,
+      &quot;bytes&quot;: 32740,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6209,7 +6225,7 @@
     {
       &quot;path&quot;: &quot;packages/logging/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1025,
+      &quot;bytes&quot;: 1019,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -6364,7 +6380,7 @@
     {
       &quot;path&quot;: &quot;packages/metrics/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 957,
+      &quot;bytes&quot;: 951,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -6952,7 +6968,7 @@
     {
       &quot;path&quot;: &quot;packages/mongodb-mcp-server/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4194,
+      &quot;bytes&quot;: 4188,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -6961,7 +6977,7 @@
     {
       &quot;path&quot;: &quot;packages/mongodb-mcp-server/packaging/mcpb/manifest.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 3622,
+      &quot;bytes&quot;: 3616,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -7034,7 +7050,7 @@
     {
       &quot;path&quot;: &quot;packages/mongodb-mcp-server/server.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 63896,
+      &quot;bytes&quot;: 67192,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -7059,7 +7075,7 @@
     {
       &quot;path&quot;: &quot;packages/mongodb-mcp-server/src/common/packageInfo.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 360,
+      &quot;bytes&quot;: 354,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7191,7 +7207,7 @@
     {
       &quot;path&quot;: &quot;packages/scripts/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1583,
+      &quot;bytes&quot;: 1577,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -7442,7 +7458,7 @@
     {
       &quot;path&quot;: &quot;packages/setup/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1435,
+      &quot;bytes&quot;: 1429,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -7629,7 +7645,7 @@
     {
       &quot;path&quot;: &quot;packages/test-utils/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 807,
+      &quot;bytes&quot;: 801,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -7800,7 +7816,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-assistant/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 996,
+      &quot;bytes&quot;: 990,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -7907,7 +7923,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-atlas/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1346,
+      &quot;bytes&quot;: 1340,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -9038,7 +9054,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-atlas-local/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1036,
+      &quot;bytes&quot;: 1030,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -9241,7 +9257,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1385,
+      &quot;bytes&quot;: 1379,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -9346,7 +9362,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/common/connectionManager.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 25205,
+      &quot;bytes&quot;: 26066,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9394,7 +9410,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/common/connectionStore.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 18411,
+      &quot;bytes&quot;: 18715,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9714,7 +9730,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/helpers/constants.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1722,
+      &quot;bytes&quot;: 1712,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10018,7 +10034,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/mongodbTool.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 15019,
+      &quot;bytes&quot;: 15999,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10130,7 +10146,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/delete/deleteMany.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4589,
+      &quot;bytes&quot;: 4416,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10242,7 +10258,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/metadata/dbStats.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2120,
+      &quot;bytes&quot;: 2008,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10306,7 +10322,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/metadata/logs.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2896,
+      &quot;bytes&quot;: 2784,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10322,7 +10338,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/read/aggregate.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21698,
+      &quot;bytes&quot;: 21550,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10338,7 +10354,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/read/aggregateDB.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10780,
+      &quot;bytes&quot;: 10632,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10354,7 +10370,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/read/count.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3419,
+      &quot;bytes&quot;: 3234,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10386,7 +10402,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/read/find.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9811,
+      &quot;bytes&quot;: 9611,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10434,7 +10450,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/update/updateMany.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4709,
+      &quot;bytes&quot;: 4536,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10468,7 +10484,7 @@
     {
       &quot;path&quot;: &quot;packages/types/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 950,
+      &quot;bytes&quot;: 944,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -10808,7 +10824,7 @@
     {
       &quot;path&quot;: &quot;packages/ui/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1656,
+      &quot;bytes&quot;: 1650,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -11020,7 +11036,7 @@
     {
       &quot;path&quot;: &quot;pnpm-lock.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 558990,
+      &quot;bytes&quot;: 561265,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -11029,7 +11045,7 @@
     {
       &quot;path&quot;: &quot;pnpm-workspace.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1454,
+      &quot;bytes&quot;: 1480,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;

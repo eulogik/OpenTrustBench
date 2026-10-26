@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>mcp-everything — Trust Card (Grade U) · OpenTrustBench</title>
-<meta name="description" content="Static security scan of mcp-everything: grade U (Ungraded — insufficient static coverage), 1 findings, scope broad. Not ranked: insufficient static coverage.">
+<meta name="description" content="Static security scan of mcp-everything: grade U (Ungraded — insufficient static coverage), 4 findings, scope broad. Not ranked: insufficient static coverage.">
 <link rel="canonical" href="https://opentrustbench.com/r/mcp-everything.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mcp-everything — OpenTrustBench Grade U">
@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"mcp-everything — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of mcp-everything: 1 findings (0 critical), permission scope broad.","datePublished":"2026-10-19","dateModified":"2026-10-19","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/mcp-everything.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"mcp-everything — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of mcp-everything: 4 findings (0 critical), permission scope broad.","datePublished":"2026-10-26","dateModified":"2026-10-26","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/mcp-everything.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-19">
+<body data-scan="2026-10-26">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -32,8 +32,8 @@
 <script>try{var d=new Date(document.body.dataset.scan);if((Date.now()-d.getTime())/864e5>30){document.getElementById('stale').hidden=false;}}catch(_){}</script>
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>mcp-everything <span class="grade ">U</span></h1>
-<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 1 findings (0 critical) · scope broad · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-19 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/servers @ 51b6382 (2026-10-19)</p>
+<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 4 findings (0 critical) · scope broad · Not ranked: insufficient static coverage.</p>
+<p class="muted">Scanned 2026-10-26 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/servers @ ef9808f (2026-10-24)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
@@ -297,7 +297,7 @@
     {
       &quot;path&quot;: &quot;__tests__/sse.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7823,
+      &quot;bytes&quot;: 10938,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -345,7 +345,7 @@
     {
       &quot;path&quot;: &quot;__tests__/streamable-http.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 23281,
+      &quot;bytes&quot;: 27868,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1122,7 +1122,7 @@
     {
       &quot;path&quot;: &quot;transports/sse.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4980,
+      &quot;bytes&quot;: 5533,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1154,7 +1154,7 @@
     {
       &quot;path&quot;: &quot;transports/streamableHttp.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13467,
+      &quot;bytes&quot;: 13935,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1275,8 +1275,8 @@
     &quot;maxFileBytes&quot;: 1048576
   }
 }</pre></details>
-<h2>Fix first (1 critical/high)</h2>
-<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tools/gzip-file-as-resource.ts:219</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, { signal: controller.signal });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
+<h2>Fix first (4 critical/high)</h2>
+<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">__tests__/sse.test.ts:203</code><br><span class="muted">Evidence: </span><code>return fetch(url, { ...init, headers });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">__tests__/streamable-http.test.ts:436</code><br><span class="muted">Evidence: </span><code>return fetch(url, { ...init, headers });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">__tests__/streamable-http.test.ts:524</code><br><span class="muted">Evidence: </span><code>return fetch(url, { ...init, headers });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">tools/gzip-file-as-resource.ts:219</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, { signal: controller.signal });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
 <h2>Permissions</h2>
 <p>Scope: <strong>broad</strong> · Shell: disabled · Network egress: yes · File deletion: enabled · Human approval: none</p>
 <h2>Provenance</h2>
