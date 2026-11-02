@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"grafana__mcp-grafana — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of grafana__mcp-grafana: 2 findings (1 critical), permission scope excessive.","datePublished":"2026-10-26","dateModified":"2026-10-26","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/grafana-mcp-grafana.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"grafana__mcp-grafana — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of grafana__mcp-grafana: 2 findings (1 critical), permission scope excessive.","datePublished":"2026-11-02","dateModified":"2026-11-02","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/grafana-mcp-grafana.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-26">
+<body data-scan="2026-11-02">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>grafana__mcp-grafana <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 2 findings (1 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-26 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream grafana/mcp-grafana @ 61f1b1a (2026-10-26)</p>
+<p class="muted">Scanned 2026-11-02 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream grafana/mcp-grafana @ 3b5666b (2026-11-02)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 188 analyzed / 602 discovered files; 338 unsupported source files; 415 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 189 analyzed / 629 discovered files; 363 unsupported source files; 441 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,7 +52,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 602,
+  &quot;discoveredFiles&quot;: 629,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.claude-plugin/install-binary.mjs&quot;,
@@ -206,6 +206,15 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;.github/workflows/stale-prs.yml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1527,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;.github/workflows/test-install-scripts.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 4763,
@@ -253,7 +262,7 @@
     {
       &quot;path&quot;: &quot;docker-compose.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 12191,
+      &quot;bytes&quot;: 12713,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -330,7 +339,7 @@
     {
       &quot;path&quot;: &quot;server.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2759,
+      &quot;bytes&quot;: 3031,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1162,6 +1171,15 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;tools/testdata/variable_interpolation/golden.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 152343,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;ui/mcp-apps/app/AppErrorBoundary.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 1166,
@@ -1178,9 +1196,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;ui/mcp-apps/app/GrafanaApplication.tsx&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 748,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;ui/mcp-apps/app/MetricsApplication.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1989,
+      &quot;bytes&quot;: 1973,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1196,7 +1230,39 @@
     {
       &quot;path&quot;: &quot;ui/mcp-apps/app/TraceApplication.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4083,
+      &quot;bytes&quot;: 1986,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;ui/mcp-apps/app/app.tsx&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 596,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;ui/mcp-apps/app/appHostState.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 8524,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1213,38 +1279,6 @@
       &quot;path&quot;: &quot;ui/mcp-apps/app/hostContext.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 1078,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;ui/mcp-apps/app/metrics.tsx&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 612,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;ui/mcp-apps/app/metricsHostState.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8254,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1290,9 +1324,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;ui/mcp-apps/app/trace.tsx&quot;,
+      &quot;path&quot;: &quot;ui/mcp-apps/app.vite.config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 308,
+      &quot;bytes&quot;: 911,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1306,9 +1340,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;ui/mcp-apps/app.vite.config.ts&quot;,
+      &quot;path&quot;: &quot;ui/mcp-apps/grafana.vite.config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 911,
+      &quot;bytes&quot;: 96,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1338,25 +1372,9 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;ui/mcp-apps/metrics.vite.config.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 100,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
       &quot;path&quot;: &quot;ui/mcp-apps/package-lock.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 112866,
+      &quot;bytes&quot;: 108729,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1365,7 +1383,7 @@
     {
       &quot;path&quot;: &quot;ui/mcp-apps/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1596,
+      &quot;bytes&quot;: 1464,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1390,7 +1408,7 @@
     {
       &quot;path&quot;: &quot;ui/mcp-apps/preview/host.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2500,
+      &quot;bytes&quot;: 2542,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1406,7 +1424,7 @@
     {
       &quot;path&quot;: &quot;ui/mcp-apps/preview/localhost.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11498,
+      &quot;bytes&quot;: 11525,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1662,7 +1680,7 @@
     {
       &quot;path&quot;: &quot;ui/mcp-apps/src/metrics/pickViz.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5134,
+      &quot;bytes&quot;: 5136,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1966,7 +1984,7 @@
     {
       &quot;path&quot;: &quot;ui/mcp-apps/test/TraceApplication.test.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5682,
+      &quot;bytes&quot;: 5887,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2030,7 +2048,7 @@
     {
       &quot;path&quot;: &quot;ui/mcp-apps/test/metrics-host-state.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2975,
+      &quot;bytes&quot;: 5720,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2127,22 +2145,6 @@
       &quot;path&quot;: &quot;ui/mcp-apps/test/useEChart.test.tsx&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 1282,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;ui/mcp-apps/trace.vite.config.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 98,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2302,6 +2304,10 @@
     &quot;image-tag&quot;,
     &quot;incident_status.go&quot;,
     &quot;incident_status_test.go&quot;,
+    &quot;internal/datasource/datasource.go&quot;,
+    &quot;internal/datasource/datasource_test.go&quot;,
+    &quot;internal/datasource/fallback.go&quot;,
+    &quot;internal/datasource/fallback_test.go&quot;,
     &quot;internal/linter/jsonschema/jsonschema_lint.go&quot;,
     &quot;internal/linter/jsonschema/jsonschema_lint_test.go&quot;,
     &quot;internal/linter/openapi/analyzer.go&quot;,
@@ -2336,6 +2342,8 @@
     &quot;permissions_test.go&quot;,
     &quot;redirect_guard.go&quot;,
     &quot;redirect_guard_test.go&quot;,
+    &quot;resources/datasources.go&quot;,
+    &quot;resources/datasources_test.go&quot;,
     &quot;socks5_proxy.go&quot;,
     &quot;testdata/clickhouse-init.sql&quot;,
     &quot;testdata/clickhouse-users.xml&quot;,
@@ -2403,6 +2411,9 @@
     &quot;tools/annotations_unit_test.go&quot;,
     &quot;tools/api.go&quot;,
     &quot;tools/api_unit_test.go&quot;,
+    &quot;tools/app.go&quot;,
+    &quot;tools/app_protocol_test.go&quot;,
+    &quot;tools/app_result_test.go&quot;,
     &quot;tools/asserts.go&quot;,
     &quot;tools/asserts_cloud_test.go&quot;,
     &quot;tools/asserts_test.go&quot;,
@@ -2414,7 +2425,11 @@
     &quot;tools/cloudlogging_test.go&quot;,
     &quot;tools/cloudmonitoring_cloud_test.go&quot;,
     &quot;tools/cloudwatch.go&quot;,
+    &quot;tools/cloudwatch_cloud_test.go&quot;,
     &quot;tools/cloudwatch_integration_test.go&quot;,
+    &quot;tools/cloudwatch_logs.go&quot;,
+    &quot;tools/cloudwatch_logs_integration_test.go&quot;,
+    &quot;tools/cloudwatch_logs_test.go&quot;,
     &quot;tools/cloudwatch_test.go&quot;,
     &quot;tools/config.go&quot;,
     &quot;tools/dashboard.go&quot;,
@@ -2434,7 +2449,6 @@
     &quot;tools/datasource_schemas/datasource_schemas_utils.go&quot;,
     &quot;tools/datasource_schemas/datasource_schemas_utils_test.go&quot;,
     &quot;tools/datasources.go&quot;,
-    &quot;tools/datasources_fallback.go&quot;,
     &quot;tools/datasources_fallback_behavior_unit_test.go&quot;,
     &quot;tools/datasources_fallback_unit_test.go&quot;,
     &quot;tools/datasources_test.go&quot;,
@@ -2445,6 +2459,7 @@
     &quot;tools/elasticsearch.go&quot;,
     &quot;tools/elasticsearch_test.go&quot;,
     &quot;tools/es_backend.go&quot;,
+    &quot;tools/es_backend_dsquery_test.go&quot;,
     &quot;tools/es_backend_opensearch.go&quot;,
     &quot;tools/es_backend_opensearch_unit_test.go&quot;,
     &quot;tools/es_backend_test.go&quot;,
@@ -2484,7 +2499,6 @@
     &quot;tools/loki_label_analyzer.go&quot;,
     &quot;tools/loki_label_analyzer_test.go&quot;,
     &quot;tools/loki_label_analyzer_unit_test.go&quot;,
-    &quot;tools/loki_parse_test.go&quot;,
     &quot;tools/loki_test.go&quot;,
     &quot;tools/loki_unit_test.go&quot;,
     &quot;tools/navigation.go&quot;,
@@ -2504,9 +2518,12 @@
     &quot;tools/prom_backend_cloudmonitoring.go&quot;,
     &quot;tools/prom_backend_cloudmonitoring_test.go&quot;,
     &quot;tools/prom_backend_test.go&quot;,
-    &quot;tools/prom_backend_victoriametrics.go&quot;,
     &quot;tools/prom_backend_victoriametrics_test.go&quot;,
     &quot;tools/prometheus.go&quot;,
+    &quot;tools/prometheus_guardrail.go&quot;,
+    &quot;tools/prometheus_guardrail_metrics.go&quot;,
+    &quot;tools/prometheus_guardrail_metrics_test.go&quot;,
+    &quot;tools/prometheus_guardrail_test.go&quot;,
     &quot;tools/prometheus_metric_names_unit_test.go&quot;,
     &quot;tools/prometheus_metrics.go&quot;,
     &quot;tools/prometheus_metrics_test.go&quot;,
@@ -2531,9 +2548,14 @@
     &quot;tools/response_utils.go&quot;,
     &quot;tools/response_utils_test.go&quot;,
     &quot;tools/run_panel_query.go&quot;,
+    &quot;tools/run_panel_query_auto_interval_test.go&quot;,
     &quot;tools/run_panel_query_enforce_unit_test.go&quot;,
     &quot;tools/run_panel_query_infinity_test.go&quot;,
     &quot;tools/run_panel_query_integration_test.go&quot;,
+    &quot;tools/run_panel_query_legacy_datasource_test.go&quot;,
+    &quot;tools/run_panel_query_multivalue_test.go&quot;,
+    &quot;tools/run_panel_query_neo4j_integration_test.go&quot;,
+    &quot;tools/run_panel_query_neo4j_test.go&quot;,
     &quot;tools/run_panel_query_postgres_test.go&quot;,
     &quot;tools/run_panel_query_test.go&quot;,
     &quot;tools/search.go&quot;,
@@ -2543,7 +2565,10 @@
     &quot;tools/snapshot_unit_test.go&quot;,
     &quot;tools/sql/athena.go&quot;,
     &quot;tools/sql/athena_test.go&quot;,
+    &quot;tools/sql/bigquery.go&quot;,
+    &quot;tools/sql/bigquery_test.go&quot;,
     &quot;tools/sql/clickhouse.go&quot;,
+    &quot;tools/sql/clickhouse_settings_test.go&quot;,
     &quot;tools/sql/clickhouse_test.go&quot;,
     &quot;tools/sql/dialect.go&quot;,
     &quot;tools/sql/mssql.go&quot;,
@@ -2552,19 +2577,21 @@
     &quot;tools/sql/snowflake.go&quot;,
     &quot;tools/sql/snowflake_test.go&quot;,
     &quot;tools/sql/sql_test.go&quot;,
+    &quot;tools/sql_bigquery_unit_test.go&quot;,
     &quot;tools/sql_cloud_test.go&quot;,
     &quot;tools/sql_integration_test.go&quot;,
     &quot;tools/sql_tools.go&quot;,
     &quot;tools/sql_tools_test.go&quot;,
     &quot;tools/telemetry_dims_unit_test.go&quot;,
     &quot;tools/tempo.go&quot;,
+    &quot;tools/tempo_ds_query.go&quot;,
     &quot;tools/tempo_integration_test.go&quot;,
-    &quot;tools/tempo_trace_llm.go&quot;,
     &quot;tools/tempo_trace_view.go&quot;,
     &quot;tools/tempo_trace_view_test.go&quot;,
     &quot;tools/tempo_transport_test.go&quot;,
     &quot;tools/tempo_unit_test.go&quot;,
     &quot;tools/testcontext_test.go&quot;,
+    &quot;tools/testdata/fuzz/FuzzVariableInterpolator/bd2704cf5bf2bdf2&quot;,
     &quot;tools/testhelpers_test.go&quot;,
     &quot;tools/time_helpers.go&quot;,
     &quot;tools/time_helpers_test.go&quot;,
@@ -2573,16 +2600,17 @@
     &quot;tools/user.go&quot;,
     &quot;tools/user_integration_test.go&quot;,
     &quot;tools/user_test.go&quot;,
+    &quot;tools/variable_interpolator.go&quot;,
+    &quot;tools/variable_interpolator_test.go&quot;,
     &quot;tools.go&quot;,
     &quot;tools_param_validation.go&quot;,
     &quot;tools_param_validation_test.go&quot;,
     &quot;tools_string_to_int_test.go&quot;,
     &quot;tools_test.go&quot;,
     &quot;trace_propagation_test.go&quot;,
-    &quot;ui/mcp-apps/app/metrics.html&quot;,
-    &quot;ui/mcp-apps/app/trace.html&quot;,
-    &quot;ui/mcp-apps/dist/metrics.html&quot;,
-    &quot;ui/mcp-apps/dist/trace.html&quot;,
+    &quot;transport_reuse_test.go&quot;,
+    &quot;ui/mcp-apps/app/app.html&quot;,
+    &quot;ui/mcp-apps/dist/app.html&quot;,
     &quot;ui/mcp-apps/preview/host.html&quot;,
     &quot;ui/mcp-apps/preview/index.html&quot;,
     &quot;ui/mcp-apps/preview/localhost.html&quot;,
@@ -2591,9 +2619,8 @@
     &quot;ui/panel-viewer/mcp-app.html&quot;,
     &quot;ui_apps.go&quot;,
     &quot;ui_embed.go&quot;,
+    &quot;ui_grafana.go&quot;,
     &quot;ui_mcp_apps_test.go&quot;,
-    &quot;ui_metrics.go&quot;,
-    &quot;ui_trace.go&quot;,
     &quot;usagestats/event.go&quot;,
     &quot;usagestats/mode.go&quot;,
     &quot;usagestats/mode_test.go&quot;,
@@ -2995,6 +3022,22 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;internal/datasource/datasource.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/datasource/datasource_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/datasource/fallback.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;internal/datasource/fallback_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;internal/linter/jsonschema/README.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -3156,6 +3199,14 @@
     },
     {
       &quot;path&quot;: &quot;redirect_guard_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;resources/datasources.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;resources/datasources_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -3447,6 +3498,18 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tools/app.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/app_protocol_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/app_result_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tools/asserts.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -3491,7 +3554,23 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tools/cloudwatch_cloud_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tools/cloudwatch_integration_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/cloudwatch_logs.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/cloudwatch_logs_integration_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/cloudwatch_logs_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -3571,10 +3650,6 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;tools/datasources_fallback.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
       &quot;path&quot;: &quot;tools/datasources_fallback_behavior_unit_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -3612,6 +3687,10 @@
     },
     {
       &quot;path&quot;: &quot;tools/es_backend.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/es_backend_dsquery_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -3771,10 +3850,6 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;tools/loki_parse_test.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
       &quot;path&quot;: &quot;tools/loki_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -3851,15 +3926,27 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;tools/prom_backend_victoriametrics.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
       &quot;path&quot;: &quot;tools/prom_backend_victoriametrics_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
       &quot;path&quot;: &quot;tools/prometheus.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/prometheus_guardrail.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/prometheus_guardrail_metrics.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/prometheus_guardrail_metrics_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/prometheus_guardrail_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -3959,6 +4046,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tools/run_panel_query_auto_interval_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tools/run_panel_query_enforce_unit_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -3968,6 +4059,22 @@
     },
     {
       &quot;path&quot;: &quot;tools/run_panel_query_integration_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/run_panel_query_legacy_datasource_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/run_panel_query_multivalue_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/run_panel_query_neo4j_integration_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/run_panel_query_neo4j_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -4007,7 +4114,19 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tools/sql/bigquery.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/sql/bigquery_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tools/sql/clickhouse.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/sql/clickhouse_settings_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -4043,6 +4162,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tools/sql_bigquery_unit_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tools/sql_cloud_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -4067,11 +4190,11 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;tools/tempo_integration_test.go&quot;,
+      &quot;path&quot;: &quot;tools/tempo_ds_query.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;tools/tempo_trace_llm.go&quot;,
+      &quot;path&quot;: &quot;tools/tempo_integration_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -4093,6 +4216,14 @@
     {
       &quot;path&quot;: &quot;tools/testcontext_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/testdata/fuzz/FuzzVariableInterpolator/bd2704cf5bf2bdf2&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/testdata/variable_interpolation/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
       &quot;path&quot;: &quot;tools/testhelpers_test.go&quot;,
@@ -4127,6 +4258,14 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;tools/variable_interpolator.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/variable_interpolator_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;tools.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -4151,6 +4290,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;transport_reuse_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;ui/mcp-apps/.gitignore&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -4159,19 +4302,11 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
-      &quot;path&quot;: &quot;ui/mcp-apps/app/metrics.html&quot;,
+      &quot;path&quot;: &quot;ui/mcp-apps/app/app.html&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;ui/mcp-apps/app/trace.html&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;ui/mcp-apps/dist/metrics.html&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;ui/mcp-apps/dist/trace.html&quot;,
+      &quot;path&quot;: &quot;ui/mcp-apps/dist/app.html&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -4215,15 +4350,11 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;ui_grafana.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;ui_mcp_apps_test.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;ui_metrics.go&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
-    },
-    {
-      &quot;path&quot;: &quot;ui_trace.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {

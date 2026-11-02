@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"stripe__agent-toolkit — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of stripe__agent-toolkit: 10 findings (0 critical), permission scope excessive.","datePublished":"2026-10-26","dateModified":"2026-10-26","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/stripe-agent-toolkit.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"stripe__agent-toolkit — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of stripe__agent-toolkit: 10 findings (0 critical), permission scope excessive.","datePublished":"2026-11-02","dateModified":"2026-11-02","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/stripe-agent-toolkit.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-26">
+<body data-scan="2026-11-02">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>stripe__agent-toolkit <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 10 findings (0 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-26 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream stripe/agent-toolkit @ 57e355b (2026-10-26)</p>
+<p class="muted">Scanned 2026-11-02 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream stripe/agent-toolkit @ b3ab914 (2026-11-02)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present; Symlinks or special files were not examined. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 444 analyzed / 1048 discovered files; 217 unsupported source files; 609 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 446 analyzed / 1087 discovered files; 216 unsupported source files; 646 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Symlinks or special files were not examined</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -53,7 +53,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 1048,
+  &quot;discoveredFiles&quot;: 1087,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.agents/plugins/marketplace.json&quot;,
@@ -130,7 +130,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/guard-skills.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2044,
+      &quot;bytes&quot;: 2093,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -175,7 +175,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/sync-skills.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2426,
+      &quot;bytes&quot;: 2481,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -5099,7 +5099,25 @@
     {
       &quot;path&quot;: &quot;providers/agent-plugins/plugin/plugin.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 6353,
+      &quot;bytes&quot;: 6354,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/mcp-config.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 190,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/plugin.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 588,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -5108,7 +5126,7 @@
     {
       &quot;path&quot;: &quot;providers/claude/plugin/.claude-plugin/plugin.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 379,
+      &quot;bytes&quot;: 728,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -5167,7 +5185,7 @@
     {
       &quot;path&quot;: &quot;providers/claude/plugin/scripts/feedback.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5272,
+      &quot;bytes&quot;: 5230,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5183,7 +5201,7 @@
     {
       &quot;path&quot;: &quot;providers/claude/plugin/scripts/hookHelpers.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1363,
+      &quot;bytes&quot;: 1592,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5199,7 +5217,7 @@
     {
       &quot;path&quot;: &quot;providers/claude/plugin/scripts/lifecycle/postToolBatch.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 587,
+      &quot;bytes&quot;: 658,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5215,7 +5233,7 @@
     {
       &quot;path&quot;: &quot;providers/claude/plugin/scripts/lifecycle/postToolUse.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 790,
+      &quot;bytes&quot;: 861,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5231,7 +5249,7 @@
     {
       &quot;path&quot;: &quot;providers/claude/plugin/scripts/lifecycle/postToolUseFailure.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 396,
+      &quot;bytes&quot;: 467,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5263,7 +5281,7 @@
     {
       &quot;path&quot;: &quot;providers/claude/plugin/scripts/lifecycle/userPromptSubmit.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 514,
+      &quot;bytes&quot;: 585,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5331,7 +5349,7 @@
     {
       &quot;path&quot;: &quot;scripts/sync.js&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5342,
+      &quot;bytes&quot;: 5479,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5363,7 +5381,7 @@
     {
       &quot;path&quot;: &quot;tests/providers/claude/plugin/scripts/hookHelpers.test.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 364,
+      &quot;bytes&quot;: 1009,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5395,7 +5413,7 @@
     {
       &quot;path&quot;: &quot;tests/providers/claude/plugin/scripts/lifecycle.integration.test.mjs&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16674,
+      &quot;bytes&quot;: 18842,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6795,7 +6813,6 @@
     &quot;benchmarks/subscription-gym/solution/server/server.rb&quot;,
     &quot;llm/ai-sdk/meter/examples/.env.example&quot;,
     &quot;llm/ai-sdk/provider/examples/.env.example&quot;,
-    &quot;providers/agent-plugins/stripe-8.0.1.zip&quot;,
     &quot;providers/claude/plugin/skills/.gitkeep&quot;,
     &quot;providers/cursor/plugin/skills/.gitkeep&quot;,
     &quot;providers/grok/plugin/skills/.gitkeep&quot;,
@@ -8482,11 +8499,159 @@
       &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
     },
     {
-      &quot;path&quot;: &quot;providers/agent-plugins/stripe-8.0.1.zip&quot;,
-      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+      &quot;path&quot;: &quot;providers/antigravity/plugin/assets/parallelogram.png&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
-      &quot;path&quot;: &quot;providers/claude/plugin/agents/company-researcher.md&quot;,
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/connect-recommend/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/connect-recommend/references/account-types.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/connect-recommend/references/charge-patterns.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/connect-recommend/references/company-researcher.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/connect-recommend/references/compatibility-matrix.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/connect-recommend/references/decision-matrix.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/connect-recommend/references/discovery-questions.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/connect-recommend/references/recommendation-template.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/connect-recommend/references/terminology-rules.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/connect-required-verification-information/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/metronome/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/references/authentication.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/references/backend.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/references/canonical-docs.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/references/discovery.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/references/extension-types.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/references/feedback.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/references/onboarding-ux.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/references/publishing.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/references/script-extensions.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/references/ui-extensions.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/references/webhooks.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-apps/references/workflow.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-best-practices/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-best-practices/references/billing.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-best-practices/references/connect.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-best-practices/references/payments.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-best-practices/references/security.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-best-practices/references/tax.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-best-practices/references/treasury.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-directory/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-docs/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-pay/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/stripe-projects/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/antigravity/plugin/skills/upgrade-stripe/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/claude/plugin/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;providers/claude/plugin/assets/parallelogram.png&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {

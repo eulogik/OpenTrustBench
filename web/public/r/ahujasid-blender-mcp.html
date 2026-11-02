@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"ahujasid__blender-mcp — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of ahujasid__blender-mcp: 9 findings (3 critical), permission scope excessive.","datePublished":"2026-10-26","dateModified":"2026-10-26","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/ahujasid-blender-mcp.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"ahujasid__blender-mcp — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of ahujasid__blender-mcp: 9 findings (3 critical), permission scope excessive.","datePublished":"2026-11-02","dateModified":"2026-11-02","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/ahujasid-blender-mcp.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-26">
+<body data-scan="2026-11-02">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>ahujasid__blender-mcp <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 9 findings (3 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-26 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream ahujasid/blender-mcp @ febcd90 (2026-10-24)</p>
+<p class="muted">Scanned 2026-11-02 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream ahujasid/blender-mcp @ 992233b (2026-10-29)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 50 analyzed / 74 discovered files; 4 unsupported source files; 25 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 51 analyzed / 77 discovered files; 4 unsupported source files; 27 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,12 +52,12 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 74,
+  &quot;discoveredFiles&quot;: 77,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;addon.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 287857,
+      &quot;bytes&quot;: 301352,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -180,7 +180,7 @@
     {
       &quot;path&quot;: &quot;src/blender_mcp/bundled/addon.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 287857,
+      &quot;bytes&quot;: 301352,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -228,7 +228,7 @@
     {
       &quot;path&quot;: &quot;src/blender_mcp/generation.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 22211,
+      &quot;bytes&quot;: 23739,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -308,7 +308,7 @@
     {
       &quot;path&quot;: &quot;src/blender_mcp/server.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 99395,
+      &quot;bytes&quot;: 100097,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -564,7 +564,7 @@
     {
       &quot;path&quot;: &quot;tests/test_generation.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 34158,
+      &quot;bytes&quot;: 37210,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -818,6 +818,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;tests/test_tripo.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 16827,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;tests/test_update_cli.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 6597,
@@ -886,6 +902,14 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;assets/logo-banner.png&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;assets/logo-banner.svg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;install.ps1&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -951,7 +975,7 @@
   }
 }</pre></details>
 <h2>Fix first (9 critical/high)</h2>
-<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">src/blender_mcp/safe_mode.py:199</code><br><span class="muted">Evidence: </span><code>&quot;eval&quot;: &quot;eval() executes arbitrary expressions&quot;,</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/test_polypizza.py:17</code><br><span class="muted">Evidence: </span><code>API_KEY = &quot;test-key-not-a-real-one&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">tests/test_safe_mode.py:155</code><br><span class="muted">Evidence: </span><code>&quot;eval&quot;: &quot;eval('1+1')&quot;,</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">addon.py:516</code><br><span class="muted">Evidence: </span><code>os.unlink(dest_path)</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">addon.py:4381</code><br><span class="muted">Evidence: </span><code>response = requests.get(url, headers=headers, params=params, timeout=30)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">addon.py:5343</code><br><span class="muted">Evidence: </span><code>response = requests.get(url, stream=True, timeout=MODEL_DOWNLOAD_TIMEOUT)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">src/blender_mcp/bundled/addon.py:516</code><br><span class="muted">Evidence: </span><code>os.unlink(dest_path)</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">src/blender_mcp/bundled/addon.py:4381</code><br><span class="muted">Evidence: </span><code>response = requests.get(url, headers=headers, params=params, timeout=30)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">src/blender_mcp/bundled/addon.py:5343</code><br><span class="muted">Evidence: </span><code>response = requests.get(url, stream=True, timeout=MODEL_DOWNLOAD_TIMEOUT)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
+<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">src/blender_mcp/safe_mode.py:199</code><br><span class="muted">Evidence: </span><code>&quot;eval&quot;: &quot;eval() executes arbitrary expressions&quot;,</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/test_polypizza.py:17</code><br><span class="muted">Evidence: </span><code>API_KEY = &quot;test-key-not-a-real-one&quot;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">tests/test_safe_mode.py:155</code><br><span class="muted">Evidence: </span><code>&quot;eval&quot;: &quot;eval('1+1')&quot;,</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">addon.py:531</code><br><span class="muted">Evidence: </span><code>os.unlink(dest_path)</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">addon.py:4417</code><br><span class="muted">Evidence: </span><code>response = requests.get(url, headers=headers, params=params, timeout=30)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">addon.py:5606</code><br><span class="muted">Evidence: </span><code>response = requests.get(url, stream=True, timeout=MODEL_DOWNLOAD_TIMEOUT)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">src/blender_mcp/bundled/addon.py:531</code><br><span class="muted">Evidence: </span><code>os.unlink(dest_path)</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">src/blender_mcp/bundled/addon.py:4417</code><br><span class="muted">Evidence: </span><code>response = requests.get(url, headers=headers, params=params, timeout=30)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">src/blender_mcp/bundled/addon.py:5606</code><br><span class="muted">Evidence: </span><code>response = requests.get(url, stream=True, timeout=MODEL_DOWNLOAD_TIMEOUT)</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
 <h2>Permissions</h2>
 <p>Scope: <strong>excessive</strong> · Shell: enabled · Network egress: yes · File deletion: enabled · Human approval: none</p>
 <h2>Provenance</h2>

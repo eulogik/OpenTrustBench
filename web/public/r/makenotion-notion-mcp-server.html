@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>makenotion__notion-mcp-server — Trust Card (Grade U) · OpenTrustBench</title>
-<meta name="description" content="Static security scan of makenotion__notion-mcp-server: grade U (Ungraded — insufficient static coverage), 4 findings, scope moderate. Not ranked: insufficient static coverage.">
+<meta name="description" content="Static security scan of makenotion__notion-mcp-server: grade U (Ungraded — insufficient static coverage), 4 findings, scope broad. Not ranked: insufficient static coverage.">
 <link rel="canonical" href="https://opentrustbench.com/r/makenotion-notion-mcp-server.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="makenotion__notion-mcp-server — OpenTrustBench Grade U">
@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"makenotion__notion-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of makenotion__notion-mcp-server: 4 findings (0 critical), permission scope moderate.","datePublished":"2026-10-26","dateModified":"2026-10-26","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/makenotion-notion-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"makenotion__notion-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of makenotion__notion-mcp-server: 4 findings (0 critical), permission scope broad.","datePublished":"2026-11-02","dateModified":"2026-11-02","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/makenotion-notion-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-10-26">
+<body data-scan="2026-11-02">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -32,13 +32,13 @@
 <script>try{var d=new Date(document.body.dataset.scan);if((Date.now()-d.getTime())/864e5>30){document.getElementById('stale').hidden=false;}}catch(_){}</script>
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>makenotion__notion-mcp-server <span class="grade ">U</span></h1>
-<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 4 findings (0 critical) · scope moderate · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-10-26 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream makenotion/notion-mcp-server @ 730ae78 (2026-09-20)</p>
+<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 4 findings (0 critical) · scope broad · Not ranked: insufficient static coverage.</p>
+<p class="muted">Scanned 2026-11-02 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream makenotion/notion-mcp-server @ cf16e5c (2026-10-29)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 36 analyzed / 52 discovered files; 1 unsupported source files; 17 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 37 analyzed / 53 discovered files; 1 unsupported source files; 17 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,7 +52,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 52,
+  &quot;discoveredFiles&quot;: 53,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/workflows/ci.yml&quot;,
@@ -93,7 +93,7 @@
     {
       &quot;path&quot;: &quot;package-lock.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 171667,
+      &quot;bytes&quot;: 184238,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -102,7 +102,7 @@
     {
       &quot;path&quot;: &quot;package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1737,
+      &quot;bytes&quot;: 1713,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -182,9 +182,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;src/__tests__/init-server.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2691,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;src/init-server.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1428,
+      &quot;bytes&quot;: 2322,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -248,7 +264,7 @@
     {
       &quot;path&quot;: &quot;src/openapi-mcp-server/client/__tests__/http-client-upload.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6397,
+      &quot;bytes&quot;: 2418,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -328,7 +344,7 @@
     {
       &quot;path&quot;: &quot;src/openapi-mcp-server/client/http-client.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8258,
+      &quot;bytes&quot;: 6752,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -659,7 +675,7 @@
 <h2>Fix first (0 critical/high)</h2>
 <table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">scripts/start-server.ts:54</code><br><span class="muted">Evidence: </span><code>console.log(`Generated auth token written to: ${authTokenFilePath}`)</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">scripts/start-server.ts:150</code><br><span class="muted">Evidence: </span><code>console.log(`Initializing session with per-request Notion token ${redactToken(resolution.token)}`)</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">scripts/start-server.ts:249</code><br><span class="muted">Evidence: </span><code>console.log(`Authentication: Bearer token required`)</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">scripts/start-server.ts:251</code><br><span class="muted">Evidence: </span><code>console.log(`Read your auth token from: ${authTokenFilePath}`)</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr></tbody></table>
 <h2>Permissions</h2>
-<p>Scope: <strong>moderate</strong> · Shell: disabled · Network egress: yes · File deletion: none · Human approval: none</p>
+<p>Scope: <strong>broad</strong> · Shell: disabled · Network egress: yes · File deletion: enabled · Human approval: none</p>
 <h2>Provenance</h2>
 <p>License: MIT · Lockfile: yes · Security policy: no · Signals: unverified origin</p>
 <div class="callout"><p><strong>Independently scanned by the OpenTrustBench registry</strong> (not self-reported by the project). Static analysis only — no code executed, findings need human triage, counts may include test/example code. <strong>Static snapshot; re-scan before relying on it:</strong> <code>npx @opentrustbench/cli scan https://github.com/makenotion/notion-mcp-server</code>. Scores move with every upstream commit; pages refresh weekly. <a href="../methodology.html">How scoring works</a>.</p></div>
