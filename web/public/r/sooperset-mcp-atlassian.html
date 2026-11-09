@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"sooperset__mcp-atlassian — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of sooperset__mcp-atlassian: 2 findings (2 critical), permission scope broad.","datePublished":"2026-11-02","dateModified":"2026-11-02","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/sooperset-mcp-atlassian.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"sooperset__mcp-atlassian — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of sooperset__mcp-atlassian: 2 findings (2 critical), permission scope broad.","datePublished":"2026-11-09","dateModified":"2026-11-09","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/sooperset-mcp-atlassian.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-11-02">
+<body data-scan="2026-11-09">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>sooperset__mcp-atlassian <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 2 findings (2 critical) · scope broad · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-11-02 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream sooperset/mcp-atlassian @ 0a5d242 (2026-09-19)</p>
+<p class="muted">Scanned 2026-11-09 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream sooperset/mcp-atlassian @ 73879ec (2026-11-08)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 359 analyzed / 420 discovered files; 42 unsupported source files; 62 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 370 analyzed / 431 discovered files; 42 unsupported source files; 62 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,7 +52,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 420,
+  &quot;discoveredFiles&quot;: 431,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.claude/settings.json&quot;,
@@ -381,7 +381,7 @@
     {
       &quot;path&quot;: &quot;docs/_overrides/confluence_update_page_section.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 775,
+      &quot;bytes&quot;: 1069,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -399,7 +399,7 @@
     {
       &quot;path&quot;: &quot;docs/_overrides/jira_add_comment.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 457,
+      &quot;bytes&quot;: 1069,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -471,7 +471,7 @@
     {
       &quot;path&quot;: &quot;docs/_overrides/jira_get_issue.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 798,
+      &quot;bytes&quot;: 1050,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -516,7 +516,7 @@
     {
       &quot;path&quot;: &quot;docs/_overrides/jira_search.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 858,
+      &quot;bytes&quot;: 1110,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -692,7 +692,7 @@
     {
       &quot;path&quot;: &quot;scripts/oauth_authorize.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12569,
+      &quot;bytes&quot;: 3912,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -717,7 +717,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/__init__.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 17754,
+      &quot;bytes&quot;: 28683,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -733,7 +733,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/confluence/__init__.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1763,
+      &quot;bytes&quot;: 1878,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -765,7 +765,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/confluence/attachments.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 30206,
+      &quot;bytes&quot;: 33799,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -781,7 +781,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/confluence/client.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13282,
+      &quot;bytes&quot;: 14240,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -861,7 +861,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/confluence/pages.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 66377,
+      &quot;bytes&quot;: 68331,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -923,9 +923,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;src/mcp_atlassian/confluence/scope.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 6871,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;src/mcp_atlassian/confluence/search.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10592,
+      &quot;bytes&quot;: 10370,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -989,7 +1005,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/confluence/utils.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4104,
+      &quot;bytes&quot;: 4369,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1021,7 +1037,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/exceptions.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 128,
+      &quot;bytes&quot;: 405,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1037,7 +1053,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/jira/__init__.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2848,
+      &quot;bytes&quot;: 2959,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1053,7 +1069,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/jira/attachments.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21982,
+      &quot;bytes&quot;: 22625,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1069,7 +1085,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/jira/boards.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2705,
+      &quot;bytes&quot;: 3332,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1085,7 +1101,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/jira/client.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21525,
+      &quot;bytes&quot;: 22484,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1101,7 +1117,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/jira/comments.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 25866,
+      &quot;bytes&quot;: 27842,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1165,7 +1181,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/jira/development.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 20879,
+      &quot;bytes&quot;: 20896,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1181,7 +1197,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/jira/epics.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 41875,
+      &quot;bytes&quot;: 61952,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1261,7 +1277,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/jira/forms_api.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 15187,
+      &quot;bytes&quot;: 17375,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1293,7 +1309,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/jira/issues.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 88568,
+      &quot;bytes&quot;: 89640,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1309,7 +1325,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/jira/links.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11263,
+      &quot;bytes&quot;: 11542,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1403,9 +1419,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;src/mcp_atlassian/jira/scope.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 10597,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;src/mcp_atlassian/jira/search.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13616,
+      &quot;bytes&quot;: 13442,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1469,7 +1501,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/jira/users.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 24992,
+      &quot;bytes&quot;: 27178,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1837,7 +1869,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/models/jira/issue.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 37819,
+      &quot;bytes&quot;: 40157,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1933,7 +1965,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/models/jira/search.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4411,
+      &quot;bytes&quot;: 4488,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2029,7 +2061,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/preprocessing/base.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 19236,
+      &quot;bytes&quot;: 28328,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2125,7 +2157,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/servers/confluence.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 108326,
+      &quot;bytes&quot;: 109108,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2141,7 +2173,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/servers/context.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 732,
+      &quot;bytes&quot;: 820,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2157,7 +2189,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/servers/dependencies.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 40809,
+      &quot;bytes&quot;: 44606,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2173,7 +2205,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/servers/error_handling.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4787,
+      &quot;bytes&quot;: 6144,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2205,7 +2237,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/servers/jira.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 163613,
+      &quot;bytes&quot;: 167292,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2221,7 +2253,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/servers/main.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 38621,
+      &quot;bytes&quot;: 44224,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2251,9 +2283,41 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;src/mcp_atlassian/servers/scope_guard.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 14232,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;src/mcp_atlassian/utils/__init__.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 1343,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;src/mcp_atlassian/utils/credential_command.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 9348,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2317,7 +2381,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/utils/environment.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7405,
+      &quot;bytes&quot;: 8171,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2333,7 +2397,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/utils/http.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16970,
+      &quot;bytes&quot;: 19675,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2349,7 +2413,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/utils/io.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1701,
+      &quot;bytes&quot;: 10383,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2381,7 +2445,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/utils/logging.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3694,
+      &quot;bytes&quot;: 4414,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2413,7 +2477,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/utils/oauth.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 28246,
+      &quot;bytes&quot;: 28307,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2429,7 +2493,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/utils/oauth_setup.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16287,
+      &quot;bytes&quot;: 18010,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2475,9 +2539,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;src/mcp_atlassian/utils/query_scope.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 4669,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;src/mcp_atlassian/utils/ssl.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12243,
+      &quot;bytes&quot;: 14529,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2493,7 +2573,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/utils/ssrf_adapter.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8064,
+      &quot;bytes&quot;: 12382,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2557,7 +2637,7 @@
     {
       &quot;path&quot;: &quot;src/mcp_atlassian/utils/urls.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7128,
+      &quot;bytes&quot;: 10500,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2605,7 +2685,7 @@
     {
       &quot;path&quot;: &quot;tests/conftest.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10850,
+      &quot;bytes&quot;: 11409,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2877,7 +2957,7 @@
     {
       &quot;path&quot;: &quot;tests/e2e/cloud/test_mcp_tools_cloud.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 18950,
+      &quot;bytes&quot;: 20538,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2998,7 +3078,7 @@
     {
       &quot;path&quot;: &quot;tests/e2e/test_mcp_tools_dc.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 18553,
+      &quot;bytes&quot;: 19097,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3222,7 +3302,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/confluence/test_attachments.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 76991,
+      &quot;bytes&quot;: 85855,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3238,7 +3318,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/confluence/test_client.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21621,
+      &quot;bytes&quot;: 21658,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3350,7 +3430,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/confluence/test_pages.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 145605,
+      &quot;bytes&quot;: 150551,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3383,6 +3463,22 @@
       &quot;path&quot;: &quot;tests/unit/confluence/test_restrictions.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 9081,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tests/unit/confluence/test_scope.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 4661,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3526,7 +3622,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/jira/test_attachments.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 61518,
+      &quot;bytes&quot;: 64317,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3590,7 +3686,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/jira/test_comments.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 54198,
+      &quot;bytes&quot;: 60998,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3670,7 +3766,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/jira/test_development.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 20719,
+      &quot;bytes&quot;: 21824,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3686,7 +3782,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/jira/test_epics.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 44112,
+      &quot;bytes&quot;: 67212,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3766,7 +3862,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/jira/test_forms_api.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 24291,
+      &quot;bytes&quot;: 28867,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3846,7 +3942,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/jira/test_links.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13215,
+      &quot;bytes&quot;: 13719,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3940,9 +4036,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;tests/unit/jira/test_scope.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 12508,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;tests/unit/jira/test_search.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 53218,
+      &quot;bytes&quot;: 53214,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4006,7 +4118,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/jira/test_users.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 56178,
+      &quot;bytes&quot;: 58588,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4356,6 +4468,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;tests/unit/preprocessing/test_code_macro_conversion.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 12834,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;tests/unit/preprocessing/test_content_processing.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 39130,
@@ -4518,7 +4646,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/servers/test_dependencies.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 110345,
+      &quot;bytes&quot;: 122682,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4566,7 +4694,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/servers/test_jira_server.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 174524,
+      &quot;bytes&quot;: 179244,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4582,7 +4710,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/servers/test_main_server.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 34679,
+      &quot;bytes&quot;: 44712,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4598,7 +4726,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/servers/test_mcp_protocol.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 56770,
+      &quot;bytes&quot;: 62166,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4647,6 +4775,22 @@
       &quot;path&quot;: &quot;tests/unit/servers/test_schema_compatibility.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 16953,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tests/unit/servers/test_scope_guard.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 13346,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4758,7 +4902,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/test_main_transport_selection.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8141,
+      &quot;bytes&quot;: 47730,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4868,6 +5012,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;tests/unit/utils/test_credential_command.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 18970,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;tests/unit/utils/test_custom_headers.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 9513,
@@ -4934,7 +5094,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils/test_environment.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21749,
+      &quot;bytes&quot;: 24124,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4950,7 +5110,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils/test_http.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 17423,
+      &quot;bytes&quot;: 25486,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4966,7 +5126,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils/test_io.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4280,
+      &quot;bytes&quot;: 11805,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4998,7 +5158,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils/test_logging.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1970,
+      &quot;bytes&quot;: 3991,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5046,7 +5206,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils/test_oauth.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 52024,
+      &quot;bytes&quot;: 53053,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5078,7 +5238,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils/test_oauth_setup.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16172,
+      &quot;bytes&quot;: 20506,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5124,9 +5284,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;tests/unit/utils/test_query_scope.py&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3558,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;tests/unit/utils/test_ssl.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 17542,
+      &quot;bytes&quot;: 26513,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5142,7 +5318,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils/test_ssrf_adapter.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8406,
+      &quot;bytes&quot;: 16489,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5206,7 +5382,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils/test_urls.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16406,
+      &quot;bytes&quot;: 20684,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5286,7 +5462,7 @@
     {
       &quot;path&quot;: &quot;tests/utils/mocks.py&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8995,
+      &quot;bytes&quot;: 9211,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5619,7 +5795,7 @@
   }
 }</pre></details>
 <h2>Fix first (2 critical/high)</h2>
-<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/unit/servers/test_confluence_server.py:216</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;server_client_secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/unit/servers/test_jira_server.py:429</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;server_client_secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr></tbody></table>
+<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/unit/servers/test_confluence_server.py:216</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;server_client_secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/unit/servers/test_jira_server.py:440</code><br><span class="muted">Evidence: </span><code>client_secret=&quot;server_client_secret&quot;,</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr></tbody></table>
 <h2>Permissions</h2>
 <p>Scope: <strong>broad</strong> · Shell: disabled · Network egress: yes · File deletion: enabled · Human approval: none</p>
 <h2>Provenance</h2>

@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-09",
   "displaying": 0,
   "checked": 44,
   "repos": [
@@ -14,11 +14,6 @@
     {
       "repo": "microsoft/playwright-mcp",
       "badge": false
-    },
-    {
-      "repo": "getsentry/sentry-mcp",
-      "badge": false,
-      "error": "GitHub API 301 for /repos/getsentry/sentry-mcp/readme"
     },
     {
       "repo": "stripe/agent-toolkit",
@@ -186,6 +181,11 @@
     {
       "repo": "sparfenyuk/mcp-proxy",
       "badge": false
+    },
+    {
+      "repo": "manusa/kubernetes-mcp-server",
+      "badge": false,
+      "error": "GitHub API 301 for /repos/manusa/kubernetes-mcp-server/readme"
     }
   ]
 }

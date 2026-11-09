@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"hashicorp__terraform-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of hashicorp__terraform-mcp-server: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-11-02","dateModified":"2026-11-02","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/hashicorp-terraform-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"hashicorp__terraform-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of hashicorp__terraform-mcp-server: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-11-09","dateModified":"2026-11-09","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/hashicorp-terraform-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-11-02">
+<body data-scan="2026-11-09">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>hashicorp__terraform-mcp-server <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope minimal · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-11-02 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream hashicorp/terraform-mcp-server @ 062700d (2026-10-28)</p>
+<p class="muted">Scanned 2026-11-09 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream hashicorp/terraform-mcp-server @ 63df659 (2026-11-06)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: No non-empty supported source analyzed; documentation and data alone provide limited coverage; Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 24 analyzed / 403 discovered files; 360 unsupported source files; 380 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 24 analyzed / 439 discovered files; 396 unsupported source files; 416 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>No non-empty supported source analyzed; documentation and data alone provide limited coverage</li><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -53,7 +53,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 403,
+  &quot;discoveredFiles&quot;: 439,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/config.yml&quot;,
@@ -324,6 +324,8 @@
     &quot;pkg/client/registry_client.go&quot;,
     &quot;pkg/client/registry_client_test.go&quot;,
     &quot;pkg/client/registry_test.go&quot;,
+    &quot;pkg/client/request_id.go&quot;,
+    &quot;pkg/client/request_id_test.go&quot;,
     &quot;pkg/client/session.go&quot;,
     &quot;pkg/client/tfe_client.go&quot;,
     &quot;pkg/client/tfe_client_test.go&quot;,
@@ -335,6 +337,7 @@
     &quot;pkg/instana/instana.go&quot;,
     &quot;pkg/instana/instana_test.go&quot;,
     &quot;pkg/instructions/instructions.go&quot;,
+    &quot;pkg/instructions/instructions_test.go&quot;,
     &quot;pkg/logging/logging.go&quot;,
     &quot;pkg/logging/logging_test.go&quot;,
     &quot;pkg/logging/logrus_adapter.go&quot;,
@@ -386,6 +389,9 @@
     &quot;pkg/mcp-official/tools/registry/search_policies_test.go&quot;,
     &quot;pkg/mcp-official/tools/registry/search_provider_docs.go&quot;,
     &quot;pkg/mcp-official/tools/registry/search_provider_docs_test.go&quot;,
+    &quot;pkg/mcp-official/tools/search/scope.go&quot;,
+    &quot;pkg/mcp-official/tools/search/search.go&quot;,
+    &quot;pkg/mcp-official/tools/search/search_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/applies_get_details_tool.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/applies_get_details_tool_test.go&quot;,
     &quot;pkg/mcp-official/tools/tfe/applies_get_logs_tool.go&quot;,
@@ -502,6 +508,8 @@
     &quot;pkg/mcp-official/tools/tools_test.go&quot;,
     &quot;pkg/otelmetrics/otelmetrics.go&quot;,
     &quot;pkg/otelmetrics/otelmetrics_test.go&quot;,
+    &quot;pkg/profiling/profiling.go&quot;,
+    &quot;pkg/profiling/profiling_test.go&quot;,
     &quot;pkg/resources/resource_templates.go&quot;,
     &quot;pkg/resources/resources.go&quot;,
     &quot;pkg/tools/dynamic_tool.go&quot;,
@@ -521,6 +529,33 @@
     &quot;pkg/tools/registry/search_modules_test.go&quot;,
     &quot;pkg/tools/registry/search_policies.go&quot;,
     &quot;pkg/tools/registry/search_provider_docs.go&quot;,
+    &quot;pkg/tools/search/descriptions.go&quot;,
+    &quot;pkg/tools/search/descriptions_test.go&quot;,
+    &quot;pkg/tools/search/diagnostic_codes.go&quot;,
+    &quot;pkg/tools/search/errors.go&quot;,
+    &quot;pkg/tools/search/execute_query.go&quot;,
+    &quot;pkg/tools/search/execute_query_test.go&quot;,
+    &quot;pkg/tools/search/generate_query_configuration.go&quot;,
+    &quot;pkg/tools/search/generate_query_configuration_test.go&quot;,
+    &quot;pkg/tools/search/generated_configuration.go&quot;,
+    &quot;pkg/tools/search/generated_configuration_test.go&quot;,
+    &quot;pkg/tools/search/get_query_status.go&quot;,
+    &quot;pkg/tools/search/get_query_status_test.go&quot;,
+    &quot;pkg/tools/search/get_query_summary.go&quot;,
+    &quot;pkg/tools/search/get_query_summary_test.go&quot;,
+    &quot;pkg/tools/search/import_preflight_test.go&quot;,
+    &quot;pkg/tools/search/import_tools.go&quot;,
+    &quot;pkg/tools/search/import_tools_test.go&quot;,
+    &quot;pkg/tools/search/prepare_import.go&quot;,
+    &quot;pkg/tools/search/provider_list_schema_list.go&quot;,
+    &quot;pkg/tools/search/provider_list_schema_list_test.go&quot;,
+    &quot;pkg/tools/search/query_discovery.go&quot;,
+    &quot;pkg/tools/search/query_discovery_test.go&quot;,
+    &quot;pkg/tools/search/query_evidence.go&quot;,
+    &quot;pkg/tools/search/query_evidence_test.go&quot;,
+    &quot;pkg/tools/search/scope.go&quot;,
+    &quot;pkg/tools/search/scope_test.go&quot;,
+    &quot;pkg/tools/search/verify_import_plan.go&quot;,
     &quot;pkg/tools/tfe/action_run.go&quot;,
     &quot;pkg/tools/tfe/add_team_member.go&quot;,
     &quot;pkg/tools/tfe/add_team_member_test.go&quot;,
@@ -604,6 +639,7 @@
     &quot;pkg/toolsets/filter_test.go&quot;,
     &quot;pkg/toolsets/mapping.go&quot;,
     &quot;pkg/toolsets/registry.go&quot;,
+    &quot;pkg/toolsets/search.go&quot;,
     &quot;pkg/toolsets/toolsets.go&quot;,
     &quot;pkg/toolsets/toolsets_test.go&quot;,
     &quot;pkg/utils/pagination.go&quot;,
@@ -892,6 +928,14 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/client/request_id.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/client/request_id_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/client/session.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -938,6 +982,10 @@
     {
       &quot;path&quot;: &quot;pkg/instructions/instructions.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/instructions/instructions_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
       &quot;path&quot;: &quot;pkg/logging/logging.go&quot;,
@@ -1141,6 +1189,18 @@
     },
     {
       &quot;path&quot;: &quot;pkg/mcp-official/tools/registry/search_provider_docs_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/search/scope.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/search/search.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp-official/tools/search/search_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1612,6 +1672,14 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/profiling/profiling.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/profiling/profiling_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/resources/resource_templates.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -1685,6 +1753,114 @@
     },
     {
       &quot;path&quot;: &quot;pkg/tools/registry/search_provider_docs.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/descriptions.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/descriptions_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/diagnostic_codes.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/errors.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/execute_query.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/execute_query_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/generate_query_configuration.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/generate_query_configuration_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/generated_configuration.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/generated_configuration_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/get_query_status.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/get_query_status_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/get_query_summary.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/get_query_summary_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/import_preflight_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/import_tools.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/import_tools_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/prepare_import.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/provider_list_schema_list.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/provider_list_schema_list_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/query_discovery.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/query_discovery_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/query_evidence.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/query_evidence_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/scope.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/scope_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/tools/search/verify_import_plan.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -2021,6 +2197,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/toolsets/registry.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/toolsets/search.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {

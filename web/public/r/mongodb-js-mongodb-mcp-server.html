@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>mongodb-js__mongodb-mcp-server — Trust Card (Grade U) · OpenTrustBench</title>
-<meta name="description" content="Static security scan of mongodb-js__mongodb-mcp-server: grade U (Ungraded — insufficient static coverage), 13 findings, scope excessive. Not ranked: insufficient static coverage.">
+<meta name="description" content="Static security scan of mongodb-js__mongodb-mcp-server: grade U (Ungraded — insufficient static coverage), 14 findings, scope excessive. Not ranked: insufficient static coverage.">
 <link rel="canonical" href="https://opentrustbench.com/r/mongodb-js-mongodb-mcp-server.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mongodb-js__mongodb-mcp-server — OpenTrustBench Grade U">
@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"mongodb-js__mongodb-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of mongodb-js__mongodb-mcp-server: 13 findings (8 critical), permission scope excessive.","datePublished":"2026-11-02","dateModified":"2026-11-02","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/mongodb-js-mongodb-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"mongodb-js__mongodb-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of mongodb-js__mongodb-mcp-server: 14 findings (8 critical), permission scope excessive.","datePublished":"2026-11-09","dateModified":"2026-11-09","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/mongodb-js-mongodb-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-11-02">
+<body data-scan="2026-11-09">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -32,13 +32,13 @@
 <script>try{var d=new Date(document.body.dataset.scan);if((Date.now()-d.getTime())/864e5>30){document.getElementById('stale').hidden=false;}}catch(_){}</script>
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>mongodb-js__mongodb-mcp-server <span class="grade ">U</span></h1>
-<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 13 findings (8 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-11-02 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream mongodb-js/mongodb-mcp-server @ 977662f (2026-10-30)</p>
+<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 14 findings (8 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
+<p class="muted">Scanned 2026-11-09 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream mongodb-js/mongodb-mcp-server @ 32ea137 (2026-11-09)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present; Scan limits reached. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 754 analyzed / 807 discovered files; 16 unsupported source files; 53 excluded; 0 read errors; 1 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 761 analyzed / 814 discovered files; 16 unsupported source files; 53 excluded; 0 read errors; 1 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Scan limits reached</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -53,7 +53,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 807,
+  &quot;discoveredFiles&quot;: 814,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/bug_report.yml&quot;,
@@ -110,6 +110,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;.github/scripts/verify-npm-version.mjs&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 5367,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;.github/workflows/accuracy-tests.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 2382,
@@ -139,7 +155,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/check.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2020,
+      &quot;bytes&quot;: 3196,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -229,7 +245,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/e2e-tests.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1977,
+      &quot;bytes&quot;: 2187,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -301,7 +317,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/publish.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 17329,
+      &quot;bytes&quot;: 18385,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -419,7 +435,7 @@
     {
       &quot;path&quot;: &quot;licenses.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1099,
+      &quot;bytes&quot;: 1047,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1278,7 +1294,7 @@
     {
       &quot;path&quot;: &quot;packages/accuracy-tests/src/streamsBuild.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 29379,
+      &quot;bytes&quot;: 32488,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2254,7 +2270,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/config/configUtils.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5727,
+      &quot;bytes&quot;: 6795,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2286,7 +2302,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/config/createKeychainFromConfig.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2694,
+      &quot;bytes&quot;: 3006,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2302,7 +2318,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/config/parseUserConfig.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6883,
+      &quot;bytes&quot;: 8286,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2318,7 +2334,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/config/userConfig.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 22248,
+      &quot;bytes&quot;: 25947,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2430,7 +2446,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/createRunnerFromConfig.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 36760,
+      &quot;bytes&quot;: 38159,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2462,7 +2478,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/createServerServices.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 15766,
+      &quot;bytes&quot;: 16863,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2558,7 +2574,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/resources/common/config.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3874,
+      &quot;bytes&quot;: 4746,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2574,7 +2590,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/resources/common/config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3795,
+      &quot;bytes&quot;: 4513,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2590,7 +2606,7 @@
     {
       &quot;path&quot;: &quot;packages/cli/src/resources/common/debug.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7166,
+      &quot;bytes&quot;: 7304,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2802,7 +2818,7 @@
     {
       &quot;path&quot;: &quot;packages/core/src/args.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 633,
+      &quot;bytes&quot;: 1544,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2978,7 +2994,7 @@
     {
       &quot;path&quot;: &quot;packages/core/src/index.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2709,
+      &quot;bytes&quot;: 2753,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3323,6 +3339,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;packages/e2e-tests/src/atlasApi.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 5465,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;packages/e2e-tests/src/elicitation.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 2473,
@@ -3357,7 +3389,7 @@
     {
       &quot;path&quot;: &quot;packages/e2e-tests/src/setup.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1413,
+      &quot;bytes&quot;: 1976,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3405,7 +3437,39 @@
     {
       &quot;path&quot;: &quot;packages/e2e-tests/src/utils/inProcessServer.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1688,
+      &quot;bytes&quot;: 2650,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/e2e-tests/src/utils/telemetry.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 774,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/e2e-tests/src/utils/useAtlasApiAgent.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3598,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3421,7 +3485,7 @@
     {
       &quot;path&quot;: &quot;packages/e2e-tests/src/utils/useMcpAgent.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2669,
+      &quot;bytes&quot;: 3517,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3462,7 +3526,7 @@
     {
       &quot;path&quot;: &quot;packages/eval-tests/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1574,
+      &quot;bytes&quot;: 1769,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -3530,7 +3594,7 @@
     {
       &quot;path&quot;: &quot;packages/eval-tests/src/lib/evalTypes.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4565,
+      &quot;bytes&quot;: 4583,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3578,7 +3642,7 @@
     {
       &quot;path&quot;: &quot;packages/eval-tests/src/lib/scoring.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 612,
+      &quot;bytes&quot;: 1301,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3706,7 +3770,7 @@
     {
       &quot;path&quot;: &quot;packages/eval-tests/src/mongodb.eval.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5959,
+      &quot;bytes&quot;: 6026,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4434,7 +4498,7 @@
     {
       &quot;path&quot;: &quot;packages/http-runners/src/monitoringServer.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8433,
+      &quot;bytes&quot;: 9255,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4450,7 +4514,7 @@
     {
       &quot;path&quot;: &quot;packages/http-runners/src/monitoringServer.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4317,
+      &quot;bytes&quot;: 4418,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4532,7 +4596,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1739,
+      &quot;bytes&quot;: 1752,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -4676,6 +4740,15 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;packages/integration-tests/src/config/fixtures/named-connections-config.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 136,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;packages/integration-tests/src/config/fixtures/valid-config.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 87,
@@ -4687,7 +4760,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/config/userConfig.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 46230,
+      &quot;bytes&quot;: 54044,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4799,7 +4872,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/helpers/expectToolEvent.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2343,
+      &quot;bytes&quot;: 2342,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4831,23 +4904,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/helpers/useBinaryServer.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3125,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
-      &quot;path&quot;: &quot;packages/integration-tests/src/helpers/useMockTelemetry.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1311,
+      &quot;bytes&quot;: 3078,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4989,22 +5046,6 @@
       ]
     },
     {
-      &quot;path&quot;: &quot;packages/integration-tests/src/mocks/telemetryServer.ts&quot;,
-      &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3520,
-      &quot;nonEmpty&quot;: true,
-      &quot;ruleIds&quot;: [
-        &quot;AT-SEC-001&quot;,
-        &quot;AT-SEC-002&quot;,
-        &quot;AT-SEC-003&quot;,
-        &quot;AT-SEC-004&quot;,
-        &quot;AT-SEC-005&quot;,
-        &quot;AT-SEC-006&quot;,
-        &quot;AT-SEC-007&quot;,
-        &quot;AT-COMP-001&quot;
-      ]
-    },
-    {
       &quot;path&quot;: &quot;packages/integration-tests/src/mocks/tools.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 200,
@@ -5023,7 +5064,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/mongodbHelpers.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 19387,
+      &quot;bytes&quot;: 19458,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5135,7 +5176,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/telemetry.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4383,
+      &quot;bytes&quot;: 4380,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5151,7 +5192,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/telemetryDelivery.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4671,
+      &quot;bytes&quot;: 4623,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5423,7 +5464,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/tools/atlas/streams/build.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8061,
+      &quot;bytes&quot;: 8161,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5615,7 +5656,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/tools/mongodb/connect/connect.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10547,
+      &quot;bytes&quot;: 13114,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5759,7 +5800,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/tools/mongodb/metadata/collectionSchema.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9908,
+      &quot;bytes&quot;: 9920,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5871,7 +5912,7 @@
     {
       &quot;path&quot;: &quot;packages/integration-tests/src/tools/mongodb/mongodbTool.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 22997,
+      &quot;bytes&quot;: 24765,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6016,6 +6057,22 @@
       &quot;path&quot;: &quot;packages/integration-tests/src/tools/mongodb/update/updateMany.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 13273,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/integration-tests/src/tools/toolSchemas.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2546,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7048,7 +7105,7 @@
     {
       &quot;path&quot;: &quot;packages/mongodb-mcp-server/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4188,
+      &quot;bytes&quot;: 4177,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -7130,7 +7187,7 @@
     {
       &quot;path&quot;: &quot;packages/mongodb-mcp-server/server.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 67192,
+      &quot;bytes&quot;: 69142,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -7376,7 +7433,7 @@
     {
       &quot;path&quot;: &quot;packages/scripts/src/generateArguments.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12340,
+      &quot;bytes&quot;: 12653,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7545,9 +7602,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;packages/setup/src/aiTool.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2183,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;packages/setup/src/aiTool.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 17646,
+      &quot;bytes&quot;: 17609,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7725,7 +7798,7 @@
     {
       &quot;path&quot;: &quot;packages/test-utils/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 801,
+      &quot;bytes&quot;: 855,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -7750,7 +7823,7 @@
     {
       &quot;path&quot;: &quot;packages/test-utils/src/index.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1098,
+      &quot;bytes&quot;: 1277,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -7869,9 +7942,41 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;packages/test-utils/src/telemetryServer.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3520,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;packages/test-utils/src/testUtils.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 1541,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;packages/test-utils/src/useMockTelemetry.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1291,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8348,7 +8453,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-atlas/src/streams/streamsArgs.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10502,
+      &quot;bytes&quot;: 13084,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8908,7 +9013,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-atlas/src/tools/streams/build.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 54704,
+      &quot;bytes&quot;: 75096,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8924,7 +9029,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-atlas/src/tools/streams/build.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 43858,
+      &quot;bytes&quot;: 56731,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8940,7 +9045,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-atlas/src/tools/streams/discover.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 29661,
+      &quot;bytes&quot;: 34857,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -8956,7 +9061,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-atlas/src/tools/streams/discover.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 32766,
+      &quot;bytes&quot;: 36587,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9004,7 +9109,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-atlas/src/tools/streams/teardown.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 24039,
+      &quot;bytes&quot;: 24103,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9020,7 +9125,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-atlas/src/tools/streams/teardown.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14714,
+      &quot;bytes&quot;: 14872,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9337,7 +9442,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1392,
+      &quot;bytes&quot;: 1417,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -9346,7 +9451,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/args.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 422,
+      &quot;bytes&quot;: 542,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9378,7 +9483,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/common/connectionEntry.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12102,
+      &quot;bytes&quot;: 12129,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9474,7 +9579,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/common/connectionRegistry.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 33703,
+      &quot;bytes&quot;: 41737,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9490,7 +9595,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/common/connectionRegistry.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14951,
+      &quot;bytes&quot;: 15242,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9506,7 +9611,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/common/connectionStore.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 20338,
+      &quot;bytes&quot;: 22054,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9522,7 +9627,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/common/connectionSummary.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4067,
+      &quot;bytes&quot;: 4094,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9666,7 +9771,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/common/schemas.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 294,
+      &quot;bytes&quot;: 313,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -9746,7 +9851,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/helpers/bsonToJson.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 642,
+      &quot;bytes&quot;: 654,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10098,7 +10203,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/index.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5452,
+      &quot;bytes&quot;: 5481,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10114,7 +10219,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/mongodbSchemas.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4218,
+      &quot;bytes&quot;: 4607,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10130,7 +10235,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/mongodbTool.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 15999,
+      &quot;bytes&quot;: 17597,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10146,7 +10251,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/connect/connect.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3277,
+      &quot;bytes&quot;: 3897,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10162,7 +10267,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/connect/disconnect.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2275,
+      &quot;bytes&quot;: 2245,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10178,7 +10283,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/connect/listConnections.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2594,
+      &quot;bytes&quot;: 2683,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10210,7 +10315,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/create/createIndex.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 15843,
+      &quot;bytes&quot;: 18377,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10226,7 +10331,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/create/insertMany.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2488,
+      &quot;bytes&quot;: 2527,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10306,7 +10411,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/metadata/collectionIndexes.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6763,
+      &quot;bytes&quot;: 6854,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10322,7 +10427,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/metadata/collectionSchema.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3912,
+      &quot;bytes&quot;: 3983,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10354,7 +10459,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/metadata/dbStats.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2008,
+      &quot;bytes&quot;: 2067,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10370,7 +10475,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/metadata/explain.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6135,
+      &quot;bytes&quot;: 6194,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10434,7 +10539,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/read/aggregate.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21550,
+      &quot;bytes&quot;: 21616,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10450,7 +10555,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/read/aggregateDB.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 10632,
+      &quot;bytes&quot;: 10698,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -10498,7 +10603,7 @@
     {
       &quot;path&quot;: &quot;packages/tools-mongodb/src/tools/read/find.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9611,
+      &quot;bytes&quot;: 9718,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11100,7 +11205,7 @@
     {
       &quot;path&quot;: &quot;packages/ui/vite.ui.config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7189,
+      &quot;bytes&quot;: 7328,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11132,7 +11237,7 @@
     {
       &quot;path&quot;: &quot;pnpm-lock.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 561812,
+      &quot;bytes&quot;: 501405,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -11168,7 +11273,7 @@
     {
       &quot;path&quot;: &quot;vitest.config.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6497,
+      &quot;bytes&quot;: 6701,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -11427,8 +11532,8 @@
     &quot;maxFileBytes&quot;: 1048576
   }
 }</pre></details>
-<h2>Fix first (12 critical/high)</h2>
-<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/eval-tests/src/scripts/reportCi.ts:82</code><br><span class="muted">Evidence: </span><code>const child = spawn(cmd, args, { stdio: [&quot;inherit&quot;, &quot;pipe&quot;, &quot;inherit&quot;], env });</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">packages/eval-tests/src/scripts/reportCi.ts:129</code><br><span class="muted">Evidence: </span><code>/** Fetch branch history, then run eval (with optional baseline from history), render markdown, write report. */</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/mongodb-mcp-server/scripts/createMcpb.ts:16</code><br><span class="muted">Evidence: </span><code>const child = spawn(cmd, args, { cwd, stdio: &quot;inherit&quot;, shell: process.platform === &quot;win32&quot; });</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/setup/src/aiTool.ts:295</code><br><span class="muted">Evidence: </span><code>exec(cmd, (error) =&gt; {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/tools-atlas/src/tools/create/createCluster.test.ts:501</code><br><span class="muted">Evidence: </span><code>const result = await exec(args);</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">packages/tools-atlas/src/tools/create/createDBUser.test.ts:116</code><br><span class="muted">Evidence: </span><code>const password = &quot;LeakyS3cret-Passw0rd&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/tools-atlas/src/tools/streams/build.test.ts:441</code><br><span class="muted">Evidence: </span><code>const expectedResult = await exec(args);</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/tools-atlas/src/tools/update/pauseResumeCluster.test.ts:206</code><br><span class="muted">Evidence: </span><code>const result = await exec(args);</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">packages/accuracy-tests/src/sdk/accuracyResultStorage/diskStorage.ts:58</code><br><span class="muted">Evidence: </span><code>await fs.unlink(latestResultFilePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/atlas-api-client/src/apiClient.ts:207</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/mongodb-atlas-mcp-remote/src/cli.ts:182</code><br><span class="muted">Evidence: </span><code>const res = await baseFetch(url, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">packages/tools-mongodb/src/common/exportsManager.ts:357</code><br><span class="muted">Evidence: </span><code>await fs.unlink(exportPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">packages/scripts/src/generate-release-notes.ts:120</code><br><span class="muted">Evidence: </span><code>console.log(&quot;GROVE_API_KEY is not set, skipping AI summary generation&quot;);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr></tbody></table>
+<h2>Fix first (13 critical/high)</h2>
+<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/eval-tests/src/scripts/reportCi.ts:82</code><br><span class="muted">Evidence: </span><code>const child = spawn(cmd, args, { stdio: [&quot;inherit&quot;, &quot;pipe&quot;, &quot;inherit&quot;], env });</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-004</code> (ASI05)</td><td>eval() / Function Constructor Invocation<br><code class="muted">packages/eval-tests/src/scripts/reportCi.ts:129</code><br><span class="muted">Evidence: </span><code>/** Fetch branch history, then run eval (with optional baseline from history), render markdown, write report. */</code></td><td>Eliminate eval(). Use safe AST parsers or isolated sandboxes (e.g. E2B Firecracker microVMs).</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/mongodb-mcp-server/scripts/createMcpb.ts:16</code><br><span class="muted">Evidence: </span><code>const child = spawn(cmd, args, { cwd, stdio: &quot;inherit&quot;, shell: process.platform === &quot;win32&quot; });</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/setup/src/aiTool.ts:295</code><br><span class="muted">Evidence: </span><code>exec(cmd, (error) =&gt; {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/tools-atlas/src/tools/create/createCluster.test.ts:501</code><br><span class="muted">Evidence: </span><code>const result = await exec(args);</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">packages/tools-atlas/src/tools/create/createDBUser.test.ts:116</code><br><span class="muted">Evidence: </span><code>const password = &quot;LeakyS3cret-Passw0rd&quot;;</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/tools-atlas/src/tools/streams/build.test.ts:442</code><br><span class="muted">Evidence: </span><code>const expectedResult = await exec(args);</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">packages/tools-atlas/src/tools/update/pauseResumeCluster.test.ts:206</code><br><span class="muted">Evidence: </span><code>const result = await exec(args);</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">.github/scripts/verify-npm-version.mjs:19</code><br><span class="muted">Evidence: </span><code>return fetch(url, { headers: { accept: &quot;application/json&quot; } });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">packages/accuracy-tests/src/sdk/accuracyResultStorage/diskStorage.ts:58</code><br><span class="muted">Evidence: </span><code>await fs.unlink(latestResultFilePath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/atlas-api-client/src/apiClient.ts:207</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">packages/mongodb-atlas-mcp-remote/src/cli.ts:182</code><br><span class="muted">Evidence: </span><code>const res = await baseFetch(url, init);</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-005</code> (ASI02)</td><td>Unrestricted Recursive File Deletion / Modification<br><code class="muted">packages/tools-mongodb/src/common/exportsManager.ts:357</code><br><span class="muted">Evidence: </span><code>await fs.unlink(exportPath);</code></td><td>Enforce strict jail/root directories and require explicit human-in-the-loop confirmation before file deletions.</td></tr><tr><td><strong style="color:var(--warn)">MEDIUM</strong></td><td><code>AT-SEC-007</code> (LLM02)</td><td>Raw Secret Leakage in Debug Logging<br><code class="muted">packages/scripts/src/generate-release-notes.ts:120</code><br><span class="muted">Evidence: </span><code>console.log(&quot;GROVE_API_KEY is not set, skipping AI summary generation&quot;);</code></td><td>Implement PII/secret redaction masks before writing to log streams.</td></tr></tbody></table>
 <h2>Permissions</h2>
 <p>Scope: <strong>excessive</strong> · Shell: enabled · Network egress: yes · File deletion: enabled · Human approval: none</p>
 <h2>Provenance</h2>
