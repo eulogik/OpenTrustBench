@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"github__github-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of github__github-mcp-server: 0 findings (0 critical), permission scope moderate.","datePublished":"2026-11-09","dateModified":"2026-11-09","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/github-github-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"github__github-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of github__github-mcp-server: 0 findings (0 critical), permission scope moderate.","datePublished":"2026-11-16","dateModified":"2026-11-16","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/github-github-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-11-09">
+<body data-scan="2026-11-16">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>github__github-mcp-server <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope moderate · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-11-09 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream github/github-mcp-server @ 6fbcd00 (2026-11-09)</p>
+<p class="muted">Scanned 2026-11-16 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream github/github-mcp-server @ 67d4dc4 (2026-11-16)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 39 analyzed / 667 discovered files; 328 unsupported source files; 629 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 40 analyzed / 729 discovered files; 355 unsupported source files; 690 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,7 +52,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 667,
+  &quot;discoveredFiles&quot;: 729,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/actions/build-ui/action.yml&quot;,
@@ -247,6 +247,15 @@
       &quot;path&quot;: &quot;gemini-extension.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 323,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/testdata/toolset-instructions.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 418,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -556,6 +565,8 @@
     &quot;pkg/github/actions_minimal_test.go&quot;,
     &quot;pkg/github/actions_test.go&quot;,
     &quot;pkg/github/actions_types.go&quot;,
+    &quot;pkg/github/agent_automations.go&quot;,
+    &quot;pkg/github/agent_automations_test.go&quot;,
     &quot;pkg/github/code_quality.go&quot;,
     &quot;pkg/github/code_quality_test.go&quot;,
     &quot;pkg/github/code_scanning.go&quot;,
@@ -672,6 +683,8 @@
     &quot;pkg/github/security_outputs.go&quot;,
     &quot;pkg/github/server.go&quot;,
     &quot;pkg/github/server_test.go&quot;,
+    &quot;pkg/github/skills.go&quot;,
+    &quot;pkg/github/skills_test.go&quot;,
     &quot;pkg/github/tool_scopes.go&quot;,
     &quot;pkg/github/tool_scopes_test.go&quot;,
     &quot;pkg/github/tools.go&quot;,
@@ -680,6 +693,7 @@
     &quot;pkg/github/tools_validation_test.go&quot;,
     &quot;pkg/github/toolset_icons_test.go&quot;,
     &quot;pkg/github/toolset_instructions.go&quot;,
+    &quot;pkg/github/toolset_instructions_test.go&quot;,
     &quot;pkg/github/typed_account_repository_search_test.go&quot;,
     &quot;pkg/github/typed_actions_outputs_test.go&quot;,
     &quot;pkg/github/typed_compatibility_test.go&quot;,
@@ -799,6 +813,28 @@
     &quot;pkg/scopes/map_test.go&quot;,
     &quot;pkg/scopes/scopes.go&quot;,
     &quot;pkg/scopes/scopes_test.go&quot;,
+    &quot;pkg/skills/availability_test.go&quot;,
+    &quot;pkg/skills/catalog/availability_test.go&quot;,
+    &quot;pkg/skills/catalog/catalog.go&quot;,
+    &quot;pkg/skills/catalog/catalog_test.go&quot;,
+    &quot;pkg/skills/catalog/tools.go&quot;,
+    &quot;pkg/skills/digest.go&quot;,
+    &quot;pkg/skills/entry.go&quot;,
+    &quot;pkg/skills/entry_test.go&quot;,
+    &quot;pkg/skills/frontmatter.go&quot;,
+    &quot;pkg/skills/integration_test.go&quot;,
+    &quot;pkg/skills/pagination.go&quot;,
+    &quot;pkg/skills/pagination_test.go&quot;,
+    &quot;pkg/skills/protocol.go&quot;,
+    &quot;pkg/skills/publisher.go&quot;,
+    &quot;pkg/skills/publisher_test.go&quot;,
+    &quot;pkg/skills/registry.go&quot;,
+    &quot;pkg/skills/registry_test.go&quot;,
+    &quot;pkg/skills/review_regressions_test.go&quot;,
+    &quot;pkg/skills/skill.go&quot;,
+    &quot;pkg/skills/skills.go&quot;,
+    &quot;pkg/skills/skills_test.go&quot;,
+    &quot;pkg/skills/uri.go&quot;,
     &quot;pkg/tooldiscovery/search.go&quot;,
     &quot;pkg/tooldiscovery/search_test.go&quot;,
     &quot;pkg/toolvalidation/readonlyhint.go&quot;,
@@ -1297,6 +1333,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/create_automation.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/create_branch.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -1337,6 +1377,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/delete_automation.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/delete_file.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -1362,6 +1406,18 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/fork_repository.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/get_automation.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/get_automation_revision.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/get_automations_configuration_for_repository.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -1490,6 +1546,22 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/label_write.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/list_automation_revisions.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/list_automations.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/list_available_automation_tools.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/list_available_automation_triggers.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -1677,6 +1749,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/run_automation.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/search_code.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -1757,6 +1833,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/__toolsnaps__/update_automation.snap&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/__toolsnaps__/update_gist.snap&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -1830,6 +1910,14 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/actions_types.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/agent_automations.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/agent_automations_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -2297,6 +2385,14 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/github/skills.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/skills_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/github/tool_scopes.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -2326,6 +2422,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/github/toolset_instructions.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/github/toolset_instructions_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -3066,6 +3166,186 @@
     },
     {
       &quot;path&quot;: &quot;pkg/scopes/scopes_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/availability_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/availability_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/catalog.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/catalog_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/account-and-team-context/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/codebase-exploration/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/codebase-exploration/references/history-investigation.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/copilot-task-delegation/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/discussion-participation/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/issue-authoring/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/issue-backlog-triage/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/label-scheme-management/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/notification-triage/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/project-planning/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/pull-request-authoring/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/pull-request-code-review/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/pull-request-review-feedback/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/release-preparation/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/release-preparation/references/release-notes-outline.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/repository-content-changes/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/repository-content-changes/references/irreversible-operations.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/repository-discovery/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/repository-health-review/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/security-alert-triage/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/security-alert-triage/references/alert-sources.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/workflow-failure-triage/SKILL.md&quot;,
+      &quot;reason&quot;: &quot;skill-instructions-not-code-analyzed&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/skills/workflow-failure-triage/references/failure-classes.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/catalog/tools.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/digest.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/entry.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/entry_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/frontmatter.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/integration_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/pagination.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/pagination_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/protocol.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/publisher.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/publisher_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/registry.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/registry_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/review_regressions_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/skill.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/skills.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/skills_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/skills/uri.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {

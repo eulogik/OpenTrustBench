@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>apify__actors-mcp-server — Trust Card (Grade U) · OpenTrustBench</title>
-<meta name="description" content="Static security scan of apify__actors-mcp-server: grade U (Ungraded — insufficient static coverage), 7 findings, scope excessive. Not ranked: insufficient static coverage.">
+<meta name="description" content="Static security scan of apify__actors-mcp-server: grade U (Ungraded — insufficient static coverage), 9 findings, scope excessive. Not ranked: insufficient static coverage.">
 <link rel="canonical" href="https://opentrustbench.com/r/apify-actors-mcp-server.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="apify__actors-mcp-server — OpenTrustBench Grade U">
@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"apify__actors-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of apify__actors-mcp-server: 7 findings (4 critical), permission scope excessive.","datePublished":"2026-11-09","dateModified":"2026-11-09","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/apify-actors-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"apify__actors-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of apify__actors-mcp-server: 9 findings (6 critical), permission scope excessive.","datePublished":"2026-11-16","dateModified":"2026-11-16","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/apify-actors-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-11-09">
+<body data-scan="2026-11-16">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -32,13 +32,13 @@
 <script>try{var d=new Date(document.body.dataset.scan);if((Date.now()-d.getTime())/864e5>30){document.getElementById('stale').hidden=false;}}catch(_){}</script>
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>apify__actors-mcp-server <span class="grade ">U</span></h1>
-<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 7 findings (4 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-11-09 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream apify/actors-mcp-server @ f8ac86c (2026-11-09)</p>
+<p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 9 findings (6 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
+<p class="muted">Scanned 2026-11-16 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream apify/actors-mcp-server @ a607957 (2026-11-16)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present; Symlinks or special files were not examined. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 404 analyzed / 462 discovered files; 9 unsupported source files; 60 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 415 analyzed / 473 discovered files; 9 unsupported source files; 60 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Symlinks or special files were not examined</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -53,7 +53,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 462,
+  &quot;discoveredFiles&quot;: 473,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/bug_report.yml&quot;,
@@ -110,7 +110,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/_check_code.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4802,
+      &quot;bytes&quot;: 4885,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -639,7 +639,7 @@
     {
       &quot;path&quot;: &quot;manifest.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2384,
+      &quot;bytes&quot;: 2385,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -664,7 +664,7 @@
     {
       &quot;path&quot;: &quot;package.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4621,
+      &quot;bytes&quot;: 4612,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -673,7 +673,7 @@
     {
       &quot;path&quot;: &quot;pnpm-lock.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 336854,
+      &quot;bytes&quot;: 307270,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -682,7 +682,7 @@
     {
       &quot;path&quot;: &quot;pnpm-workspace.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2418,
+      &quot;bytes&quot;: 3215,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -757,7 +757,7 @@
     {
       &quot;path&quot;: &quot;server.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1310,
+      &quot;bytes&quot;: 1311,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -766,7 +766,7 @@
     {
       &quot;path&quot;: &quot;src/apify_client.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8047,
+      &quot;bytes&quot;: 15665,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -782,7 +782,7 @@
     {
       &quot;path&quot;: &quot;src/const.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13415,
+      &quot;bytes&quot;: 14080,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -798,7 +798,7 @@
     {
       &quot;path&quot;: &quot;src/dev_server.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 18181,
+      &quot;bytes&quot;: 18640,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -814,7 +814,7 @@
     {
       &quot;path&quot;: &quot;src/errors.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3537,
+      &quot;bytes&quot;: 3868,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -846,7 +846,7 @@
     {
       &quot;path&quot;: &quot;src/index_internals.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1648,
+      &quot;bytes&quot;: 1765,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -910,7 +910,7 @@
     {
       &quot;path&quot;: &quot;src/mcp/actors.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3204,
+      &quot;bytes&quot;: 4845,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -926,7 +926,7 @@
     {
       &quot;path&quot;: &quot;src/mcp/client.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5279,
+      &quot;bytes&quot;: 5667,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1070,7 +1070,7 @@
     {
       &quot;path&quot;: &quot;src/mcp/stateless_server.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 18830,
+      &quot;bytes&quot;: 18805,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1086,7 +1086,7 @@
     {
       &quot;path&quot;: &quot;src/mcp/task_execution.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 20337,
+      &quot;bytes&quot;: 20372,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1102,7 +1102,7 @@
     {
       &quot;path&quot;: &quot;src/mcp/tool_call_engine.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 27260,
+      &quot;bytes&quot;: 27400,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1118,7 +1118,7 @@
     {
       &quot;path&quot;: &quot;src/mcp/tool_call_error_mapper.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3692,
+      &quot;bytes&quot;: 4433,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1134,7 +1134,7 @@
     {
       &quot;path&quot;: &quot;src/mcp/tool_call_telemetry.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6284,
+      &quot;bytes&quot;: 6328,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1198,7 +1198,7 @@
     {
       &quot;path&quot;: &quot;src/payments/helpers.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3921,
+      &quot;bytes&quot;: 4240,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1326,7 +1326,7 @@
     {
       &quot;path&quot;: &quot;src/resources/api_resources.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14329,
+      &quot;bytes&quot;: 16432,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1374,7 +1374,7 @@
     {
       &quot;path&quot;: &quot;src/server_card.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3354,
+      &quot;bytes&quot;: 3378,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1406,7 +1406,7 @@
     {
       &quot;path&quot;: &quot;src/stdio.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9279,
+      &quot;bytes&quot;: 7189,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1438,7 +1438,7 @@
     {
       &quot;path&quot;: &quot;src/tools/actor_input_schema.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16219,
+      &quot;bytes&quot;: 16199,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1454,7 +1454,7 @@
     {
       &quot;path&quot;: &quot;src/tools/actor_tool_naming.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9282,
+      &quot;bytes&quot;: 9613,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1470,7 +1470,7 @@
     {
       &quot;path&quot;: &quot;src/tools/actors/actor_definition.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9438,
+      &quot;bytes&quot;: 9475,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1486,7 +1486,7 @@
     {
       &quot;path&quot;: &quot;src/tools/actors/actor_executor.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4971,
+      &quot;bytes&quot;: 4860,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1502,7 +1502,7 @@
     {
       &quot;path&quot;: &quot;src/tools/actors/actor_run_response.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 43987,
+      &quot;bytes&quot;: 44991,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1534,7 +1534,7 @@
     {
       &quot;path&quot;: &quot;src/tools/actors/actor_tools_factory.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 25371,
+      &quot;bytes&quot;: 26030,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1550,7 +1550,7 @@
     {
       &quot;path&quot;: &quot;src/tools/actors/call_actor.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 29457,
+      &quot;bytes&quot;: 30529,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1566,7 +1566,7 @@
     {
       &quot;path&quot;: &quot;src/tools/actors/call_actor_mcp_tool.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8897,
+      &quot;bytes&quot;: 10571,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1598,7 +1598,7 @@
     {
       &quot;path&quot;: &quot;src/tools/actors/fetch_actor_details.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14382,
+      &quot;bytes&quot;: 15878,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1614,7 +1614,7 @@
     {
       &quot;path&quot;: &quot;src/tools/actors/fetch_actor_mcp_tool_list.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5136,
+      &quot;bytes&quot;: 5240,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1662,7 +1662,7 @@
     {
       &quot;path&quot;: &quot;src/tools/actors/send_server_actor_request.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 29229,
+      &quot;bytes&quot;: 30515,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1678,7 +1678,7 @@
     {
       &quot;path&quot;: &quot;src/tools/actors/server_interface_details.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 17695,
+      &quot;bytes&quot;: 17912,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1710,7 +1710,7 @@
     {
       &quot;path&quot;: &quot;src/tools/api/apify_api_blocklist.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7351,
+      &quot;bytes&quot;: 7738,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1774,7 +1774,7 @@
     {
       &quot;path&quot;: &quot;src/tools/api/apify_api_request.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 17978,
+      &quot;bytes&quot;: 18229,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1822,7 +1822,7 @@
     {
       &quot;path&quot;: &quot;src/tools/api/apify_api_write.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7268,
+      &quot;bytes&quot;: 7266,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1854,7 +1854,7 @@
     {
       &quot;path&quot;: &quot;src/tools/builds/build_helpers.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8874,
+      &quot;bytes&quot;: 8934,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1902,7 +1902,7 @@
     {
       &quot;path&quot;: &quot;src/tools/builds/get_actor_build_log.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2963,
+      &quot;bytes&quot;: 2779,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1934,7 +1934,7 @@
     {
       &quot;path&quot;: &quot;src/tools/docs/fetch_apify_docs.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6095,
+      &quot;bytes&quot;: 6161,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -1950,7 +1950,7 @@
     {
       &quot;path&quot;: &quot;src/tools/docs/search_apify_docs.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5711,
+      &quot;bytes&quot;: 5931,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2046,7 +2046,7 @@
     {
       &quot;path&quot;: &quot;src/tools/runs/get_actor_run_log.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2552,
+      &quot;bytes&quot;: 2399,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2062,7 +2062,7 @@
     {
       &quot;path&quot;: &quot;src/tools/schedules/create_schedule.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5261,
+      &quot;bytes&quot;: 5409,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2110,7 +2110,7 @@
     {
       &quot;path&quot;: &quot;src/tools/schedules/schedule_helpers.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14304,
+      &quot;bytes&quot;: 15187,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2126,7 +2126,7 @@
     {
       &quot;path&quot;: &quot;src/tools/schedules/update_schedule.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5417,
+      &quot;bytes&quot;: 5668,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2142,7 +2142,7 @@
     {
       &quot;path&quot;: &quot;src/tools/storage/get_dataset.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6087,
+      &quot;bytes&quot;: 6060,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2158,7 +2158,7 @@
     {
       &quot;path&quot;: &quot;src/tools/storage/get_dataset_items.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6208,
+      &quot;bytes&quot;: 6768,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2190,7 +2190,7 @@
     {
       &quot;path&quot;: &quot;src/tools/storage/get_dataset_schema.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5983,
+      &quot;bytes&quot;: 6051,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2206,7 +2206,7 @@
     {
       &quot;path&quot;: &quot;src/tools/storage/get_key_value_store.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3809,
+      &quot;bytes&quot;: 3913,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2222,7 +2222,7 @@
     {
       &quot;path&quot;: &quot;src/tools/storage/get_key_value_store_keys.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4098,
+      &quot;bytes&quot;: 4279,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2254,7 +2254,7 @@
     {
       &quot;path&quot;: &quot;src/tools/storage/get_key_value_store_record.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8841,
+      &quot;bytes&quot;: 9755,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2270,7 +2270,7 @@
     {
       &quot;path&quot;: &quot;src/tools/storage/storage_helpers.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12742,
+      &quot;bytes&quot;: 16090,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2286,7 +2286,7 @@
     {
       &quot;path&quot;: &quot;src/tools/structured_output_schemas.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 59944,
+      &quot;bytes&quot;: 60917,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2302,7 +2302,7 @@
     {
       &quot;path&quot;: &quot;src/tools/tasks/create_actor_task.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5463,
+      &quot;bytes&quot;: 5807,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2382,7 +2382,7 @@
     {
       &quot;path&quot;: &quot;src/tools/tasks/update_actor_task.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5778,
+      &quot;bytes&quot;: 6220,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2478,7 +2478,7 @@
     {
       &quot;path&quot;: &quot;src/tools/versions/source_helpers.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 25099,
+      &quot;bytes&quot;: 24447,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2510,7 +2510,7 @@
     {
       &quot;path&quot;: &quot;src/tools/widgets/call_actor_widget.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6191,
+      &quot;bytes&quot;: 6429,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2526,7 +2526,7 @@
     {
       &quot;path&quot;: &quot;src/tools/widgets/fetch_actor_details_widget.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5798,
+      &quot;bytes&quot;: 5756,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2583,7 +2583,7 @@
     {
       &quot;path&quot;: &quot;src/types.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 35867,
+      &quot;bytes&quot;: 36037,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2599,7 +2599,7 @@
     {
       &quot;path&quot;: &quot;src/utils/actor.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4383,
+      &quot;bytes&quot;: 4729,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2631,7 +2631,7 @@
     {
       &quot;path&quot;: &quot;src/utils/actor_details.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7968,
+      &quot;bytes&quot;: 8266,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2663,7 +2663,7 @@
     {
       &quot;path&quot;: &quot;src/utils/ajv.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3919,
+      &quot;bytes&quot;: 3793,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2695,7 +2695,7 @@
     {
       &quot;path&quot;: &quot;src/utils/apify_errors.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4554,
+      &quot;bytes&quot;: 4783,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2727,7 +2727,7 @@
     {
       &quot;path&quot;: &quot;src/utils/apify_resource_id.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1688,
+      &quot;bytes&quot;: 3737,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2791,7 +2791,23 @@
     {
       &quot;path&quot;: &quot;src/utils/generic.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3520,
+      &quot;bytes&quot;: 4188,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;src/utils/log_tail.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 9484,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2807,7 +2823,23 @@
     {
       &quot;path&quot;: &quot;src/utils/logging.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 9982,
+      &quot;bytes&quot;: 10992,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;src/utils/lru.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1273,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2823,7 +2855,7 @@
     {
       &quot;path&quot;: &quot;src/utils/mcp.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14427,
+      &quot;bytes&quot;: 15074,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2839,7 +2871,7 @@
     {
       &quot;path&quot;: &quot;src/utils/mcp_clients.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2612,
+      &quot;bytes&quot;: 2697,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2903,7 +2935,7 @@
     {
       &quot;path&quot;: &quot;src/utils/schema_generation.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6895,
+      &quot;bytes&quot;: 7162,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2967,7 +2999,7 @@
     {
       &quot;path&quot;: &quot;src/utils/tool_status.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11568,
+      &quot;bytes&quot;: 13105,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2983,7 +3015,7 @@
     {
       &quot;path&quot;: &quot;src/utils/tools.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6101,
+      &quot;bytes&quot;: 6313,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -2999,7 +3031,7 @@
     {
       &quot;path&quot;: &quot;src/utils/tools_loader.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14978,
+      &quot;bytes&quot;: 15019,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3015,7 +3047,7 @@
     {
       &quot;path&quot;: &quot;src/utils/ttl_lru.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1767,
+      &quot;bytes&quot;: 1648,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3577,7 +3609,7 @@
     {
       &quot;path&quot;: &quot;tests/test_kit/cases/actors.cases.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 59656,
+      &quot;bytes&quot;: 60088,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3657,7 +3689,7 @@
     {
       &quot;path&quot;: &quot;tests/test_kit/cases/storage.cases.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 24713,
+      &quot;bytes&quot;: 24881,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3721,7 +3753,7 @@
     {
       &quot;path&quot;: &quot;tests/test_kit/helpers.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12028,
+      &quot;bytes&quot;: 12230,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3769,7 +3801,7 @@
     {
       &quot;path&quot;: &quot;tests/test_kit/register.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1690,
+      &quot;bytes&quot;: 1848,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3794,7 +3826,23 @@
     {
       &quot;path&quot;: &quot;tests/test_kit/types.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2066,
+      &quot;bytes&quot;: 2265,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tests/unit/apify_client.request_paths.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 9670,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3826,7 +3874,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/apify_client.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4398,
+      &quot;bytes&quot;: 5549,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -3858,7 +3906,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/dev_server.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 22683,
+      &quot;bytes&quot;: 24223,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4137,6 +4185,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;tests/unit/helpers/log_server.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 4699,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;tests/unit/helpers/mcp_server.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 17760,
@@ -4235,7 +4299,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/mcp.actors.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5450,
+      &quot;bytes&quot;: 8355,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4347,7 +4411,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/mcp.server.legacy_actor_syntax.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4006,
+      &quot;bytes&quot;: 4773,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4491,7 +4555,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/mcp.server.tool_call_contracts.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 72626,
+      &quot;bytes&quot;: 74003,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4523,7 +4587,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/mcp.stateless.registration.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 3993,
+      &quot;bytes&quot;: 3978,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4635,7 +4699,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/mcp_clients.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5524,
+      &quot;bytes&quot;: 5701,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4715,7 +4779,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/resources.api.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 36697,
+      &quot;bytes&quot;: 41115,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4747,7 +4811,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/schema_generation.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12547,
+      &quot;bytes&quot;: 14418,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4764,6 +4828,22 @@
       &quot;path&quot;: &quot;tests/unit/server-instructions.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 27945,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tests/unit/server_card.broken_install.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 2024,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4811,7 +4891,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tool_call_engine.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 22064,
+      &quot;bytes&quot;: 22949,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4827,7 +4907,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tool_call_error_mapper.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 8424,
+      &quot;bytes&quot;: 10835,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4891,7 +4971,23 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.actor_executor.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12387,
+      &quot;bytes&quot;: 14330,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tests/unit/tools.actor_input_logging.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 8585,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4907,7 +5003,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.actor_mcp_server.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 25148,
+      &quot;bytes&quot;: 29548,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4923,7 +5019,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.actor_task_crud.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14284,
+      &quot;bytes&quot;: 14618,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4939,7 +5035,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.actor_tools_factory.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13081,
+      &quot;bytes&quot;: 15659,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4955,7 +5051,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.apify_api.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 60876,
+      &quot;bytes&quot;: 61458,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -4971,7 +5067,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.apify_api_blocklist.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 13720,
+      &quot;bytes&quot;: 13790,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5003,7 +5099,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.build_actor.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 20366,
+      &quot;bytes&quot;: 20426,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5035,7 +5131,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.call_actor_common.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 27496,
+      &quot;bytes&quot;: 27058,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5115,7 +5211,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.create_actor_version.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 47185,
+      &quot;bytes&quot;: 47770,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5177,6 +5273,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;tests/unit/tools.fetch_actor_details.mcp_next_step.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 5666,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;tests/unit/tools.fetch_actor_details.response.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 11438,
@@ -5195,7 +5307,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.fetch_actor_details.server_interface.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 29303,
+      &quot;bytes&quot;: 29765,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5227,7 +5339,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.fetch_apify_docs.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2032,
+      &quot;bytes&quot;: 2533,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5243,7 +5355,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.get_actor_build.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12250,
+      &quot;bytes&quot;: 12310,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5275,7 +5387,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.get_actor_build_log.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6380,
+      &quot;bytes&quot;: 6436,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5307,7 +5419,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.get_actor_run.response.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 68052,
+      &quot;bytes&quot;: 70382,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5355,7 +5467,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.get_actor_run_log.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5875,
+      &quot;bytes&quot;: 7376,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5387,7 +5499,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.get_dataset.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11876,
+      &quot;bytes&quot;: 11895,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5403,7 +5515,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.get_dataset_items.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11980,
+      &quot;bytes&quot;: 11925,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5499,7 +5611,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.get_key_value_store_record.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 23517,
+      &quot;bytes&quot;: 33495,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5547,7 +5659,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.normalize_actor_id.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2942,
+      &quot;bytes&quot;: 4336,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5593,6 +5705,22 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;tests/unit/tools.resource_id_max_length.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 3619,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;tests/unit/tools.schedule_actor_resolution.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
       &quot;bytes&quot;: 3685,
@@ -5611,7 +5739,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.schedule_crud.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 19872,
+      &quot;bytes&quot;: 20084,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5627,7 +5755,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.schemas.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2349,
+      &quot;bytes&quot;: 2258,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5689,9 +5817,25 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;tests/unit/tools.search_apify_docs.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 801,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;tests/unit/tools.send_server_actor_request.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 47023,
+      &quot;bytes&quot;: 50818,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5723,7 +5867,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.storage_helpers.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6939,
+      &quot;bytes&quot;: 6628,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5787,7 +5931,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/tools.utils.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 53764,
+      &quot;bytes&quot;: 54156,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5819,7 +5963,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils.actor.build_cache.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 2481,
+      &quot;bytes&quot;: 3164,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5835,7 +5979,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils.actor.cache.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 7846,
+      &quot;bytes&quot;: 10286,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5867,7 +6011,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils.actor_details.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 11931,
+      &quot;bytes&quot;: 12061,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5931,7 +6075,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils.apify_errors.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 4019,
+      &quot;bytes&quot;: 4246,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5963,7 +6107,23 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils.generic.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 5012,
+      &quot;bytes&quot;: 5567,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tests/unit/utils.log_tail.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 8080,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5979,7 +6139,23 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils.logging.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 12133,
+      &quot;bytes&quot;: 12682,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-001&quot;,
+        &quot;AT-SEC-002&quot;,
+        &quot;AT-SEC-003&quot;,
+        &quot;AT-SEC-004&quot;,
+        &quot;AT-SEC-005&quot;,
+        &quot;AT-SEC-006&quot;,
+        &quot;AT-SEC-007&quot;,
+        &quot;AT-COMP-001&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;tests/unit/utils.lru.test.ts&quot;,
+      &quot;scope&quot;: &quot;code&quot;,
+      &quot;bytes&quot;: 1939,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -5995,7 +6171,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils.mcp.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 21544,
+      &quot;bytes&quot;: 22400,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6011,7 +6187,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils.payment_errors.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 6336,
+      &quot;bytes&quot;: 6370,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6091,7 +6267,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils.tool_status.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 14828,
+      &quot;bytes&quot;: 17329,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6123,7 +6299,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils.tools_loader.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 16319,
+      &quot;bytes&quot;: 17398,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6139,7 +6315,7 @@
     {
       &quot;path&quot;: &quot;tests/unit/utils.ttl_lru.test.ts&quot;,
       &quot;scope&quot;: &quot;code&quot;,
-      &quot;bytes&quot;: 1799,
+      &quot;bytes&quot;: 3153,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-001&quot;,
@@ -6487,8 +6663,8 @@
     &quot;maxFileBytes&quot;: 1048576
   }
 }</pre></details>
-<h2>Fix first (7 critical/high)</h2>
-<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/dev_standby.js:16</code><br><span class="muted">Evidence: </span><code>const child = spawn(cmd, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/unit/tools.create_actor.test.ts:195</code><br><span class="muted">Evidence: </span><code>const SECRET = 'synthetic-secret-4f2a';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/unit/tools.create_actor_version.test.ts:171</code><br><span class="muted">Evidence: </span><code>const SECRET = 'synthetic-secret-4f2a';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/unit/tools.update_actor_version.test.ts:477</code><br><span class="muted">Evidence: </span><code>const SECRET = 'synthetic-secret-4f2a';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">src/mcp/client.ts:100</code><br><span class="muted">Evidence: </span><code>async fetch(input: Request | URL | string, init?: RequestInit) {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">src/mcp/client.ts:105</code><br><span class="muted">Evidence: </span><code>return fetch(input, { ...init, headers });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">src/payments/x402.ts:126</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
+<h2>Fix first (9 critical/high)</h2>
+<table class="data"><thead><tr><th>Severity</th><th>Rule</th><th>Finding</th><th>Remediation</th></tr></thead><tbody><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">scripts/dev_standby.js:16</code><br><span class="muted">Evidence: </span><code>const child = spawn(cmd, args, {</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-003</code> (ASI02)</td><td>Unbounded Dynamic Shell Execution<br><code class="muted">tests/unit/helpers/log_server.ts:45</code><br><span class="muted">Evidence: </span><code>const id = /^\/v2\/actor-(?:runs|builds)\/([^/?]+)\/log(?:\?|$)/.exec(req.url ?? '')?.[1];</code></td><td>Strictly restrict shell execution to an immutable allowlist of binary commands with explicit argument arrays, or execute inside microVM sandboxes.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/unit/tools.actor_input_logging.test.ts:15</code><br><span class="muted">Evidence: </span><code>const SECRET = 'synthetic-secret-4f2a';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/unit/tools.create_actor.test.ts:195</code><br><span class="muted">Evidence: </span><code>const SECRET = 'synthetic-secret-4f2a';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/unit/tools.create_actor_version.test.ts:171</code><br><span class="muted">Evidence: </span><code>const SECRET = 'synthetic-secret-4f2a';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--bad)">CRITICAL</strong></td><td><code>AT-SEC-002</code> (LLM02)</td><td>Hardcoded Credential or API Secret<br><code class="muted">tests/unit/tools.update_actor_version.test.ts:477</code><br><span class="muted">Evidence: </span><code>const SECRET = 'synthetic-secret-4f2a';</code></td><td>Move credentials to secure environment variables or a key vault. Never commit API keys.</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">src/mcp/client.ts:108</code><br><span class="muted">Evidence: </span><code>async fetch(input: Request | URL | string, init?: RequestInit) {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">src/mcp/client.ts:113</code><br><span class="muted">Evidence: </span><code>return fetch(input, { ...init, headers });</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr><tr><td><strong style="color:var(--orange)">HIGH</strong></td><td><code>AT-SEC-006</code> (LLM06)</td><td>Unfiltered SSRF / Arbitrary Network Egress<br><code class="muted">src/payments/x402.ts:126</code><br><span class="muted">Evidence: </span><code>const response = await fetch(url, {</code></td><td>Define an explicit egress domain allowlist and block private IP ranges (127.0.0.1, 10.0.0.0/8, 169.254.169.254).</td></tr></tbody></table>
 <h2>Permissions</h2>
 <p>Scope: <strong>excessive</strong> · Shell: enabled · Network egress: yes · File deletion: none · Human approval: none</p>
 <h2>Provenance</h2>

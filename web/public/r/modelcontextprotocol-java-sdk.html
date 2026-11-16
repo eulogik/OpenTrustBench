@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"modelcontextprotocol__java-sdk — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of modelcontextprotocol__java-sdk: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-11-09","dateModified":"2026-11-09","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/modelcontextprotocol-java-sdk.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"modelcontextprotocol__java-sdk — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of modelcontextprotocol__java-sdk: 0 findings (0 critical), permission scope minimal.","datePublished":"2026-11-16","dateModified":"2026-11-16","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/modelcontextprotocol-java-sdk.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-11-09">
+<body data-scan="2026-11-16">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>modelcontextprotocol__java-sdk <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 0 findings (0 critical) · scope minimal · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-11-09 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/java-sdk @ 2d5a5bf (2026-11-07)</p>
+<p class="muted">Scanned 2026-11-16 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream modelcontextprotocol/java-sdk @ 779893c (2026-11-16)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 12 analyzed / 404 discovered files; 350 unsupported source files; 393 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 12 analyzed / 489 discovered files; 427 unsupported source files; 478 excluded; 0 read errors; 0 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -52,7 +52,7 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 404,
+  &quot;discoveredFiles&quot;: 489,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/ISSUE_TEMPLATE/config.yml&quot;,
@@ -100,7 +100,7 @@
     {
       &quot;path&quot;: &quot;.github/workflows/conformance.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 4411,
+      &quot;bytes&quot;: 5495,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -163,7 +163,7 @@
     {
       &quot;path&quot;: &quot;mkdocs.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 2455,
+      &quot;bytes&quot;: 2514,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -175,6 +175,9 @@
     &quot;conformance-tests/client-jdk-http-client/pom.xml&quot;,
     &quot;conformance-tests/client-jdk-http-client/src/main/java/io/modelcontextprotocol/conformance/client/ConformanceJdkClientMcpClient.java&quot;,
     &quot;conformance-tests/client-jdk-http-client/src/main/resources/logback.xml&quot;,
+    &quot;conformance-tests/client-modern/pom.xml&quot;,
+    &quot;conformance-tests/client-modern/src/main/java/io/modelcontextprotocol/conformance/client/modern/ModernConformanceClient.java&quot;,
+    &quot;conformance-tests/client-modern/src/main/resources/logback.xml&quot;,
     &quot;conformance-tests/client-spring-http-client/pom.xml&quot;,
     &quot;conformance-tests/client-spring-http-client/src/main/java/io/modelcontextprotocol/conformance/client/ConformanceSpringClientApplication.java&quot;,
     &quot;conformance-tests/client-spring-http-client/src/main/java/io/modelcontextprotocol/conformance/client/McpClientController.java&quot;,
@@ -230,8 +233,51 @@
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/json/schema/JsonSchemaValidatorSupplier.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/JsonRpc.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/McpException.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/McpHttp.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/McpSchema.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/McpStdio.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/ToolParamHeaderAnnotations.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/AsyncClientRequester.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/CallSettings.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/ClientRequestFactory.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/Deadlines.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/DiscoverCache.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/InputHandlers.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/JsonRpcRequestSender.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/Listings.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpAsyncClient.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpAsyncElicitationHandler.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpClient.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpClientException.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpInputHandlerMissingException.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpInputRoundsExceededException.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpInvalidResultException.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpMissingClientCapabilityException.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpResponseLostException.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpSubscriptionLostException.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpSyncClient.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpSyncElicitationHandler.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpSyncSubscriptionListener.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpTimeoutException.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/MultiRoundTripRequest.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/RequestMeta.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/ResultDecoding.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/SubscriptionEvent.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/SubscriptionStream.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/SyncClientRequester.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/ToolCatalog.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/ToolParamHeaders.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/HttpClientMcpTransport.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpClientTransport.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHeaderMirror.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHttpAuthorizationErrorHandler.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHttpRequest.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHttpRequestCustomizer.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHttpRequestHeaders.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHttpResponseInfo.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHttpStatusException.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpTransportRequest.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/StdioMcpClientTransport.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/CompletionsFeature.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/DefaultAsyncNotifier.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/DiscoverFeature.java&quot;,
@@ -240,7 +286,8 @@
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpAsyncNotifier.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpAsyncResponse.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpFeature.java&quot;,
-    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpParamHeaders.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpHeader.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpHeaders.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpRequestContext.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpRequestManager.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpServer.java&quot;,
@@ -248,6 +295,7 @@
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpSyncResponse.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpTransportResponse.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/RequestStateCodec.java&quot;,
+    &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/SubscriptionRestriction.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/SubscriptionsFeature.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/feature/McpAsyncCompletionHandler.java&quot;,
     &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/feature/McpAsyncPrompt.java&quot;,
@@ -377,7 +425,15 @@
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/customizer/McpHttpClientAuthorizationErrorHandlerTest.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/client/transport/customizer/McpHttpClientTransportAuthorizationErrorHandlerTest.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/common/McpTransportContextTests.java&quot;,
-    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/McpParamHeadersTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/SubscriptionFilterTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/McpClientExceptionsTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/RequestMetaTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/SubscriptionEventTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/transport/McpHeaderMirrorTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/transport/McpHttpRequestHeadersTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/transport/McpHttpRequestTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/transport/McpTransportRequestTests.java&quot;,
+    &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/McpHeadersTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/feature/McpChangeFeedTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/transport/McpHeaderDecoderTests.java&quot;,
     &quot;mcp-core/src/test/java/io/modelcontextprotocol/server/AsyncToolSpecificationBuilderTest.java&quot;,
@@ -473,6 +529,27 @@
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/common/SyncServerMcpTransportContextIntegrationTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/McpSchemaSerializationTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/ToolParamHeaderAnnotationsTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/ClientRequesterTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/CollectingListener.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/HttpClientMcpTransportIntegrationTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/InputHandlersTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/IntegrationTestServer.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpAsyncClientInputTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpAsyncClientIntegrationTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpAsyncClientListenTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpAsyncClientResponseTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpAsyncClientTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpAsyncClientToolCatalogTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpClientToolListingTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpSyncClientIntegrationTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpSyncClientTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/MockMcpClientTransport.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/MultiRoundTripRequestTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/RequestMetaServerTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/StdioMcpClientTransportTests.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/StdioTestServer.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/TestChangePublisher.java&quot;,
+    &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/ToolCatalogTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/HmacRequestStateCodecTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/McpServerMrtrTests.java&quot;,
     &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/server/McpServerTests.java&quot;,
@@ -592,6 +669,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;RELEASE.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;ROADMAP.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -621,6 +702,22 @@
     },
     {
       &quot;path&quot;: &quot;conformance-tests/client-jdk-http-client/src/main/resources/logback.xml&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;conformance-tests/client-modern/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;conformance-tests/client-modern/pom.xml&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;conformance-tests/client-modern/src/main/java/io/modelcontextprotocol/conformance/client/modern/ModernConformanceClient.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;conformance-tests/client-modern/src/main/resources/logback.xml&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -716,6 +813,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;docs/client-modern.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;docs/client.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -732,11 +833,27 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;docs/images/java-mcp-client-architecture-modern.svg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;docs/images/java-mcp-client-architecture.jpg&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;docs/images/java-mcp-client-architecture.svg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/images/java-mcp-server-architecture-modern.svg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;docs/images/java-mcp-server-architecture.jpg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/images/java-mcp-server-architecture.svg&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -749,6 +866,10 @@
     },
     {
       &quot;path&quot;: &quot;docs/images/logo-light.svg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/images/mcp-stack-modern.svg&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -932,11 +1053,183 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/McpHttp.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/McpSchema.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/McpStdio.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/ToolParamHeaderAnnotations.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/AsyncClientRequester.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/CallSettings.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/ClientRequestFactory.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/Deadlines.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/DiscoverCache.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/InputHandlers.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/JsonRpcRequestSender.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/Listings.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpAsyncClient.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpAsyncElicitationHandler.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpClient.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpClientException.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpInputHandlerMissingException.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpInputRoundsExceededException.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpInvalidResultException.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpMissingClientCapabilityException.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpResponseLostException.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpSubscriptionLostException.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpSyncClient.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpSyncElicitationHandler.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpSyncSubscriptionListener.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/McpTimeoutException.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/MultiRoundTripRequest.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/RequestMeta.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/ResultDecoding.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/SubscriptionEvent.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/SubscriptionStream.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/SyncClientRequester.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/ToolCatalog.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/ToolParamHeaders.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/HttpClientMcpTransport.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpClientTransport.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHeaderMirror.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHttpAuthorizationErrorHandler.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHttpRequest.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHttpRequestCustomizer.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHttpRequestHeaders.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHttpResponseInfo.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpHttpStatusException.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/McpTransportRequest.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/client/transport/StdioMcpClientTransport.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -972,7 +1265,11 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpParamHeaders.java&quot;,
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpHeader.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/McpHeaders.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1001,6 +1298,10 @@
     },
     {
       &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/RequestStateCodec.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/main/java/io/modelcontextprotocol/modern/server/SubscriptionRestriction.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1520,7 +1821,39 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
-      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/McpParamHeadersTests.java&quot;,
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/SubscriptionFilterTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/McpClientExceptionsTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/RequestMetaTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/SubscriptionEventTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/transport/McpHeaderMirrorTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/transport/McpHttpRequestHeadersTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/transport/McpHttpRequestTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/client/transport/McpTransportRequestTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-core/src/test/java/io/modelcontextprotocol/modern/server/McpHeadersTests.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -1901,6 +2234,90 @@
     },
     {
       &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/ToolParamHeaderAnnotationsTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/ClientRequesterTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/CollectingListener.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/HttpClientMcpTransportIntegrationTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/InputHandlersTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/IntegrationTestServer.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpAsyncClientInputTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpAsyncClientIntegrationTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpAsyncClientListenTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpAsyncClientResponseTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpAsyncClientTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpAsyncClientToolCatalogTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpClientToolListingTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpSyncClientIntegrationTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/McpSyncClientTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/MockMcpClientTransport.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/MultiRoundTripRequestTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/RequestMetaServerTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/StdioMcpClientTransportTests.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/StdioTestServer.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/TestChangePublisher.java&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;mcp-test/src/test/java/io/modelcontextprotocol/modern/client/ToolCatalogTests.java&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
