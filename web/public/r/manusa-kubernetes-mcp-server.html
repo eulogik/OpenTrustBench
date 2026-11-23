@@ -12,14 +12,14 @@
 <meta property="og:image" content="https://opentrustbench.com/og-image.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"manusa__kubernetes-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of manusa__kubernetes-mcp-server: 1 findings (1 critical), permission scope excessive.","datePublished":"2026-11-16","dateModified":"2026-11-16","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/manusa-kubernetes-mcp-server.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://opentrustbench.com/#org","name":"OpenTrustBench","url":"https://opentrustbench.com/","sameAs":["https://github.com/eulogik/OpenTrustBench"]},{"@type":"Article","headline":"manusa__kubernetes-mcp-server — OpenTrustBench Grade U (Ungraded — insufficient static coverage)","description":"Static security scan of manusa__kubernetes-mcp-server: 1 findings (1 critical), permission scope excessive.","datePublished":"2026-11-23","dateModified":"2026-11-23","author":{"@id":"https://opentrustbench.com/#org"},"publisher":{"@id":"https://opentrustbench.com/#org"},"mainEntityOfPage":"https://opentrustbench.com/r/manusa-kubernetes-mcp-server.html"}]}</script>
 <link rel="preload" href="../assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body data-scan="2026-11-16">
+<body data-scan="2026-11-23">
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav" aria-label="Main"><div class="nav-inner">
 <a class="brand" href="../"><span class="brand-mark">O</span>OpenTrustBench</a>
@@ -33,12 +33,12 @@
 <p class="eyebrow">Trust Card · Static snapshot</p>
 <h1>manusa__kubernetes-mcp-server <span class="grade ">U</span></h1>
 <p class="lede"><strong style="color:var(--text)">Ungraded — insufficient static coverage</strong> · 1 findings (1 critical) · scope excessive · Not ranked: insufficient static coverage.</p>
-<p class="muted">Scanned 2026-11-16 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream manusa/kubernetes-mcp-server @ be8b260 (2026-11-16)</p>
+<p class="muted">Scanned 2026-11-23 · engine v0.1.3 (8 regex rules, OWASP-mapped) · upstream manusa/kubernetes-mcp-server @ 6896552 (2026-11-23)</p>
 <h2>Score breakdown</h2>
 <p>No numeric score or breakdown: insufficient static coverage. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <p class="muted">Insufficient static coverage: Unsupported source present; Scan limits reached; Symlinks or special files were not examined. Findings remain actionable; absence of findings is not evidence of safety.</p>
 <h2>Coverage: limited</h2>
-<p>Static-heuristic scope: 334 analyzed / 1072 discovered files; 665 unsupported source files; 770 excluded; 0 read errors; 7 truncations. This is not a semantic coverage percentage or proof of safety.</p>
+<p>Static-heuristic scope: 349 analyzed / 1107 discovered files; 682 unsupported source files; 790 excluded; 0 read errors; 7 truncations. This is not a semantic coverage percentage or proof of safety.</p>
 <ul><li>Unsupported source present</li><li>Scan limits reached</li><li>Symlinks or special files were not examined</li><li>Coverage describes the files read and regex rules applied, not semantic, runtime, or dependency coverage.</li><li>Supported code is JavaScript, TypeScript, and Python; JSON/YAML receive only the credential rule.</li><li>Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.</li><li>Ignored directories, declarations, and non-implementation assets are outside rule scope.</li></ul>
 <details><summary>File coverage, applied rules and scan limits</summary><pre>{
   &quot;mode&quot;: &quot;static-heuristic&quot;,
@@ -54,12 +54,12 @@
     &quot;Skill instructions and other prose are not code-analyzed; declared controls are not verified enforcement.&quot;,
     &quot;Ignored directories, declarations, and non-implementation assets are outside rule scope.&quot;
   ],
-  &quot;discoveredFiles&quot;: 1072,
+  &quot;discoveredFiles&quot;: 1107,
   &quot;analyzedFiles&quot;: [
     {
       &quot;path&quot;: &quot;.github/dependabot.yml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 1251,
+      &quot;bytes&quot;: 1417,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -471,6 +471,24 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;evals/core-eval-testing/acp-anthropic/eval-korrel8r-baseline.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 611,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/core-eval-testing/acp-anthropic/eval-korrel8r.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1023,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;evals/core-eval-testing/acp-anthropic/eval-obs.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 16803,
@@ -483,6 +501,24 @@
       &quot;path&quot;: &quot;evals/core-eval-testing/acp-google/agent.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 99,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/core-eval-testing/acp-google/eval-korrel8r-baseline.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 611,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/core-eval-testing/acp-google/eval-korrel8r.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1023,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -507,6 +543,24 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;evals/core-eval-testing/builtin-anthropic/eval-korrel8r-baseline.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 611,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/core-eval-testing/builtin-anthropic/eval-korrel8r.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1023,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;evals/core-eval-testing/builtin-anthropic/eval-obs.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 16803,
@@ -519,6 +573,24 @@
       &quot;path&quot;: &quot;evals/core-eval-testing/builtin-google/agent.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 115,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/core-eval-testing/builtin-google/eval-korrel8r-baseline.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 611,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/core-eval-testing/builtin-google/eval-korrel8r.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1023,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -615,6 +687,24 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;evals/core-eval-testing/builtin-openai/eval-korrel8r-baseline.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 611,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/core-eval-testing/builtin-openai/eval-korrel8r.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1023,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;evals/core-eval-testing/builtin-openai/eval-kubevirt.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 1003,
@@ -662,7 +752,16 @@
     {
       &quot;path&quot;: &quot;evals/results/builtin-openai-config-multicluster-latest.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 37728,
+      &quot;bytes&quot;: 32669,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/results/builtin-openai-core-readonly-latest.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 251598,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -671,7 +770,7 @@
     {
       &quot;path&quot;: &quot;evals/results/openai-agent-multicluster-latest.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 150451,
+      &quot;bytes&quot;: 167363,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -986,7 +1085,7 @@
     {
       &quot;path&quot;: &quot;evals/tasks/core/debug-app-logs/artifacts/calc-app-pod.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 691,
+      &quot;bytes&quot;: 687,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -1597,6 +1696,33 @@
       &quot;path&quot;: &quot;evals/tasks/kiali/troubleshooting-workload-logs/troubleshooting-workload-logs.yaml&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 641,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/tasks/korrel8r/deployment-correlations/task.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 2548,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/tasks/korrel8r/shared/korrel8r.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 1875,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
+      &quot;path&quot;: &quot;evals/tasks/korrel8r/shared/signals.yaml&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 2328,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -2744,6 +2870,15 @@
       ]
     },
     {
+      &quot;path&quot;: &quot;pkg/mcp/testdata/toolsets-observability-korrel8r-tools.json&quot;,
+      &quot;scope&quot;: &quot;data&quot;,
+      &quot;bytes&quot;: 49002,
+      &quot;nonEmpty&quot;: true,
+      &quot;ruleIds&quot;: [
+        &quot;AT-SEC-002&quot;
+      ]
+    },
+    {
       &quot;path&quot;: &quot;pkg/mcp/testdata/toolsets-observability-logs-tools.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
       &quot;bytes&quot;: 12163,
@@ -2773,7 +2908,7 @@
     {
       &quot;path&quot;: &quot;pkg/mcp/testdata/toolsets-observability-traces-tools.json&quot;,
       &quot;scope&quot;: &quot;data&quot;,
-      &quot;bytes&quot;: 22555,
+      &quot;bytes&quot;: 22865,
       &quot;nonEmpty&quot;: true,
       &quot;ruleIds&quot;: [
         &quot;AT-SEC-002&quot;
@@ -3141,6 +3276,7 @@
     &quot;build/helm.mk&quot;,
     &quot;build/keycloak.mk&quot;,
     &quot;build/kiali.mk&quot;,
+    &quot;build/korrel8r.mk&quot;,
     &quot;build/kuadrant.mk&quot;,
     &quot;build/kubevirt.mk&quot;,
     &quot;build/minikube.mk&quot;,
@@ -3259,6 +3395,10 @@
     &quot;evals/tasks/kiali/scripts/ensure_gateway_api_crds.sh&quot;,
     &quot;evals/tasks/kiali/scripts/ensure_inference_api_crds.sh&quot;,
     &quot;evals/tasks/kiali/scripts/update_tasks.sh&quot;,
+    &quot;evals/tasks/korrel8r/shared/setup-signals.sh&quot;,
+    &quot;evals/tasks/korrel8r/shared/setup.sh&quot;,
+    &quot;evals/tasks/korrel8r/shared/teardown-signals.sh&quot;,
+    &quot;evals/tasks/korrel8r/shared/teardown.sh&quot;,
     &quot;evals/tasks/kubevirt/helpers/verify-vm.sh&quot;,
     &quot;evals/tasks/netobserv/shared/setup-mock.sh&quot;,
     &quot;evals/tasks/tekton/helpers/cleanup-namespace.sh&quot;,
@@ -3300,6 +3440,7 @@
     &quot;pkg/api/toolsets.go&quot;,
     &quot;pkg/api/toolsets_test.go&quot;,
     &quot;pkg/api/validation.go&quot;,
+    &quot;pkg/config/ca_url_config_test.go&quot;,
     &quot;pkg/config/config.go&quot;,
     &quot;pkg/config/config_default_overrides.go&quot;,
     &quot;pkg/config/config_test.go&quot;,
@@ -3344,6 +3485,7 @@
     &quot;pkg/http/wellknown_test.go&quot;,
     &quot;pkg/kcp/kcp.go&quot;,
     &quot;pkg/kcp/provider.go&quot;,
+    &quot;pkg/kcp/provider_test.go&quot;,
     &quot;pkg/kcp/workspace.go&quot;,
     &quot;pkg/kcp/workspace_test.go&quot;,
     &quot;pkg/kcp/workspace_watcher.go&quot;,
@@ -3351,6 +3493,7 @@
     &quot;pkg/kiali/config_test.go&quot;,
     &quot;pkg/kiali/crd_types.go&quot;,
     &quot;pkg/kiali/discover.go&quot;,
+    &quot;pkg/kiali/discover_test.go&quot;,
     &quot;pkg/kiali/gvr.go&quot;,
     &quot;pkg/kiali/gvr_test.go&quot;,
     &quot;pkg/kiali/kiali.go&quot;,
@@ -3366,6 +3509,10 @@
     &quot;pkg/kubernetes/accesscontrol_round_tripper.go&quot;,
     &quot;pkg/kubernetes/accesscontrol_round_tripper_test.go&quot;,
     &quot;pkg/kubernetes/auth.go&quot;,
+    &quot;pkg/kubernetes/ca.go&quot;,
+    &quot;pkg/kubernetes/ca_owner_other.go&quot;,
+    &quot;pkg/kubernetes/ca_owner_unix.go&quot;,
+    &quot;pkg/kubernetes/ca_test.go&quot;,
     &quot;pkg/kubernetes/common_test.go&quot;,
     &quot;pkg/kubernetes/configuration.go&quot;,
     &quot;pkg/kubernetes/confirmation_validator.go&quot;,
@@ -3452,6 +3599,7 @@
     &quot;pkg/mcp/helm_test.go&quot;,
     &quot;pkg/mcp/inflight_test.go&quot;,
     &quot;pkg/mcp/kiali_test.go&quot;,
+    &quot;pkg/mcp/korrel8r_test.go&quot;,
     &quot;pkg/mcp/kubevirt_test.go&quot;,
     &quot;pkg/mcp/mcp.go&quot;,
     &quot;pkg/mcp/mcp_apps_metadata_test.go&quot;,
@@ -3667,6 +3815,8 @@
     &quot;pkg/toolsets/kiali/tools/rbac.go&quot;,
     &quot;pkg/toolsets/kiali/tools/rbac_test.go&quot;,
     &quot;pkg/toolsets/kiali/toolset.go&quot;,
+    &quot;pkg/toolsets/korrel8r/toolset.go&quot;,
+    &quot;pkg/toolsets/korrel8r/toolset_test.go&quot;,
     &quot;pkg/toolsets/kubevirt/hco_status.go&quot;,
     &quot;pkg/toolsets/kubevirt/hco_status_test.go&quot;,
     &quot;pkg/toolsets/kubevirt/internal/defaults/defaults.go&quot;,
@@ -3761,6 +3911,7 @@
     &quot;pkg/toolsets/traces/config.go&quot;,
     &quot;pkg/toolsets/traces/config_test.go&quot;,
     &quot;pkg/toolsets/traces/get_trace_by_id.go&quot;,
+    &quot;pkg/toolsets/traces/get_trace_by_id_test.go&quot;,
     &quot;pkg/toolsets/traces/handlers_test.go&quot;,
     &quot;pkg/toolsets/traces/list_instances.go&quot;,
     &quot;pkg/toolsets/traces/list_instances_test.go&quot;,
@@ -3770,6 +3921,7 @@
     &quot;pkg/toolsets/traces/search_tags.go&quot;,
     &quot;pkg/toolsets/traces/search_traces.go&quot;,
     &quot;pkg/toolsets/traces/toolset.go&quot;,
+    &quot;pkg/toolsets/traces/trace_format.go&quot;,
     &quot;pkg/version/version.go&quot;,
     &quot;test/browser/run.sh&quot;,
     &quot;test/e2e/apps_test.go&quot;,
@@ -4039,6 +4191,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;build/korrel8r.mk&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;build/kuadrant.mk&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -4131,6 +4287,10 @@
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
+      &quot;path&quot;: &quot;dev/config/mcp-configs/korrel8r.toml&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
       &quot;path&quot;: &quot;dev/config/mcp-configs/netobserv.toml&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -4204,6 +4364,10 @@
     },
     {
       &quot;path&quot;: &quot;docs/images/vibe-coding.jpg&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;docs/korrel8r.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
     {
@@ -4687,6 +4851,26 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;evals/tasks/korrel8r/README.md&quot;,
+      &quot;reason&quot;: &quot;outside-rule-scope&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evals/tasks/korrel8r/shared/setup-signals.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evals/tasks/korrel8r/shared/setup.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evals/tasks/korrel8r/shared/teardown-signals.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evals/tasks/korrel8r/shared/teardown.sh&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;evals/tasks/kubevirt/README.md&quot;,
       &quot;reason&quot;: &quot;outside-rule-scope&quot;
     },
@@ -4879,6 +5063,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/config/ca_url_config_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/config/config.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -5055,6 +5243,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/kcp/provider_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/kcp/workspace.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -5080,6 +5272,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/kiali/discover.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/kiali/discover_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -5144,6 +5340,22 @@
     },
     {
       &quot;path&quot;: &quot;pkg/kubernetes/auth.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/kubernetes/ca.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/kubernetes/ca_owner_other.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/kubernetes/ca_owner_unix.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/kubernetes/ca_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -5496,6 +5708,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/mcp/kiali_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/mcp/korrel8r_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
@@ -6363,6 +6579,14 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/toolsets/korrel8r/toolset.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/toolsets/korrel8r/toolset_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/toolsets/kubevirt/hco_status.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -6739,6 +6963,10 @@
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
+      &quot;path&quot;: &quot;pkg/toolsets/traces/get_trace_by_id_test.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
       &quot;path&quot;: &quot;pkg/toolsets/traces/handlers_test.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
@@ -6772,6 +7000,10 @@
     },
     {
       &quot;path&quot;: &quot;pkg/toolsets/traces/toolset.go&quot;,
+      &quot;reason&quot;: &quot;unsupported-implementation&quot;
+    },
+    {
+      &quot;path&quot;: &quot;pkg/toolsets/traces/trace_format.go&quot;,
       &quot;reason&quot;: &quot;unsupported-implementation&quot;
     },
     {
